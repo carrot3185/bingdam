@@ -1,0 +1,159 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "10": {
+    "class_type": "DenoResolutionSetup",
+    "inputs": {
+      "mode": "Manual Input",
+      "ratio_preset": "16:9",
+      "megapixels": 3.69,
+      "width": 2560,
+      "height": 1440,
+      "divisible_by": "32",
+      "resize_method": "Center Crop (Fill)",
+      "interpolation": "lanczos",
+      "crop_x": 0.5,
+      "crop_y": 0.5,
+      "crop_zoom": 1
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ],
+      "batch_size": 1
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Remove only the exterior window on the rear wall at the left of the entry passage, together with its gray drapes, sheer curtain and the potted olive tree standing in front of it. Fill that whole section with continuous plain ivory wall matching the surrounding wall, with the same flush shadow-gap baseboard and the same warm cove light washing down from the ceiling. The only exterior window of this apartment is behind the camera, so the wall around the entrance has no window. Keep everything else identical: the camera view, the slate-gray sofa with cushions, round stone coffee table and gray rug on the left, the oak dining table with four charcoal chairs, laptop, glass and pendant on the right, the ivory kitchen, the recessed tiled vestibule and the gray entrance door with its digital lock, the oak floor, ceiling cove, downlights, air-conditioner diffuser and evening lighting. A local architectural correction, not a camera move or redesign. No people, captions or watermark.",
+      "negative_prompt": "",
+      "resolution": 1536,
+      "images.image_1": [
+        "7",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 202610052200,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_locations_v02/HOME_REVERSE_v02"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "HOME_REVERSE (1).png"
+    }
+  }
+}

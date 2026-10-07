@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Seoul",
+  "status": "both police characters user confirmed final",
+  "approval": "사용자: \"경찰 A,B 최종 fix할께\" (2026-10-07). 직전에 표시한 CHAR_06_turnaround_v02와 CHAR_07_turnaround_v02_capfix_final을 채택.",
+  "characters": [
+    {
+      "id": "CHAR_06",
+      "name": "경찰 A",
+      "description": "30대 초반 한국인 여성, 낮은 쪽머리",
+      "final_turnaround": "outputs/CHAR_06_turnaround_v02.png",
+      "turnaround_sha256": "e129e16c25e4a0972bcb57ec20c56f2463f896be57afcc95607f440a894e92f6",
+      "identity_source": "../police_qwen_v01/outputs/CHAR_06_cast_a.png",
+      "uniform_front_reference": "outputs/CHAR_06_dress_a.png",
+      "status": "user confirmed final"
+    },
+    {
+      "id": "CHAR_07",
+      "name": "경찰 B",
+      "description": "40대 중반 한국인 남성, 관자놀이 흰머리, 넓은 체격",
+      "final_turnaround": "outputs/CHAR_07_turnaround_v02_capfix_final.png",
+      "turnaround_sha256": "fa673307d0aa313cd5adc7a68b5b2247c796be5a3a5c7210d46f2573ba878725",
+      "identity_source": "../police_qwen_v01/outputs/CHAR_07_cast_a.png",
+      "note": "outputs/CHAR_07_dress_a.png는 패치 글자가 깨지고 모자가 수정 전 상태이므로 제복 기준으로 쓰지 않는다. 최종 턴어라운드 정면 패널을 기준으로 쓴다.",
+      "status": "user confirmed final"
+    }
+  ],
+  "uniform": {
+    "source": "사용자 제공 실제 한국 경찰 동절기 근무복 사진 references/USER_KOREAN_POLICE_UNIFORM_REF.png (얼굴 가린 사본 UNIFORM_REF_face_masked.png만 모델 입력)",
+    "items": [
+      "남색 경찰모: 테두리 휘장형 금색 독수리 엠블럼, 챙 가장자리 금색 잎 자수 한 줄",
+      "연회색 패딩 근무점퍼: 스탠드 칼라, 견장, 착용자 오른팔 상단 지퍼 주머니, 청록색 안쪽 시보리",
+      "남색 지퍼 근무조끼: 가슴 은색 반사띠(등까지 이어짐), 착용자 오른쪽 가슴 흰색 \"경찰/POLICE\" 패치, 착용자 왼쪽 가슴 독수리 휘장 파우치, 착용자 왼어깨 무전기, 하단 플랩 파우치",
+      "검은 일자 바지, 검은 가죽 옥스퍼드화"
+    ],
+    "same_for_both": true
+  },
+  "fixed_scope": [
+    "facial identity",
+    "hairstyle and hair color",
+    "body design and proportions",
+    "uniform design, colors and item positions (anatomical sides)",
+    "approved profile and rear visual design"
+  ],
+  "variable_scope": [
+    "scene pose and action",
+    "expression and gaze",
+    "camera and lighting"
+  ],
+  "known_differences": [
+    "조끼 등판은 참조 사진에 없어 반사띠만 있는 추정 디자인이며 실제 등판 표기와 대조하지 않음",
+    "B 왼쪽 향한 측면의 소매 패치가 무늬 없는 회색 사각형",
+    "측면에서 비스듬히 보이는 이름 패치 글자는 불완전",
+    "계급장·휘장은 공식 규정과 대조하지 않음"
+  ],
+  "reference_usage": "Use actual final image files as generation inputs; stable CHAR IDs alone do not connect references."
+}

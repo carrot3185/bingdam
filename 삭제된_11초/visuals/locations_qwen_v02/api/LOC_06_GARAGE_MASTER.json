@@ -1,0 +1,149 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "10": {
+    "class_type": "DenoResolutionSetup",
+    "inputs": {
+      "mode": "Manual Input",
+      "ratio_preset": "16:9",
+      "megapixels": 3.69,
+      "width": 2560,
+      "height": 1440,
+      "divisible_by": "32",
+      "resize_method": "Center Crop (Fill)",
+      "interpolation": "lanczos",
+      "crop_x": 0.5,
+      "crop_y": 0.5,
+      "crop_zoom": 1
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ],
+      "batch_size": 1
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Professional interior-design portfolio photograph: full-frame camera with a wide rectilinear lens at adult eye height, perfectly vertical walls and clean two-point perspective, balanced high-dynamic-range exposure so the window and the darker corners both hold detail, crisp micro-detail in wood grain, fabric weave, stone veining and painted wall texture. The image is a wide architectural photograph of an upscale Korean apartment underground parking garage late at night, with a black linear-baffle ceiling, warm gray granite pavers and dark charcoal columns. The camera stands at adult eye height in the middle of the main driving aisle, looking straight down the aisle toward a far end wall, and the garage fills the frame.\nAcross the whole ceiling, long parallel matte black metal baffles run along the aisle with deep black voids between them. Long slim linear LED light lines are set into the baffles, some running along the aisle and some across it, and small black dome security cameras hang from the baffles.\nThe aisle floor is laid with rectangular flamed granite pavers in warm light gray with a fine speckle and thin joints. Dark granite strips separate the aisle from the parking bays on both sides.\nOn both sides stand square columns finished in matte dark charcoal, each front edge protected by a black-and-yellow striped rubber corner guard. Parking bays sit between the columns.\nIn the near left bay, a silver mid-size SUV is seen from its rear quarter, cropped by the left edge. Farther along the left wall is a glass-doored elevator lobby vestibule set into the charcoal wall, softly lit from inside.\nIn the right bays, a row of parked premium sedans and one coupe in black, deep navy, burgundy and white stand nose-in. Every car is plain and unbranded, with blank license plates.\nAt the far end, the aisle ends at a wall clad in warm horizontal timber slats, outlined by a thin cool blue LED line along its top and sides.\nThe aisle in the middle distance is completely open and evenly lit, with room for two adults to stand.\nCrisp cool-white light falls from the linear LED lines, leaving sharp highlights on the car paint, soft reflections on the granite and slightly darker columns under deep black ceiling voids. The palette is black, charcoal and warm gray granite with a warm timber accent and a touch of cool blue; sleek, quiet, expensive and slightly cold. The space is empty and unoccupied: no people, no readable text, signage, logos or watermark.",
+      "negative_prompt": "",
+      "resolution": 1024
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 202610052310,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_locations_v02/LOC_06_GARAGE_MASTER"
+    }
+  }
+}

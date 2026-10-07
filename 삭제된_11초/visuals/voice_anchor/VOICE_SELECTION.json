@@ -1,0 +1,62 @@
+{
+ "date": "2026-10-07",
+ "timezone": "Asia/Seoul",
+ "status": "도현·서윤·지수·경찰 A 기준 음성 사용자 선택; 참조 오디오 방식 사용자 확정",
+ "approval": "사용자: 서윤·도현 둘 다 첫 번째 테스트 영상이 마음에 듦. 목소리도 마찬가지, 대사 호흡이 좋음.",
+ "voices": [
+  {
+   "id": "CHAR_02",
+   "name": "도현",
+   "source_clip": "video_h3_voice_test/outputs/S2-14_anchor_v01_s110214_00001-audio.mp4",
+   "source_sha256": "9bccbb4252e82afd6b03d204b35d3bf32376b0c84a38e64988b416f1c0dbc075",
+   "anchor_audio": "voice_anchor/VOICE_CHAR_02_dohyun_anchor_v01.wav",
+   "anchor_sha256": "8e24f4a924744d8be9e67cb1fbe7823852af20a7b6472da8e2fb07d48da315a0",
+   "comfy_input": "D11_VOICE_CHAR_02_dohyun_anchor_v01.wav",
+   "line": "병원에서. 마취 깨자마자 아이스크림 찾았잖아."
+  },
+  {
+   "id": "CHAR_01",
+   "name": "서윤",
+   "source_clip": "video_h3_voice_test/outputs/S3-17_anchor_v01_s110317_00001-audio.mp4",
+   "source_sha256": "a1c97e7d9c098d2d4454748a32677eefe8d160bc7756b0463f9f91ad96e8b675",
+   "anchor_audio": "voice_anchor/VOICE_CHAR_01_seoyun_anchor_v01.wav",
+   "anchor_sha256": "55b25387d9f275883169e015b35a8aa3d556c067175b772c612db3a957215f8b",
+   "comfy_input": "D11_VOICE_CHAR_01_seoyun_anchor_v01.wav",
+   "line": "그날 내 차 점검받았잖아."
+  },
+  {
+   "id": "CHAR_03",
+   "name": "지수",
+   "source_clip": "video_h3_takes/outputs/T7E2_v01_s820701_00001-audio.mp4",
+   "source_sha256": "c5402b69b60d128afe5a19af9f5560e3ba70f99838e45c98fb2946b6ec8cd5ff",
+   "anchor_audio": "voice_anchor/VOICE_CHAR_03_jisu_anchor_v01.wav",
+   "anchor_sha256": "79602753db06737f4973e4ef4c7510b2e9838495a1daf5f6c798a311399a7eff",
+   "comfy_input": "D11_VOICE_CHAR_03_jisu_anchor_v01.wav",
+   "line": "진작 버렸어.",
+   "selected": "2026-10-07 사용자 선택(후보 3개 중 2번째)",
+   "note": "참조 오디오 없이 생성한 후보. 클립 전체 오디오를 가공 없이 wav로 추출."
+  },
+  {
+   "id": "CHAR_06",
+   "name": "경찰 A",
+   "source_clip": "video_h3_takes/outputs/T-VO-P_v01_s920601_00001-audio.mp4",
+   "source_sha256": "59426ff6e889a45a36bf6c9f9ff0e0e79179da72baa8a5df81b92a94dedc2249",
+   "anchor_audio": "voice_anchor/VOICE_CHAR_06_policeA_anchor_v01.wav",
+   "anchor_sha256": "671864828787858913f45e7a1a4a9b08461fd8c233c7438a716595c598454e90",
+   "comfy_input": "D11_VOICE_CHAR_06_policeA_anchor_v01.wav",
+   "line": "경찰입니다. 한서윤 씨 계십니까? / 문에서 물러나세요.",
+   "selected": "2026-10-07 사용자 선택(후보 3개 중 2번째)",
+   "note": "참조 오디오 없이 생성한 후보. 클립 전체 오디오를 가공 없이 wav로 추출."
+  }
+ ],
+ "anchor_extraction": "클립 전체 오디오(5.856초, 32kHz 스테레오, 대사 앞 숨·실내음 포함)를 PCM wav로 추출. 자르거나 가공하지 않음.",
+ "also_approved": "두 선택 클립의 연기·대사 호흡",
+ "next": "참조 오디오(<Audio 1>)로 다른 대사에서 같은 목소리가 유지되는지 테스트 — video_h3_voice_test/ S3-13·S3-21 vref/noref",
+ "reference_audio_validation": {
+  "date": "2026-10-07",
+  "status": "user confirmed",
+  "user_feedback": "비교해보니까 거의 비슷하게 들리는 거 같아 (v02 vref 4클립 vs 기준 음성)",
+  "method": "기준 음성 wav를 H3 R2V ref_audios.ref_audio_0(<Audio 1>)로 입력, 새 대사는 프롬프트 <d>[Korean] …</d>. 상대 인물 시트 <Picture 3>, 상대 대사 따옴표 인용 금지.",
+  "evidence": "video_h3_voice_test/GENERATION_RECORD.json round2·round3"
+ }
+}

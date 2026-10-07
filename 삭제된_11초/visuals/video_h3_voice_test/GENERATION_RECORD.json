@@ -1,0 +1,330 @@
+{
+ "date": "2026-10-07",
+ "timezone": "Asia/Seoul",
+ "purpose": "기준 목소리(앵커) 후보 생성 — H3가 영상과 함께 생성한 음성. 사용자 청취 선택 전",
+ "status": "generated; user approved overall condition for production; per-character voice not yet selected",
+ "common": {
+  "workflow_source": "D:/Comfy-Desktop/ComfyUI-Installs/KSH/ComfyUI/user/default/workflows/Deno_minimax_final_R2V_7+1_memopt_Sol.json",
+  "workflow_source_sha256": "68a3d5712c248dcdd9d457f698ac1f77d0139dcb0d5adbd7cb3360a16da6c256",
+  "changes_from_source": [
+   "prompt (node 186)",
+   "reference image paths (node 142)",
+   "seconds 5.6 -> length 141 frames (node 132)",
+   "fixed seed (node 129)",
+   "filename_prefix (node 144)",
+   "API conversion via comfy_cli.workflow_to_api; node 197 MinimaxH3LatentUpscaler3D widget values were misaligned in the saved UI file (force_unload='cuda', device='bf16', precision='fp16'); set to force_unload=True, device=cuda, precision=bf16"
+  ],
+  "unchanged_settings": "euler/simple 8 steps split 7+1, Camera_Control LoRA 1.0 on first pass, dmd ref2va 8step turbo LoRA on last step, latent x2, H3MemoryOptimization, sol-attn, ref_image_size=match, DenoResolutionSetup 16:9 0.51MP",
+  "output_spec_observed": "1920x1088, 24fps, 141 frames (5.875s), AAC stereo 32kHz",
+  "runtime_observed": "about 306 s per clip (first clip, measured from ComfyUI history) on RTX 4070 12GB",
+  "audio_reference_connected": false
+ },
+ "clips": [
+  {
+   "shot": "S2-14",
+   "character": "CHAR_02 도현",
+   "seed": 110214,
+   "line_requested": "병원에서. 마취 깨자마자 아이스크림 찾았잖아.",
+   "prompt_file": "prompts/S2-14_anchor_v01.txt",
+   "references": [
+    {
+     "tag": "<Picture 1>",
+     "role": "identity",
+     "project_file": "turnaround_qwen_v02/outputs/CHAR_02_도현_turnaround_v02_HQ.png",
+     "comfy_input": "D11_h3/CHAR_02_dohyun_turnaround_v02_HQ.png",
+     "sha256": "2bcc683de8cc8a7a73d043e787ca1e0b261623d1d5c804e5795624d5aab987ca"
+    },
+    {
+     "tag": "<Picture 2>",
+     "role": "environment",
+     "project_file": "locations_qwen_v02/outputs/LOC_02_KITCHEN.png",
+     "comfy_input": "D11_h3/LOC_02_KITCHEN.png",
+     "sha256": "a17cb8d0c8888d40265000327a54a1cd7f6138fb7d7cfde65a2c840662d20392"
+    }
+   ],
+   "workflow_api": "workflows/D11_S2-14_anchor_v01_s110214_api.json",
+   "output": "outputs/S2-14_anchor_v01_s110214_00001-audio.mp4",
+   "output_sha256": "9bccbb4252e82afd6b03d204b35d3bf32376b0c84a38e64988b416f1c0dbc075",
+   "visual_observation": "얼굴·셔츠 색 시트와 가까움. 아이스크림 오른손·시계 왼손목 유지. 화면 왼쪽 앞에 서윤 뒤통수. 주방 상부장·후드 배경."
+  },
+  {
+   "shot": "S2-14",
+   "character": "CHAR_02 도현",
+   "seed": 220214,
+   "line_requested": "병원에서. 마취 깨자마자 아이스크림 찾았잖아.",
+   "prompt_file": "prompts/S2-14_anchor_v01.txt",
+   "references": [
+    {
+     "tag": "<Picture 1>",
+     "role": "identity",
+     "project_file": "turnaround_qwen_v02/outputs/CHAR_02_도현_turnaround_v02_HQ.png",
+     "comfy_input": "D11_h3/CHAR_02_dohyun_turnaround_v02_HQ.png",
+     "sha256": "2bcc683de8cc8a7a73d043e787ca1e0b261623d1d5c804e5795624d5aab987ca"
+    },
+    {
+     "tag": "<Picture 2>",
+     "role": "environment",
+     "project_file": "locations_qwen_v02/outputs/LOC_02_KITCHEN.png",
+     "comfy_input": "D11_h3/LOC_02_KITCHEN.png",
+     "sha256": "a17cb8d0c8888d40265000327a54a1cd7f6138fb7d7cfde65a2c840662d20392"
+    }
+   ],
+   "workflow_api": "workflows/D11_S2-14_anchor_v01_s220214_api.json",
+   "output": "outputs/S2-14_anchor_v01_s220214_00001-audio.mp4",
+   "output_sha256": "c0f47c60bee943e94e2fea5237480c153a36671f21f9996a5567cdd600e7936e",
+   "visual_observation": "셔츠가 시트보다 어두운 남색 쪽. 손·시계 유지. 배경 주방 벽."
+  },
+  {
+   "shot": "S2-14",
+   "character": "CHAR_02 도현",
+   "seed": 330214,
+   "line_requested": "병원에서. 마취 깨자마자 아이스크림 찾았잖아.",
+   "prompt_file": "prompts/S2-14_anchor_v01.txt",
+   "references": [
+    {
+     "tag": "<Picture 1>",
+     "role": "identity",
+     "project_file": "turnaround_qwen_v02/outputs/CHAR_02_도현_turnaround_v02_HQ.png",
+     "comfy_input": "D11_h3/CHAR_02_dohyun_turnaround_v02_HQ.png",
+     "sha256": "2bcc683de8cc8a7a73d043e787ca1e0b261623d1d5c804e5795624d5aab987ca"
+    },
+    {
+     "tag": "<Picture 2>",
+     "role": "environment",
+     "project_file": "locations_qwen_v02/outputs/LOC_02_KITCHEN.png",
+     "comfy_input": "D11_h3/LOC_02_KITCHEN.png",
+     "sha256": "a17cb8d0c8888d40265000327a54a1cd7f6138fb7d7cfde65a2c840662d20392"
+    }
+   ],
+   "workflow_api": "workflows/D11_S2-14_anchor_v01_s330214_api.json",
+   "output": "outputs/S2-14_anchor_v01_s330214_00001-audio.mp4",
+   "output_sha256": "ff4a67e46cc873dff95d6e8a2e8189ea9a57350be7ee2c47a4915eb04168e033",
+   "visual_observation": "아이스크림 뚜껑이 열린 상태로 바뀜, 왼손은 주머니. 배경에 커튼·창이 주방 벽 옆에 보여 확정 배치와 다름."
+  },
+  {
+   "shot": "S3-17",
+   "character": "CHAR_01 서윤",
+   "seed": 110317,
+   "line_requested": "그날 내 차 점검받았잖아.",
+   "prompt_file": "prompts/S3-17_anchor_v01.txt",
+   "references": [
+    {
+     "tag": "<Picture 1>",
+     "role": "identity",
+     "project_file": "turnaround_qwen_v02/outputs/CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+     "comfy_input": "D11_h3/CHAR_01_seoyun_turnaround_v02_HQ_repaired.png",
+     "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f"
+    },
+    {
+     "tag": "<Picture 2>",
+     "role": "environment",
+     "project_file": "locations_qwen_v02/outputs/HOME_MASTER_b.png",
+     "comfy_input": "D11_h3/HOME_MASTER_b.png",
+     "sha256": "32cdac49777d410d8d96e196e3e63f3d83250413ab2bdb540a47b00eb97f3ca9"
+    }
+   ],
+   "workflow_api": "workflows/D11_S3-17_anchor_v01_s110317_api.json",
+   "output": "outputs/S3-17_anchor_v01_s110317_00001-audio.mp4",
+   "output_sha256": "a1c97e7d9c098d2d4454748a32677eefe8d160bc7756b0463f9f91ad96e8b675",
+   "visual_observation": "보호대 왼손목 회색 유지. 시선이 대부분 그릇 쪽, 끝에서 살짝 듦. 입술 색이 시트보다 진함. 오른쪽 앞에 도현 어깨(어두운 옷)."
+  },
+  {
+   "shot": "S3-17",
+   "character": "CHAR_01 서윤",
+   "seed": 220317,
+   "line_requested": "그날 내 차 점검받았잖아.",
+   "prompt_file": "prompts/S3-17_anchor_v01.txt",
+   "references": [
+    {
+     "tag": "<Picture 1>",
+     "role": "identity",
+     "project_file": "turnaround_qwen_v02/outputs/CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+     "comfy_input": "D11_h3/CHAR_01_seoyun_turnaround_v02_HQ_repaired.png",
+     "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f"
+    },
+    {
+     "tag": "<Picture 2>",
+     "role": "environment",
+     "project_file": "locations_qwen_v02/outputs/HOME_MASTER_b.png",
+     "comfy_input": "D11_h3/HOME_MASTER_b.png",
+     "sha256": "32cdac49777d410d8d96e196e3e63f3d83250413ab2bdb540a47b00eb97f3ca9"
+    }
+   ],
+   "workflow_api": "workflows/D11_S3-17_anchor_v01_s220317_api.json",
+   "output": "outputs/S3-17_anchor_v01_s220317_00001-audio.mp4",
+   "output_sha256": "0559f5c313e20ab724619ebe6398a95960e0ac5a7d4d97eed5ccbd38fd1157b8",
+   "visual_observation": "보호대 유지. 후반에 시선을 들어 상대를 봄 — 프롬프트 의도와 가장 가까움. 입술 색 진함."
+  },
+  {
+   "shot": "S3-17",
+   "character": "CHAR_01 서윤",
+   "seed": 330317,
+   "line_requested": "그날 내 차 점검받았잖아.",
+   "prompt_file": "prompts/S3-17_anchor_v01.txt",
+   "references": [
+    {
+     "tag": "<Picture 1>",
+     "role": "identity",
+     "project_file": "turnaround_qwen_v02/outputs/CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+     "comfy_input": "D11_h3/CHAR_01_seoyun_turnaround_v02_HQ_repaired.png",
+     "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f"
+    },
+    {
+     "tag": "<Picture 2>",
+     "role": "environment",
+     "project_file": "locations_qwen_v02/outputs/HOME_MASTER_b.png",
+     "comfy_input": "D11_h3/HOME_MASTER_b.png",
+     "sha256": "32cdac49777d410d8d96e196e3e63f3d83250413ab2bdb540a47b00eb97f3ca9"
+    }
+   ],
+   "workflow_api": "workflows/D11_S3-17_anchor_v01_s330317_api.json",
+   "output": "outputs/S3-17_anchor_v01_s330317_00001-audio.mp4",
+   "output_sha256": "78dad1572768da3961b7c8253421a5fa7de55e9d333f3703ffadac44d67f1ebf",
+   "visual_observation": "보호대 무늬가 줄무늬처럼 바뀜. 시선이 끝까지 그릇 쪽. 발화가 4.0초에 늦게 시작해 압축됨."
+  }
+ ],
+ "transcript_check": "faster-whisper base(CPU, 로컬 캐시)로 6개 모두 요청 대사와 같은 문장을 확인. 도현 클립은 '마취 깨자마자'를 base 모델이 '마치게자마자'로 받아씀(모델 한계 가능성, 발음 판정 아님).",
+ "timing_observation": "6개 모두 발화 전 1.8~4.0초 무음(행동 비트)과 구절 사이 약 1초 쉼이 생겨 대사가 클립 끝(5.6~5.8초)까지 밀림. 프롬프트의 종료 시각(4.3~4.4초) 지시는 지켜지지 않음.",
+ "framing_observation": "요청한 MCU/CU보다 넓은 MS로 생성됨. 상대 인물의 어깨·뒤통수가 전경에 자동 추가됨.",
+ "not_verified": [
+  "목소리가 인물과 맞는지",
+  "한국어 발음 품질의 정밀 판정",
+  "입모양 정밀 동기화",
+  "같은 시드 재현성"
+ ],
+ "user_feedback": {
+  "date": "2026-10-07",
+  "text": "연기와 대사가 너무 자연스러워서 마음에 듦. 영상 톤앤매너, 카메라 연출, 포커스 아웃 연출도 좋음. 이 컨디션으로 본 작업 진행.",
+  "scope": "생성 조건(워크플로우 설정·참조 방식·프롬프트 구조·룩) 승인. 특정 클립·목소리 선택은 아직 없음."
+ },
+ "round2_voice_reference": {
+  "date": "2026-10-07",
+  "purpose": "선택한 기준 음성을 <Audio 1>(ref_audios.ref_audio_0, LoadAudio)로 넣어 다른 대사에서 목소리가 유지되는지. 같은 시드의 참조 없는 클립(noref)과 비교.",
+  "length": "6.5초 입력 → 158프레임(6.58초)",
+  "clips": [
+   {
+    "shot": "S3-13",
+    "mode": "vref",
+    "seed": 410313,
+    "prompt_file": "prompts/S3-13_vref_v01.txt",
+    "workflow_api": "workflows/D11_S3-13_vref_v01_s410313_api.json",
+    "output": "outputs/S3-13_vref_v01_s410313_00001-audio.mp4",
+    "output_sha256": "c6de74d7a4ad65f6442667282f5a56bcf2c3d95f913562fa5f8acd92d5e44d88",
+    "ref_audio": "D11_VOICE_CHAR_02_dohyun_anchor_v01.wav"
+   },
+   {
+    "shot": "S3-13",
+    "mode": "vref",
+    "seed": 520313,
+    "prompt_file": "prompts/S3-13_vref_v01.txt",
+    "workflow_api": "workflows/D11_S3-13_vref_v01_s520313_api.json",
+    "output": "outputs/S3-13_vref_v01_s520313_00001-audio.mp4",
+    "output_sha256": "a042bb0d80760139e7b3b0478d3e15a1b1271c6f91473a01049c98b8df55bfa2",
+    "ref_audio": "D11_VOICE_CHAR_02_dohyun_anchor_v01.wav"
+   },
+   {
+    "shot": "S3-13",
+    "mode": "noref",
+    "seed": 410313,
+    "prompt_file": "prompts/S3-13_noref_v01.txt",
+    "workflow_api": "workflows/D11_S3-13_noref_v01_s410313_api.json",
+    "output": "outputs/S3-13_noref_v01_s410313_00001-audio.mp4",
+    "output_sha256": "9918a38c9ca93e8f5e60f9df73f15eb4afab43180a9bebe2ef4b8c7c46d26641",
+    "ref_audio": null
+   },
+   {
+    "shot": "S3-21",
+    "mode": "vref",
+    "seed": 410321,
+    "prompt_file": "prompts/S3-21_vref_v01.txt",
+    "workflow_api": "workflows/D11_S3-21_vref_v01_s410321_api.json",
+    "output": "outputs/S3-21_vref_v01_s410321_00001-audio.mp4",
+    "output_sha256": "00d2c13c48452f23906a72d4c129d9e52ef89d17359a8b79e97cf13c83e741ff",
+    "ref_audio": "D11_VOICE_CHAR_01_seoyun_anchor_v01.wav"
+   },
+   {
+    "shot": "S3-21",
+    "mode": "vref",
+    "seed": 520321,
+    "prompt_file": "prompts/S3-21_vref_v01.txt",
+    "workflow_api": "workflows/D11_S3-21_vref_v01_s520321_api.json",
+    "output": "outputs/S3-21_vref_v01_s520321_00001-audio.mp4",
+    "output_sha256": "6ab1ddb4faf39a7798c7a807125a0382d914bf1c0b2cb1e2c61bcbfdb88bd60f",
+    "ref_audio": "D11_VOICE_CHAR_01_seoyun_anchor_v01.wav"
+   },
+   {
+    "shot": "S3-21",
+    "mode": "noref",
+    "seed": 410321,
+    "prompt_file": "prompts/S3-21_noref_v01.txt",
+    "workflow_api": "workflows/D11_S3-21_noref_v01_s410321_api.json",
+    "output": "outputs/S3-21_noref_v01_s410321_00001-audio.mp4",
+    "output_sha256": "6c9cdf8ede4da5199ff37837525fe5f33c552fa2400fbe6b6e57f7fcaf7e7a70",
+    "ref_audio": null
+   }
+  ],
+  "observed": [
+   "6개 모두 요청한 새 대사를 말함. 기준 음성의 대사를 재생·반복하지 않음(faster-whisper base 받아쓰기).",
+   "참조 오디오를 넣은 4개 모두 프롬프트에서 따옴표로 인용한 직전 상대 대사를 소리로 냄: 도현 클립 첫머리 '왜?'(약 172Hz, 여성 음역 추정), 서윤 클립 첫머리 '너, 네'류의 짧은 말(정체 불명). 참조 없는 2개에는 없음.",
+   "화면: 도현 셔츠·시계, 서윤 보호대 유지. 전경에 상대 어깨가 들어감. 서윤 vref는 끝까지 시선이 대부분 그릇 쪽."
+  ],
+  "not_verified": [
+   "참조 클립의 목소리가 기준 음성과 같게 들리는지 — 로컬 화자 비교 모델 없음, 사용자 청취 필요"
+  ],
+  "lesson_proposed": "참조 오디오 사용 시 상대 대사를 따옴표로 인용하지 않고 상황만 서술한다(v02에서 확인 필요)."
+ },
+ "round3_ots_partner_sheet": {
+  "date": "2026-10-07",
+  "trigger": "사용자 지적: OTS 전경의 상대 인물 의상·외형이 클립마다 바뀜(서윤이 분홍 블라우스처럼 나옴).",
+  "cause": "상대 인물의 참조 이미지를 넣지 않아 모델이 전경 인물을 임의로 그림.",
+  "change_from_v01": [
+   "상대 인물 확정 시트를 <Picture 3>로 추가(도현 샷: 서윤 시트 / 서윤 샷: 도현 시트)",
+   "전경 인물을 S2로 명명하고 등을 보인 어깨·뒤통수·얼굴 비노출을 명시",
+   "상대 대사의 따옴표 인용을 상황 서술로 교체, S2 무음 명시",
+   "시드는 v01과 동일 + 추가 1개"
+  ],
+  "clips": [
+   {
+    "shot": "S3-13",
+    "seed": 410313,
+    "prompt_file": "prompts/S3-13_vref_v02.txt",
+    "workflow_api": "workflows/D11_S3-13_vref_v02_s410313_api.json",
+    "output": "outputs/S3-13_vref_v02_s410313_00001-audio.mp4",
+    "output_sha256": "137ce36a68bbcf9acc95194a224b3bb8eb7f7b7b1fc9823764f77eea0e65437e"
+   },
+   {
+    "shot": "S3-13",
+    "seed": 520313,
+    "prompt_file": "prompts/S3-13_vref_v02.txt",
+    "workflow_api": "workflows/D11_S3-13_vref_v02_s520313_api.json",
+    "output": "outputs/S3-13_vref_v02_s520313_00001-audio.mp4",
+    "output_sha256": "29e6854fda19371d89022be852ac1443d447a10b24be82945fb6af2049c6a1ff"
+   },
+   {
+    "shot": "S3-21",
+    "seed": 410321,
+    "prompt_file": "prompts/S3-21_vref_v02.txt",
+    "workflow_api": "workflows/D11_S3-21_vref_v02_s410321_api.json",
+    "output": "outputs/S3-21_vref_v02_s410321_00001-audio.mp4",
+    "output_sha256": "051c36296e6dc869502931f8754006c2151aea7a52633b0533ce6d6446805945"
+   },
+   {
+    "shot": "S3-21",
+    "seed": 520321,
+    "prompt_file": "prompts/S3-21_vref_v02.txt",
+    "workflow_api": "workflows/D11_S3-21_vref_v02_s520321_api.json",
+    "output": "outputs/S3-21_vref_v02_s520321_00001-audio.mp4",
+    "output_sha256": "c213f8982bbd92d1c3feb4e261e2c61a21d2f46c65dfd575a35cfccabb829313"
+   }
+  ],
+  "observed": [
+   "4개 모두 전경 인물이 확정 의상으로 나옴: 서윤 = 오트밀 베이지 니트 + 긴 검은 머리, 도현 = 슬레이트 블루 셔츠 + 짧은 검은 머리. v01의 분홍·회색 상의 사라짐.",
+   "전 구간에서 전경 인물은 등을 보인 채 유지, 얼굴 노출·인물 뒤바뀜 없음(1.2fps 프레임 확인).",
+   "v01에서 끼어들던 상대 대사 소리('왜?' 등)가 4개 모두 사라짐(받아쓰기). 서윤 s410321은 '그런데'로 받아쓰기됨 — base 모델 오인 가능성, 청취 확인 필요.",
+   "서윤 샷은 끝까지 시선이 대부분 그릇 쪽 — '끝에서 눈을 든다' 지시는 약하게 반영."
+  ],
+  "not_verified": [
+   "목소리 동일성(사용자 청취)"
+  ]
+ }
+}

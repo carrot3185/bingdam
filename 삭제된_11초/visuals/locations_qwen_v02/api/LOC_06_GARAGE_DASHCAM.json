@@ -1,0 +1,159 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "10": {
+    "class_type": "DenoResolutionSetup",
+    "inputs": {
+      "mode": "Manual Input",
+      "ratio_preset": "16:9",
+      "megapixels": 3.69,
+      "width": 2560,
+      "height": 1440,
+      "divisible_by": "32",
+      "resize_method": "Center Crop (Fill)",
+      "interpolation": "lanczos",
+      "crop_x": 0.5,
+      "crop_y": 0.5,
+      "crop_zoom": 1
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ],
+      "batch_size": 1
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Using the parking garage in the image as the actual location, generate a fixed dashcam still recorded from inside one car that is reverse-parked in a bay of this garage, so the car's front faces straight across the main driving aisle.\nThe dashcam is mounted high at the center of the windshield and has a mildly wide dashcam lens. Along the bottom of the frame, a dark dashboard edge and the lower windshield frame occupy a thin band; no steering wheel, rear-view mirror, driver or wiper is visible.\nDirectly in front of the car is the open granite-paved aisle, bright under the ceiling LED lines, where two adults could stand facing the windshield with their faces fully lit. Beyond the aisle, the opposite row of charcoal columns with black-and-yellow corner guards and parked plain unbranded cars with blank plates stands at middle distance. Above, the black linear baffle ceiling and its LED lines fill the top of the frame and recede to both sides.\nKeep the same materials and lighting as the image: warm gray granite pavers, dark granite bay strips, matte charcoal columns, black baffles, cool-white linear light.\nThe image has subtle dashcam character: slightly limited dynamic range, mild compression softness and a faint highlight bloom around the LED lines, while faces in the open aisle area would still be clearly readable. No timestamp, recording icon or interface overlay, no license plate close-up, no people, no collision or damage, no readable text or logos, no watermark.",
+      "negative_prompt": "",
+      "resolution": 1536,
+      "images.image_1": [
+        "7",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 202610052330,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_locations_v02/LOC_06_GARAGE_DASHCAM"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "LOC_06_GARAGE_MASTER.png"
+    }
+  }
+}

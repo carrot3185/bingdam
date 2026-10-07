@@ -1,0 +1,689 @@
+{
+ "character": "CHAR_01 한서윤",
+ "test": "voice_casting_v01",
+ "created_utc": "2026-10-06T16:03:13+00:00",
+ "status": "후보 테스트. 사용자 청취·선택 전.",
+ "model": "ssfm-v30",
+ "seed": 11,
+ "records": [
+  {
+   "candidate": "V1",
+   "voice_name": "예진",
+   "voice_id": "tc_67c90ad544cf859417f2fc3a",
+   "line": "L1",
+   "scene": "S#3",
+   "text": "그날 내 차 점검받았잖아.",
+   "intent": "삼키기 어려운 죽을 한 숟갈 먹은 직후. 평소 말투를 유지하려 하지만 확인하려는 질문.",
+   "file": "V1_예진_L1.wav",
+   "sha256": "b81baea56219464da1b8d3e0dbf966db3bc8ed5377556f410f4790fa87469ce8",
+   "duration_sec": 1.7,
+   "payload": {
+    "voice_id": "tc_67c90ad544cf859417f2fc3a",
+    "text": "그날 내 차 점검받았잖아.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "그러니까. 괜히 돈 쓰지 말고 새로 사자.",
+     "next_text": "응."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.14,
+    "speech_end_sec": 1.56,
+    "speech_sec": 1.42,
+    "syllables": 10,
+    "syll_per_sec": 7.04,
+    "f0_median_hz": 216.2,
+    "f0_last30pct_hz": 168.4,
+    "peak_dbfs": -20.6
+   }
+  },
+  {
+   "candidate": "V1",
+   "voice_name": "예진",
+   "voice_id": "tc_67c90ad544cf859417f2fc3a",
+   "line": "L2",
+   "scene": "S#5",
+   "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+   "intent": "도현의 말을 끊고 들어간다. 고성 없이 문장이 짧고 분명해지는 지점.",
+   "file": "V1_예진_L2.wav",
+   "sha256": "424dc53323c527296baa50b744ff6ca54626a5885599b1f2c64245e481c4376a",
+   "duration_sec": 3.0,
+   "payload": {
+    "voice_id": "tc_67c90ad544cf859417f2fc3a",
+    "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "서윤아. 네가 지금 사고 때문에—",
+     "next_text": "내가 병원에서 며칠을 잤어."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.24,
+    "speech_end_sec": 2.77,
+    "speech_sec": 2.53,
+    "syllables": 16,
+    "syll_per_sec": 6.32,
+    "f0_median_hz": 242.4,
+    "f0_last30pct_hz": 219.2,
+    "peak_dbfs": -19.8
+   }
+  },
+  {
+   "candidate": "V1",
+   "voice_name": "예진",
+   "voice_id": "tc_67c90ad544cf859417f2fc3a",
+   "line": "L3",
+   "scene": "S#7",
+   "text": "그러니까 무서워.",
+   "intent": "한동안 바라본 뒤. 울음·고성보다 남편을 보며 낮게 끝내는 방향(설정집 제안).",
+   "file": "V1_예진_L3.wav",
+   "sha256": "5d6e6e29a51cdefddaa0e92dffa5e029e25d74102df97ec30ad0063f34229fa3",
+   "duration_sec": 1.55,
+   "payload": {
+    "voice_id": "tc_67c90ad544cf859417f2fc3a",
+    "text": "그러니까 무서워.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "나 네 옆에 있었잖아."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.27,
+    "speech_end_sec": 1.4,
+    "speech_sec": 1.13,
+    "syllables": 7,
+    "syll_per_sec": 6.19,
+    "f0_median_hz": 228.6,
+    "f0_last30pct_hz": 160.0,
+    "peak_dbfs": -20.2
+   }
+  },
+  {
+   "candidate": "V2",
+   "voice_name": "서희",
+   "voice_id": "tc_66d91cac31a58a718f750a49",
+   "line": "L1",
+   "scene": "S#3",
+   "text": "그날 내 차 점검받았잖아.",
+   "intent": "삼키기 어려운 죽을 한 숟갈 먹은 직후. 평소 말투를 유지하려 하지만 확인하려는 질문.",
+   "file": "V2_서희_L1.wav",
+   "sha256": "a7102d90a8904b83865ccd93931a876ad5812605bac1e4ca070bb0aff2eee7a5",
+   "duration_sec": 2.2,
+   "payload": {
+    "voice_id": "tc_66d91cac31a58a718f750a49",
+    "text": "그날 내 차 점검받았잖아.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "그러니까. 괜히 돈 쓰지 말고 새로 사자.",
+     "next_text": "응."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.19,
+    "speech_end_sec": 1.89,
+    "speech_sec": 1.7,
+    "syllables": 10,
+    "syll_per_sec": 5.88,
+    "f0_median_hz": 246.2,
+    "f0_last30pct_hz": 205.1,
+    "peak_dbfs": -14.6
+   }
+  },
+  {
+   "candidate": "V2",
+   "voice_name": "서희",
+   "voice_id": "tc_66d91cac31a58a718f750a49",
+   "line": "L2",
+   "scene": "S#5",
+   "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+   "intent": "도현의 말을 끊고 들어간다. 고성 없이 문장이 짧고 분명해지는 지점.",
+   "file": "V2_서희_L2.wav",
+   "sha256": "ceec27fb020d7b36c2d011d0b07eda30fb9d1ecff43044c31d0d766a10cc14e2",
+   "duration_sec": 3.4,
+   "payload": {
+    "voice_id": "tc_66d91cac31a58a718f750a49",
+    "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "서윤아. 네가 지금 사고 때문에—",
+     "next_text": "내가 병원에서 며칠을 잤어."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.3,
+    "speech_end_sec": 3.15,
+    "speech_sec": 2.85,
+    "syllables": 16,
+    "syll_per_sec": 5.61,
+    "f0_median_hz": 213.3,
+    "f0_last30pct_hz": 195.1,
+    "peak_dbfs": -15.0
+   }
+  },
+  {
+   "candidate": "V2",
+   "voice_name": "서희",
+   "voice_id": "tc_66d91cac31a58a718f750a49",
+   "line": "L3",
+   "scene": "S#7",
+   "text": "그러니까 무서워.",
+   "intent": "한동안 바라본 뒤. 울음·고성보다 남편을 보며 낮게 끝내는 방향(설정집 제안).",
+   "file": "V2_서희_L3.wav",
+   "sha256": "df584786deb47404ac67c29ee95a6762b9d84b88681dccc6e2d3cede7e46a223",
+   "duration_sec": 1.85,
+   "payload": {
+    "voice_id": "tc_66d91cac31a58a718f750a49",
+    "text": "그러니까 무서워.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "나 네 옆에 있었잖아."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.2,
+    "speech_end_sec": 1.61,
+    "speech_sec": 1.41,
+    "syllables": 7,
+    "syll_per_sec": 4.96,
+    "f0_median_hz": 222.2,
+    "f0_last30pct_hz": 195.1,
+    "peak_dbfs": -17.7
+   }
+  },
+  {
+   "candidate": "V3",
+   "voice_name": "라연",
+   "voice_id": "tc_68413e12459cfdf27b481183",
+   "line": "L1",
+   "scene": "S#3",
+   "text": "그날 내 차 점검받았잖아.",
+   "intent": "삼키기 어려운 죽을 한 숟갈 먹은 직후. 평소 말투를 유지하려 하지만 확인하려는 질문.",
+   "file": "V3_라연_L1.wav",
+   "sha256": "a379187928f69ceea97bb7f0925678ea4a04fa37b7a22a8d2d9faf27d7c40054",
+   "duration_sec": 2.1,
+   "payload": {
+    "voice_id": "tc_68413e12459cfdf27b481183",
+    "text": "그날 내 차 점검받았잖아.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "그러니까. 괜히 돈 쓰지 말고 새로 사자.",
+     "next_text": "응."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.32,
+    "speech_end_sec": 1.95,
+    "speech_sec": 1.63,
+    "syllables": 10,
+    "syll_per_sec": 6.13,
+    "f0_median_hz": 197.5,
+    "f0_last30pct_hz": 140.4,
+    "peak_dbfs": -22.2
+   }
+  },
+  {
+   "candidate": "V3",
+   "voice_name": "라연",
+   "voice_id": "tc_68413e12459cfdf27b481183",
+   "line": "L2",
+   "scene": "S#5",
+   "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+   "intent": "도현의 말을 끊고 들어간다. 고성 없이 문장이 짧고 분명해지는 지점.",
+   "file": "V3_라연_L2.wav",
+   "sha256": "6295fbd111040efe28f72be6eb8ea3e51d297b050945ca1e92a0f50cc018334c",
+   "duration_sec": 2.75,
+   "payload": {
+    "voice_id": "tc_68413e12459cfdf27b481183",
+    "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "서윤아. 네가 지금 사고 때문에—",
+     "next_text": "내가 병원에서 며칠을 잤어."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.16,
+    "speech_end_sec": 2.67,
+    "speech_sec": 2.51,
+    "syllables": 16,
+    "syll_per_sec": 6.37,
+    "f0_median_hz": 213.3,
+    "f0_last30pct_hz": 161.6,
+    "peak_dbfs": -17.6
+   }
+  },
+  {
+   "candidate": "V3",
+   "voice_name": "라연",
+   "voice_id": "tc_68413e12459cfdf27b481183",
+   "line": "L3",
+   "scene": "S#7",
+   "text": "그러니까 무서워.",
+   "intent": "한동안 바라본 뒤. 울음·고성보다 남편을 보며 낮게 끝내는 방향(설정집 제안).",
+   "file": "V3_라연_L3.wav",
+   "sha256": "d84e70121b23a803bad6fa0ec1902217a35e048874def3a961ec34c24740fafb",
+   "duration_sec": 1.65,
+   "payload": {
+    "voice_id": "tc_68413e12459cfdf27b481183",
+    "text": "그러니까 무서워.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "나 네 옆에 있었잖아."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.17,
+    "speech_end_sec": 1.44,
+    "speech_sec": 1.27,
+    "syllables": 7,
+    "syll_per_sec": 5.51,
+    "f0_median_hz": 192.8,
+    "f0_last30pct_hz": 175.8,
+    "peak_dbfs": -27.5
+   }
+  },
+  {
+   "candidate": "V4",
+   "voice_name": "해랑",
+   "voice_id": "tc_6788847e9939d48aeb8642d2",
+   "line": "L1",
+   "scene": "S#3",
+   "text": "그날 내 차 점검받았잖아.",
+   "intent": "삼키기 어려운 죽을 한 숟갈 먹은 직후. 평소 말투를 유지하려 하지만 확인하려는 질문.",
+   "file": "V4_해랑_L1.wav",
+   "sha256": "52e230fe31dc6d2dc531687797ad2b6700f380f88ae4b09de797659a10740f67",
+   "duration_sec": 2.15,
+   "payload": {
+    "voice_id": "tc_6788847e9939d48aeb8642d2",
+    "text": "그날 내 차 점검받았잖아.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "그러니까. 괜히 돈 쓰지 말고 새로 사자.",
+     "next_text": "응."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.2,
+    "speech_end_sec": 1.88,
+    "speech_sec": 1.68,
+    "syllables": 10,
+    "syll_per_sec": 5.95,
+    "f0_median_hz": 278.3,
+    "f0_last30pct_hz": 219.2,
+    "peak_dbfs": -12.4
+   }
+  },
+  {
+   "candidate": "V4",
+   "voice_name": "해랑",
+   "voice_id": "tc_6788847e9939d48aeb8642d2",
+   "line": "L2",
+   "scene": "S#5",
+   "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+   "intent": "도현의 말을 끊고 들어간다. 고성 없이 문장이 짧고 분명해지는 지점.",
+   "file": "V4_해랑_L2.wav",
+   "sha256": "7ad41a20d7d36421c8c5ce7c08692c216b641835c2647ac61df6abce1d24373c",
+   "duration_sec": 2.8,
+   "payload": {
+    "voice_id": "tc_6788847e9939d48aeb8642d2",
+    "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "서윤아. 네가 지금 사고 때문에—",
+     "next_text": "내가 병원에서 며칠을 잤어."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.19,
+    "speech_end_sec": 2.5,
+    "speech_sec": 2.31,
+    "syllables": 16,
+    "syll_per_sec": 6.93,
+    "f0_median_hz": 285.7,
+    "f0_last30pct_hz": 180.8,
+    "peak_dbfs": -12.8
+   }
+  },
+  {
+   "candidate": "V4",
+   "voice_name": "해랑",
+   "voice_id": "tc_6788847e9939d48aeb8642d2",
+   "line": "L3",
+   "scene": "S#7",
+   "text": "그러니까 무서워.",
+   "intent": "한동안 바라본 뒤. 울음·고성보다 남편을 보며 낮게 끝내는 방향(설정집 제안).",
+   "file": "V4_해랑_L3.wav",
+   "sha256": "d7326a602441d746aa8e0d16611eaecbc4b59571d2f8e7f592ab1458af692aef",
+   "duration_sec": 1.55,
+   "payload": {
+    "voice_id": "tc_6788847e9939d48aeb8642d2",
+    "text": "그러니까 무서워.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "나 네 옆에 있었잖아."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.22,
+    "speech_end_sec": 1.26,
+    "speech_sec": 1.04,
+    "syllables": 7,
+    "syll_per_sec": 6.73,
+    "f0_median_hz": 258.1,
+    "f0_last30pct_hz": 233.6,
+    "peak_dbfs": -13.2
+   }
+  },
+  {
+   "candidate": "V5",
+   "voice_name": "소예",
+   "voice_id": "tc_6837dec48fc46637a9272b88",
+   "line": "L1",
+   "scene": "S#3",
+   "text": "그날 내 차 점검받았잖아.",
+   "intent": "삼키기 어려운 죽을 한 숟갈 먹은 직후. 평소 말투를 유지하려 하지만 확인하려는 질문.",
+   "file": "V5_소예_L1.wav",
+   "sha256": "c820b10f8142777878d23eb45cb0d4f9a3d1fe8731bfe8caf12a71d56df920ed",
+   "duration_sec": 2.1,
+   "payload": {
+    "voice_id": "tc_6837dec48fc46637a9272b88",
+    "text": "그날 내 차 점검받았잖아.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "그러니까. 괜히 돈 쓰지 말고 새로 사자.",
+     "next_text": "응."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.18,
+    "speech_end_sec": 1.88,
+    "speech_sec": 1.7,
+    "syllables": 10,
+    "syll_per_sec": 5.88,
+    "f0_median_hz": 222.2,
+    "f0_last30pct_hz": 177.8,
+    "peak_dbfs": -19.7
+   }
+  },
+  {
+   "candidate": "V5",
+   "voice_name": "소예",
+   "voice_id": "tc_6837dec48fc46637a9272b88",
+   "line": "L2",
+   "scene": "S#5",
+   "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+   "intent": "도현의 말을 끊고 들어간다. 고성 없이 문장이 짧고 분명해지는 지점.",
+   "file": "V5_소예_L2.wav",
+   "sha256": "3abe003d1630f693c251a91a815bde780ed77e6fbb4280347a4e33f7ddf6ac89",
+   "duration_sec": 2.75,
+   "payload": {
+    "voice_id": "tc_6837dec48fc46637a9272b88",
+    "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "서윤아. 네가 지금 사고 때문에—",
+     "next_text": "내가 병원에서 며칠을 잤어."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.15,
+    "speech_end_sec": 2.51,
+    "speech_sec": 2.36,
+    "syllables": 16,
+    "syll_per_sec": 6.78,
+    "f0_median_hz": 205.1,
+    "f0_last30pct_hz": 173.9,
+    "peak_dbfs": -22.3
+   }
+  },
+  {
+   "candidate": "V5",
+   "voice_name": "소예",
+   "voice_id": "tc_6837dec48fc46637a9272b88",
+   "line": "L3",
+   "scene": "S#7",
+   "text": "그러니까 무서워.",
+   "intent": "한동안 바라본 뒤. 울음·고성보다 남편을 보며 낮게 끝내는 방향(설정집 제안).",
+   "file": "V5_소예_L3.wav",
+   "sha256": "a17dd11103333e40f0d831f3b97b9949039956b2dd3dbb53e7c39fae0eb3ba29",
+   "duration_sec": 1.8,
+   "payload": {
+    "voice_id": "tc_6837dec48fc46637a9272b88",
+    "text": "그러니까 무서워.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "나 네 옆에 있었잖아."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.27,
+    "speech_end_sec": 1.58,
+    "speech_sec": 1.31,
+    "syllables": 7,
+    "syll_per_sec": 5.34,
+    "f0_median_hz": 197.5,
+    "f0_last30pct_hz": 175.8,
+    "peak_dbfs": -24.4
+   }
+  },
+  {
+   "candidate": "V6",
+   "voice_name": "서진",
+   "voice_id": "tc_68537c9420b646f2176890ba",
+   "line": "L1",
+   "scene": "S#3",
+   "text": "그날 내 차 점검받았잖아.",
+   "intent": "삼키기 어려운 죽을 한 숟갈 먹은 직후. 평소 말투를 유지하려 하지만 확인하려는 질문.",
+   "file": "V6_서진_L1.wav",
+   "sha256": "3a90babd202de146d6691acc73b6698b85e60c9e9bacb014680d2bc495383760",
+   "duration_sec": 2.15,
+   "payload": {
+    "voice_id": "tc_68537c9420b646f2176890ba",
+    "text": "그날 내 차 점검받았잖아.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "그러니까. 괜히 돈 쓰지 말고 새로 사자.",
+     "next_text": "응."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.2,
+    "speech_end_sec": 1.88,
+    "speech_sec": 1.68,
+    "syllables": 10,
+    "syll_per_sec": 5.95,
+    "f0_median_hz": 213.3,
+    "f0_last30pct_hz": 163.3,
+    "peak_dbfs": -14.7
+   }
+  },
+  {
+   "candidate": "V6",
+   "voice_name": "서진",
+   "voice_id": "tc_68537c9420b646f2176890ba",
+   "line": "L2",
+   "scene": "S#5",
+   "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+   "intent": "도현의 말을 끊고 들어간다. 고성 없이 문장이 짧고 분명해지는 지점.",
+   "file": "V6_서진_L2.wav",
+   "sha256": "023009228694f71b172996d966a10339d171475d68ec9326998d1801f4e99c28",
+   "duration_sec": 3.45,
+   "payload": {
+    "voice_id": "tc_68537c9420b646f2176890ba",
+    "text": "기억 안 나는 거랑 귀 안 들리는 거랑 달라.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "서윤아. 네가 지금 사고 때문에—",
+     "next_text": "내가 병원에서 며칠을 잤어."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.28,
+    "speech_end_sec": 3.16,
+    "speech_sec": 2.88,
+    "syllables": 16,
+    "syll_per_sec": 5.56,
+    "f0_median_hz": 216.2,
+    "f0_last30pct_hz": 173.9,
+    "peak_dbfs": -18.9
+   }
+  },
+  {
+   "candidate": "V6",
+   "voice_name": "서진",
+   "voice_id": "tc_68537c9420b646f2176890ba",
+   "line": "L3",
+   "scene": "S#7",
+   "text": "그러니까 무서워.",
+   "intent": "한동안 바라본 뒤. 울음·고성보다 남편을 보며 낮게 끝내는 방향(설정집 제안).",
+   "file": "V6_서진_L3.wav",
+   "sha256": "0fb74744ebf17b8a166957bcc8bec2c8959ba9bab3aab4ef7ec6f04e9fb556f8",
+   "duration_sec": 1.55,
+   "payload": {
+    "voice_id": "tc_68537c9420b646f2176890ba",
+    "text": "그러니까 무서워.",
+    "model": "ssfm-v30",
+    "language": "kor",
+    "prompt": {
+     "emotion_type": "smart",
+     "previous_text": "나 네 옆에 있었잖아."
+    },
+    "output": {
+     "audio_format": "wav",
+     "audio_tempo": 1.0
+    },
+    "seed": 11
+   },
+   "analysis": {
+    "speech_start_sec": 0.25,
+    "speech_end_sec": 1.29,
+    "speech_sec": 1.04,
+    "syllables": 7,
+    "syll_per_sec": 6.73,
+    "f0_median_hz": 235.3,
+    "f0_last30pct_hz": 179.8,
+    "peak_dbfs": -20.2
+   }
+  }
+ ],
+ "analysis_note": "자동 측정(자기상관 F0 근사, RMS 기반 발화 구간). 음색·연기 판단이 아니며 사용자 청취가 기준이다."
+}

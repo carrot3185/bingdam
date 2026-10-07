@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-05",
+  "timezone": "Asia/Seoul",
+  "status": "passed",
+  "indexed_source_files": 185,
+  "all_indexed_files_exist_and_match_sha256": true,
+  "source_png_count": 73,
+  "confirmed_character_checks": [
+    {
+      "id": "CHAR_01",
+      "final_file_exists": true,
+      "final_sha256_matches": true,
+      "casting_reference_exists": true,
+      "casting_copy_identical": true
+    },
+    {
+      "id": "CHAR_02",
+      "final_file_exists": true,
+      "final_sha256_matches": true,
+      "casting_reference_exists": true,
+      "casting_copy_identical": true
+    },
+    {
+      "id": "CHAR_03",
+      "final_file_exists": true,
+      "final_sha256_matches": true,
+      "casting_reference_exists": true,
+      "casting_copy_identical": true
+    }
+  ],
+  "location_proposal_checks": [
+    {
+      "id": "HOME_MASTER",
+      "file": "outputs/HOME_MASTER.png",
+      "exists": true
+    },
+    {
+      "id": "HOME_REVERSE_v02",
+      "file": "outputs/HOME_REVERSE_v02.png",
+      "exists": true
+    },
+    {
+      "id": "LOC_02_KITCHEN_v03",
+      "file": "outputs/LOC_02_KITCHEN_v03.png",
+      "exists": true
+    },
+    {
+      "id": "LOC_03_ENTRY",
+      "file": "outputs/LOC_03_ENTRY.png",
+      "exists": true
+    },
+    {
+      "id": "LOC_04_CORRIDOR",
+      "file": "outputs/LOC_04_CORRIDOR.png",
+      "exists": true
+    },
+    {
+      "id": "LOC_05_ELEVATOR",
+      "file": "outputs/LOC_05_ELEVATOR.png",
+      "exists": true
+    },
+    {
+      "id": "LOC_06_GARAGE_v02",
+      "file": "outputs/LOC_06_GARAGE_v02.png",
+      "exists": true
+    }
+  ],
+  "json_files_parsed": 61,
+  "json_parse_errors": [],
+  "related_threads": 5,
+  "related_turns": 27,
+  "all_related_available_turns_retrieved": true,
+  "limitations": [
+    "Handoff validation checks files, SHA-256, manifests and JSON syntax; no new visual quality inspection.",
+    "No live Claude Code session was launched or messaged. CLAUDE.md enables in-folder onboarding.",
+    "ComfyUI server, model loading, video and audio capabilities were not retested.",
+    "Old project documents are preserved; superseded statements are explained in HANDOFF.md."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "blender_version": "5.2.1 LTS",
+  "reference_id": "PLAN_REF_001",
+  "objects": 315,
+  "scenes": [
+    "01_LAYOUT_CUTAWAY",
+    "02_LAYOUT_FULL_HEIGHT"
+  ],
+  "assumed_wall_height_m": 2.6,
+  "opening_count": 18,
+  "bedrooms": 5,
+  "source_dimensions_m": {
+    "bottom_width": 18.37,
+    "right_height_datum": 15.52
+  },
+  "status": "draft_from_raster",
+  "outputs": [
+    "floorplan_layout_v01.blend",
+    "layout_perspective.png",
+    "layout_top.png"
+  ]
+}

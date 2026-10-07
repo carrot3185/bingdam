@@ -1,0 +1,17 @@
+D:\work\Youtube\New_롱폼\experiments\floorplan_3d_01\build_layout.py:27: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name); m.diffuse_color=(*color,1); m.use_nodes=True
+D:\work\Youtube\New_롱폼\experiments\floorplan_3d_01\build_layout.py:224: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  s.world=bpy.data.worlds.new(s.name+'_World'); s.world.use_nodes=True; s.world.node_tree.nodes['Background'].inputs[0].default_value=(.78,.82,.88,1); s.world.node_tree.nodes['Background'].inputs[1].default_value=.55
+00:01.454  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Dots Stroke'
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+00:01.454  reports          | WARNING Path 'C:\Program Files\Blender Foundation\Blender 5.2\5.2\datafiles\assets\brushes\essentials_brushes-gp_draw.blend' cannot be made relative for Material 'Material'
+00:01.454  reports          | WARNING Path 'C:/Windows/Fonts/malgun.ttf' cannot be made relative for Font 'Malgun Gothic Regular'
+00:11.875  render           | Saved: 'D:\work\Youtube\New_롱폼\experiments\floorplan_3d_01\layout_perspective.png'
+00:12.329  render           | Saved: 'D:\work\Youtube\New_롱폼\experiments\floorplan_3d_01\layout_top.png'
+Info: Packed 1 file(s)
+Info: Saved as "floorplan_layout_v01.blend"
+{"blender_version": "5.2.1 LTS", "reference_id": "PLAN_REF_001", "objects": 315, "scenes": ["01_LAYOUT_CUTAWAY", "02_LAYOUT_FULL_HEIGHT"], "assumed_wall_height_m": 2.6, "opening_count": 18, "bedrooms": 5, "source_dimensions_m": {"bottom_width": 18.37, "right_height_datum": 15.52}, "status": "draft_from_raster", "outputs": ["floorplan_layout_v01.blend", "layout_perspective.png", "layout_top.png"]}
+Unable to delete file
+Unable to delete file
+
+Blender quit

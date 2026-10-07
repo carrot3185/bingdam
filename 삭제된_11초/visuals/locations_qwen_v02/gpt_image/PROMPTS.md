@@ -1,0 +1,12 @@
+# 지하주차장 GPT Image 재생성 — 입력 준비 (2026-10-06)
+
+사용자 요청: 주차장 2장은 업스케일 후에도 디테일이 무너져, GPT Image로 다시 만든다.
+도구: 사용자 확정 OpenAI GPT Image 2.5 (데스크톱 앱). 결과 파일은 이 폴더에 저장한다.
+
+## 1) 기준 뷰 — 첨부: `../outputs/LOC_06_GARAGE_MASTER.png`
+
+Recreate the attached image as a photorealistic, high-detail architectural photograph. Keep the exact same composition, camera position, perspective and layout, and every element in its place: the black linear metal baffle ceiling with long slim LED light lines and small black dome security cameras; the warm light-gray flamed granite paver aisle with dark granite strips along the parking bays; the matte charcoal square columns with black-and-yellow striped corner guards; the silver mid-size SUV in the near left bay; the glass-doored elevator lobby on the left wall; the row of parked sedans in black, deep navy, burgundy and white on the right; and the far end wall of warm horizontal timber slats outlined by a thin cool blue LED line. Improve only realism and fine detail: crisp granite grain and joints, believable car paint reflections, panel gaps, wheels and headlights, sharp baffle edges and clean LED lines, subtle reflections on the stone floor. Every car is plain and unbranded with no logos or badges, and license plates are blank. The aisle stays empty: no people. No text, signage or watermark. Wide 16:9 landscape.
+
+## 2) 블랙박스 시점 — 첨부: `../outputs/LOC_06_GARAGE_DASHCAM_v03.png` (같은 대화에서 1 다음에)
+
+Using the same garage, recreate the attached image as a photorealistic, high-detail dashcam still. Keep the exact composition: a fixed view from inside a reverse-parked car through its windshield, looking straight across the open granite-paved aisle toward the opposite row of nose-in parked cars standing between matte charcoal columns with black-and-yellow striped corner guards, under the black linear baffle ceiling with LED light lines and small dome cameras; a thin dark dashboard edge runs along the bottom of the frame. Improve realism and fine detail in the granite, car paint and column surfaces while keeping a subtle dashcam character: slightly wide lens, mild compression softness and faint bloom around the LED lines. The open aisle in front of the car is evenly lit and clearly readable, with room for two adults to stand. Every car is plain and unbranded with no logos, and plates are blank. No people, no timestamp or recording overlay, no text, no watermark. Wide 16:9 landscape.

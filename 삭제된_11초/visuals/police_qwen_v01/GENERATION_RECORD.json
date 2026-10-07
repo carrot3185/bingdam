@@ -1,0 +1,215 @@
+{
+  "engine": "local ComfyUI 127.0.0.1:8188 / Deno Qwen-Image 2.1 T2I + Edit (검증된 워크플로우 사본의 API 그래프)",
+  "date": "2026-10-06",
+  "user_request": "서윤을 제외한 나머지 인물들도 턴어라운드 이미지 만들어줘.",
+  "scope_decision": "도현·지수는 2026-10-05 사용자 확정 턴어라운드가 있어 재생성하지 않음. 민재(목소리만)·낯선 남자(얼굴 없이 어깨만, SHOT_PLAN §1-7 텍스트 생성)는 기존 기록상 인물 자산을 만들지 않으므로 제외. 화면 실물 등장하는 경찰 A/B만 제작.",
+  "design_status": "경찰 외형·근무복은 제작 제안이며 사용자 확정 전. 실제 경찰 제복 휘장·문구는 정밀 재현하지 않고 판독 가능한 글자를 넣지 않음.",
+  "runs": [
+    {
+      "id": "CHAR_06_cast_a",
+      "character": "CHAR_06",
+      "name": "경찰 A",
+      "stage": "casting T2I",
+      "seed": 2026100601,
+      "size": [
+        1024,
+        1536
+      ],
+      "steps": 60,
+      "reference": null,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "prompt_id": "1387b3b5-4377-433e-91ee-1fa66a737eb8",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "전신·모자·근무점퍼·반사띠·가슴 바디캠·근무벨트 확인. 홀스터는 화면 왼쪽(해부학적 오른쪽 허리). 낮은 묶음머리. 어깨 패치에 판독 불가한 의사 문자.",
+      "output": "outputs/CHAR_06_cast_a.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "elapsed_seconds": 60.0,
+      "sha256": "17851e87da39f4ea7b6e0e048005d312ed6e91b5fde2e2333801959bda85f10f",
+      "selection": "selected"
+    },
+    {
+      "id": "CHAR_06_cast_b",
+      "character": "CHAR_06",
+      "name": "경찰 A",
+      "stage": "casting T2I",
+      "seed": 2026100602,
+      "size": [
+        1024,
+        1536
+      ],
+      "steps": 60,
+      "reference": null,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "prompt_id": "8e4f0e18-6158-4183-84c2-a4a55b23cdbc",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "a와 거의 같은 인물·의상. 머리가 땋은 형태로 보여 낮은 쪽진 머리 지시와 덜 맞음.",
+      "output": "outputs/CHAR_06_cast_b.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "elapsed_seconds": 50.0,
+      "sha256": "aab62d95e0aca1c171892e4e3429f117e1405cbc8a411407ce7950761bb5e2c0",
+      "selection": "not selected"
+    },
+    {
+      "id": "CHAR_07_cast_a",
+      "character": "CHAR_07",
+      "name": "경찰 B",
+      "stage": "casting T2I",
+      "seed": 2026100601,
+      "size": [
+        1024,
+        1536
+      ],
+      "steps": 60,
+      "reference": null,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "prompt_id": "3a391857-5371-40a7-9906-78304b1f9cc1",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "40대 중반 인상, 관자놀이 흰머리, 넓은 어깨. 홀스터 해부학적 오른쪽 허리. 미소가 약간 있음.",
+      "output": "outputs/CHAR_07_cast_a.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "elapsed_seconds": 60.0,
+      "sha256": "4a281c0046e1d9e50b5011df4ecb69072893323fb0a16c15af8e12f5ecd242c6",
+      "selection": "selected"
+    },
+    {
+      "id": "CHAR_07_cast_b",
+      "character": "CHAR_07",
+      "name": "경찰 B",
+      "stage": "casting T2I",
+      "seed": 2026100602,
+      "size": [
+        1024,
+        1536
+      ],
+      "steps": 60,
+      "reference": null,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "prompt_id": "ac5a4f44-10a8-4742-b648-95435dd265e6",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "더 젊어 보이고 흰머리가 거의 보이지 않음.",
+      "output": "outputs/CHAR_07_cast_b.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "elapsed_seconds": 50.0,
+      "sha256": "0abd1b3b6bc1287e443aa6d3b7e3392bcfb27828e0e3cd4fdc4383517d5f1dd6",
+      "selection": "not selected"
+    },
+    {
+      "id": "CHAR_06_turnaround_v01",
+      "character": "CHAR_06",
+      "name": "경찰 A",
+      "stage": "turnaround Edit",
+      "seed": 2026100611,
+      "size": [
+        2560,
+        1536
+      ],
+      "steps": 60,
+      "encoder_resolution": 0,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "reference": {
+        "source": "outputs\\CHAR_06_cast_a.png",
+        "uploaded_name": "CHAR_06_cast_a.png",
+        "sha256": "17851e87da39f4ea7b6e0e048005d312ed6e91b5fde2e2333801959bda85f10f",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "ImageCrop 34 of node 7 (same file)",
+        "crop": [
+          384,
+          384,
+          320,
+          0
+        ],
+        "destination": "16 images.image_2"
+      },
+      "prompt_id": "3d5f4e44-3da1-493d-a0f0-da11ebcb5f43",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "정면·왼쪽 향한 측면·후면·오른쪽 향한 측면 4방향 전신. 얼굴·쪽머리·모자·반사띠(후면 포함)·바디캠 유지. 왼쪽 향한 측면(해부학적 왼쪽)에 파우치, 오른쪽 향한 측면에 홀스터로 정면과 같은 쪽. 후면 벨트에서는 홀스터가 뚜렷이 구별되지 않음. 소매 패치에 판독 불가한 의사 문자.",
+      "output": "outputs/CHAR_06_turnaround_v01.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 195.1,
+      "sha256": "45f762e4ddc6681ed77cc104e85a67ef4e82104cbcf2b9393b1246d34c7e9192",
+      "selection": "generated, user review pending"
+    },
+    {
+      "id": "CHAR_07_turnaround_v01",
+      "character": "CHAR_07",
+      "name": "경찰 B",
+      "stage": "turnaround Edit",
+      "seed": 2026100611,
+      "size": [
+        2560,
+        1536
+      ],
+      "steps": 60,
+      "encoder_resolution": 0,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "reference": {
+        "source": "outputs\\CHAR_07_cast_a.png",
+        "uploaded_name": "CHAR_07_cast_a.png",
+        "sha256": "4a281c0046e1d9e50b5011df4ecb69072893323fb0a16c15af8e12f5ecd242c6",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "ImageCrop 34 of node 7 (same file)",
+        "crop": [
+          384,
+          384,
+          320,
+          0
+        ],
+        "destination": "16 images.image_2"
+      },
+      "prompt_id": "ae10850a-a23d-430b-82b8-5e6aec3103fd",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "4방향 전신. 얼굴·흰 관자놀이·체격·모자·반사띠(후면 포함)·바디캠 유지. 홀스터는 해부학적 오른쪽, 오른쪽 향한 측면에서 확인. 소매 패치에 판독 불가한 의사 문자. 정면 얼굴은 기준 사진과 육안 비교만 함.",
+      "output": "outputs/CHAR_07_turnaround_v01.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 245.1,
+      "sha256": "87c0238afe56e0a36006ecb61b4896cb25655f599e6c9644caaac5d3c06ed2fc",
+      "selection": "generated, user review pending"
+    }
+  ],
+  "selection": {
+    "CHAR_06": "outputs/CHAR_06_cast_a.png",
+    "CHAR_07": "outputs/CHAR_07_cast_a.png",
+    "selected_by": "Claude 제안(육안 검수). 사용자 선택 아님."
+  },
+  "limits": [
+    "측면·후면 형상은 정면 기준 사진에서 추론 생성.",
+    "실제 한국 경찰 휘장·패치·계급장 형태를 재현·검증하지 않았고, 패치의 의사 문자는 편집 단계에서 흐리거나 교체 필요할 수 있음.",
+    "정량적 얼굴 동일성 계측 없음.",
+    "UI 워크플로우 사본은 만들지 않고 실제 제출한 API 그래프를 api/에 저장."
+  ],
+  "status": "경찰 A/B 턴어라운드 v01 생성·육안 검수 완료, 사용자 확정 전"
+}

@@ -1,0 +1,59 @@
+{
+  "runs": [
+    {
+      "id": "CHAR_01",
+      "status": "completed, superseded by rear brace repair",
+      "prompt_id": "a5a3efa3-87f9-489a-8b41-beabebfd571d",
+      "observed": "Sharper hair and textile detail than v01; front face and trouser drape closer to casting A. Missing rear brace required repair."
+    },
+    {
+      "id": "CHAR_03",
+      "status": "completed and visually inspected",
+      "prompt_id": "ac68b225-ff9a-4862-923d-40ce23ae3bb5",
+      "output": "outputs/CHAR_03_지수_turnaround_v02_HQ.png",
+      "observed": "Four full-body views; finer hair, jacket seam, denim and sneaker detail visible. Front compared to casting B. Bag shoulder/hip side preserved. Rear bag shape remains inferred.",
+      "user_confirmed_final": true
+    },
+    {
+      "id": "CHAR_01_REAR_REPAIR",
+      "prompt_id": "0d1bcb60-f06e-455d-a867-87701194f493",
+      "status": "completed and visually inspected",
+      "note": "Qwen edits rear crop; ImageCompositeMasked preserves three other panels",
+      "output": "outputs/CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+      "observed": "Rear image-left wrist now wears gray orthosis; image-right wrist bare. Front and both profile panels preserved by compositing; pixel delta verified.",
+      "non_rear_panels_max_RGB_channel_delta": 0,
+      "user_confirmed_final": true
+    },
+    {
+      "id": "CHAR_02",
+      "prompt_id": "2393106e-56b8-4fdc-90d3-f9494860b513",
+      "status": "completed and visually inspected",
+      "observed": "Four full-body directions. Front face/hair/outfit visually compared to confirmed D. Finer hair, shirt folds, button and shoe details visible. Watch remains anatomical LEFT in front, left-facing profile and rear. Rear arms rest outside pockets despite requested pocket pose; other views retain pockets.",
+      "output": "outputs/CHAR_02_도현_turnaround_v02_HQ.png",
+      "user_confirmed_final": true
+    }
+  ],
+  "status": "all three characters user confirmed final",
+  "engine": "local Qwen-Image 2.1 Edit",
+  "validation": "All four workflow copies valid; zero errors and warnings.",
+  "recommended_outputs": {
+    "CHAR_01": "outputs/CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+    "CHAR_03": "outputs/CHAR_03_지수_turnaround_v02_HQ.png",
+    "CHAR_02": "outputs/CHAR_02_도현_turnaround_v02_HQ.png"
+  },
+  "generation_count": 4,
+  "limits": [
+    "Unseen side and rear geometry inferred; exact identity and proportions not formally measured.",
+    "Quality judgment visual, not an objective score. Several node options and prompt details changed together; no individual option effect isolated.",
+    "Profile and rear design was generated from front references and is now user-approved as fictional character design; no measured 3D reconstruction claim."
+  ],
+  "user_confirmation": {
+    "date": "2026-10-05",
+    "selection_manifest": "FINAL_SELECTION.json",
+    "approved_ids": [
+      "CHAR_01",
+      "CHAR_02",
+      "CHAR_03"
+    ]
+  }
+}

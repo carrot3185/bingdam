@@ -1,0 +1,131 @@
+[
+  {
+    "id": "CHAR_01",
+    "output": "outputs/CHAR_01_서윤_turnaround_v01.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "model": "qwen_image_2.1_int8_convrot.safetensors",
+    "reference_name": "D11_CHAR_01_FINAL.png",
+    "reference_sha256": "3befd9d098183bc6126742f4de93ac5174f2a1e873a7ee81a1ea7d2e8ecd69f6",
+    "embedded_reference_hash_matches": true,
+    "selected_source_hash_matches": true,
+    "embedded_prompt_matches": true,
+    "actual_reference_link": [
+      "7",
+      0
+    ],
+    "actual_sampler": {
+      "seed": 2026100501,
+      "steps": 40,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ]
+    },
+    "output_sha256": "59a35169649ae60b6faa9c9642c6e05c40a7b02ba34016066a34f919f0a35190"
+  },
+  {
+    "id": "CHAR_02",
+    "output": "outputs/CHAR_02_도현_turnaround_v01.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "model": "qwen_image_2.1_int8_convrot.safetensors",
+    "reference_name": "D11_CHAR_02_FINAL.png",
+    "reference_sha256": "19e55c85fe02aa3152e49fcd9d8c0a9369cd346436dd44b6f794c4fd4fad447d",
+    "embedded_reference_hash_matches": true,
+    "selected_source_hash_matches": true,
+    "embedded_prompt_matches": true,
+    "actual_reference_link": [
+      "7",
+      0
+    ],
+    "actual_sampler": {
+      "seed": 2026100502,
+      "steps": 40,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ]
+    },
+    "output_sha256": "22aa40a7bc4a2fb84d8b80664b6d1598cf95ef615a1ae0c3993465747169ead7"
+  },
+  {
+    "id": "CHAR_03",
+    "output": "outputs/CHAR_03_지수_turnaround_v01.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "model": "qwen_image_2.1_int8_convrot.safetensors",
+    "reference_name": "D11_CHAR_03_FINAL.png",
+    "reference_sha256": "a3ccdee45b2bd3b4b9b824d76f7faf6e73d407ec21e0bd2a532ae449f2557648",
+    "embedded_reference_hash_matches": true,
+    "selected_source_hash_matches": true,
+    "embedded_prompt_matches": true,
+    "actual_reference_link": [
+      "7",
+      0
+    ],
+    "actual_sampler": {
+      "seed": 2026100503,
+      "steps": 40,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ]
+    },
+    "output_sha256": "15bf08a5414048e7dfc6b41d94c2140a910db60c8afa5fa6c806d6d7f433c22a"
+  }
+]

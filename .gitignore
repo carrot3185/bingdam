@@ -1,0 +1,10 @@
+# secrets
+.env
+.env.*
+
+# Blender autosave backups
+*.blend1
+
+# Python
+__pycache__/
+*.pyc

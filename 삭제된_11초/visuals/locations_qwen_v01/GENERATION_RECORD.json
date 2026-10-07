@@ -1,0 +1,191 @@
+{
+  "engine": "local ComfyUI Desktop / Deno Qwen-Image 2.1 T2I + Edit",
+  "date": "2026-10-05",
+  "status": "generated and visually reviewed; design proposal, not user-confirmed",
+  "design_status": "검토용 생성 시안; 사용자 확정 전",
+  "settings": {
+    "width": 2048,
+    "height": 1152,
+    "steps": 40,
+    "cfg": 1,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "cache": "cpu/default"
+  },
+  "runs": [
+    {
+      "id": "HOME_MASTER",
+      "title": "집 전체 · 현관에서 거실",
+      "seed": 202610051100,
+      "prompt_id": "f8443d06-d61c-4538-ab01-945202663a9a",
+      "node_errors": {},
+      "reference": null,
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\HOME_MASTER.png",
+      "server_output": {
+        "filename": "HOME_MASTER_00001_.png",
+        "subfolder": "deleted_11s_locations_v01",
+        "type": "output"
+      },
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "elapsed_seconds": 55.6,
+      "sha256": "940b3f35701490577be6471c63b9c6d110fafe1cab161f07681eef1fa0fed0b9"
+    },
+    {
+      "id": "HOME_REVERSE",
+      "title": "집 역방향 · 거실에서 현관",
+      "seed": 202610051101,
+      "prompt_id": "62801505-b5d4-4976-98a8-04e38eb1f2c9",
+      "node_errors": {},
+      "reference": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\HOME_MASTER.png",
+        "uploaded_name": "HOME_MASTER.png",
+        "sha256": "940b3f35701490577be6471c63b9c6d110fafe1cab161f07681eef1fa0fed0b9",
+        "destination": "16 images.image_1"
+      },
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\HOME_REVERSE.png",
+      "server_output": {
+        "filename": "HOME_REVERSE_00001_.png",
+        "subfolder": "deleted_11s_locations_v01",
+        "type": "output"
+      },
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "elapsed_seconds": 100.1,
+      "sha256": "20ecc66006424a7889e2e2ecdf1d115a7bd875e41a7ca46beda46a18d0478177"
+    },
+    {
+      "id": "LOC_02_KITCHEN",
+      "title": "주방에서 식탁·거실",
+      "seed": 202610051102,
+      "prompt_id": "78aad2fa-21c5-46bf-9a57-e29f23f3adad",
+      "node_errors": {},
+      "reference": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\HOME_MASTER.png",
+        "uploaded_name": "HOME_MASTER.png",
+        "sha256": "940b3f35701490577be6471c63b9c6d110fafe1cab161f07681eef1fa0fed0b9",
+        "destination": "16 images.image_1"
+      },
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_02_KITCHEN.png",
+      "server_output": {
+        "filename": "LOC_02_KITCHEN_00001_.png",
+        "subfolder": "deleted_11s_locations_v01",
+        "type": "output"
+      },
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "elapsed_seconds": 100.2,
+      "sha256": "11e6427385e8e5cb3b181aa0287df1914d8f64a3543dbf81702f087590379ab4"
+    },
+    {
+      "id": "LOC_03_ENTRY",
+      "title": "현관과 출구",
+      "seed": 202610051103,
+      "prompt_id": "a39b0574-5690-41d9-8611-ab08b8f2bb3b",
+      "node_errors": {},
+      "reference": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\HOME_MASTER.png",
+        "uploaded_name": "HOME_MASTER.png",
+        "sha256": "940b3f35701490577be6471c63b9c6d110fafe1cab161f07681eef1fa0fed0b9",
+        "destination": "16 images.image_1"
+      },
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_03_ENTRY.png",
+      "server_output": {
+        "filename": "LOC_03_ENTRY_00001_.png",
+        "subfolder": "deleted_11s_locations_v01",
+        "type": "output"
+      },
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "elapsed_seconds": 95.5,
+      "sha256": "2c22df802c9bc00217ecb5cfe3b09204a22afdbd1e206c7ecbaef8f2e1ccd3ab"
+    },
+    {
+      "id": "LOC_04_CORRIDOR",
+      "title": "복도와 엘리베이터 동선",
+      "seed": 202610051104,
+      "prompt_id": "9f695a1a-19f0-460f-97ba-c86908349157",
+      "node_errors": {},
+      "reference": null,
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_04_CORRIDOR.png",
+      "server_output": {
+        "filename": "LOC_04_CORRIDOR_00001_.png",
+        "subfolder": "deleted_11s_locations_v01",
+        "type": "output"
+      },
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "elapsed_seconds": 165.2,
+      "sha256": "ca54f04ded996211aa586354a9b94a5926efbe43114023da65d1ef9ebd85f7c6"
+    },
+    {
+      "id": "LOC_05_ELEVATOR",
+      "title": "엘리베이터 내부",
+      "seed": 202610051105,
+      "prompt_id": "b97ee6c1-f512-4260-a907-d4b16da9fc5c",
+      "node_errors": {},
+      "reference": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_04_CORRIDOR.png",
+        "uploaded_name": "LOC_04_CORRIDOR.png",
+        "sha256": "ca54f04ded996211aa586354a9b94a5926efbe43114023da65d1ef9ebd85f7c6",
+        "destination": "16 images.image_1"
+      },
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_05_ELEVATOR.png",
+      "server_output": {
+        "filename": "LOC_05_ELEVATOR_00001_.png",
+        "subfolder": "deleted_11s_locations_v01",
+        "type": "output"
+      },
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "elapsed_seconds": 200.3,
+      "sha256": "68f60825b1167dc5275dc08a9db7b90cbc341d52a3e085f25342161b5a4b17b4"
+    },
+    {
+      "id": "LOC_06_GARAGE",
+      "title": "블랙박스 시점 지하주차장",
+      "seed": 202610051106,
+      "prompt_id": "a5b52e9c-7271-462a-8ec9-31b93822c6aa",
+      "node_errors": {},
+      "reference": null,
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_06_GARAGE.png",
+      "server_output": {
+        "filename": "LOC_06_GARAGE_00001_.png",
+        "subfolder": "deleted_11s_locations_v01",
+        "type": "output"
+      },
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "elapsed_seconds": 160.3,
+      "sha256": "00ccfe65c03afc056e269761f8390b9d35485f42657f2e7d58a079cb92eb35b1"
+    }
+  ]
+}

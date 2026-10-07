@@ -1,0 +1,461 @@
+{
+  "engine": "local ComfyUI 127.0.0.1:8188 / Deno Qwen-Image 2.1 T2I + Edit (검증된 워크플로우 사본의 API 그래프)",
+  "date": "2026-10-06",
+  "user_request": "서윤을 제외한 나머지 인물들도 턴어라운드 이미지 만들어줘.",
+  "scope_decision": "도현·지수는 2026-10-05 사용자 확정 턴어라운드가 있어 재생성하지 않음. 민재(목소리만)·낯선 남자(얼굴 없이 어깨만, SHOT_PLAN §1-7 텍스트 생성)는 기존 기록상 인물 자산을 만들지 않으므로 제외. 화면 실물 등장하는 경찰 A/B만 제작.",
+  "design_status": "경찰 외형·근무복은 제작 제안이며 사용자 확정 전. 실제 경찰 제복 휘장·문구는 정밀 재현하지 않고 판독 가능한 글자를 넣지 않음.",
+  "runs": [
+    {
+      "id": "CHAR_06_dress_a",
+      "character": "CHAR_06",
+      "name": "경찰 A",
+      "stage": "uniform edit",
+      "seed": 2026100621,
+      "size": [
+        1024,
+        1536
+      ],
+      "steps": 60,
+      "encoder_resolution": 0,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "reference": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\police_qwen_v01\\outputs\\CHAR_06_cast_a.png",
+        "uploaded_name": "CHAR_06_cast_a.png",
+        "sha256": "17851e87da39f4ea7b6e0e048005d312ed6e91b5fde2e2333801959bda85f10f",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\police_qwen_v02\\references\\UNIFORM_REF_face_masked.png",
+        "uploaded_name": "UNIFORM_REF_face_masked.png",
+        "sha256": "382cb938e2a474bcaf3fe0a2e9d308aece3524bc7a81c0a4e918ab5b831df004",
+        "destination": "16 images.image_2"
+      },
+      "prompt_id": "9f96523b-f8a1-40fb-84a5-72a5b2be41a4",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "v01 얼굴·쪽머리 유지, 참조 제복(남색 모자 금색 독수리·챙 자수, 회색 패딩 점퍼, 남색 근무조끼·반사띠, 경찰/POLICE 패치, 왼어깨 무전기, 검은 바지·옥스퍼드화) 반영. 패치 글자 \"경찰\" 정상.",
+      "output": "outputs/CHAR_06_dress_a.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "elapsed_seconds": 90.0,
+      "sha256": "452e50b85675ad4f142f51168bc4ce1c8cbd7b1319dd3329524adb03a0af626b",
+      "selection": "selected"
+    },
+    {
+      "id": "CHAR_06_dress_b",
+      "character": "CHAR_06",
+      "name": "경찰 A",
+      "stage": "uniform edit",
+      "seed": 2026100622,
+      "size": [
+        1024,
+        1536
+      ],
+      "steps": 60,
+      "encoder_resolution": 0,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "reference": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\police_qwen_v01\\outputs\\CHAR_06_cast_a.png",
+        "uploaded_name": "CHAR_06_cast_a.png",
+        "sha256": "17851e87da39f4ea7b6e0e048005d312ed6e91b5fde2e2333801959bda85f10f",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\police_qwen_v02\\references\\UNIFORM_REF_face_masked.png",
+        "uploaded_name": "UNIFORM_REF_face_masked.png",
+        "sha256": "382cb938e2a474bcaf3fe0a2e9d308aece3524bc7a81c0a4e918ab5b831df004",
+        "destination": "16 images.image_2"
+      },
+      "prompt_id": "9a53227d-479a-4406-983c-7593aa9394ac",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "a와 유사. 패치 글자가 작고 흐림.",
+      "output": "outputs/CHAR_06_dress_b.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "elapsed_seconds": 70.6,
+      "sha256": "592fc8d1ac0c5e47c05b7dcf73c9ca54afd336cc95498cea9e02ab8acd6497a2",
+      "selection": "not selected"
+    },
+    {
+      "id": "CHAR_07_dress_a",
+      "character": "CHAR_07",
+      "name": "경찰 B",
+      "stage": "uniform edit",
+      "seed": 2026100621,
+      "size": [
+        1024,
+        1536
+      ],
+      "steps": 60,
+      "encoder_resolution": 0,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "reference": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\police_qwen_v01\\outputs\\CHAR_07_cast_a.png",
+        "uploaded_name": "CHAR_07_cast_a.png",
+        "sha256": "4a281c0046e1d9e50b5011df4ecb69072893323fb0a16c15af8e12f5ecd242c6",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\police_qwen_v02\\references\\UNIFORM_REF_face_masked.png",
+        "uploaded_name": "UNIFORM_REF_face_masked.png",
+        "sha256": "382cb938e2a474bcaf3fe0a2e9d308aece3524bc7a81c0a4e918ab5b831df004",
+        "destination": "16 images.image_2"
+      },
+      "prompt_id": "cd34e0b9-e7f1-43ca-bb98-333946d61f8d",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "v01 얼굴·흰 관자놀이 유지, 참조 제복 반영. 확대 확인 시 패치 두 번째 글자가 번져 \"찰\"이 불완전.",
+      "output": "outputs/CHAR_07_dress_a.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "elapsed_seconds": 85.1,
+      "sha256": "65566e1d3b205091e348ed77a89b419592e93f74e9399e2280b6bbfe5841618d",
+      "selection": "selected"
+    },
+    {
+      "id": "CHAR_07_dress_b",
+      "character": "CHAR_07",
+      "name": "경찰 B",
+      "stage": "uniform edit",
+      "seed": 2026100622,
+      "size": [
+        1024,
+        1536
+      ],
+      "steps": 60,
+      "encoder_resolution": 0,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "reference": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\police_qwen_v01\\outputs\\CHAR_07_cast_a.png",
+        "uploaded_name": "CHAR_07_cast_a.png",
+        "sha256": "4a281c0046e1d9e50b5011df4ecb69072893323fb0a16c15af8e12f5ecd242c6",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\police_qwen_v02\\references\\UNIFORM_REF_face_masked.png",
+        "uploaded_name": "UNIFORM_REF_face_masked.png",
+        "sha256": "382cb938e2a474bcaf3fe0a2e9d308aece3524bc7a81c0a4e918ab5b831df004",
+        "destination": "16 images.image_2"
+      },
+      "prompt_id": "075369dd-c88b-4c32-957b-668caafd8d8c",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "패치 글자 깨짐, 모자 챙 자수가 과함.",
+      "output": "outputs/CHAR_07_dress_b.png",
+      "actual_size": [
+        1024,
+        1536
+      ],
+      "elapsed_seconds": 75.0,
+      "sha256": "820adea7ea18b219167acc9738cde459d237dad774e7c96b43b762aa347b2fe0",
+      "selection": "not selected"
+    },
+    {
+      "id": "CHAR_06_turnaround_v02",
+      "character": "CHAR_06",
+      "name": "경찰 A",
+      "stage": "turnaround Edit",
+      "seed": 2026100631,
+      "size": [
+        2560,
+        1536
+      ],
+      "steps": 60,
+      "encoder_resolution": 0,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "reference": {
+        "source": "outputs\\CHAR_06_dress_a.png",
+        "uploaded_name": "CHAR_06_dress_a.png",
+        "sha256": "452e50b85675ad4f142f51168bc4ce1c8cbd7b1319dd3329524adb03a0af626b",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "ImageCrop 34 of node 7 (same file)",
+        "crop": [
+          384,
+          384,
+          320,
+          0
+        ],
+        "destination": "16 images.image_2"
+      },
+      "prompt_id": "ee11bc6d-ceb7-43fd-852d-8aa376cd3edd",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "4방향 전신. 이름 패치(착용자 오른쪽 가슴)·독수리 파우치·무전기(착용자 왼어깨)·소매 지퍼 주머니(착용자 오른팔)가 정면·양측면·후면에서 같은 쪽으로 유지. 정면 패치 \"경찰/POLICE\" 정상. 후면은 반사띠만 있는 무지 조끼(실제 후면 표기는 미확인).",
+      "output": "outputs/CHAR_06_turnaround_v02.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 195.1,
+      "sha256": "e129e16c25e4a0972bcb57ec20c56f2463f896be57afcc95607f440a894e92f6",
+      "selection": "user confirmed final",
+      "user_confirmed_final": true
+    },
+    {
+      "id": "CHAR_07_turnaround_v02",
+      "character": "CHAR_07",
+      "name": "경찰 B",
+      "stage": "turnaround Edit",
+      "seed": 2026100631,
+      "size": [
+        2560,
+        1536
+      ],
+      "steps": 60,
+      "encoder_resolution": 0,
+      "template": "D:\\work\\Youtube\\New_롱폼\\experiments\\emotional_acting_01\\workflows\\Qwen_Emotion_AB_00_T2I.json",
+      "unet": "qwen_image_2.1_int8_convrot.safetensors",
+      "reference": {
+        "source": "outputs\\CHAR_07_dress_a.png",
+        "uploaded_name": "CHAR_07_dress_a.png",
+        "sha256": "65566e1d3b205091e348ed77a89b419592e93f74e9399e2280b6bbfe5841618d",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "ImageCrop 34 of node 7 (same file)",
+        "crop": [
+          384,
+          384,
+          320,
+          0
+        ],
+        "destination": "16 images.image_2"
+      },
+      "prompt_id": "a3749586-7b9b-40b4-88ed-86276ca2274e",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "4방향·좌우 소품 위치는 맞으나 정면 패치가 \"경차\"로 깨짐. 모자가 남색보다 검게 보이고 챙 자수가 A보다 굵음. 왼쪽 향한 측면의 소매 패치가 무늬 없는 회색 사각형.",
+      "output": "outputs/CHAR_07_turnaround_v02.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 200.2,
+      "sha256": "17b890618e7c32efe1ac90c9e32a9e5b3ad43672a0ef7904eb62c03e4c07636e",
+      "selection": "superseded by patchfix"
+    },
+    {
+      "id": "CHAR_07_turnaround_v02_patchfix",
+      "character": "CHAR_07",
+      "name": "경찰 B",
+      "stage": "name patch repair",
+      "seed": 2026100641,
+      "steps": 60,
+      "reference": {
+        "source": "outputs\\CHAR_07_turnaround_v02.png",
+        "uploaded_name": "CHAR_07_turnaround_v02.png",
+        "sha256": "17b890618e7c32efe1ac90c9e32a9e5b3ad43672a0ef7904eb62c03e4c07636e",
+        "destination": "ImageCrop 512x512@(96,200) → x2 → 16 images.image_1; also composite destination"
+      },
+      "reference2": {
+        "source": "outputs\\CHAR_06_turnaround_v02.png",
+        "uploaded_name": "CHAR_06_turnaround_v02.png",
+        "sha256": "e129e16c25e4a0972bcb57ec20c56f2463f896be57afcc95607f440a894e92f6",
+        "destination": "ImageCrop 110x85@(290,375) → x4 → 16 images.image_2"
+      },
+      "mask": {
+        "box_in_crop": [
+          100,
+          80,
+          206,
+          180
+        ],
+        "feather": 10
+      },
+      "prompt_id": "619b8208-d968-406b-afdc-b8e8ee89323f",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "정면 패치가 \"경찰/POLICE\"로 수정됨. 원본 시트와의 픽셀 차이 범위 bbox (302,380)-(402,460) — 패치 박스 밖은 변경 없음. 오른쪽 향한 측면의 비스듬한 패치 글자는 여전히 불완전.",
+      "output": "outputs/CHAR_07_turnaround_v02_patchfix.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 55.0,
+      "sha256": "79f1101519f8cdca73b8697720b1ee7bdf920875244258d37ba82d0bac104ce3",
+      "selection": "superseded by capfix_final"
+    },
+    {
+      "id": "CHAR_07_turnaround_v02_capfix",
+      "character": "CHAR_07",
+      "name": "경찰 B",
+      "stage": "cap color/embroidery match to CHAR_06",
+      "seed": 2026100751,
+      "steps": 60,
+      "reference": {
+        "source": "outputs\\CHAR_07_turnaround_v02_patchfix.png",
+        "uploaded_name": "CHAR_07_turnaround_v02_patchfix.png",
+        "sha256": "79f1101519f8cdca73b8697720b1ee7bdf920875244258d37ba82d0bac104ce3",
+        "destination": "per-panel crop x3 → image_1; composite destination"
+      },
+      "reference2": {
+        "source": "outputs\\CHAR_06_turnaround_v02.png",
+        "uploaded_name": "CHAR_06_turnaround_v02.png",
+        "sha256": "e129e16c25e4a0972bcb57ec20c56f2463f896be57afcc95607f440a894e92f6",
+        "destination": "same-view crop x3 → image_2"
+      },
+      "panels": {
+        "front": [
+          256,
+          0,
+          172,
+          120,
+          84,
+          40
+        ],
+        "profile_left": [
+          832,
+          0,
+          240,
+          140,
+          33,
+          40
+        ],
+        "rear": [
+          1440,
+          0,
+          170,
+          135,
+          85,
+          40
+        ],
+        "profile_right": [
+          2048,
+          0,
+          250,
+          150,
+          47,
+          40
+        ]
+      },
+      "feather": 10,
+      "upscale": 3,
+      "prompt_id": "8d55ac3a-c608-411f-aee4-df45c35691e7",
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "4방향 모두 자수가 A처럼 한 줄의 가는 금색 잎 자수로 바뀌고 정면 엠블럼이 A와 같은 테두리 휘장형이 됨. 그러나 모자 원단이 A보다 밝은 청남색(중앙값 약 41,50,74)으로 과하게 바뀌었고, 편집 박스 안 배경이 원본보다 4~7 어두워져 사각 경계가 보임 → finalize_cap.py로 후처리.",
+      "output": "outputs/CHAR_07_turnaround_v02_capfix.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 175.2,
+      "sha256": "f1e4aea98895c70a48b6202778a42ba68cc58532526b4aaa30f738909a9ad614",
+      "selection": "intermediate"
+    },
+    {
+      "id": "CHAR_07_turnaround_v02_capfix_final",
+      "character": "CHAR_07",
+      "stage": "Python post-process of capfix (no generation)",
+      "script": "finalize_cap.py",
+      "inputs": [
+        "outputs/CHAR_07_turnaround_v02_patchfix.png",
+        "outputs/CHAR_07_turnaround_v02_capfix.png",
+        "outputs/CHAR_06_turnaround_v02.png"
+      ],
+      "fabric_color_transfer": {
+        "front": {
+          "fabric_pixels": 6114,
+          "before_mean": [
+            39.4,
+            43.2,
+            56.5
+          ],
+          "A_ref_mean": [
+            33.5,
+            35.3,
+            38.8
+          ],
+          "after_mean": [
+            33.5,
+            35.3,
+            38.8
+          ]
+        },
+        "profile_left": {
+          "fabric_pixels": 11157,
+          "before_mean": [
+            37.0,
+            48.4,
+            68.1
+          ],
+          "A_ref_mean": [
+            28.5,
+            30.3,
+            34.0
+          ],
+          "after_mean": [
+            28.5,
+            30.3,
+            34.1
+          ]
+        },
+        "rear": {
+          "fabric_pixels": 12421,
+          "before_mean": [
+            48.5,
+            52.9,
+            74.5
+          ],
+          "A_ref_mean": [
+            30.1,
+            32.1,
+            36.1
+          ],
+          "after_mean": [
+            30.1,
+            32.2,
+            36.1
+          ]
+        },
+        "profile_right": {
+          "fabric_pixels": 13279,
+          "before_mean": [
+            42.1,
+            50.9,
+            72.4
+          ],
+          "A_ref_mean": [
+            29.6,
+            32.0,
+            37.4
+          ],
+          "after_mean": [
+            29.6,
+            32.0,
+            37.4
+          ]
+        }
+      },
+      "output": "outputs/CHAR_07_turnaround_v02_capfix_final.png",
+      "sha256": "fa673307d0aa313cd5adc7a68b5b2247c796be5a3a5c7210d46f2573ba878725",
+      "status": "generated",
+      "visual_review": "모자 원단 평균색이 A의 실측값(약 RGB 29~34, 30~35, 34~39)과 같은 아주 어두운 남색으로 맞춰짐. 자수·정면 휘장은 capfix의 A 맞춤 결과 유지. 배경 경계 사라짐. 얼굴·머리·나머지 시트는 패치 수정본과 동일.",
+      "selection": "user confirmed final",
+      "user_confirmed_final": true
+    }
+  ],
+  "v02_note": "사용자 제공 실제 한국 경찰 근무복 사진을 제복 참조로 사용. 사진 속 실존 인물 얼굴은 회색 사각형으로 가리고 인물 주변만 잘라 입력(얼굴 정체성 미사용).",
+  "final_candidates": {
+    "CHAR_06": "outputs/CHAR_06_turnaround_v02.png",
+    "CHAR_07": "outputs/CHAR_07_turnaround_v02_capfix_final.png",
+    "status": "user confirmed final 2026-10-07"
+  },
+  "status": "경찰 A/B 턴어라운드 v02 사용자 최종 확정 (2026-10-07). FINAL_SELECTION.json 참조.",
+  "user_feedback": "2026-10-06 사용자: v01 근무복이 실제 한국 경찰 제복과 다름. 실제 제복 사진 제공(\"이게 한국 경찰 제복이야\").",
+  "user_feedback_2": "2026-10-07 사용자: \"B모자 색이랑 자수 A에 맞춰줘\"."
+}

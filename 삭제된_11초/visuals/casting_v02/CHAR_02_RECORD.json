@@ -1,0 +1,48 @@
+{
+  "tool": "built-in image_gen",
+  "model_version": "not exposed",
+  "status": "생성·육안 확인 / 사용자 미선택",
+  "references": [],
+  "records": [
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "variant": "A",
+      "filename": "CHAR_02_도현_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Kim Do-hyeon, 35-year-old Korean man. User wants the sophisticated handsome leading-man atmosphere of Korean actor Lee Jong-won (이종원): lean refined face, striking long eyes, sculpted straight nose, quietly seductive and stylish presence, clean-shaven, dark hair with a natural gently parted fringe. He is a FICTIONAL husband role in a suspense drama, photographed as a neutral casting portrait, not the real actor in an allegation or real event. Slightly restrained friendly expression, no villain smirk. Slate-blue button-down shirt, dark navy trousers, simple black wristwatch on left wrist, dark plain flat shoes. Balanced lean physique, no exaggerated muscles, scars or gloves.\nSpecific distinct candidate: A: long lean oval face, horizontally long single-lid eyes, tall straight nose, medium natural lips, clean subtle sensual charisma.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-227391cc-d763-452f-a33f-f0b0b5d32f84.png",
+      "generated": true,
+      "review": "전신, 푸른 셔츠·남색 바지·검은 구두·시계, 세련된 남성 인상 확인. 손은 주머니에 들어가 있으며 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "variant": "B",
+      "filename": "CHAR_02_도현_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Kim Do-hyeon, 35-year-old Korean man. User wants the sophisticated handsome leading-man atmosphere of Korean actor Lee Jong-won (이종원): lean refined face, striking long eyes, sculpted straight nose, quietly seductive and stylish presence, clean-shaven, dark hair with a natural gently parted fringe. He is a FICTIONAL husband role in a suspense drama, photographed as a neutral casting portrait, not the real actor in an allegation or real event. Slightly restrained friendly expression, no villain smirk. Slate-blue button-down shirt, dark navy trousers, simple black wristwatch on left wrist, dark plain flat shoes. Balanced lean physique, no exaggerated muscles, scars or gloves.\nSpecific distinct candidate: B: slightly broader sculpted oval face, deep-set lightly hooded eyes, defined cheekbones, moderately broad straight nose bridge, thin upper lip, polished composed charisma.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-1bd1cc87-fb29-4061-be4b-4cf92ce12b94.png",
+      "generated": true,
+      "review": "전신, 푸른 셔츠·남색 바지·검은 구두·시계, 세련된 남성 인상 확인. 손은 주머니에 들어가 있으며 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "variant": "C",
+      "filename": "CHAR_02_도현_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Kim Do-hyeon, 35-year-old Korean man. User wants the sophisticated handsome leading-man atmosphere of Korean actor Lee Jong-won (이종원): lean refined face, striking long eyes, sculpted straight nose, quietly seductive and stylish presence, clean-shaven, dark hair with a natural gently parted fringe. He is a FICTIONAL husband role in a suspense drama, photographed as a neutral casting portrait, not the real actor in an allegation or real event. Slightly restrained friendly expression, no villain smirk. Slate-blue button-down shirt, dark navy trousers, simple black wristwatch on left wrist, dark plain flat shoes. Balanced lean physique, no exaggerated muscles, scars or gloves.\nSpecific distinct candidate: C: soft angular square-oval jaw, bright double-lid long eyes, a longer prominent nose, fuller lower lip, appealing warm smile corners, refined charismatic presence.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-2fd016c3-1fd2-49c1-bb8d-bcc090877e9b.png",
+      "generated": true,
+      "review": "전신, 푸른 셔츠·남색 바지·검은 구두·시계, 세련된 남성 인상 확인. 손은 주머니에 들어가 있으며 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "variant": "D",
+      "filename": "CHAR_02_도현_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Kim Do-hyeon, 35-year-old Korean man. User wants the sophisticated handsome leading-man atmosphere of Korean actor Lee Jong-won (이종원): lean refined face, striking long eyes, sculpted straight nose, quietly seductive and stylish presence, clean-shaven, dark hair with a natural gently parted fringe. He is a FICTIONAL husband role in a suspense drama, photographed as a neutral casting portrait, not the real actor in an allegation or real event. Slightly restrained friendly expression, no villain smirk. Slate-blue button-down shirt, dark navy trousers, simple black wristwatch on left wrist, dark plain flat shoes. Balanced lean physique, no exaggerated muscles, scars or gloves.\nSpecific distinct candidate: D: narrow elegant oval face, high forehead, gently downturned attentive eyes, subtle double lids, small refined nose tip, fuller lips, chic relaxed mature leading-man presence.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-cf0264ea-f21a-4049-a453-19969a3c9a8a.png",
+      "generated": true,
+      "review": "전신, 푸른 셔츠·남색 바지·검은 구두·시계, 세련된 남성 인상 확인. 손은 주머니에 들어가 있으며 얼굴 후보는 미선택."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "date": "2026-10-05",
+  "status": "사용자 최종 선택 완료: 서윤 A / 도현 D / 지수 B",
+  "tool": "built-in image_gen",
+  "model_version": "not exposed",
+  "reference_images": [],
+  "style_references": "배우 이름·외형 설명을 텍스트로 전달",
+  "image_count": 12,
+  "files": [
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "variant": "A",
+      "filename": "CHAR_01_서윤_A.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-e26be951-9f37-47d5-9e4b-946aabee41ee.png",
+      "review": "전신, 오트밀 상의·차콜 바지, 긴 검은 머리, 왼쪽 손목 보호대 확인. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "variant": "B",
+      "filename": "CHAR_01_서윤_B.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-ca013847-05b7-448f-b13c-bdd40f9f2efb.png",
+      "review": "전신, 오트밀 상의·차콜 바지, 긴 검은 머리, 왼쪽 손목 보호대 확인. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "variant": "C",
+      "filename": "CHAR_01_서윤_C.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-b0fac10f-152c-43c8-acac-2430979b2892.png",
+      "review": "전신, 오트밀 상의·차콜 바지, 긴 검은 머리, 왼쪽 손목 보호대 확인. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "variant": "D",
+      "filename": "CHAR_01_서윤_D.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-debfa257-c07c-433b-bc87-74ef23359ebf.png",
+      "review": "전신, 오트밀 상의·차콜 바지, 긴 검은 머리, 왼쪽 손목 보호대 확인. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "variant": "A",
+      "filename": "CHAR_02_도현_A.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-227391cc-d763-452f-a33f-f0b0b5d32f84.png",
+      "review": "전신, 푸른 셔츠·남색 바지·검은 구두·시계, 세련된 남성 인상 확인. 손은 주머니에 들어가 있으며 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "variant": "B",
+      "filename": "CHAR_02_도현_B.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-1bd1cc87-fb29-4061-be4b-4cf92ce12b94.png",
+      "review": "전신, 푸른 셔츠·남색 바지·검은 구두·시계, 세련된 남성 인상 확인. 손은 주머니에 들어가 있으며 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "variant": "C",
+      "filename": "CHAR_02_도현_C.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-2fd016c3-1fd2-49c1-bb8d-bcc090877e9b.png",
+      "review": "전신, 푸른 셔츠·남색 바지·검은 구두·시계, 세련된 남성 인상 확인. 손은 주머니에 들어가 있으며 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "variant": "D",
+      "filename": "CHAR_02_도현_D.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-cf0264ea-f21a-4049-a453-19969a3c9a8a.png",
+      "review": "전신, 푸른 셔츠·남색 바지·검은 구두·시계, 세련된 남성 인상 확인. 손은 주머니에 들어가 있으며 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "variant": "A",
+      "filename": "CHAR_03_지수_A.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-0dfb6d1d-95b5-45f4-b937-f375cdec4803.png",
+      "review": "남성 전신, 올리브 재킷·아이보리 티셔츠·진청 바지·크로스백·운동화, 따뜻한 표정 확인. 후보마다 가방 방향·재킷 디테일이 조금 달라 최종 선택 후 고정 필요. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "variant": "B",
+      "filename": "CHAR_03_지수_B.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-e5546f6a-0dec-45f3-b615-d9f6feae6a42.png",
+      "review": "남성 전신, 올리브 재킷·아이보리 티셔츠·진청 바지·크로스백·운동화, 따뜻한 표정 확인. 후보마다 가방 방향·재킷 디테일이 조금 달라 최종 선택 후 고정 필요. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "variant": "C",
+      "filename": "CHAR_03_지수_C.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-72e1f898-4047-4e88-9db3-25e6967d30c7.png",
+      "review": "남성 전신, 올리브 재킷·아이보리 티셔츠·진청 바지·크로스백·운동화, 따뜻한 표정 확인. 후보마다 가방 방향·재킷 디테일이 조금 달라 최종 선택 후 고정 필요. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "variant": "D",
+      "filename": "CHAR_03_지수_D.png",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-d8db8d33-c241-4664-8fd1-112878d5bc52.png",
+      "review": "남성 전신, 올리브 재킷·아이보리 티셔츠·진청 바지·크로스백·운동화, 따뜻한 표정 확인. 후보마다 가방 방향·재킷 디테일이 조금 달라 최종 선택 후 고정 필요. 얼굴 후보는 미선택."
+    }
+  ],
+  "limitations": [
+    "배우 닮음의 정량 평가는 하지 않음",
+    "약7등신은 생성 지시이며 정밀 좌표 계측은 하지 않음",
+    "지수 가방 방향·재킷 디테일, 도현 손의 주머니 자세는 최종 후보 선택 후 연속성 기준으로 고정"
+  ],
+  "other_characters": "중단 유지",
+  "final_selections": {
+    "CHAR_02": "D",
+    "CHAR_03": "B",
+    "CHAR_01": "A"
+  }
+}

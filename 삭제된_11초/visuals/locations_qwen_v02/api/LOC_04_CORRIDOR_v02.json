@@ -1,0 +1,169 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "10": {
+    "class_type": "DenoResolutionSetup",
+    "inputs": {
+      "mode": "Manual Input",
+      "ratio_preset": "16:9",
+      "megapixels": 3.69,
+      "width": 2560,
+      "height": 1440,
+      "divisible_by": "32",
+      "resize_method": "Center Crop (Fill)",
+      "interpolation": "lanczos",
+      "crop_x": 0.5,
+      "crop_y": 0.5,
+      "crop_zoom": 1
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ],
+      "batch_size": 1
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Professional interior-design portfolio photograph: full-frame camera with a wide rectilinear lens at adult eye height, perfectly vertical walls and clean two-point perspective, balanced high-dynamic-range exposure so the window and the darker corners both hold detail, crisp micro-detail in wood grain, fabric weave, stone veining and painted wall texture. Using the corridor in <image1> as the scene, keep its camera position, framing, corridor length and layout exactly: the apartment doorway on the near left, the short corridor, the side recess on the left and the elevator at the far end. Refinish the whole corridor to the material detail of a well-kept upscale Korean apartment building.\nThe apartment entrance door is the same door that <image2> shows from inside: a plain warm-gray metal slab door with a slim frame and one fine vertical reveal line. Its corridor-side face carries a slim black digital keypad lock with a lever handle. The door stands open outward into the corridor, its leaf swung toward the camera along the near left wall and hinged on the near edge of the doorway, so the pale gray tiled shoe vestibule and the warm ivory interior light are visible through the opening.\nThe corridor floor is large-format warm gray porcelain tile with fine joints and a soft satin sheen. The walls are clad in pale greige large-format panels with thin dark reveal lines and slim dark recessed baseboards. The flat ceiling carries one continuous linear LED cove running down the corridor, a few small recessed downlights and one small smoke detector. Beside the door is a small plain unit-number plate with no readable characters.\nAt the far end, the elevator has hairline brushed stainless steel doors in a slim brushed steel frame, with a small call-button panel on its right.\nEven neutral-white ceiling light fills the corridor, with a warm spill from the open apartment onto the floor near the doorway. Only the finishes and lighting detail change; the architecture and camera stay as in <image1>. The space is empty and unoccupied: no people, no readable text, signage, logos or watermark.",
+      "negative_prompt": "",
+      "resolution": 1536,
+      "images.image_1": [
+        "7",
+        0
+      ],
+      "images.image_2": [
+        "8",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 202610052300,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_locations_v02/LOC_04_CORRIDOR_v02"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "LOC_04_CORRIDOR.png"
+    }
+  },
+  "8": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "LOC_03_ENTRY_v02.png"
+    }
+  }
+}

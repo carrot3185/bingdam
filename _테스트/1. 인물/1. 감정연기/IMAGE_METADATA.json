@@ -1,0 +1,185 @@
+{
+  "inspection_date": "2026-10-05",
+  "scope": "PNG dimensions and embedded ComfyUI execution graph; no source image modifications",
+  "images": [
+    {
+      "file": "GPT/감격의 미소와 눈물.png",
+      "size": [
+        1672,
+        941
+      ],
+      "png_text_metadata_keys": [],
+      "actual_generation_prompt": null,
+      "matching_prepared_prompt": null,
+      "reference_input": null,
+      "sampler": null,
+      "diffusion_model": null,
+      "encoder": null,
+      "encoder_resolution": null,
+      "negative_prompt": null,
+      "reference_file_sha256_match": null
+    },
+    {
+      "file": "GPT/눈물 어린 따뜻한 미소.png",
+      "size": [
+        1672,
+        941
+      ],
+      "png_text_metadata_keys": [],
+      "actual_generation_prompt": null,
+      "matching_prepared_prompt": null,
+      "reference_input": null,
+      "sampler": null,
+      "diffusion_model": null,
+      "encoder": null,
+      "encoder_resolution": null,
+      "negative_prompt": null,
+      "reference_file_sha256_match": null
+    },
+    {
+      "file": "GPT/눈물 어린 조용한 위로.png",
+      "size": [
+        1672,
+        941
+      ],
+      "png_text_metadata_keys": [],
+      "actual_generation_prompt": null,
+      "matching_prepared_prompt": null,
+      "reference_input": null,
+      "sampler": null,
+      "diffusion_model": null,
+      "encoder": null,
+      "encoder_resolution": null,
+      "negative_prompt": null,
+      "reference_file_sha256_match": null
+    },
+    {
+      "file": "GPT/차분한 자연광의 여성 초상.png",
+      "size": [
+        1672,
+        941
+      ],
+      "png_text_metadata_keys": [],
+      "actual_generation_prompt": null,
+      "matching_prepared_prompt": null,
+      "reference_input": null,
+      "sampler": null,
+      "diffusion_model": null,
+      "encoder": null,
+      "encoder_resolution": null,
+      "negative_prompt": null,
+      "reference_file_sha256_match": null
+    },
+    {
+      "file": "Qwen/B_00_neutral_00001_.png",
+      "size": [
+        1536,
+        864
+      ],
+      "png_text_metadata_keys": [
+        "prompt",
+        "workflow"
+      ],
+      "actual_generation_prompt": "The image is a horizontal cinematic photograph of one Korean woman in her thirties, against a softly blurred muted-grey interior. The camera is at eye level at close portrait distance, and her face fills most of the frame height while her full forehead and chin remain visible. In the center, her head is nearly frontal and upright, with a relaxed neck and shoulders. Her gaze rests on a person just beside the lens. Her natural black hair reaches her shoulders and frames both sides of her face without covering her eyes. Along the lower edge, only the upper portion of her plain ivory cotton blouse and shoulders is visible. At both side edges, narrow areas of blurred background remain clear of objects and other people. Her eyebrows are relaxed, her lower eyelids are at rest, her lips are gently closed, and her mouth corners are level. This is a calm neutral starting expression, with dry cheeks and no visible tears or smile. Her skin has natural texture and restrained sheen. Soft window light comes from screen left, giving her face gentle modeling, soft shadows to the right, and small natural eye reflections. The overall composition is quiet and restrained, with the eyes and mouth clearly readable; no text or watermark.",
+      "matching_prepared_prompt": "00_NEUTRAL_T2I.txt",
+      "reference_input": null,
+      "sampler": {
+        "seed": 303617254009935,
+        "steps": 40,
+        "cfg": 1.0,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0
+      },
+      "diffusion_model": "qwen_image_2.1_int8_convrot.safetensors",
+      "encoder": "qwen3vl_8b_int8_convrot.safetensors",
+      "encoder_resolution": 1024,
+      "negative_prompt": "",
+      "reference_file_sha256_match": null
+    },
+    {
+      "file": "Qwen/B_00_neutral_00002_.png",
+      "size": [
+        1536,
+        864
+      ],
+      "png_text_metadata_keys": [
+        "prompt",
+        "workflow"
+      ],
+      "actual_generation_prompt": "Change only the woman's expression and tear state in the image to the first restrained moment of joyful relief after learning that someone she loves is safe. Her eyes soften as emotion gathers, and a thin clear bead of moisture sits along each lower eyelid. Her eyebrows remain relaxed rather than drawing together in distress. Her lips are gently pressed together, and the corners of her mouth remain level: a smile has not started. Her cheeks are dry, with no falling tear or wet trail. The visible response is relief held in the eyes, quiet and emotionally contained. Use the woman in the image as the identity reference; preserve her facial identity, hairstyle, clothing, framing, head position, gaze direction, background, and lighting while allowing the intended expression changes. This is a local edit of the original photograph, with the existing skin texture intact. No added people, objects, text, or watermark.",
+      "matching_prepared_prompt": "01_TEARS_EDIT.txt",
+      "reference_input": "B_00_neutral_00001_.png",
+      "sampler": {
+        "seed": 50915118364261,
+        "steps": 40,
+        "cfg": 1.0,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0
+      },
+      "diffusion_model": "qwen_image_2.1_int8_convrot.safetensors",
+      "encoder": "qwen3vl_8b_int8_convrot.safetensors",
+      "encoder_resolution": 1024,
+      "negative_prompt": "",
+      "reference_file_sha256_match": true,
+      "reference_input_recorded_hash": "36d032e879b4f69f3b3658151ded7010bb3a70dfa0e5ca3381544f4f93054bfb"
+    },
+    {
+      "file": "Qwen/B_00_neutral_00003_.png",
+      "size": [
+        1536,
+        864
+      ],
+      "png_text_metadata_keys": [
+        "prompt",
+        "workflow"
+      ],
+      "actual_generation_prompt": "Change only the woman's expression and tear state in the image to the moment a small smile begins through joyful relief after learning that someone she loves is safe. A thin clear bead of moisture sits along each lower eyelid, and both cheeks remain dry without a falling tear or wet trail. Her lower eyelids lift slightly, her cheeks rise gently, and the corners of her mouth turn upward into a small emerging smile. Her eyebrows stay relaxed. Her lips remain closed, with no visible teeth. The smile is clearly warmer than a neutral face but still restrained, as though she is holding back a stronger response. Use the woman in the image as the identity reference; preserve her facial identity, hairstyle, clothing, framing, head position, gaze direction, background, and lighting while allowing the intended expression changes. This is a local edit of the original photograph, with the existing skin texture intact. No added people, objects, text, or watermark.",
+      "matching_prepared_prompt": "02_SMILE_EDIT.txt",
+      "reference_input": "B_00_neutral_00001_.png",
+      "sampler": {
+        "seed": 608809688184503,
+        "steps": 40,
+        "cfg": 1.0,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0
+      },
+      "diffusion_model": "qwen_image_2.1_int8_convrot.safetensors",
+      "encoder": "qwen3vl_8b_int8_convrot.safetensors",
+      "encoder_resolution": 1024,
+      "negative_prompt": "",
+      "reference_file_sha256_match": true,
+      "reference_input_recorded_hash": "36d032e879b4f69f3b3658151ded7010bb3a70dfa0e5ca3381544f4f93054bfb"
+    },
+    {
+      "file": "Qwen/B_00_neutral_00004_.png",
+      "size": [
+        1536,
+        864
+      ],
+      "png_text_metadata_keys": [
+        "prompt",
+        "workflow"
+      ],
+      "actual_generation_prompt": "Change only the woman's expression and tear state in the image to a warm restrained smile with one fallen tear, expressing joyful relief after learning that someone she loves is safe. Her eyes and gently lifted cheeks carry the smile, and her mouth corners are softly raised. Her lips remain closed, with no visible teeth. A single clear tear rests halfway down one cheek, connected to the lower eyelid by one narrow wet trail; the other cheek remains dry. The tear sits on the skin surface, with a subtle highlight that follows the existing light. Her eyebrows stay relaxed, and her face reads as relieved and happy rather than contorted by sobbing. Use the woman in the image as the identity reference; preserve her facial identity, hairstyle, clothing, framing, head position, gaze direction, background, and lighting while allowing the intended expression changes. This is a local edit of the original photograph, with the existing skin texture intact. No added people, objects, text, or watermark.",
+      "matching_prepared_prompt": "03_TEAR_FALL_EDIT.txt",
+      "reference_input": "B_00_neutral_00001_.png",
+      "sampler": {
+        "seed": 456345842862480,
+        "steps": 40,
+        "cfg": 1.0,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0
+      },
+      "diffusion_model": "qwen_image_2.1_int8_convrot.safetensors",
+      "encoder": "qwen3vl_8b_int8_convrot.safetensors",
+      "encoder_resolution": 1024,
+      "negative_prompt": "",
+      "reference_file_sha256_match": true,
+      "reference_input_recorded_hash": "36d032e879b4f69f3b3658151ded7010bb3a70dfa0e5ca3381544f4f93054bfb"
+    }
+  ]
+}

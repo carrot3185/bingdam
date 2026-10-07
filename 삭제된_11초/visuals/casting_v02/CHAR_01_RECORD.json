@@ -1,0 +1,48 @@
+{
+  "tool": "built-in image_gen",
+  "model_version": "not exposed",
+  "status": "생성·육안 확인 / 사용자 미선택",
+  "references": [],
+  "records": [
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "variant": "A",
+      "filename": "CHAR_01_서윤_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Han Seo-yun, 32-year-old Korean woman. User wants the beauty and atmosphere associated with Korean actresses Go Youn-jung (고윤정) and Kim Ji-won (김지원): strongly dimensional sculpted facial structure, luminous large expressive eyes, defined high nose bridge, refined full lips, elegant feminine charisma and a captivating slightly cosmopolitan look while clearly Korean. This should look like a striking leading actress, not a generic plain girl or a Caucasian woman. Long loose black hair with fine wispy bangs retained from the earlier user-selected hairstyle. Plain oatmeal cotton long-sleeved top and charcoal relaxed straight-leg trousers. Gray soft wrist brace exclusively on anatomical LEFT wrist (viewer RIGHT), right wrist bare, simple bare feet. No lace, jewelry, dress, outerwear or hospital bracelet. Calm natural gaze.\nSpecific distinct candidate: A: emphasize Go Youn-jung-inspired atmosphere, large rounded almond eyes, softer oval silhouette, delicately high nose, fuller natural lips, luminous youthful actress beauty while an adult 32-year-old character.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-e26be951-9f37-47d5-9e4b-946aabee41ee.png",
+      "generated": true,
+      "review": "전신, 오트밀 상의·차콜 바지, 긴 검은 머리, 왼쪽 손목 보호대 확인. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "variant": "B",
+      "filename": "CHAR_01_서윤_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Han Seo-yun, 32-year-old Korean woman. User wants the beauty and atmosphere associated with Korean actresses Go Youn-jung (고윤정) and Kim Ji-won (김지원): strongly dimensional sculpted facial structure, luminous large expressive eyes, defined high nose bridge, refined full lips, elegant feminine charisma and a captivating slightly cosmopolitan look while clearly Korean. This should look like a striking leading actress, not a generic plain girl or a Caucasian woman. Long loose black hair with fine wispy bangs retained from the earlier user-selected hairstyle. Plain oatmeal cotton long-sleeved top and charcoal relaxed straight-leg trousers. Gray soft wrist brace exclusively on anatomical LEFT wrist (viewer RIGHT), right wrist bare, simple bare feet. No lace, jewelry, dress, outerwear or hospital bracelet. Calm natural gaze.\nSpecific distinct candidate: B: emphasize Kim Ji-won-inspired atmosphere, longer elegant almond eyes, a slightly more defined jaw, sculpted nose bridge, refined thinner upper lip, poised cool mature beauty.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-ca013847-05b7-448f-b13c-bdd40f9f2efb.png",
+      "generated": true,
+      "review": "전신, 오트밀 상의·차콜 바지, 긴 검은 머리, 왼쪽 손목 보호대 확인. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "variant": "C",
+      "filename": "CHAR_01_서윤_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Han Seo-yun, 32-year-old Korean woman. User wants the beauty and atmosphere associated with Korean actresses Go Youn-jung (고윤정) and Kim Ji-won (김지원): strongly dimensional sculpted facial structure, luminous large expressive eyes, defined high nose bridge, refined full lips, elegant feminine charisma and a captivating slightly cosmopolitan look while clearly Korean. This should look like a striking leading actress, not a generic plain girl or a Caucasian woman. Long loose black hair with fine wispy bangs retained from the earlier user-selected hairstyle. Plain oatmeal cotton long-sleeved top and charcoal relaxed straight-leg trousers. Gray soft wrist brace exclusively on anatomical LEFT wrist (viewer RIGHT), right wrist bare, simple bare feet. No lace, jewelry, dress, outerwear or hospital bracelet. Calm natural gaze.\nSpecific distinct candidate: C: blend both inspirations with noticeably broader oval face, slightly wide-set bright double-eyelid eyes, short refined nose tip, pronounced fuller lips and softly defined cheekbones, inviting magnetic expression.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-b0fac10f-152c-43c8-acac-2430979b2892.png",
+      "generated": true,
+      "review": "전신, 오트밀 상의·차콜 바지, 긴 검은 머리, 왼쪽 손목 보호대 확인. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "variant": "D",
+      "filename": "CHAR_01_서윤_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Han Seo-yun, 32-year-old Korean woman. User wants the beauty and atmosphere associated with Korean actresses Go Youn-jung (고윤정) and Kim Ji-won (김지원): strongly dimensional sculpted facial structure, luminous large expressive eyes, defined high nose bridge, refined full lips, elegant feminine charisma and a captivating slightly cosmopolitan look while clearly Korean. This should look like a striking leading actress, not a generic plain girl or a Caucasian woman. Long loose black hair with fine wispy bangs retained from the earlier user-selected hairstyle. Plain oatmeal cotton long-sleeved top and charcoal relaxed straight-leg trousers. Gray soft wrist brace exclusively on anatomical LEFT wrist (viewer RIGHT), right wrist bare, simple bare feet. No lace, jewelry, dress, outerwear or hospital bracelet. Calm natural gaze.\nSpecific distinct candidate: D: blend both inspirations with narrow oval face, deeper-set elongated double-eyelid eyes, more prominent high nose bridge, defined cheekbones, natural medium lips, sophisticated magnetic mature beauty.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-debfa257-c07c-433b-bc87-74ef23359ebf.png",
+      "generated": true,
+      "review": "전신, 오트밀 상의·차콜 바지, 긴 검은 머리, 왼쪽 손목 보호대 확인. 얼굴 후보는 미선택."
+    }
+  ]
+}

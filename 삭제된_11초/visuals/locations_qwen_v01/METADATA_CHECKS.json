@@ -1,0 +1,123 @@
+[
+  {
+    "id": "HOME_MASTER",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": null,
+    "prompt_file_equal_actual": true,
+    "sha256": "940b3f35701490577be6471c63b9c6d110fafe1cab161f07681eef1fa0fed0b9"
+  },
+  {
+    "id": "HOME_REVERSE",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": "HOME_MASTER.png",
+    "prompt_file_equal_actual": true,
+    "sha256": "20ecc66006424a7889e2e2ecdf1d115a7bd875e41a7ca46beda46a18d0478177"
+  },
+  {
+    "id": "HOME_REVERSE_v02",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": "HOME_REVERSE.png",
+    "prompt_file_equal_actual": true,
+    "sha256": "76a33ff9c4a95e958827d5240b192003f1d5641922c4500ca630f6dd09205cb8"
+  },
+  {
+    "id": "LOC_02_KITCHEN",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": "HOME_MASTER.png",
+    "prompt_file_equal_actual": true,
+    "sha256": "11e6427385e8e5cb3b181aa0287df1914d8f64a3543dbf81702f087590379ab4"
+  },
+  {
+    "id": "LOC_02_KITCHEN_v02",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": "HOME_MASTER.png",
+    "prompt_file_equal_actual": true,
+    "sha256": "24b33cd90a5876e3cbe05e748c78a7deedd85682fd74d79f1dddd852d5485405"
+  },
+  {
+    "id": "LOC_02_KITCHEN_v03",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": "LOC_02_KITCHEN_v02.png",
+    "prompt_file_equal_actual": true,
+    "sha256": "36f88c2b691be28cf3169b2c911d53d7ddcc5e8c18c0e37f7f1dfc739f6568c1"
+  },
+  {
+    "id": "LOC_03_ENTRY",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": "HOME_MASTER.png",
+    "prompt_file_equal_actual": true,
+    "sha256": "2c22df802c9bc00217ecb5cfe3b09204a22afdbd1e206c7ecbaef8f2e1ccd3ab"
+  },
+  {
+    "id": "LOC_04_CORRIDOR",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": null,
+    "prompt_file_equal_actual": true,
+    "sha256": "ca54f04ded996211aa586354a9b94a5926efbe43114023da65d1ef9ebd85f7c6"
+  },
+  {
+    "id": "LOC_05_ELEVATOR",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": "LOC_04_CORRIDOR.png",
+    "prompt_file_equal_actual": true,
+    "sha256": "68f60825b1167dc5275dc08a9db7b90cbc341d52a3e085f25342161b5a4b17b4"
+  },
+  {
+    "id": "LOC_06_GARAGE",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": null,
+    "prompt_file_equal_actual": true,
+    "sha256": "00ccfe65c03afc056e269761f8390b9d35485f42657f2e7d58a079cb92eb35b1"
+  },
+  {
+    "id": "LOC_06_GARAGE_v02",
+    "actual_dimensions": [
+      2048,
+      1152
+    ],
+    "submitted_inputs_equal_png_prompt": true,
+    "actual_reference": "LOC_06_GARAGE.png",
+    "prompt_file_equal_actual": true,
+    "sha256": "5117a678f880d7a29b0218c1b200141687a25c067a91c91ace5c34cc1fa92496"
+  }
+]

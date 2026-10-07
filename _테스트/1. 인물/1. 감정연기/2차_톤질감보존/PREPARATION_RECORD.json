@@ -1,0 +1,37 @@
+{
+  "status": "prepared_not_executed",
+  "reference": "COMMON_REFERENCE.png",
+  "reference_sha256": "81E135E8C58FB1037ECA165588C93169C2615B4712ECBEF06C7623A3C6BA89A2",
+  "source_workflow_sha256": "959701D670DF6531D51ED86A8D38C41FC5F34388B195BD5E64437C2DA9113FF3",
+  "checks": "Four prompt matches, enabled image input, fixed seeds, dimensions, unchanged links/model nodes/guide; control matches v2.",
+  "conditions": [
+    {
+      "workflow": "00_CONTROL_V2_TEAR_FALL.json",
+      "prompt": "00_CONTROL_V2_TEAR_FALL.txt",
+      "workflow_sha256": "2BE63F0B6EFA4A63F02124EA5A7D6C9198E94AD245121E3D038847BEE2CD663B",
+      "seed": 50915118364261,
+      "output_prefix": "emotional_acting_02/B_CONTROL_V2_03"
+    },
+    {
+      "workflow": "01_V3_TEARS_EDIT.json",
+      "prompt": "01_V3_TEARS_EDIT.txt",
+      "workflow_sha256": "B2FACDBDD84D9670C91ED5242F07314728F091D3B2F137DD71EF399921128510",
+      "seed": 50915118364261,
+      "output_prefix": "emotional_acting_02/B_V3_01"
+    },
+    {
+      "workflow": "02_V3_SMILE_EDIT.json",
+      "prompt": "02_V3_SMILE_EDIT.txt",
+      "workflow_sha256": "4DF0CE723079884CC0FE6A4F01288E4EB29ACC56C50BCC2444A6BB9B4F873DA4",
+      "seed": 50915118364261,
+      "output_prefix": "emotional_acting_02/B_V3_02"
+    },
+    {
+      "workflow": "03_V3_TEAR_FALL_EDIT.json",
+      "prompt": "03_V3_TEAR_FALL_EDIT.txt",
+      "workflow_sha256": "747333C4251069F60DE2629C8A4216EBCEAB51C1418B63610E3EEC0775E5790A",
+      "seed": 50915118364261,
+      "output_prefix": "emotional_acting_02/B_V3_03"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "10": {
+    "class_type": "DenoResolutionSetup",
+    "inputs": {
+      "mode": "Manual Input",
+      "ratio_preset": "16:9",
+      "megapixels": 3.69,
+      "width": 2560,
+      "height": 1440,
+      "divisible_by": "32",
+      "resize_method": "Center Crop (Fill)",
+      "interpolation": "lanczos",
+      "crop_x": 0.5,
+      "crop_y": 0.5,
+      "crop_zoom": 1
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ],
+      "batch_size": 1
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Professional interior-design portfolio photograph: full-frame camera with a wide rectilinear lens at adult eye height, perfectly vertical walls and clean two-point perspective, balanced high-dynamic-range exposure so the window and the darker corners both hold detail, crisp micro-detail in wood grain, fabric weave, stone veining and painted wall texture. Using the apartment in the image as the architecture, materials and lighting reference, generate a photographic view from the dining-side passage toward the recessed shoe-removal vestibule and the gray entrance door.\nThe camera is at adult eye height several steps back from the door, framing the passage and the full vestibule with enough floor for two adults to stand and one to reach the handle. In the near foreground, the edge of the oak dining table and one charcoal-seat oak chair partly enter the frame.\nThe wide-plank oak walkway recedes and meets a slim metal threshold strip at the large-format pale gray porcelain entry tiles. At the back, one plain warm-gray metal apartment door with a slim frame, a single lever handle and a black interior digital lock mounted directly on the door leaf, not on the wall. Along one side of the vestibule stands a tall flush matte ivory shoe cabinet with handleless doors and a recessed open niche lit by a thin warm LED strip. Two pairs of simple shoes rest tidily beside it, out of the central path. A small recessed ceiling downlight above the vestibule. The door is closed; it opens outward into the communal corridor. No bag or loose props.\nFinishes: wide-plank natural pale oak floor with visible grain, fine board seams and a matte finish; ivory walls with flush shadow-gap baseboards; a flat ivory ceiling with a recessed perimeter cove emitting soft warm indirect light, a few small recessed downlights and one slim linear air-conditioner diffuser. Warm living-room light comes from behind the camera while the soft neutral vestibule downlight keeps the lock and surrounding wall readable. Overlapping table edge, passage walls and recessed door create connected depth without turning the entry into a spacious lobby. Empty unoccupied location, no people, no family photographs, no captions, readable text or watermark. Realistic architectural proportions without fisheye distortion. A carefully finished, attainable mid-sized Korean apartment, tasteful and well kept but not a penthouse: single-height ceiling, no double-height void, no staircase, no stacked-stone feature wall, no glossy marble showroom floor.",
+      "negative_prompt": "",
+      "resolution": 1536,
+      "images.image_1": [
+        "7",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 202610052103,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_locations_v02/LOC_03_ENTRY"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "HOME_MASTER_b.png"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-05",
+  "character_id": "CHAR_01",
+  "status": "사용자 지정 얼굴·헤어를 적용한 전신 시안; 생성물 최종 승인 전",
+  "user_request": "첨부 이미지의 얼굴·헤어로 교체. 기존 의상 유지. 전신, 7등신.",
+  "tool": "built-in image_gen",
+  "model_version": "not exposed",
+  "references": [
+    {
+      "slot": 1,
+      "role": "edit target; wardrobe, brace, lighting and backdrop",
+      "path": "../casting_v01/CHAR_01_한서윤_A.png"
+    },
+    {
+      "slot": 2,
+      "role": "user-selected facial identity and hairstyle only",
+      "path": "references/CHAR_01_face_hair_user_ref.png"
+    }
+  ],
+  "prompt": "Use case: identity-preserve. Edit and extend Image 1 (existing Seo-yun casting photograph) into ONE full-body standing character reference photograph. Image 1 is the edit target and is the ONLY source for clothes, wrist brace, photographic lighting and background. Image 2 is the user's chosen FACE IDENTITY and HAIRSTYLE reference ONLY.\nReplace the face in Image 1 with the same distinctive facial identity from Image 2: preserve her eye shape and iris color, nose, lips, jaw and overall appearance closely. Replace the tied brown hair with Image 2's long loose BLACK hair and fine wispy straight bangs across the forehead, hair flowing naturally down the shoulders and back. No ponytail. Do not transfer Image 2's pink lace outfit, lace, ribbons, pearls or glamour background.\nPreserve Image 1's plain oatmeal cotton long-sleeved top, charcoal relaxed straight-leg trousers, and gray soft wrist brace exclusively on the woman's anatomical LEFT wrist (viewer RIGHT in frontal pose). Right wrist bare. Preserve realistic cotton fabric and natural soft studio lighting with pale warm-gray background. No outerwear, no cast, no hospital bracelet, no additional accessories.\nChange framing to a full-length vertical portrait from the top of her hair to the soles of both feet, with breathing room above head and below feet. Adult natural SEVEN-HEADS-TALL anatomical proportions: the crown-to-chin head height should be approximately one seventh of the crown-to-soles body height. Normal-sized adult head, balanced torso and legs, neither tiny fashion-model head nor eight/nine-head elongated legs. Stand upright facing the camera, level shoulders, weight balanced, feet planted side by side, neutral calm expression, arms relaxed slightly away from body so both wrists and the left brace are visible. Extend trouser legs naturally; simple bare feet on the studio floor. Camera level at mid-torso with minimal perspective distortion. Single person, anatomically correct hands and feet. Photorealistic. No collage, rulers, grid, typography, caption, logo, watermark or extra people.",
+  "output": "CHAR_01_fullbody_v01.png",
+  "observed": {
+    "framing": "머리부터 양쪽 맨발까지 보이는 전신",
+    "face_hair": "사용자 참조의 얼굴 특징, 앞머리와 풀어 내린 검은 긴 머리가 반영됨",
+    "clothing": "오트밀 긴팔 상의·차콜 긴 바지 유지, 분홍 레이스 의상 미사용",
+    "brace": "해부학적 왼손목(화면 오른쪽)에 회색 보호대",
+    "proportion": "약 7등신 목표의 자연스러운 성인 비율. 정밀 좌표 계측은 수행하지 않음"
+  },
+  "proposed_unconfirmed_details": [
+    "프레임 확장에 따른 맨발과 바지 밑단"
+  ],
+  "prior_batch": "다른 얼굴 후보 생성 중 사용자 교체 요청이 들어옴. 기존 캐스팅 후보는 확정하지 않으며, 다른 인물의 4후보 작업은 미완료."
+}

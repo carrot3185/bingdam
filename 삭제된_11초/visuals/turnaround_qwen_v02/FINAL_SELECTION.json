@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-05",
+  "timezone": "Asia/Seoul",
+  "status": "all three characters user confirmed final",
+  "approval": "User accepted the displayed v02 character sheets and instructed fixing all three characters in these designs.",
+  "characters": [
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "casting_candidate": "A",
+      "casting_reference": "references/D11_CHAR_01_FINAL.png",
+      "final_turnaround": "outputs/CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+      "turnaround_sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+      "status": "user confirmed final"
+    },
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "casting_candidate": "D",
+      "casting_reference": "references/D11_CHAR_02_FINAL.png",
+      "final_turnaround": "outputs/CHAR_02_도현_turnaround_v02_HQ.png",
+      "turnaround_sha256": "2bcc683de8cc8a7a73d043e787ca1e0b261623d1d5c804e5795624d5aab987ca",
+      "status": "user confirmed final"
+    },
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "casting_candidate": "B",
+      "casting_reference": "references/D11_CHAR_03_FINAL.png",
+      "final_turnaround": "outputs/CHAR_03_지수_turnaround_v02_HQ.png",
+      "turnaround_sha256": "6198dd2232480b978c31e3cec30c98100256c2a38c56bf9072d0b18066007f6c",
+      "status": "user confirmed final"
+    }
+  ],
+  "fixed_scope": [
+    "facial identity",
+    "hairstyle and hair color",
+    "body design and proportions",
+    "current base outfit, colors, fit and material appearance",
+    "character accessories and anatomical ownership side",
+    "approved profile and rear visual design"
+  ],
+  "variable_scope": [
+    "scene pose and action",
+    "expression and gaze",
+    "camera and lighting",
+    "script-required costume state explicitly specified for a scene"
+  ],
+  "continuity": {
+    "CHAR_01": "Gray brace on anatomical LEFT wrist; baseline indoor outfit and bare feet.",
+    "CHAR_02": "Watch on anatomical LEFT wrist; blue shirt, navy trousers, black shoes.",
+    "CHAR_03": "Male character; olive jacket, ivory T-shirt, indigo jeans, dark sneakers. Crossbody strap LEFT shoulder to bag at RIGHT hip."
+  },
+  "reference_usage": "Use actual final image files as generation inputs; stable CHAR IDs alone do not connect references."
+}

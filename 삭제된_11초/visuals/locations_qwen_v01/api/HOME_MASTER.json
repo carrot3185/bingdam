@@ -1,0 +1,149 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "10": {
+    "class_type": "DenoResolutionSetup",
+    "inputs": {
+      "mode": "Manual Input",
+      "ratio_preset": "16:9",
+      "megapixels": 2.36,
+      "width": 2048,
+      "height": 1152,
+      "divisible_by": "32",
+      "resize_method": "Center Crop (Fill)",
+      "interpolation": "lanczos",
+      "crop_x": 0.5,
+      "crop_y": 0.5,
+      "crop_zoom": 1
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ],
+      "batch_size": 1
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "The image is a wide cinematic interior photograph of an ordinary lived-in modern Korean apartment at early evening, with ivory walls, pale oak flooring and matte furniture. The camera stands just inside the short entrance passage at adult eye height, looking diagonally across the connected kitchen, dining area and living room, with the room filling the frame. On the near left edge, a partial ivory passage wall and a small section of the gray entry tile frame the view. On the left midground, an open L-shaped kitchen has matte ivory cabinets, light gray countertops and modest plain appliances, without a high island. Ahead of the kitchen stands one pale oak rectangular dining table with exactly four simple chairs and one cream pendant lamp above it. A closed plain silver laptop and one clear water glass sit unobtrusively on the table. On the right midground, a low gray-brown fabric sofa faces inward toward the living area; a small low oak coffee table stands nearby. At the far end, a broad apartment window with thin off-white curtains reveals dim blue evening sky. A clear continuous floor path runs from the near entrance beside the dining table into the living room. Overlapping doorway edges, furniture at distinct distances and floorboards converging toward the far window create readable foreground, middle distance and background; the room feels moderately sized and habitable, with space for two actors to move. Soft cool evening light enters from the far window, balanced by the warm diffuse dining pendant, leaving gently modeled corners and readable shadows. The overall palette is calm ivory, pale wood and muted gray, quietly ordinary with a hint of tension. Empty unoccupied location, no people, no family photographs, no captions or watermark. Realistic architectural proportions, straight vertical walls, natural rectilinear perspective without fisheye distortion. Tactile matte surfaces and believable light, photographic Korean domestic drama location reference, not a furniture showroom or luxury property.",
+      "negative_prompt": "",
+      "resolution": 1024
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 202610051100,
+      "steps": 40,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_locations_v01/HOME_MASTER"
+    }
+  }
+}

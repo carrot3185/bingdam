@@ -1,0 +1,14 @@
+{
+  "status": "generated, visually reviewed design proposals; not user-confirmed",
+  "selected_outputs": {
+    "HOME_MASTER": "outputs/HOME_MASTER.png",
+    "HOME_REVERSE_v02": "outputs/HOME_REVERSE_v02.png",
+    "LOC_02_KITCHEN_v03": "outputs/LOC_02_KITCHEN_v03.png",
+    "LOC_03_ENTRY": "outputs/LOC_03_ENTRY.png",
+    "LOC_04_CORRIDOR": "outputs/LOC_04_CORRIDOR.png",
+    "LOC_05_ELEVATOR": "outputs/LOC_05_ELEVATOR.png",
+    "LOC_06_GARAGE_v02": "outputs/LOC_06_GARAGE_v02.png"
+  },
+  "actual_generation_count": 11,
+  "selected_view_count": 7
+}

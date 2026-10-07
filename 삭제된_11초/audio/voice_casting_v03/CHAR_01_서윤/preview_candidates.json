@@ -1,0 +1,1311 @@
+[
+ {
+  "name": "연화",
+  "id": "tc_600697fd8a8ea9b977284703",
+  "age": "middle_age",
+  "uses": [
+   "Audiobook/Storytelling"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017134207_600697fd8a8ea9b977284703_SSFM-V3_0.mp3",
+  "f0": 155.3,
+  "spread_st": 9.5,
+  "centroid": 818
+ },
+ {
+  "name": "혜라",
+  "id": "tc_66504763aed05555cd12438c",
+  "age": "middle_age",
+  "uses": [
+   "Ads/Promotion"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142841_66504763aed05555cd12438c_SSFM-V3_0.mp3",
+  "f0": 195.1,
+  "spread_st": 8.7,
+  "centroid": 833
+ },
+ {
+  "name": "설화",
+  "id": "tc_6731b307df12333201d12b94",
+  "age": "young_adult",
+  "uses": [
+   "Conversational",
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141654_6731b307df12333201d12b94_SSFM-V3_0.mp3",
+  "f0": 242.4,
+  "spread_st": 10.0,
+  "centroid": 835
+ },
+ {
+  "name": "선영",
+  "id": "tc_5c789c317ad86500073a02cb",
+  "age": "middle_age",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141650_5c789c317ad86500073a02cb_SSFM-V3_0.mp3",
+  "f0": 210.5,
+  "spread_st": 10.9,
+  "centroid": 839
+ },
+ {
+  "name": "유리",
+  "id": "tc_673eca75a1aae856ff42b80e",
+  "age": "middle_age",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/yuri_mixdown.mp3",
+  "f0": 235.3,
+  "spread_st": 9.3,
+  "centroid": 866
+ },
+ {
+  "name": "은빈",
+  "id": "tc_660e45ff50e0ecacaf967d22",
+  "age": "young_adult",
+  "uses": [
+   "Ads/Promotion"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142137_660e45ff50e0ecacaf967d22_SSFM-V3_0.mp3",
+  "f0": 222.2,
+  "spread_st": 9.8,
+  "centroid": 897
+ },
+ {
+  "name": "도희",
+  "id": "tc_644a05b537254553823492fb",
+  "age": "middle_age",
+  "uses": [
+   "Ads/Promotion"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141214_644a05b537254553823492fb_SSFM-V3_0.mp3",
+  "f0": 173.9,
+  "spread_st": 12.5,
+  "centroid": 937
+ },
+ {
+  "name": "소영",
+  "id": "tc_5c789c317ad86500073a02cc",
+  "age": "middle_age",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141727_5c789c317ad86500073a02cc_SSFM-V3_0.mp3",
+  "f0": 188.2,
+  "spread_st": 8.5,
+  "centroid": 955
+ },
+ {
+  "name": "문정",
+  "id": "tc_68f9c6a72f0f04a417bb136f",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer",
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_moonjung/moonjung_mixdown.mp3",
+  "f0": 250.0,
+  "spread_st": 11.6,
+  "centroid": 965
+ },
+ {
+  "name": "현지",
+  "id": "tc_66d00104bda076835c38ba68",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142833_66d00104bda076835c38ba68_SSFM-V3_0.mp3",
+  "f0": 271.2,
+  "spread_st": 8.3,
+  "centroid": 968
+ },
+ {
+  "name": "진희",
+  "id": "tc_6731b2b2478a48710ecc9158",
+  "age": "young_adult",
+  "uses": [
+   "Announcer",
+   "News Reporter"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142448_6731b2b2478a48710ecc9158_SSFM-V3_0.mp3",
+  "f0": 219.2,
+  "spread_st": 10.9,
+  "centroid": 979
+ },
+ {
+  "name": "민정",
+  "id": "tc_6699eb0f10b8e361d6a9aba1",
+  "age": "young_adult",
+  "uses": [
+   "Audiobook/Storytelling"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141456_6699eb0f10b8e361d6a9aba1_SSFM-V3_0.mp3",
+  "f0": 228.6,
+  "spread_st": 9.9,
+  "centroid": 984
+ },
+ {
+  "name": "유미",
+  "id": "tc_65e96ab52564d1136ecb1d67",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017135801_65e96ab52564d1136ecb1d67_SSFM-V3_0.mp3",
+  "f0": 262.3,
+  "spread_st": 9.8,
+  "centroid": 984
+ },
+ {
+  "name": "은경",
+  "id": "tc_6a7446c19f2d7dfed990a900",
+  "age": "young_adult",
+  "uses": [
+   "Conversational",
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/260806_eunkyung/eunkyung_mixdown.mp3",
+  "f0": 228.6,
+  "spread_st": 10.5,
+  "centroid": 992
+ },
+ {
+  "name": "승연",
+  "id": "tc_63622aa127f06f51e93a873c",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141827_63622aa127f06f51e93a873c_SSFM-V3_0.mp3",
+  "f0": 219.2,
+  "spread_st": 10.8,
+  "centroid": 1006
+ },
+ {
+  "name": "다현",
+  "id": "tc_646f0dac2465b38f37787f64",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250930112107_646f0dac2465b38f37787f64_SSFM-V3_0.mp3",
+  "f0": 207.8,
+  "spread_st": 6.7,
+  "centroid": 1029
+ },
+ {
+  "name": "혜정",
+  "id": "tc_5f8e9644f6120100074475f0",
+  "age": "middle_age",
+  "uses": [
+   "Game"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/hyejung_mixdown.mp3",
+  "f0": 262.3,
+  "spread_st": 10.7,
+  "centroid": 1031
+ },
+ {
+  "name": "효은",
+  "id": "tc_691d49ccc47926d741f15913",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer",
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/251119_hyoeun/hyoeun_mixdown.mp3",
+  "f0": 222.2,
+  "spread_st": 11.6,
+  "centroid": 1039
+ },
+ {
+  "name": "인화",
+  "id": "tc_6296a815b958a8ed9610b189",
+  "age": "middle_age",
+  "uses": [
+   "Documentary",
+   "Audiobook/Storytelling",
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142219_6296a815b958a8ed9610b189_SSFM-V3_0.mp3",
+  "f0": 197.5,
+  "spread_st": 10.7,
+  "centroid": 1066
+ },
+ {
+  "name": "민주",
+  "id": "tc_6731b36bd944a485bc4070fd",
+  "age": "young_adult",
+  "uses": [
+   "Conversational",
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141458_6731b36bd944a485bc4070fd_SSFM-V3_0.mp3",
+  "f0": 280.7,
+  "spread_st": 10.7,
+  "centroid": 1067
+ },
+ {
+  "name": "지영",
+  "id": "tc_5c789c34dabcfa0008b0a390",
+  "age": "young_adult",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251021111451_5c789c34dabcfa0008b0a390_SSFM-V3_0.mp3",
+  "f0": 210.5,
+  "spread_st": 11.2,
+  "centroid": 1094
+ },
+ {
+  "name": "이보미",
+  "id": "tc_60915b5616d74069af8e8cab",
+  "age": "young_adult",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142155_60915b5616d74069af8e8cab_SSFM-V3_0.mp3",
+  "f0": 210.5,
+  "spread_st": 9.2,
+  "centroid": 1095
+ },
+ {
+  "name": "현주",
+  "id": "tc_6335062fd260d463f7d7abb9",
+  "age": "young_adult",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142832_6335062fd260d463f7d7abb9_SSFM-V3_0.mp3",
+  "f0": 250.0,
+  "spread_st": 10.1,
+  "centroid": 1105
+ },
+ {
+  "name": "재선",
+  "id": "tc_684a7a1446e2a628b5b07230",
+  "age": "middle_age",
+  "uses": [
+   "Conversational",
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017142239_684a7a1446e2a628b5b07230_SSFM-V3_0.mp3",
+  "f0": 181.8,
+  "spread_st": 12.1,
+  "centroid": 1113
+ },
+ {
+  "name": "은솔",
+  "id": "tc_67db72eb93add6902ea41e5c",
+  "age": "young_adult",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017140114_67db72eb93add6902ea41e5c_SSFM-V3_0.mp3",
+  "f0": 238.8,
+  "spread_st": 9.5,
+  "centroid": 1115
+ },
+ {
+  "name": "인선",
+  "id": "tc_664599ee6c2fb2b4a1e4b3aa",
+  "age": "middle_age",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142211_664599ee6c2fb2b4a1e4b3aa_SSFM-V3_0.mp3",
+  "f0": 188.2,
+  "spread_st": 7.7,
+  "centroid": 1122
+ },
+ {
+  "name": "정아",
+  "id": "tc_641c10c956c8ba415e6a1101",
+  "age": "young_adult",
+  "uses": [
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/jeongah_mixdown.mp3",
+  "f0": 262.3,
+  "spread_st": 12.4,
+  "centroid": 1129
+ },
+ {
+  "name": "한솔",
+  "id": "tc_661797923ed12f31b61c4b5f",
+  "age": "young_adult",
+  "uses": [
+   "Audiobook/Storytelling"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142751_661797923ed12f31b61c4b5f_SSFM-V3_0.mp3",
+  "f0": 228.6,
+  "spread_st": 7.8,
+  "centroid": 1133
+ },
+ {
+  "name": "국희",
+  "id": "tc_5c789c31dabcfa0008b0a38c",
+  "age": "middle_age",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141013_5c789c31dabcfa0008b0a38c_SSFM-V3_0.mp3",
+  "f0": 254.0,
+  "spread_st": 9.0,
+  "centroid": 1139
+ },
+ {
+  "name": "예은",
+  "id": "tc_65f280c8bca6a9dc5c12c348",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017134650_65f280c8bca6a9dc5c12c348_SSFM-V3_0.mp3",
+  "f0": 285.7,
+  "spread_st": 3.2,
+  "centroid": 1157
+ },
+ {
+  "name": "자인",
+  "id": "tc_6809c111e5e8c73f8a0237b2",
+  "age": "middle_age",
+  "uses": [
+   "Conversational",
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142228_6809c111e5e8c73f8a0237b2_SSFM-V3_0.mp3",
+  "f0": 197.5,
+  "spread_st": 8.0,
+  "centroid": 1163
+ },
+ {
+  "name": "혜나",
+  "id": "tc_65d6f8ee2b58da07b6284a56",
+  "age": "young_adult",
+  "uses": [
+   "Ads/Promotion"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142839_65d6f8ee2b58da07b6284a56_SSFM-V3_0.mp3",
+  "f0": 285.7,
+  "spread_st": 8.5,
+  "centroid": 1164
+ },
+ {
+  "name": "수민",
+  "id": "tc_66e266f9c568136dce8164e5",
+  "age": "young_adult",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141748_66e266f9c568136dce8164e5_SSFM-V3_0.mp3",
+  "f0": 246.2,
+  "spread_st": 11.6,
+  "centroid": 1168
+ },
+ {
+  "name": "고운",
+  "id": "tc_68785db8ba9cd7503f27d921",
+  "age": "young_adult",
+  "uses": [
+   "Conversational",
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141005_68785db8ba9cd7503f27d921_SSFM-V3_0.mp3",
+  "f0": 219.2,
+  "spread_st": 11.6,
+  "centroid": 1183
+ },
+ {
+  "name": "은채",
+  "id": "tc_663343c5b1f85ebd9f4896b9",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer",
+   "News Reporter",
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142141_663343c5b1f85ebd9f4896b9_SSFM-V3_0.mp3",
+  "f0": 296.3,
+  "spread_st": 9.2,
+  "centroid": 1186
+ },
+ {
+  "name": "아린",
+  "id": "tc_67513c3cf30802da48949a14",
+  "age": "young_adult",
+  "uses": [
+   "Ads/Promotion"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017132438_67513c3cf30802da48949a14_SSFM-V3_0.mp3",
+  "f0": 254.0,
+  "spread_st": 11.4,
+  "centroid": 1188
+ },
+ {
+  "name": "지현",
+  "id": "tc_65f280ecf1a9fb325938fdf9",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142431_65f280ecf1a9fb325938fdf9_SSFM-V3_0.mp3",
+  "f0": 231.9,
+  "spread_st": 10.7,
+  "centroid": 1189
+ },
+ {
+  "name": "수윤",
+  "id": "tc_6763bef751dc3fb17792acaf",
+  "age": "young_adult",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141753_6763bef751dc3fb17792acaf_SSFM-V3_0.mp3",
+  "f0": 250.0,
+  "spread_st": 10.0,
+  "centroid": 1199
+ },
+ {
+  "name": "수빈",
+  "id": "tc_63aaec0d34ca719d00798a97",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/251021_remaining/251021_soobin.mp3",
+  "f0": 222.2,
+  "spread_st": 12.7,
+  "centroid": 1218
+ },
+ {
+  "name": "현경",
+  "id": "tc_5ecbbc5599979700087711d6",
+  "age": "middle_age",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250930101751_5ecbbc5599979700087711d6_SSFM-V3_0.mp3",
+  "f0": 216.2,
+  "spread_st": 8.4,
+  "centroid": 1253
+ },
+ {
+  "name": "민채",
+  "id": "tc_66b4523f259dc43de649c1d1",
+  "age": "young_adult",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141504_66b4523f259dc43de649c1d1_SSFM-V3_0.mp3",
+  "f0": 254.0,
+  "spread_st": 9.6,
+  "centroid": 1258
+ },
+ {
+  "name": "경숙",
+  "id": "tc_5ebea266728f5b00075e6215",
+  "age": "middle_age",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250930103456_5ebea266728f5b00075e6215_SSFM-V3_0.mp3",
+  "f0": 213.3,
+  "spread_st": 6.7,
+  "centroid": 1264
+ },
+ {
+  "name": "혜민",
+  "id": "tc_667ce80314cb3a612d6959e8",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251021123229_667ce80314cb3a612d6959e8_SSFM-V3_0.mp3",
+  "f0": 242.4,
+  "spread_st": 13.4,
+  "centroid": 1268
+ },
+ {
+  "name": "한영",
+  "id": "tc_6731b3ac075b04a944644234",
+  "age": "young_adult",
+  "uses": [
+   "Radio/Podcast",
+   "Audiobook/Storytelling"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142755_6731b3ac075b04a944644234_SSFM-V3_0.mp3",
+  "f0": 216.2,
+  "spread_st": 9.2,
+  "centroid": 1321
+ },
+ {
+  "name": "유라",
+  "id": "tc_61130d6cf89dd58a4c13295d",
+  "age": "young_adult",
+  "uses": [
+   "Documentary",
+   "Ads/Promotion",
+   "Audiobook/Storytelling",
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142116_61130d6cf89dd58a4c13295d_SSFM-V3_0.mp3",
+  "f0": 235.3,
+  "spread_st": 12.5,
+  "centroid": 1327
+ },
+ {
+  "name": "명희",
+  "id": "tc_5c789c347ad86500073a02cf",
+  "age": "middle_age",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141417_5c789c347ad86500073a02cf_SSFM-V3_0.mp3",
+  "f0": 238.8,
+  "spread_st": 11.3,
+  "centroid": 1337
+ },
+ {
+  "name": "가을",
+  "id": "tc_60f7a217279ffba711ce2958",
+  "age": "young_adult",
+  "uses": [
+   "Audiobook/Storytelling"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929140940_60f7a217279ffba711ce2958_SSFM-V3_0.mp3",
+  "f0": 262.3,
+  "spread_st": 11.2,
+  "centroid": 1341
+ },
+ {
+  "name": "한나",
+  "id": "tc_628d9e0e1374f7682602991b",
+  "age": "young_adult",
+  "uses": [
+   "Audiobook/Storytelling"
+  ],
+  "preview": "https://static2.typecast.ai/c/251021_remaining/251021_hanna.mp3",
+  "f0": 222.2,
+  "spread_st": 9.5,
+  "centroid": 1344
+ },
+ {
+  "name": "나진",
+  "id": "tc_5ebea185728f5b00075e61e3",
+  "age": "middle_age",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141102_5ebea185728f5b00075e61e3_SSFM-V3_0.mp3",
+  "f0": 222.2,
+  "spread_st": 11.1,
+  "centroid": 1347
+ },
+ {
+  "name": "시연",
+  "id": "tc_6568164fe05ddffee8b0e271",
+  "age": "young_adult",
+  "uses": [
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141842_6568164fe05ddffee8b0e271_SSFM-V3_0.mp3",
+  "f0": 213.3,
+  "spread_st": 10.1,
+  "centroid": 1351
+ },
+ {
+  "name": "서연",
+  "id": "tc_637cbfeef7f00f21e8a1c6c8",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141638_637cbfeef7f00f21e8a1c6c8_SSFM-V3_0.mp3",
+  "f0": 266.7,
+  "spread_st": 11.6,
+  "centroid": 1368
+ },
+ {
+  "name": "예나",
+  "id": "tc_61e748d0fd9fb2d2cacbb04d",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142027_61e748d0fd9fb2d2cacbb04d_SSFM-V3_0.mp3",
+  "f0": 250.0,
+  "spread_st": 11.0,
+  "centroid": 1372
+ },
+ {
+  "name": "원경",
+  "id": "tc_675a74035ff33c1eeff6255f",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017135530_675a74035ff33c1eeff6255f_SSFM-V3_0.mp3",
+  "f0": 235.3,
+  "spread_st": 8.6,
+  "centroid": 1373
+ },
+ {
+  "name": "미경",
+  "id": "tc_633d52c5febcba27f45eced7",
+  "age": "middle_age",
+  "uses": [
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141432_633d52c5febcba27f45eced7_SSFM-V3_0.mp3",
+  "f0": 228.6,
+  "spread_st": 12.1,
+  "centroid": 1382
+ },
+ {
+  "name": "나은",
+  "id": "tc_662a05cf14d4a303e5d0baa2",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250930105321_662a05cf14d4a303e5d0baa2_SSFM-V3_0.mp3",
+  "f0": 271.2,
+  "spread_st": 7.9,
+  "centroid": 1390
+ },
+ {
+  "name": "미선",
+  "id": "tc_65a8c7e1915a6295614f775b",
+  "age": "middle_age",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141436_65a8c7e1915a6295614f775b_SSFM-V3_0.mp3",
+  "f0": 262.3,
+  "spread_st": 12.8,
+  "centroid": 1396
+ },
+ {
+  "name": "예린",
+  "id": "tc_611c406d9540d10d3002e03a",
+  "age": "young_adult",
+  "uses": [
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142029_611c406d9540d10d3002e03a_SSFM-V3_0.mp3",
+  "f0": 228.6,
+  "spread_st": 9.4,
+  "centroid": 1400
+ },
+ {
+  "name": "수진",
+  "id": "tc_5c3c52ca5827e00008dd7f3a",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141757_5c3c52ca5827e00008dd7f3a_SSFM-V3_0.mp3",
+  "f0": 301.9,
+  "spread_st": 11.4,
+  "centroid": 1401
+ },
+ {
+  "name": "로미",
+  "id": "tc_61377f7ca4d286537b5aba6c",
+  "age": "young_adult",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141302_61377f7ca4d286537b5aba6c_SSFM-V3_0.mp3",
+  "f0": 271.2,
+  "spread_st": 8.2,
+  "centroid": 1404
+ },
+ {
+  "name": "최미란",
+  "id": "tc_65e02cf60c83f6b4209f4343",
+  "age": "young_adult",
+  "uses": [
+   "Audiobook/Storytelling",
+   "Announcer",
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142516_65e02cf60c83f6b4209f4343_SSFM-V3_0.mp3",
+  "f0": 246.2,
+  "spread_st": 6.6,
+  "centroid": 1408
+ },
+ {
+  "name": "최정",
+  "id": "tc_63e4665444a08572e32da6e1",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142520_63e4665444a08572e32da6e1_SSFM-V3_0.mp3",
+  "f0": 280.7,
+  "spread_st": 11.9,
+  "centroid": 1411
+ },
+ {
+  "name": "영희",
+  "id": "tc_5c3c52caea9791000747155e",
+  "age": "young_adult",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142025_5c3c52caea9791000747155e_SSFM-V3_0.mp3",
+  "f0": 285.7,
+  "spread_st": 10.5,
+  "centroid": 1411
+ },
+ {
+  "name": "혜원",
+  "id": "tc_640997db84d8713b1114f32a",
+  "age": "middle_age",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142847_640997db84d8713b1114f32a_SSFM-V3_0.mp3",
+  "f0": 290.9,
+  "spread_st": 8.7,
+  "centroid": 1413
+ },
+ {
+  "name": "세희",
+  "id": "tc_611c3f692fac944dff493a04",
+  "age": "young_adult",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/sehee_mixdown.mp3",
+  "f0": 231.9,
+  "spread_st": 10.4,
+  "centroid": 1419
+ },
+ {
+  "name": "하린",
+  "id": "tc_6271b9b22b3bf7947c23e9bc",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142729_6271b9b22b3bf7947c23e9bc_SSFM-V3_0.mp3",
+  "f0": 250.0,
+  "spread_st": 9.5,
+  "centroid": 1426
+ },
+ {
+  "name": "소혜",
+  "id": "tc_642f9d147ce3f79717423466",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017114232_642f9d147ce3f79717423466_SSFM-V3_0.mp3",
+  "f0": 262.3,
+  "spread_st": 11.4,
+  "centroid": 1436
+ },
+ {
+  "name": "오미자",
+  "id": "tc_6059db64e2d12a32cce1b0c7",
+  "age": "middle_age",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017134906_6059db64e2d12a32cce1b0c7_SSFM-V3_0.mp3",
+  "f0": 207.8,
+  "spread_st": 7.9,
+  "centroid": 1443
+ },
+ {
+  "name": "진서",
+  "id": "tc_65bb3a1976b69213594357fc",
+  "age": "young_adult",
+  "uses": [
+   "Ads/Promotion",
+   "TikTok/Reels/Shorts",
+   "Documentary",
+   "Audiobook/Storytelling",
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142439_65bb3a1976b69213594357fc_SSFM-V3_0.mp3",
+  "f0": 258.1,
+  "spread_st": 10.5,
+  "centroid": 1479
+ },
+ {
+  "name": "주은",
+  "id": "tc_63b6650cd4db9f9f9bc4ad84",
+  "age": "young_adult",
+  "uses": [
+   "News Reporter"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/jooeun_mixdown.mp3",
+  "f0": 290.9,
+  "spread_st": 9.8,
+  "centroid": 1513
+ },
+ {
+  "name": "하나",
+  "id": "tc_61659cc118732016a95fe7c6",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142725_61659cc118732016a95fe7c6_SSFM-V3_0.mp3",
+  "f0": 254.0,
+  "spread_st": 15.5,
+  "centroid": 1515
+ },
+ {
+  "name": "유민",
+  "id": "tc_648187771b32756f613acec3",
+  "age": "young_adult",
+  "uses": [
+   "Audiobook/Storytelling"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_yuyuyu/251023_yumin.mp3",
+  "f0": 205.1,
+  "spread_st": 5.2,
+  "centroid": 1545
+ },
+ {
+  "name": "지희",
+  "id": "tc_60a3c91b4bc87f0d62b09a50",
+  "age": "young_adult",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142435_60a3c91b4bc87f0d62b09a50_SSFM-V3_0.mp3",
+  "f0": 254.0,
+  "spread_st": 12.4,
+  "centroid": 1549
+ },
+ {
+  "name": "미진",
+  "id": "tc_63745dd5e0b6db6f3cf10924",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141450_63745dd5e0b6db6f3cf10924_SSFM-V3_0.mp3",
+  "f0": 250.0,
+  "spread_st": 10.3,
+  "centroid": 1569
+ },
+ {
+  "name": "애란",
+  "id": "tc_5d01a52c63338e00072b8c9f",
+  "age": "middle_age",
+  "uses": [
+   "E-learning/Explainer",
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141936_5d01a52c63338e00072b8c9f_SSFM-V3_0.mp3",
+  "f0": 266.7,
+  "spread_st": 11.3,
+  "centroid": 1569
+ },
+ {
+  "name": "미리내",
+  "id": "tc_6620d242904c5eef906092eb",
+  "age": "young_adult",
+  "uses": [
+   "News Reporter",
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141434_6620d242904c5eef906092eb_SSFM-V3_0.mp3",
+  "f0": 280.7,
+  "spread_st": 9.1,
+  "centroid": 1571
+ },
+ {
+  "name": "지윤",
+  "id": "tc_62296627a4ff5d1ee6bf4ecc",
+  "age": "young_adult",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142428_62296627a4ff5d1ee6bf4ecc_SSFM-V3_0.mp3",
+  "f0": 225.4,
+  "spread_st": 14.4,
+  "centroid": 1576
+ },
+ {
+  "name": "혜진",
+  "id": "tc_6a21054564d676539427427e",
+  "age": "middle_age",
+  "uses": [
+   "Conversational",
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/260604_hyejin/hyejin_mixdown.mp3",
+  "f0": 262.3,
+  "spread_st": 9.7,
+  "centroid": 1577
+ },
+ {
+  "name": "금희",
+  "id": "tc_5c789c337ad86500073a02cd",
+  "age": "middle_age",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250930104458_5c789c337ad86500073a02cd_SSFM-V3_0.mp3",
+  "f0": 258.1,
+  "spread_st": 10.1,
+  "centroid": 1589
+ },
+ {
+  "name": "다은",
+  "id": "tc_692799c46508f6b9468c54c7",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts",
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/251127_daeun/daeun_mixdown.mp3",
+  "f0": 258.1,
+  "spread_st": 9.5,
+  "centroid": 1595
+ },
+ {
+  "name": "선하",
+  "id": "tc_649408f268febb61286eec85",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141652_649408f268febb61286eec85_SSFM-V3_0.mp3",
+  "f0": 285.7,
+  "spread_st": 10.6,
+  "centroid": 1598
+ },
+ {
+  "name": "정원",
+  "id": "tc_5d01a529bb04140008a23f36",
+  "age": "middle_age",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142313_5d01a529bb04140008a23f36_SSFM-V3_0.mp3",
+  "f0": 280.7,
+  "spread_st": 10.3,
+  "centroid": 1622
+ },
+ {
+  "name": "세나",
+  "id": "tc_622964d6255364be41659078",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/sena_mixdown.mp3",
+  "f0": 254.0,
+  "spread_st": 9.5,
+  "centroid": 1632
+ },
+ {
+  "name": "정희",
+  "id": "tc_5ebea1a364afaf00087fc2fb",
+  "age": "young_adult",
+  "uses": [
+   "E-learning/Explainer"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142320_5ebea1a364afaf00087fc2fb_SSFM-V3_0.mp3",
+  "f0": 283.2,
+  "spread_st": 11.6,
+  "centroid": 1649
+ },
+ {
+  "name": "소진",
+  "id": "tc_666a9871abcf27a5169850d0",
+  "age": "young_adult",
+  "uses": [
+   "Audiobook/Storytelling",
+   "Radio/Podcast",
+   "Ads/Promotion"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141735_666a9871abcf27a5169850d0_SSFM-V3_0.mp3",
+  "f0": 266.7,
+  "spread_st": 9.2,
+  "centroid": 1661
+ },
+ {
+  "name": "현진",
+  "id": "tc_5d01a522bb04140008a23f34",
+  "age": "young_adult",
+  "uses": [
+   "Voicemail/Voice Assistant"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/hyunjin_mixdown.mp3",
+  "f0": 266.7,
+  "spread_st": 11.4,
+  "centroid": 1661
+ },
+ {
+  "name": "소라",
+  "id": "tc_62c3de188bb43a2b3ab3ef08",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017114031_62c3de188bb43a2b3ab3ef08_SSFM-V3_0.mp3",
+  "f0": 222.2,
+  "spread_st": 11.2,
+  "centroid": 1701
+ },
+ {
+  "name": "유진",
+  "id": "tc_64818767272f62f8ddb73948",
+  "age": "young_adult",
+  "uses": [
+   "Audiobook/Storytelling"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_yuyuyu/251023_yujin.mp3",
+  "f0": 238.8,
+  "spread_st": 12.8,
+  "centroid": 1711
+ },
+ {
+  "name": "신혜",
+  "id": "tc_5ecbbc4b0fbab10007bb3c7d",
+  "age": "young_adult",
+  "uses": [
+   "Documentary"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141855_5ecbbc4b0fbab10007bb3c7d_SSFM-V3_0.mp3",
+  "f0": 242.4,
+  "spread_st": 12.5,
+  "centroid": 1723
+ },
+ {
+  "name": "민지",
+  "id": "tc_5eb55ce920d1b60016e91de6",
+  "age": "young_adult",
+  "uses": [
+   "Documentary",
+   "Audiobook/Storytelling"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/minji_mixdown.mp3",
+  "f0": 246.2,
+  "spread_st": 11.6,
+  "centroid": 1726
+ },
+ {
+  "name": "은하",
+  "id": "tc_65cd94c242e2d9d9c9c905e7",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017141243_65cd94c242e2d9d9c9c905e7_SSFM-V3_0.mp3",
+  "f0": 301.9,
+  "spread_st": 7.1,
+  "centroid": 1740
+ },
+ {
+  "name": "유빈",
+  "id": "tc_64818789444a9ae3e2e9f89d",
+  "age": "young_adult",
+  "uses": [
+   "Audiobook/Storytelling",
+   "Radio/Podcast",
+   "Ads/Promotion"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_yuyuyu/251023_yubin.mp3",
+  "f0": 296.3,
+  "spread_st": 9.3,
+  "centroid": 1743
+ },
+ {
+  "name": "청아",
+  "id": "tc_67513c5a498d6471f99d48fc",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/chungah_mixdown.mp3",
+  "f0": 254.0,
+  "spread_st": 12.2,
+  "centroid": 1744
+ },
+ {
+  "name": "연아",
+  "id": "tc_63e4665f44a08572e32da6e9",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142006_63e4665f44a08572e32da6e9_SSFM-V3_0.mp3",
+  "f0": 242.4,
+  "spread_st": 10.3,
+  "centroid": 1745
+ },
+ {
+  "name": "윤서",
+  "id": "tc_66d91c60da8dd20be59cd40b",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142131_66d91c60da8dd20be59cd40b_SSFM-V3_0.mp3",
+  "f0": 301.9,
+  "spread_st": 9.8,
+  "centroid": 1752
+ },
+ {
+  "name": "이나",
+  "id": "tc_62686be9deec4c1bb7fd077c",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017141409_62686be9deec4c1bb7fd077c_SSFM-V3_0.mp3",
+  "f0": 250.0,
+  "spread_st": 10.3,
+  "centroid": 1757
+ },
+ {
+  "name": "재이",
+  "id": "tc_612ed01c7eb720fddd3ddedf",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017142358_612ed01c7eb720fddd3ddedf_SSFM-V3_0.mp3",
+  "f0": 254.0,
+  "spread_st": 7.8,
+  "centroid": 1772
+ },
+ {
+  "name": "개나리",
+  "id": "tc_606c6b127b9f53b4cd1743f5",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250930103141_606c6b127b9f53b4cd1743f5_SSFM-V3_0.mp3",
+  "f0": 235.3,
+  "spread_st": 9.4,
+  "centroid": 1779
+ },
+ {
+  "name": "혜리",
+  "id": "tc_62e8f21e979b3860fe2f6a24",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts",
+   "Ads/Promotion"
+  ],
+  "preview": "https://static2.typecast.ai/c/251023_preview/hyelee_mixdown.mp3",
+  "f0": 275.9,
+  "spread_st": 10.7,
+  "centroid": 1836
+ },
+ {
+  "name": "수지",
+  "id": "tc_62686cc30e70d8c6b0d9b010",
+  "age": "young_adult",
+  "uses": [
+   "Radio/Podcast"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929141755_62686cc30e70d8c6b0d9b010_SSFM-V3_0.mp3",
+  "f0": 275.9,
+  "spread_st": 9.9,
+  "centroid": 1886
+ },
+ {
+  "name": "소율",
+  "id": "tc_62b17f026fe31dc29ac8e94e",
+  "age": "young_adult",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017114147_62b17f026fe31dc29ac8e94e_SSFM-V3_0.mp3",
+  "f0": 264.5,
+  "spread_st": 16.0,
+  "centroid": 1996
+ },
+ {
+  "name": "아리",
+  "id": "tc_6047863af12456064b35354e",
+  "age": "young_adult",
+  "uses": [
+   "Conversational"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017132406_6047863af12456064b35354e_SSFM-V3_0.mp3",
+  "f0": 400.0,
+  "spread_st": 0.0,
+  "centroid": 2050
+ },
+ {
+  "name": "혜지",
+  "id": "tc_65435f8ebcdf44d6ed8d5acb",
+  "age": "middle_age",
+  "uses": [
+   "Game"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250929142851_65435f8ebcdf44d6ed8d5acb_SSFM-V3_0.mp3",
+  "f0": 275.9,
+  "spread_st": 10.0,
+  "centroid": 2079
+ },
+ {
+  "name": "연자",
+  "id": "tc_65b21530d893c47d5751840f",
+  "age": "middle_age",
+  "uses": [
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251017134235_65b21530d893c47d5751840f_SSFM-V3_0.mp3",
+  "f0": 280.7,
+  "spread_st": 9.8,
+  "centroid": 2138
+ },
+ {
+  "name": "보라",
+  "id": "tc_618203f635ea62f8574c7d8a",
+  "age": "young_adult",
+  "uses": [
+   "Game"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/251016120209_618203f635ea62f8574c7d8a_SSFM-V3_0.mp3",
+  "f0": 296.3,
+  "spread_st": 9.3,
+  "centroid": 2153
+ },
+ {
+  "name": "가희",
+  "id": "tc_624ccc04adcd568510764d3f",
+  "age": "young_adult",
+  "uses": [
+   "Conversational",
+   "Ads/Promotion",
+   "Game",
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/audio_QA-approved_1761021415637/250930102529_624ccc04adcd568510764d3f_SSFM-V3_0.mp3",
+  "f0": 271.2,
+  "spread_st": 9.1,
+  "centroid": 2307
+ },
+ {
+  "name": "정숙",
+  "id": "tc_694b51e6dc12c8f4ec1a959c",
+  "age": "middle_age",
+  "uses": [
+   "Conversational",
+   "TikTok/Reels/Shorts"
+  ],
+  "preview": "https://static2.typecast.ai/c/251224_jungsook/jungsook_mixdown.mp3",
+  "f0": 296.3,
+  "spread_st": 9.7,
+  "centroid": 2499
+ }
+]

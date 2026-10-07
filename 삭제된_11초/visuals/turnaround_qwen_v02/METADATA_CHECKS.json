@@ -1,0 +1,217 @@
+[
+  {
+    "id": "CHAR_01",
+    "size": [
+      2560,
+      1536
+    ],
+    "reference_sha256": "3befd9d098183bc6126742f4de93ac5174f2a1e873a7ee81a1ea7d2e8ecd69f6",
+    "embedded_reference_hash_matches": true,
+    "prompt_matches": true,
+    "reference_resolution": 0,
+    "reference_1": [
+      "7",
+      0
+    ],
+    "reference_2": [
+      "34",
+      0
+    ],
+    "face_crop": {
+      "width": 384,
+      "height": 384,
+      "x": 320,
+      "y": 0,
+      "image": [
+        "7",
+        0
+      ]
+    },
+    "sampler": {
+      "seed": 2026100501,
+      "steps": 60,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ]
+    },
+    "cache": {
+      "device": "cpu",
+      "dtype": "default",
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "output": "outputs/CHAR_01_서윤_turnaround_v02_HQ.png",
+    "output_sha256": "644d52a40e08ea4a031cb775a55069b8781e8e93fcabd917d0f9aafadc587fad"
+  },
+  {
+    "id": "CHAR_03",
+    "size": [
+      2560,
+      1536
+    ],
+    "reference_sha256": "a3ccdee45b2bd3b4b9b824d76f7faf6e73d407ec21e0bd2a532ae449f2557648",
+    "embedded_reference_hash_matches": true,
+    "prompt_matches": true,
+    "reference_resolution": 0,
+    "reference_1": [
+      "7",
+      0
+    ],
+    "reference_2": [
+      "34",
+      0
+    ],
+    "face_crop": {
+      "width": 384,
+      "height": 384,
+      "x": 320,
+      "y": 0,
+      "image": [
+        "7",
+        0
+      ]
+    },
+    "sampler": {
+      "seed": 2026100503,
+      "steps": 60,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ]
+    },
+    "cache": {
+      "device": "cpu",
+      "dtype": "default",
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "output": "outputs/CHAR_03_지수_turnaround_v02_HQ.png",
+    "output_sha256": "6198dd2232480b978c31e3cec30c98100256c2a38c56bf9072d0b18066007f6c"
+  },
+  {
+    "id": "CHAR_01_REAR_REPAIR",
+    "output": "outputs/CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+    "size": [
+      2560,
+      1536
+    ],
+    "original_reference_hash_verified": true,
+    "target_sheet_hash_verified": true,
+    "actual_prompt_verified": true,
+    "composite": {
+      "x": 1280,
+      "y": 0,
+      "resize_source": false,
+      "destination": [
+        "7",
+        0
+      ],
+      "source": [
+        "21",
+        0
+      ]
+    },
+    "non_rear_panels_max_RGB_channel_delta": 0,
+    "output_sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f"
+  },
+  {
+    "id": "CHAR_02",
+    "output": "outputs/CHAR_02_도현_turnaround_v02_HQ.png",
+    "size": [
+      2560,
+      1536
+    ],
+    "reference_sha256": "19e55c85fe02aa3152e49fcd9d8c0a9369cd346436dd44b6f794c4fd4fad447d",
+    "embedded_reference_hash_matches": true,
+    "prompt_matches": true,
+    "reference_resolution": 0,
+    "face_crop": {
+      "width": 384,
+      "height": 384,
+      "x": 320,
+      "y": 0,
+      "image": [
+        "7",
+        0
+      ]
+    },
+    "reference_1": [
+      "7",
+      0
+    ],
+    "reference_2": [
+      "34",
+      0
+    ],
+    "sampler": {
+      "seed": 2026100502,
+      "steps": 60,
+      "cfg": 1.0,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1.0,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ]
+    },
+    "cache": {
+      "device": "cpu",
+      "dtype": "default",
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "output_sha256": "2bcc683de8cc8a7a73d043e787ca1e0b261623d1d5c804e5795624d5aab987ca"
+  }
+]

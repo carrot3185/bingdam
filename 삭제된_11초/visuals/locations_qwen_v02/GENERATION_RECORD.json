@@ -1,0 +1,431 @@
+{
+  "engine": "local ComfyUI Desktop / Deno Qwen-Image 2.1 T2I + Edit (workflow copy)",
+  "date": "2026-10-05",
+  "design_status": "검토용 생성 시안; 사용자 확정 전",
+  "user_direction": "로케이션 완성도·디테일 상향. 레퍼런스 https://www.haanong.com/portfolio/project7-sr 는 마감·디테일만 반영, 기존 중형 아파트 구조 유지 (사용자 선택 2026-10-05).",
+  "reference_usage": "레퍼런스 사진은 모델에 입력하지 않음. 관찰한 마감 요소(간접조명 코브, 넓은 원목 마루, 무손잡이 수납, 석재 상판, 다크 메탈 선반, 화분, 레이어드 커튼, 건축 사진 노출)를 텍스트로 번역.",
+  "settings": {
+    "width": 2560,
+    "height": 1440,
+    "steps": 60,
+    "cfg": 1,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "cache": "cpu/default",
+    "edit_encoder_resolution": 1536
+  },
+  "runs": [
+    {
+      "id": "HOME_MASTER_a",
+      "view": "HOME_MASTER",
+      "title": "집 전체 · 현관에서 거실",
+      "seed": 202610052100,
+      "prompt_id": "2ee8e987-8f25-4d49-b18e-7d411d632988",
+      "node_errors": {},
+      "reference": null,
+      "status": "generated",
+      "visual_review": "비채택",
+      "output": "outputs/HOME_MASTER_a.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 150.2,
+      "sha256": "cdb45e90beede493813a00fa98505e0856d2867667340ea1ac1812010d3adfad",
+      "observed": "배치·마감은 지시대로이나 식탁 의자가 6개로 보임(지시 4개). 오른쪽 선반이 낮은 사이드 테이블로 생성."
+    },
+    {
+      "id": "HOME_MASTER_b",
+      "view": "HOME_MASTER",
+      "title": "집 전체 · 현관에서 거실",
+      "seed": 202610052150,
+      "prompt_id": "ef8690de-2a56-4f9e-a3e6-a62918b2df28",
+      "node_errors": {},
+      "reference": null,
+      "status": "generated",
+      "visual_review": "채택(기준 뷰)",
+      "output": "outputs/HOME_MASTER_b.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 145.1,
+      "sha256": "32cdac49777d410d8d96e196e3e63f3d83250413ab2bdb540a47b00eb97f3ca9",
+      "observed": "왼쪽 무손잡이 주방·석재 백스플래시, 의자 정확히 4개(긴 변마다 2), 오른쪽 소파·원형 석재 테이블·러그·다크 메탈 선반·올리브나무, 안쪽 레이어드 커튼 창, 천장 간접조명 코브·다운라이트·에어컨 디퓨저 확인. 좌하단 현관 타일이 거실 바닥보다 약간 높은 단처럼 보임(한국 아파트의 낮은 현관과 다름)."
+    },
+    {
+      "id": "HOME_REVERSE",
+      "view": "HOME_REVERSE",
+      "title": "집 역방향 · 거실에서 현관",
+      "seed": 202610052101,
+      "prompt_id": "5ffab83b-d347-42e0-ac78-33baf6e423f2",
+      "node_errors": {},
+      "reference": {
+        "source": "outputs\\HOME_MASTER_b.png",
+        "uploaded_name": "HOME_MASTER_b.png",
+        "sha256": "32cdac49777d410d8d96e196e3e63f3d83250413ab2bdb540a47b00eb97f3ca9",
+        "destination": "16 images.image_1"
+      },
+      "status": "generated",
+      "visual_review": "보정 전",
+      "output": "outputs/HOME_REVERSE.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 235.6,
+      "sha256": "957a4ddf7080e0b5578312cc445eaa9ff5b28f6dcd5de4ef2098a211661c970a",
+      "observed": "좌측 소파·우측 식탁/주방·정면 현관문·문짝 도어록 확인. 그러나 현관 쪽 벽에 창·커튼·올리브나무가 추가돼 기준 뷰와 창 위치가 모순."
+    },
+    {
+      "id": "LOC_02_KITCHEN",
+      "view": "LOC_02_KITCHEN",
+      "title": "주방에서 식탁·거실",
+      "seed": 202610052102,
+      "prompt_id": "e98288d3-ecf1-4db6-8f77-9cb2301de57f",
+      "node_errors": {},
+      "reference": {
+        "source": "outputs\\HOME_MASTER_b.png",
+        "uploaded_name": "HOME_MASTER_b.png",
+        "sha256": "32cdac49777d410d8d96e196e3e63f3d83250413ab2bdb540a47b00eb97f3ca9",
+        "destination": "16 images.image_1"
+      },
+      "status": "generated",
+      "visual_review": "채택",
+      "output": "outputs/LOC_02_KITCHEN.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 230.1,
+      "sha256": "a17cb8d0c8888d40265000327a54a1cd7f6138fb7d7cfde65a2c840662d20392",
+      "observed": "전경 석재 상판·언더마운트 싱크·수전·냄비, 중경 식탁(의자 4)·펜던트, 후경 소파·선반·올리브나무·창이 기준 뷰와 일치. 전경 카운터는 낮은 반도형 연장부로 해석됨(높은 아일랜드 아님)."
+    },
+    {
+      "id": "LOC_03_ENTRY",
+      "view": "LOC_03_ENTRY",
+      "title": "현관과 출구",
+      "seed": 202610052103,
+      "prompt_id": "0b01801e-9283-45ef-81bf-442e517fcbc2",
+      "node_errors": {},
+      "reference": {
+        "source": "outputs\\HOME_MASTER_b.png",
+        "uploaded_name": "HOME_MASTER_b.png",
+        "sha256": "32cdac49777d410d8d96e196e3e63f3d83250413ab2bdb540a47b00eb97f3ca9",
+        "destination": "16 images.image_1"
+      },
+      "status": "generated",
+      "visual_review": "보정 전",
+      "output": "outputs/LOC_03_ENTRY.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 235.2,
+      "sha256": "ab60084f04cafc425da61f865ead6c412bc91e811a022c3ec27fa9c6177755b9",
+      "observed": "마감 디테일 양호. 그러나 식탁이 왼쪽·신발장과 도어록이 오른쪽으로 HOME_REVERSE와 좌우 반대이고, 문 안쪽에 경첩이 보여 안여닫이로 읽힘."
+    },
+    {
+      "id": "LOC_03_ENTRY_flip",
+      "view": "LOC_03_ENTRY",
+      "type": "post-process: horizontal flip (PIL), no model",
+      "source": "outputs/LOC_03_ENTRY.png",
+      "source_sha256": "ab60084f04cafc425da61f865ead6c412bc91e811a022c3ec27fa9c6177755b9",
+      "reason": "HOME_REVERSE에서 현관을 볼 때 식탁·주방이 오른쪽, 신발장·도어록이 왼쪽. 원본 현관 뷰가 반대였음.",
+      "output": "outputs/LOC_03_ENTRY_flip.png",
+      "sha256": "b90089119dc600036c5a2db8a9493187b7989a09f5ec4d49c0a16c9226210b88",
+      "status": "generated",
+      "visual_review": "중간본",
+      "observed": "좌우 반전으로 식탁 오른쪽·신발장 왼쪽·도어록 문 왼쪽 가장자리 → HOME_REVERSE와 일치. 경첩은 오른쪽으로 이동했을 뿐 남아 있음."
+    },
+    {
+      "id": "HOME_REVERSE_v02",
+      "view": "HOME_REVERSE_v02",
+      "title": "집 역방향 · 거실에서 현관 (보정)",
+      "seed": 202610052200,
+      "prompt_id": "460809c9-c4ba-4273-bdf6-633083ab6fd3",
+      "node_errors": {},
+      "reference": {
+        "source": "outputs\\HOME_REVERSE.png",
+        "uploaded_name": "HOME_REVERSE (1).png",
+        "sha256": "957a4ddf7080e0b5578312cc445eaa9ff5b28f6dcd5de4ef2098a211661c970a",
+        "destination": "16 images.image_1"
+      },
+      "status": "generated",
+      "visual_review": "채택",
+      "output": "outputs/HOME_REVERSE_v02.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 235.3,
+      "sha256": "c0d20dea94d034816b6a5cd526bbb928a77a8004a1d31aef3e0ccc4dfdee1317",
+      "observed": "창·커튼·올리브나무 제거, 이어지는 아이보리 벽으로 대체 확인. 소파·러그·식탁·주방·현관문·조명 유지."
+    },
+    {
+      "id": "LOC_03_ENTRY_v02",
+      "view": "LOC_03_ENTRY_v02",
+      "title": "현관과 출구 (보정)",
+      "seed": 202610052201,
+      "prompt_id": "542d63b7-fb69-4b1e-b032-c809d05cbb63",
+      "node_errors": {},
+      "reference": {
+        "source": "outputs\\LOC_03_ENTRY_flip.png",
+        "uploaded_name": "LOC_03_ENTRY_flip.png",
+        "sha256": "b90089119dc600036c5a2db8a9493187b7989a09f5ec4d49c0a16c9226210b88",
+        "destination": "16 images.image_1"
+      },
+      "status": "generated",
+      "visual_review": "채택",
+      "output": "outputs/LOC_03_ENTRY_v02.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 255.3,
+      "sha256": "4b178951fcf217b24637a26ed46aa327e0abedd5f05ab861b9002676b95fcfe9",
+      "observed": "문 안쪽 경첩 제거, 매끈한 문틀만 남음 확인. 도어록·손잡이·신발장·신발·타일·금속 단차 몰딩·식탁/의자 전경 유지."
+    },
+    {
+      "id": "LOC_04_CORRIDOR_v02",
+      "view": "LOC_04_CORRIDOR_v02",
+      "title": "복도와 엘리베이터 동선 (디테일 상향)",
+      "seed": 202610052300,
+      "prompt_id": "6108c8ae-4541-4875-a590-92edb72fe51d",
+      "node_errors": {},
+      "reference": {
+        "source": "..\\locations_qwen_v01\\outputs\\LOC_04_CORRIDOR.png",
+        "uploaded_name": "LOC_04_CORRIDOR.png",
+        "sha256": "ca54f04ded996211aa586354a9b94a5926efbe43114023da65d1ef9ebd85f7c6",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "outputs\\LOC_03_ENTRY_v02.png",
+        "uploaded_name": "LOC_03_ENTRY_v02.png",
+        "sha256": "4b178951fcf217b24637a26ed46aa327e0abedd5f05ab861b9002676b95fcfe9",
+        "destination": "16 images.image_2"
+      },
+      "status": "generated",
+      "visual_review": "채택(대표)",
+      "output": "outputs/LOC_04_CORRIDOR_v02.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 300.4,
+      "sha256": "30f98fd0aacf5f287170703238f5892d92c3146b3e783d30b527c78424cfdeab",
+      "observed": "v01 구도(왼쪽 앞 집 문, 짧은 복도, 왼쪽 오목부, 끝 엘리베이터) 유지. 그레이지 대형 패널·얇은 리빌, 연속 선형 LED 코브, 대형 웜그레이 타일, 다운라이트·감지기, 스테인리스 엘리베이터 문 확인. 문은 확정 현관문 디자인(웜그레이, 세로 리빌)과 일치. 단 문짝이 개구부 안쪽에 있고 경첩이 먼 쪽에 보여 안여닫이·반대 손잡이로 읽힘(미해결)."
+    },
+    {
+      "id": "LOC_06_GARAGE_MASTER",
+      "view": "LOC_06_GARAGE_MASTER",
+      "title": "지하주차장 기준 뷰 (레퍼런스 디벨롭)",
+      "seed": 202610052310,
+      "prompt_id": "cefe56d6-e6fe-4c4a-a3aa-8e2cfb9a7443",
+      "node_errors": {},
+      "reference": null,
+      "reference2": null,
+      "status": "generated",
+      "visual_review": "채택(디자인 기준)",
+      "output": "outputs/LOC_06_GARAGE_MASTER.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 145.1,
+      "sha256": "7d3b1e9e524ad02f6936649c8447fc2ff751ab3fe0ff3df7028d906049dc2d3c",
+      "observed": "사용자 레퍼런스의 검은 루버 천장·선형 LED·돔 CCTV, 화강석 페이버·어두운 화강석 구획선, 차콜 기둥과 노랑·검정 모서리 보호대, 블루 LED 테두리의 목재 루버 끝벽, 왼쪽 유리문 엘리베이터 홀 반영. 번호판은 빈칸, 판독 가능한 로고 없음. 남색·버건디 세단 그릴 형태가 특정 브랜드를 연상시킬 수 있음."
+    },
+    {
+      "id": "LOC_05_ELEVATOR_v02",
+      "view": "LOC_05_ELEVATOR_v02",
+      "title": "엘리베이터 내부 (디테일 상향)",
+      "seed": 202610052320,
+      "prompt_id": "6ad5d535-70ad-4f80-b391-66f72a15760f",
+      "node_errors": {},
+      "reference": {
+        "source": "..\\locations_qwen_v01\\outputs\\LOC_05_ELEVATOR.png",
+        "uploaded_name": "LOC_05_ELEVATOR.png",
+        "sha256": "68f60825b1167dc5275dc08a9db7b90cbc341d52a3e085f25342161b5a4b17b4",
+        "destination": "16 images.image_1"
+      },
+      "reference2": {
+        "source": "outputs\\LOC_04_CORRIDOR_v02.png",
+        "uploaded_name": "LOC_04_CORRIDOR_v02.png",
+        "sha256": "30f98fd0aacf5f287170703238f5892d92c3146b3e783d30b527c78424cfdeab",
+        "destination": "16 images.image_2"
+      },
+      "status": "generated",
+      "visual_review": "채택",
+      "output": "outputs/LOC_05_ELEVATOR_v02.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 315.3,
+      "sha256": "7f5bb2815fb2c80f532e6d6046adc3fcea47933d2a86fee6c1bbcecf17aa38ac",
+      "observed": "v01 정면 구도 유지. 복도 v02와 같은 패널·타일·걸레받이, 헤어라인 스테인리스 문·프레임, 웜그레이 뒷벽과 가로 손잡이, 어두운 석재풍 바닥, 매입 조명판 확인. 뒷벽 패널 제거됨. 버튼 패널은 오른쪽 측벽이지만 문 옆이 아니라 안쪽(뒷벽 가까이) 위치 — 한 걸음 들어가야 오른손이 닿음."
+    },
+    {
+      "id": "LOC_06_GARAGE_DASHCAM",
+      "view": "LOC_06_GARAGE_DASHCAM",
+      "title": "블랙박스 시점 지하주차장 (디벨롭)",
+      "seed": 202610052330,
+      "prompt_id": "c95af126-87b2-4cd6-8082-64939f232144",
+      "node_errors": {},
+      "reference": {
+        "source": "outputs\\LOC_06_GARAGE_MASTER.png",
+        "uploaded_name": "LOC_06_GARAGE_MASTER.png",
+        "sha256": "7d3b1e9e524ad02f6936649c8447fc2ff751ab3fe0ff3df7028d906049dc2d3c",
+        "destination": "16 images.image_1"
+      },
+      "reference2": null,
+      "status": "generated",
+      "visual_review": "비채택",
+      "output": "outputs/LOC_06_GARAGE_DASHCAM.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 250.7,
+      "sha256": "2f4375927191180fd7ab0d4e1fbfc765ffb272a2eca7bab3f625caf0134af1eb",
+      "observed": "기준 뷰 구도를 그대로 두고 하단에 대시보드만 추가됨. 차가 통로 한가운데 선 꼴이라 주차 블랙박스로 부적합, 블랙박스 질감도 약함."
+    },
+    {
+      "id": "LOC_06_GARAGE_DASHCAM_v02",
+      "view": "LOC_06_GARAGE_DASHCAM_v02",
+      "title": "블랙박스 시점 지하주차장 (재구도)",
+      "seed": 202610052350,
+      "prompt_id": "34868534-a482-4fea-96df-d9ee076e8088",
+      "node_errors": {},
+      "reference": {
+        "source": "outputs\\LOC_06_GARAGE_MASTER.png",
+        "uploaded_name": "LOC_06_GARAGE_MASTER.png",
+        "sha256": "7d3b1e9e524ad02f6936649c8447fc2ff751ab3fe0ff3df7028d906049dc2d3c",
+        "destination": "16 images.image_1"
+      },
+      "reference2": null,
+      "status": "generated",
+      "visual_review": "보정 전",
+      "output": "outputs/LOC_06_GARAGE_DASHCAM_v02.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 281.0,
+      "sha256": "3e0dd3b02ba45f88e075ca42384eaeed16b8564e47e704c5c3b8806fbcc76ce0",
+      "observed": "후진 주차 차량에서 통로를 가로질러 맞은편 주차열을 보는 새 구도 성공. 차 앞 통로가 비어 있고 밝음. 그러나 왼쪽 흰 차 주변에 요청하지 않은 인물 3명 생성(v01과 같은 실패 유형)."
+    },
+    {
+      "id": "LOC_04_CORRIDOR_v03",
+      "view": "LOC_04_CORRIDOR_v03",
+      "title": "복도 (문 바깥여닫이 보정)",
+      "seed": 202610052340,
+      "prompt_id": "58775559-7039-41be-a0c6-c5f97f922d37",
+      "node_errors": {},
+      "reference": {
+        "source": "outputs\\LOC_04_CORRIDOR_v02.png",
+        "uploaded_name": "LOC_04_CORRIDOR_v02.png",
+        "sha256": "30f98fd0aacf5f287170703238f5892d92c3146b3e783d30b527c78424cfdeab",
+        "destination": "16 images.image_1"
+      },
+      "reference2": null,
+      "status": "generated",
+      "visual_review": "비채택",
+      "output": "outputs/LOC_04_CORRIDOR_v03.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 250.6,
+      "sha256": "673fddcaa3c29ad11737fe75a097743945d5b9d9f3f37dcae6b2a30a6ad4ab9e",
+      "observed": "바깥여닫이(카메라 쪽 경첩, 복도로 펼친 문짝) 보정 시도. 문 위치·경첩 측이 거의 그대로 남아 보정 실패. v02와 사실상 동일해 v02를 대표로 유지."
+    },
+    {
+      "id": "LOC_06_GARAGE_DASHCAM_v03",
+      "view": "LOC_06_GARAGE_DASHCAM_v03",
+      "title": "블랙박스 시점 지하주차장 (인물 제거)",
+      "seed": 202610052360,
+      "prompt_id": "180029d8-f1fc-47ca-b4d7-ec70a41cd65a",
+      "node_errors": {},
+      "reference": {
+        "source": "outputs\\LOC_06_GARAGE_DASHCAM_v02.png",
+        "uploaded_name": "LOC_06_GARAGE_DASHCAM_v02.png",
+        "sha256": "3e0dd3b02ba45f88e075ca42384eaeed16b8564e47e704c5c3b8806fbcc76ce0",
+        "destination": "16 images.image_1"
+      },
+      "reference2": null,
+      "status": "generated",
+      "visual_review": "채택(대표)",
+      "output": "outputs/LOC_06_GARAGE_DASHCAM_v03.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 275.5,
+      "sha256": "dd0adb10c4e7b01a13b4bdeb4f8b820ad64c63831d28111ffcce98d9fa75ef37",
+      "observed": "인물 3명 제거, 흰 차·벽·주차선 자연스럽게 복원. 나머지 유지 확인. 하단 대시보드 띠가 화면의 약 1/4로 두꺼움. 목재 끝벽은 이 시점에서 보이지 않음. 기준 뷰와 같은 건물 재질이지만 정확한 위치 대응은 미검증."
+    },
+    {
+      "id": "LOC_04_CORRIDOR_v04a",
+      "view": "LOC_04_CORRIDOR",
+      "title": "복도 (문 마스크 인페인팅)",
+      "type": "masked inpaint + composite",
+      "seed": 202610060101,
+      "denoise": 0.75,
+      "steps": 50,
+      "prompt_id": "3c6bfcbf-b7ae-4b99-8083-53abec0b53bb",
+      "source": "outputs/LOC_04_CORRIDOR_v02.png",
+      "source_sha256": "30f98fd0aacf5f287170703238f5892d92c3146b3e783d30b527c78424cfdeab",
+      "guide": "inpaint/door_guide.png",
+      "mask": "inpaint/door_mask.png (crop 0,0,1280,1440; dilate 25, blur 10)",
+      "wiring": "guide→VAEEncode→SetLatentNoiseMask(mask)→KSampler; guide→16 images.image_1 (resolution 0); DifferentialDiffusion; ImageCompositeMasked onto source",
+      "output": "outputs/LOC_04_CORRIDOR_v04a.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 80.1,
+      "sha256": "a51e7b694577a090caaec90a70128a933040d6e48b74b726371b8520843de008",
+      "outside_mask_max_rgb_delta": 0,
+      "status": "generated",
+      "visual_review": "비채택",
+      "observed": "문 구조는 바깥여닫이로 바뀜(카메라 쪽 경첩, 문짝이 복도 벽에 젖혀짐, 개구부 개방). 단 denoise 0.75라 단색 가이드 느낌이 남아 문짝·실내가 평면적."
+    },
+    {
+      "id": "LOC_04_CORRIDOR_v04b",
+      "view": "LOC_04_CORRIDOR",
+      "title": "복도 (문 마스크 인페인팅)",
+      "type": "masked inpaint + composite",
+      "seed": 202610060102,
+      "denoise": 0.88,
+      "steps": 50,
+      "prompt_id": "cdd5673b-56ce-4635-85cb-ed4c2d8af8b9",
+      "source": "outputs/LOC_04_CORRIDOR_v02.png",
+      "source_sha256": "30f98fd0aacf5f287170703238f5892d92c3146b3e783d30b527c78424cfdeab",
+      "guide": "inpaint/door_guide.png",
+      "mask": "inpaint/door_mask.png (crop 0,0,1280,1440; dilate 25, blur 10)",
+      "wiring": "guide→VAEEncode→SetLatentNoiseMask(mask)→KSampler; guide→16 images.image_1 (resolution 0); DifferentialDiffusion; ImageCompositeMasked onto source",
+      "output": "outputs/LOC_04_CORRIDOR_v04b.png",
+      "actual_size": [
+        2560,
+        1440
+      ],
+      "elapsed_seconds": 65.5,
+      "sha256": "9b9ba628d661e1914746644a595223daa2e6e6a1a2d908ca9feac077251e30e1",
+      "outside_mask_max_rgb_delta": 0,
+      "status": "generated",
+      "visual_review": "채택(대표)",
+      "observed": "denoise 0.88. 경첩 3개가 카메라 쪽 문틀에 있고 문짝이 복도 벽에 거의 평행하게 젖혀져 바깥여닫이로 읽힘. 문짝 바깥면에 검은 레버형 도어록(키패드 디테일은 약함). 개구부로 따뜻한 실내 벽·밝은 회색 현관 바닥·문턱이 보임. 먼 쪽 문틀 경첩 제거. 마스크 밖 픽셀 변화 0 확인, 합성 경계 육안상 이음 없음. 실내는 단순한 벽면이고 신발장 등은 보이지 않음. 문짝 색이 확정 현관문보다 약간 밝은 그레이지."
+    }
+  ],
+  "status": "집 내부 4뷰 사용자 확정; 복도·엘리베이터·주차장 생성·검수 완료, 사용자 확정 전",
+  "generation_count": {
+    "qwen_runs": 16,
+    "post_process": 1
+  },
+  "floor_and_garage": {
+    "user_direction": "복도·엘리베이터는 디테일만 상향, 지하주차장은 사용자 제공 레퍼런스(references/USER_REF_GARAGE.webp)로 디벨롭 (2026-10-05).",
+    "reference_usage": "주차장 레퍼런스 이미지는 모델에 입력하지 않음. 마감 요소를 텍스트로 번역(실차 브랜드·번호판 복제 방지). 복도는 v01 복도(image_1, 구도)+확정 현관 뷰(image_2, 문 디자인), 엘리베이터는 v01 엘리베이터(image_1)+복도 v02(image_2)를 실제 입력."
+  }
+}

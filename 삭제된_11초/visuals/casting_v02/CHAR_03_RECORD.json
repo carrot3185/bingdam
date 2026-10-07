@@ -1,0 +1,48 @@
+{
+  "tool": "built-in image_gen",
+  "model_version": "not exposed",
+  "status": "생성·육안 확인 / 사용자 미선택",
+  "references": [],
+  "records": [
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "variant": "A",
+      "filename": "CHAR_03_지수_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Ji-su, now a 32-year-old Korean MAN, Seo-yun's trusted male friend. User wants the attractive warm leading-man atmosphere of Korean actor Ji Chang-wook (지창욱): handsome balanced masculine features, clear lively eyes, a high straight nose, strong yet friendly jaw, warm reassuring charisma. Short dark neatly styled natural hair with soft side part, clean-shaven. Dark olive short casual jacket over ivory T-shirt, dark indigo jeans, small plain crossbody bag, clean understated dark sneakers. Warm composed gentle expression, balanced naturally fit build. Friendly casual contemporary styling; no police uniform, no romance scene, no weapon. An original fictional male casting design inspired by the actor's general atmosphere.\nSpecific distinct candidate: A: classic balanced oval-to-square face, expressive double-lid eyes, high straight nose, gentle medium full lips, strong soft jaw and a subtle warm smile.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-0dfb6d1d-95b5-45f4-b937-f375cdec4803.png",
+      "generated": true,
+      "review": "남성 전신, 올리브 재킷·아이보리 티셔츠·진청 바지·크로스백·운동화, 따뜻한 표정 확인. 후보마다 가방 방향·재킷 디테일이 조금 달라 최종 선택 후 고정 필요. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "variant": "B",
+      "filename": "CHAR_03_지수_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Ji-su, now a 32-year-old Korean MAN, Seo-yun's trusted male friend. User wants the attractive warm leading-man atmosphere of Korean actor Ji Chang-wook (지창욱): handsome balanced masculine features, clear lively eyes, a high straight nose, strong yet friendly jaw, warm reassuring charisma. Short dark neatly styled natural hair with soft side part, clean-shaven. Dark olive short casual jacket over ivory T-shirt, dark indigo jeans, small plain crossbody bag, clean understated dark sneakers. Warm composed gentle expression, balanced naturally fit build. Friendly casual contemporary styling; no police uniform, no romance scene, no weapon. An original fictional male casting design inspired by the actor's general atmosphere.\nSpecific distinct candidate: B: longer lean oval face, horizontally long clear eyes, prominent straight nose bridge, subtly defined cheekbones, thinner lips, warm reliable mature charm.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-e5546f6a-0dec-45f3-b615-d9f6feae6a42.png",
+      "generated": true,
+      "review": "남성 전신, 올리브 재킷·아이보리 티셔츠·진청 바지·크로스백·운동화, 따뜻한 표정 확인. 후보마다 가방 방향·재킷 디테일이 조금 달라 최종 선택 후 고정 필요. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "variant": "C",
+      "filename": "CHAR_03_지수_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Ji-su, now a 32-year-old Korean MAN, Seo-yun's trusted male friend. User wants the attractive warm leading-man atmosphere of Korean actor Ji Chang-wook (지창욱): handsome balanced masculine features, clear lively eyes, a high straight nose, strong yet friendly jaw, warm reassuring charisma. Short dark neatly styled natural hair with soft side part, clean-shaven. Dark olive short casual jacket over ivory T-shirt, dark indigo jeans, small plain crossbody bag, clean understated dark sneakers. Warm composed gentle expression, balanced naturally fit build. Friendly casual contemporary styling; no police uniform, no romance scene, no weapon. An original fictional male casting design inspired by the actor's general atmosphere.\nSpecific distinct candidate: C: broader soft square face, slightly wide-set bright eyes, naturally thicker eyebrows, medium straight nose, full smile corners, energetic friendly charm.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-72e1f898-4047-4e88-9db3-25e6967d30c7.png",
+      "generated": true,
+      "review": "남성 전신, 올리브 재킷·아이보리 티셔츠·진청 바지·크로스백·운동화, 따뜻한 표정 확인. 후보마다 가방 방향·재킷 디테일이 조금 달라 최종 선택 후 고정 필요. 얼굴 후보는 미선택."
+    },
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "variant": "D",
+      "filename": "CHAR_03_지수_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: individual fictional web-drama casting candidate photograph for '삭제된 11초'. Make ONE full-length vertical studio photograph of one original adult Korean character, not a collage. Head, body, hands and both feet fully visible with clear margin, centered upright relaxed stance facing camera, neutral camera at mid-torso, natural approximately seven-heads-tall adult proportions with balanced torso and legs. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin and fabric detail, accurate hands, subtle professional casting-portrait polish. Attractive screen-actor presence. No text, labels, watermarks or extra people. Each candidate is a different fictional person whose facial proportions distinguish them; referenced actors are aesthetic inspiration, not an assertion about those actors or a scene depicting the real actors.\nCharacter and fixed design: Ji-su, now a 32-year-old Korean MAN, Seo-yun's trusted male friend. User wants the attractive warm leading-man atmosphere of Korean actor Ji Chang-wook (지창욱): handsome balanced masculine features, clear lively eyes, a high straight nose, strong yet friendly jaw, warm reassuring charisma. Short dark neatly styled natural hair with soft side part, clean-shaven. Dark olive short casual jacket over ivory T-shirt, dark indigo jeans, small plain crossbody bag, clean understated dark sneakers. Warm composed gentle expression, balanced naturally fit build. Friendly casual contemporary styling; no police uniform, no romance scene, no weapon. An original fictional male casting design inspired by the actor's general atmosphere.\nSpecific distinct candidate: D: narrower sculpted oval face, deep-set bright double-lid eyes, more prominent refined nose, high cheekbones, fuller lower lip, calm magnetic friendly charm.",
+      "source": "C:\\Users\\commz\\.codex\\generated_images\\01a10b2e-6a7f-73a2-88ed-51bea6e56e31\\exec-d8db8d33-c241-4664-8fd1-112878d5bc52.png",
+      "generated": true,
+      "review": "남성 전신, 올리브 재킷·아이보리 티셔츠·진청 바지·크로스백·운동화, 따뜻한 표정 확인. 후보마다 가방 방향·재킷 디테일이 조금 달라 최종 선택 후 고정 필요. 얼굴 후보는 미선택."
+    }
+  ]
+}

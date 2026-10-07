@@ -1,0 +1,126 @@
+{
+  "method": "RealESRGAN_x4plus.safetensors x4 → lanczos 5120x2880 (ComfyUI) 결과와 원본 lanczos 확대를 50:50 혼합 + UnsharpMask(1.6, 40%, 2). 픽셀 업스케일만, 확산 재생성 없음.",
+  "date": "2026-10-06",
+  "runs": [
+    {
+      "source": "outputs\\HOME_MASTER_b.png",
+      "source_sha256": "32cdac49777d410d8d96e196e3e63f3d83250413ab2bdb540a47b00eb97f3ca9",
+      "output": "outputs_5k\\HOME_MASTER_b_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "7a8c53e3f7ff81324069749ced4ea1b710dd527728924712af978e54cd67d4df",
+      "prompt_id": "7246e089-cc5e-4f83-8bd8-3f1178dcd4e2",
+      "elapsed_seconds": 5.1
+    },
+    {
+      "source": "outputs\\HOME_REVERSE_v02.png",
+      "source_sha256": "c0d20dea94d034816b6a5cd526bbb928a77a8004a1d31aef3e0ccc4dfdee1317",
+      "output": "outputs_5k\\HOME_REVERSE_v02_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "9d0e9d91e25dde21964dcecaec1d86b98c5d71ad24f39bf7207be77d97a37dcd",
+      "prompt_id": "e543a29f-9d62-4575-9f20-f50c5fdc586e",
+      "elapsed_seconds": 29.2
+    },
+    {
+      "source": "outputs\\LOC_02_KITCHEN.png",
+      "source_sha256": "a17cb8d0c8888d40265000327a54a1cd7f6138fb7d7cfde65a2c840662d20392",
+      "output": "outputs_5k\\LOC_02_KITCHEN_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "c0e928e09d119187a2b263dac8a1379da4024058c922b4a257025a4d82e8549c",
+      "prompt_id": "7e1ecaf5-8bdb-4351-8aeb-b6b58df20857",
+      "elapsed_seconds": 29.2
+    },
+    {
+      "source": "outputs\\LOC_03_ENTRY_v02.png",
+      "source_sha256": "4b178951fcf217b24637a26ed46aa327e0abedd5f05ab861b9002676b95fcfe9",
+      "output": "outputs_5k\\LOC_03_ENTRY_v02_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "45e9ab06f92252606dd38c3306f0c26021eb765916b386eda14fe7ab9593efad",
+      "prompt_id": "17b89c74-eb49-4c71-be4a-be5f75ab8ad0",
+      "elapsed_seconds": 29.2
+    },
+    {
+      "source": "outputs\\LOC_04_CORRIDOR_v04b.png",
+      "source_sha256": "9b9ba628d661e1914746644a595223daa2e6e6a1a2d908ca9feac077251e30e1",
+      "output": "outputs_5k\\LOC_04_CORRIDOR_v04b_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "c10398148ede97af835105ce1b620c0e1d33f06fa05b65a28eb6f4d3ee4b3a48",
+      "prompt_id": "9a325e9f-a38c-4b5a-963e-eddd0adf54b6",
+      "elapsed_seconds": 29.2
+    },
+    {
+      "source": "outputs\\LOC_05_ELEVATOR_v02.png",
+      "source_sha256": "7f5bb2815fb2c80f532e6d6046adc3fcea47933d2a86fee6c1bbcecf17aa38ac",
+      "output": "outputs_5k\\LOC_05_ELEVATOR_v02_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "a79ef354769860b8e6c18c43b9896be523c9ded7224a0158f2730b29d6baaa5a",
+      "prompt_id": "22fd1cae-0176-4253-b958-ee797d213adc",
+      "elapsed_seconds": 29.3
+    },
+    {
+      "source": "outputs\\LOC_06_GARAGE_MASTER.png",
+      "source_sha256": "7d3b1e9e524ad02f6936649c8447fc2ff751ab3fe0ff3df7028d906049dc2d3c",
+      "output": "outputs_5k\\LOC_06_GARAGE_MASTER_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "28f79acd5015b4e5d63f7368245b0ad31c260d96de782e90678c3464fd43b1dc",
+      "prompt_id": "708ffe06-ab39-439d-a18d-f47af651d477",
+      "elapsed_seconds": 28.9
+    },
+    {
+      "source": "outputs\\LOC_06_GARAGE_DASHCAM_v03.png",
+      "source_sha256": "dd0adb10c4e7b01a13b4bdeb4f8b820ad64c63831d28111ffcce98d9fa75ef37",
+      "output": "outputs_5k\\LOC_06_GARAGE_DASHCAM_v03_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "677581b726fd78ee69d976e55aaefb5362cc2526912b26b198022f05d326ed73",
+      "prompt_id": "7c7b1e0c-bf14-420f-8ae8-aa6871477790",
+      "elapsed_seconds": 29.4
+    },
+    {
+      "source": "gpt_image\\LOC_06_GARAGE_MASTER_gpt_a.png",
+      "source_sha256": "fa02063837af047d2761704cd26d6b05e8328aa938a93cb2fd126f8edf8b3635",
+      "output": "outputs_5k\\LOC_06_GARAGE_MASTER_gpt_a_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "8d193ce5f49bcbdaa175e6d831340837f9ba44f5e2bb1c8c6e99d99fdb3d60b3",
+      "prompt_id": "99fd86f4-d44d-431d-9cf9-1d30f48e6043",
+      "elapsed_seconds": 16.7
+    },
+    {
+      "source": "gpt_image\\LOC_06_GARAGE_DASHCAM_gpt_a.png",
+      "source_sha256": "6fc6ab6ba210ac80db7860d834e97214a9a114ba0da91f35e86bd26bfbffbc69",
+      "output": "outputs_5k\\LOC_06_GARAGE_DASHCAM_gpt_a_5k.png",
+      "size": [
+        5120,
+        2880
+      ],
+      "sha256": "fd8ad9eb6186a5c7f5ce35594622c2b192fd6dca6aa3249c4ed25e05452a8100",
+      "prompt_id": "b851f284-9734-48b9-ac5d-0995adf9c91e",
+      "elapsed_seconds": 16.9
+    }
+  ]
+}

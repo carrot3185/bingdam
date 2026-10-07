@@ -1,0 +1,845 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": 960,
+      "height": 768
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "40": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "CHAR_07_turnaround_v02_patchfix.png"
+    }
+  },
+  "41": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "CHAR_06_turnaround_v02.png"
+    }
+  },
+  "100": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "40",
+        0
+      ],
+      "width": 320,
+      "height": 256,
+      "x": 256,
+      "y": 0
+    }
+  },
+  "101": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "100",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 960,
+      "height": 768,
+      "crop": "disabled"
+    }
+  },
+  "102": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "41",
+        0
+      ],
+      "width": 320,
+      "height": 256,
+      "x": 256,
+      "y": 0
+    }
+  },
+  "103": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "102",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 960,
+      "height": 768,
+      "crop": "disabled"
+    }
+  },
+  "104": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Using image one as the edit target and image two as the cap reference, change only the police cap worn by the man in image one so that it matches the cap in image two: the same dark navy blue cap fabric color, not black, with the same matte cotton twill texture and seams; front view; the gold police eagle emblem sits inside the same framed gold badge shape as image two, and the brim edge carries the same single thin row of gold leaf embroidery. Do not make the gold embroidery thicker or denser than image two. Keep the cap shape, size, angle and position on his head exactly as in image one. Keep the man's face, ears, gray-templed short hair, skin, collar, background and lighting exactly as in image one. Do not copy the woman, her face or her hair bun from image two. No text, no watermark.",
+      "negative_prompt": "",
+      "resolution": 0,
+      "images.image_1": [
+        "101",
+        0
+      ],
+      "images.image_2": [
+        "103",
+        0
+      ]
+    }
+  },
+  "105": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "104",
+        0
+      ],
+      "negative": [
+        "104",
+        1
+      ],
+      "latent_image": [
+        "104",
+        2
+      ],
+      "seed": 2026100751,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "106": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "105",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "107": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "106",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 320,
+      "height": 256,
+      "crop": "disabled"
+    }
+  },
+  "108": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 0.0,
+      "width": 320,
+      "height": 256
+    }
+  },
+  "109": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 1.0,
+      "width": 172,
+      "height": 120
+    }
+  },
+  "110": {
+    "class_type": "FeatherMask",
+    "inputs": {
+      "mask": [
+        "109",
+        0
+      ],
+      "left": 10,
+      "top": 10,
+      "right": 10,
+      "bottom": 10
+    }
+  },
+  "111": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "108",
+        0
+      ],
+      "source": [
+        "110",
+        0
+      ],
+      "x": 84,
+      "y": 40,
+      "operation": "add"
+    }
+  },
+  "112": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "40",
+        0
+      ],
+      "source": [
+        "107",
+        0
+      ],
+      "x": 256,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "111",
+        0
+      ]
+    }
+  },
+  "120": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "40",
+        0
+      ],
+      "width": 320,
+      "height": 256,
+      "x": 832,
+      "y": 0
+    }
+  },
+  "121": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "120",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 960,
+      "height": 768,
+      "crop": "disabled"
+    }
+  },
+  "122": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "41",
+        0
+      ],
+      "width": 320,
+      "height": 256,
+      "x": 832,
+      "y": 0
+    }
+  },
+  "123": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "122",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 960,
+      "height": 768,
+      "crop": "disabled"
+    }
+  },
+  "124": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Using image one as the edit target and image two as the cap reference, change only the police cap worn by the man in image one so that it matches the cap in image two: the same dark navy blue cap fabric color, not black, with the same matte cotton twill texture and seams; side view; the brim edge carries the same single thin row of gold leaf embroidery as image two, and the small gold emblem at the front of the crown matches image two. Do not make the gold embroidery thicker or denser than image two. Keep the cap shape, size, angle and position on his head exactly as in image one. Keep the man's face, ears, gray-templed short hair, skin, collar, background and lighting exactly as in image one. Do not copy the woman, her face or her hair bun from image two. No text, no watermark.",
+      "negative_prompt": "",
+      "resolution": 0,
+      "images.image_1": [
+        "121",
+        0
+      ],
+      "images.image_2": [
+        "123",
+        0
+      ]
+    }
+  },
+  "125": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "124",
+        0
+      ],
+      "negative": [
+        "124",
+        1
+      ],
+      "latent_image": [
+        "124",
+        2
+      ],
+      "seed": 2026100752,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "126": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "125",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "127": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "126",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 320,
+      "height": 256,
+      "crop": "disabled"
+    }
+  },
+  "128": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 0.0,
+      "width": 320,
+      "height": 256
+    }
+  },
+  "129": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 1.0,
+      "width": 240,
+      "height": 140
+    }
+  },
+  "130": {
+    "class_type": "FeatherMask",
+    "inputs": {
+      "mask": [
+        "129",
+        0
+      ],
+      "left": 10,
+      "top": 10,
+      "right": 10,
+      "bottom": 10
+    }
+  },
+  "131": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "128",
+        0
+      ],
+      "source": [
+        "130",
+        0
+      ],
+      "x": 33,
+      "y": 40,
+      "operation": "add"
+    }
+  },
+  "132": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "112",
+        0
+      ],
+      "source": [
+        "127",
+        0
+      ],
+      "x": 832,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "131",
+        0
+      ]
+    }
+  },
+  "140": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "40",
+        0
+      ],
+      "width": 320,
+      "height": 256,
+      "x": 1440,
+      "y": 0
+    }
+  },
+  "141": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "140",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 960,
+      "height": 768,
+      "crop": "disabled"
+    }
+  },
+  "142": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "41",
+        0
+      ],
+      "width": 320,
+      "height": 256,
+      "x": 1440,
+      "y": 0
+    }
+  },
+  "143": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "142",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 960,
+      "height": 768,
+      "crop": "disabled"
+    }
+  },
+  "144": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Using image one as the edit target and image two as the cap reference, change only the police cap worn by the man in image one so that it matches the cap in image two: the same dark navy blue cap fabric color, not black, with the same matte cotton twill texture and seams; rear view; only the cap fabric color and the back strap color change to match image two. Do not make the gold embroidery thicker or denser than image two. Keep the cap shape, size, angle and position on his head exactly as in image one. Keep the man's face, ears, gray-templed short hair, skin, collar, background and lighting exactly as in image one. Do not copy the woman, her face or her hair bun from image two. No text, no watermark.",
+      "negative_prompt": "",
+      "resolution": 0,
+      "images.image_1": [
+        "141",
+        0
+      ],
+      "images.image_2": [
+        "143",
+        0
+      ]
+    }
+  },
+  "145": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "144",
+        0
+      ],
+      "negative": [
+        "144",
+        1
+      ],
+      "latent_image": [
+        "144",
+        2
+      ],
+      "seed": 2026100753,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "146": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "145",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "147": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "146",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 320,
+      "height": 256,
+      "crop": "disabled"
+    }
+  },
+  "148": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 0.0,
+      "width": 320,
+      "height": 256
+    }
+  },
+  "149": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 1.0,
+      "width": 170,
+      "height": 135
+    }
+  },
+  "150": {
+    "class_type": "FeatherMask",
+    "inputs": {
+      "mask": [
+        "149",
+        0
+      ],
+      "left": 10,
+      "top": 10,
+      "right": 10,
+      "bottom": 10
+    }
+  },
+  "151": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "148",
+        0
+      ],
+      "source": [
+        "150",
+        0
+      ],
+      "x": 85,
+      "y": 40,
+      "operation": "add"
+    }
+  },
+  "152": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "132",
+        0
+      ],
+      "source": [
+        "147",
+        0
+      ],
+      "x": 1440,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "151",
+        0
+      ]
+    }
+  },
+  "160": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "40",
+        0
+      ],
+      "width": 320,
+      "height": 256,
+      "x": 2048,
+      "y": 0
+    }
+  },
+  "161": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "160",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 960,
+      "height": 768,
+      "crop": "disabled"
+    }
+  },
+  "162": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "41",
+        0
+      ],
+      "width": 320,
+      "height": 256,
+      "x": 2048,
+      "y": 0
+    }
+  },
+  "163": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "162",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 960,
+      "height": 768,
+      "crop": "disabled"
+    }
+  },
+  "164": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Using image one as the edit target and image two as the cap reference, change only the police cap worn by the man in image one so that it matches the cap in image two: the same dark navy blue cap fabric color, not black, with the same matte cotton twill texture and seams; side view; the brim edge carries the same single thin row of gold leaf embroidery as image two, and the small gold emblem at the front of the crown matches image two. Do not make the gold embroidery thicker or denser than image two. Keep the cap shape, size, angle and position on his head exactly as in image one. Keep the man's face, ears, gray-templed short hair, skin, collar, background and lighting exactly as in image one. Do not copy the woman, her face or her hair bun from image two. No text, no watermark.",
+      "negative_prompt": "",
+      "resolution": 0,
+      "images.image_1": [
+        "161",
+        0
+      ],
+      "images.image_2": [
+        "163",
+        0
+      ]
+    }
+  },
+  "165": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "164",
+        0
+      ],
+      "negative": [
+        "164",
+        1
+      ],
+      "latent_image": [
+        "164",
+        2
+      ],
+      "seed": 2026100754,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "166": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "165",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "167": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "166",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 320,
+      "height": 256,
+      "crop": "disabled"
+    }
+  },
+  "168": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 0.0,
+      "width": 320,
+      "height": 256
+    }
+  },
+  "169": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 1.0,
+      "width": 250,
+      "height": 150
+    }
+  },
+  "170": {
+    "class_type": "FeatherMask",
+    "inputs": {
+      "mask": [
+        "169",
+        0
+      ],
+      "left": 10,
+      "top": 10,
+      "right": 10,
+      "bottom": 10
+    }
+  },
+  "171": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "168",
+        0
+      ],
+      "source": [
+        "170",
+        0
+      ],
+      "x": 47,
+      "y": 40,
+      "operation": "add"
+    }
+  },
+  "172": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "152",
+        0
+      ],
+      "source": [
+        "167",
+        0
+      ],
+      "x": 2048,
+      "y": 0,
+      "resize_source": false,
+      "mask": [
+        "171",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "172",
+        0
+      ],
+      "filename_prefix": "deleted_11s_police_v02/CHAR_07_turnaround_v02_capfix"
+    }
+  }
+}

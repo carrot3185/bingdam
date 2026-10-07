@@ -1,0 +1,169 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "10": {
+    "class_type": "DenoResolutionSetup",
+    "inputs": {
+      "mode": "Manual Input",
+      "ratio_preset": "16:9",
+      "megapixels": 3.69,
+      "width": 2560,
+      "height": 1440,
+      "divisible_by": "32",
+      "resize_method": "Center Crop (Fill)",
+      "interpolation": "lanczos",
+      "crop_x": 0.5,
+      "crop_y": 0.5,
+      "crop_zoom": 1
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ],
+      "batch_size": 1
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Professional interior-design portfolio photograph: full-frame camera with a wide rectilinear lens at adult eye height, perfectly vertical walls and clean two-point perspective, balanced high-dynamic-range exposure so the window and the darker corners both hold detail, crisp micro-detail in wood grain, fabric weave, stone veining and painted wall texture. Using the open elevator in <image1> as the scene, keep its camera position, head-on framing, door opening size and cabin depth. Refinish it to match the building corridor in <image2>: the corridor floor outside the threshold uses the same large-format warm gray porcelain tile, the walls beside the door use the same pale greige panels with thin dark reveals and slim dark baseboards, and the door frame and doors are the same hairline brushed stainless steel.\nInside the cabin, the side walls are hairline brushed stainless steel panels with fine vertical seams, the rear wall is a warm-gray textured laminate panel with one horizontal brushed steel handrail, the floor is dark gray stone-look tile, and the ceiling is a recessed soft diffused LED panel with a slim perimeter light.\nMove the control panel onto the right side wall of the cabin, right next to the doorway at adult hand height, so a person stepping in reaches it with the right hand: a slim vertical brushed steel panel with small round buttons and a tiny dark floor display, without readable characters. The rear wall carries no panel or notice.\nThere is no large mirror and no reflection of people. Neutral-white cabin light, a little brighter than the corridor. The space is empty and unoccupied: no people, no readable text, signage, logos or watermark.",
+      "negative_prompt": "",
+      "resolution": 1536,
+      "images.image_1": [
+        "7",
+        0
+      ],
+      "images.image_2": [
+        "8",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 202610052320,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_locations_v02/LOC_05_ELEVATOR_v02"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "LOC_05_ELEVATOR.png"
+    }
+  },
+  "8": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "LOC_04_CORRIDOR_v02.png"
+    }
+  }
+}

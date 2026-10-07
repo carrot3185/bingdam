@@ -1,0 +1,281 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": 640,
+      "height": 1536
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "CHAR_01_서윤_COSTUME_01B_turnaround_b.png"
+    }
+  },
+  "35": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "CHAR_01_서윤_turnaround_v02_HQ_repaired.png"
+    }
+  },
+  "100": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "7",
+        0
+      ],
+      "width": 640,
+      "height": 1536,
+      "x": 640,
+      "y": 0
+    }
+  },
+  "101": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "35",
+        0
+      ],
+      "width": 160,
+      "height": 240,
+      "x": 860,
+      "y": 600
+    }
+  },
+  "102": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Using image one as the edit target, a left-facing strict profile photograph of a woman in a long open camel wool coat, and image two as a close detail of her original gray structured wrist brace seen from the same side, change only her near arm, the arm closest to the camera, which is her anatomical LEFT arm: below the camel coat cuff, add the matching gray soft wrist brace with its fastening straps and thumb opening over the wrist and the base of the hand. Match the brace shape, gray color, straps and fabric texture of image two. The hand and fingers below the brace stay natural and relaxed. Keep her face, long black hair, the camel coat with its length and seams, the charcoal trousers, the white sneakers, her pose, body size, skin tone, background and lighting exactly as in image one, in the same pixel positions and scale. Add the single brace, no other changes, no text or watermark.",
+      "negative_prompt": "",
+      "resolution": 0,
+      "images.image_1": [
+        "100",
+        0
+      ],
+      "images.image_2": [
+        "101",
+        0
+      ]
+    }
+  },
+  "103": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "102",
+        0
+      ],
+      "negative": [
+        "102",
+        1
+      ],
+      "latent_image": [
+        "102",
+        2
+      ],
+      "seed": 2026100611,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "104": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "103",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "105": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "7",
+        0
+      ],
+      "source": [
+        "104",
+        0
+      ],
+      "x": 640,
+      "y": 0,
+      "resize_source": false
+    }
+  },
+  "110": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "7",
+        0
+      ],
+      "width": 640,
+      "height": 1536,
+      "x": 1280,
+      "y": 0
+    }
+  },
+  "111": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "35",
+        0
+      ],
+      "width": 160,
+      "height": 240,
+      "x": 1390,
+      "y": 600
+    }
+  },
+  "112": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Using image one as the edit target, a straight rear-view photograph of a woman in a long camel wool coat, and image two as a close detail of her original gray structured wrist brace seen from behind, change only the wrist on the LEFT SIDE OF THE IMAGE, which is her anatomical LEFT wrist: below the camel coat cuff, add the matching gray soft wrist brace with its fastening straps over the wrist and the base of the hand. The wrist on the right side of the image stays completely bare. Match the brace shape, gray color, straps and fabric texture of image two, rotated naturally to its back-facing side. Keep the long black hair, the camel coat with its length and center seam, the charcoal trousers, the white sneakers, her pose, body size, skin tone, background and lighting exactly as in image one, in the same pixel positions and scale. Add the single brace, no other changes, no text or watermark.",
+      "negative_prompt": "",
+      "resolution": 0,
+      "images.image_1": [
+        "110",
+        0
+      ],
+      "images.image_2": [
+        "111",
+        0
+      ]
+    }
+  },
+  "113": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "112",
+        0
+      ],
+      "negative": [
+        "112",
+        1
+      ],
+      "latent_image": [
+        "112",
+        2
+      ],
+      "seed": 2026100612,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "114": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "113",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "115": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "105",
+        0
+      ],
+      "source": [
+        "114",
+        0
+      ],
+      "x": 1280,
+      "y": 0,
+      "resize_source": false
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "115",
+        0
+      ],
+      "filename_prefix": "deleted_11s_costume/CHAR_01_서윤_COSTUME_01B_turnaround_b_repaired"
+    }
+  }
+}

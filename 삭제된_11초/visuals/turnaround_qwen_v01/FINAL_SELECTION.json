@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-05",
+  "status": "사용자 확정",
+  "selections": [
+    {
+      "id": "CHAR_01",
+      "name": "서윤",
+      "candidate": "A",
+      "source": "../casting_v02/CHAR_01_서윤_A.png",
+      "reference": "references/D11_CHAR_01_FINAL.png"
+    },
+    {
+      "id": "CHAR_02",
+      "name": "도현",
+      "candidate": "D",
+      "source": "../casting_v02/CHAR_02_도현_D.png",
+      "reference": "references/D11_CHAR_02_FINAL.png"
+    },
+    {
+      "id": "CHAR_03",
+      "name": "지수",
+      "candidate": "B",
+      "source": "../casting_v02/CHAR_03_지수_B.png",
+      "reference": "references/D11_CHAR_03_FINAL.png"
+    }
+  ],
+  "turnaround": "Generated and visually inspected: front, left-facing profile, rear, right-facing profile. Selected casting remains user-confirmed; inferred rear details have not been separately approved."
+}

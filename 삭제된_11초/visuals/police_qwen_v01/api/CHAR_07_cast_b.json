@@ -1,0 +1,149 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "10": {
+    "class_type": "DenoResolutionSetup",
+    "inputs": {
+      "mode": "Manual Input",
+      "ratio_preset": "3:2",
+      "megapixels": 1.57,
+      "width": 1024,
+      "height": 1536,
+      "divisible_by": "32",
+      "resize_method": "Center Crop (Fill)",
+      "interpolation": "lanczos",
+      "crop_x": 0.5,
+      "crop_y": 0.5,
+      "crop_zoom": 1
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ],
+      "batch_size": 1
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Make ONE full-length vertical studio photograph of one original fictional adult Korean character for the web drama \"Deleted 11 Seconds\", not a collage. Head, cap, body, both hands and both feet fully visible with clear margin, centered upright relaxed stance facing the camera, arms resting naturally at the sides, neutral camera at mid-torso height, natural adult proportions. Plain pale warm-gray seamless background, soft neutral studio daylight, realistic skin texture, fine fabric weave, seams, zipper and footwear edges in clear focus, accurate hands. An ordinary, believable working police officer, not a model, action hero or riot officer. No text, labels, watermark or extra people. Police Officer B, a Korean man in his mid-forties, about 178 cm, sturdy medium build with a slightly thick neck and broad shoulders, square jaw, short black hair with a little gray at the temples beneath the cap, clean-shaven with faint smile lines, steady patient gaze, calm firm expression of an experienced officer. Current-generation South Korean police patrol uniform for a cool autumn night call: a dark navy structured patrol cap with a small metallic police emblem; a dark navy zip-front patrol jacket with a stand collar, shoulder epaulettes, chest pockets, one small embroidered police shoulder patch on each upper sleeve, and a thin silver-gray reflective band around the chest, back and forearms; a small black body-worn camera clipped at the center of the chest; straight dark navy uniform trousers; a black duty belt with closed black pouches and a closed holster, no weapon drawn; plain black leather duty shoes. The uniform carries no readable lettering, name tag text or numbers. ",
+      "negative_prompt": "",
+      "resolution": 1024
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 2026100602,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_police_v01/CHAR_07_cast_b"
+    }
+  }
+}

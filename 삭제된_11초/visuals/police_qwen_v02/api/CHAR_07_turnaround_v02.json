@@ -1,0 +1,176 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "10": {
+    "class_type": "DenoResolutionSetup",
+    "inputs": {
+      "mode": "Manual Input",
+      "ratio_preset": "3:2",
+      "megapixels": 3.93,
+      "width": 2560,
+      "height": 1536,
+      "divisible_by": "32",
+      "resize_method": "Center Crop (Fill)",
+      "interpolation": "lanczos",
+      "crop_x": 0.5,
+      "crop_y": 0.5,
+      "crop_zoom": 1
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "10",
+        1
+      ],
+      "height": [
+        "10",
+        2
+      ],
+      "batch_size": 1
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Using image one as the exact full-body identity and costume reference and image two as a close crop of that SAME original person's head, generate a photographic turnaround of that same person. Image two only reinforces the original face and cap; it does not introduce another person or a new design. Show exactly four separate full-body views in one horizontal row: front, strict profile facing the left edge, straight rear, strict profile facing the right edge. Keep every head and foot inside the frame, views evenly spaced on the same floor baseline, same body scale and natural proportions as image one. The front-view facial geometry, eye spacing and shape, nose, lips, jaw, head size, hairline and skin tone must match the original, without beautifying, slimming, recasting or changing age. Keep the original soft studio lighting and pale warm-gray backdrop. Preserve individual hair strands, natural skin texture, subtle fabric weave, garment seams, folds, fastenings and footwear edges, with clear focused detail and without painterly smoothing or artificial sharpening. Rotate the same original person and clothes; do not reinterpret their design. No text or watermark. Preserve the original man's exact face, short black hair with gray temples visible below the cap, and his sturdy build. Keep exactly the same uniform: dark navy police cap with gold embroidered eagle emblem and gold-embroidered brim edge; light cool-gray padded winter jacket with stand collar, epaulettes, upper-left-sleeve zip pocket and teal inner cuffs; dark navy zip-front duty vest with the silver reflective band continuing around the back, the white 경찰 POLICE name patch on the wearer's right chest, the gold eagle badge pouch on the wearer's left chest, the black radio on the wearer's left shoulder strap and the same lower pouches on the same sides; slim black trousers and black leather oxford shoes. The rear of the vest shows the reflective band; do not invent large back lettering. Arms rest naturally at the sides in all four views.",
+      "negative_prompt": "",
+      "resolution": 0,
+      "images.image_1": [
+        "7",
+        0
+      ],
+      "images.image_2": [
+        "34",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 2026100631,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_police_v02/CHAR_07_turnaround_v02"
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "CHAR_07_dress_a.png"
+    }
+  },
+  "34": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "7",
+        0
+      ],
+      "width": 384,
+      "height": 384,
+      "x": 320,
+      "y": 0
+    }
+  }
+}

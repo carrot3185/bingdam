@@ -1,0 +1,7 @@
+[reference generation] <Picture 1> is a close reference of S1's hands and sleeves only: a man's hands, slate-blue shirt sleeves rolled to the forearms, and a black wristwatch on his LEFT wrist. <Picture 2> is the apartment where the scene takes place: a warm evening interior with white flat-panel kitchen cabinets, a warm LED strip under the upper cabinets, a gray stone backsplash, and a light oak dining table. The whole video is one continuous live-action insert shot in that apartment in the evening, photographed like a restrained Korean TV drama: soft warm light, shallow depth of field.
+
+integrated_multimodal_description: [Shot 1] Close insert shot on the end of the light oak dining table from <Picture 2>, static camera, framed only on the table, a dark green reusable grocery bag and S1's hands. His hands in the rolled slate-blue sleeves from <Picture 1> take things out of the bag: first his right hand lifts out a small paper pint of ice cream and sets it on the table, while the black watch on his LEFT wrist is visible as his left hand holds the bag open. The ice cream pint is plain and ordinary. At 00:04.000, his hands stay still on the bag, until the end. The frame shows only the hands, sleeves, bag, ice cream and table.
+
+overall_soundscape: Quiet apartment room tone in the evening, the rustle of the grocery bag, the soft knock of the cold carton on the wood. No voices are heard.
+
+non_diegetic_music: N/A

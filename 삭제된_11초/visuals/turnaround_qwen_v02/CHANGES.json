@@ -1,0 +1,122 @@
+[
+  {
+    "id": "CHAR_01",
+    "selected_source": "D11_CHAR_01_FINAL.png",
+    "seed": 2026100501,
+    "options": {
+      "DenoResolutionSetup": [
+        2560,
+        1536
+      ],
+      "TextEncodeQwenImage21.resolution": 0,
+      "KSampler.steps": 60,
+      "QwenImage21Cache": [
+        "cpu",
+        "default"
+      ]
+    },
+    "added_node": {
+      "id": 34,
+      "type": "ImageCrop",
+      "source": [
+        7,
+        0
+      ],
+      "crop": [
+        384,
+        384,
+        320,
+        0
+      ],
+      "destination": "16 images.image_2"
+    },
+    "unchanged": {
+      "model": "qwen_image_2.1_int8_convrot.safetensors",
+      "CFG": 1,
+      "sampler": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    },
+    "status": "generated and visually inspected; see RUNS.json for repairs and observations"
+  },
+  {
+    "id": "CHAR_03",
+    "selected_source": "D11_CHAR_03_FINAL.png",
+    "seed": 2026100503,
+    "options": {
+      "DenoResolutionSetup": [
+        2560,
+        1536
+      ],
+      "TextEncodeQwenImage21.resolution": 0,
+      "KSampler.steps": 60,
+      "QwenImage21Cache": [
+        "cpu",
+        "default"
+      ]
+    },
+    "added_node": {
+      "id": 34,
+      "type": "ImageCrop",
+      "source": [
+        7,
+        0
+      ],
+      "crop": [
+        384,
+        384,
+        320,
+        0
+      ],
+      "destination": "16 images.image_2"
+    },
+    "unchanged": {
+      "model": "qwen_image_2.1_int8_convrot.safetensors",
+      "CFG": 1,
+      "sampler": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    },
+    "status": "generated and visually inspected; see RUNS.json for repairs and observations"
+  },
+  {
+    "id": "CHAR_02",
+    "selected_source": "D11_CHAR_02_FINAL.png",
+    "seed": 2026100502,
+    "options": {
+      "DenoResolutionSetup": [
+        2560,
+        1536
+      ],
+      "TextEncodeQwenImage21.resolution": 0,
+      "KSampler.steps": 60,
+      "QwenImage21Cache": [
+        "cpu",
+        "default"
+      ]
+    },
+    "added_node": {
+      "id": 34,
+      "type": "ImageCrop",
+      "source": [
+        7,
+        0
+      ],
+      "crop": [
+        384,
+        384,
+        320,
+        0
+      ],
+      "destination": "16 images.image_2"
+    },
+    "unchanged": {
+      "model": "qwen_image_2.1_int8_convrot.safetensors",
+      "CFG": 1,
+      "sampler": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    },
+    "status": "generated and visually inspected; see RUNS.json for repairs and observations"
+  }
+]

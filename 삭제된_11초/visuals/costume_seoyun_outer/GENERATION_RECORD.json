@@ -1,0 +1,2076 @@
+{
+  "engine": "local ComfyUI Desktop / Deno Qwen-Image 2.1 T2I + Edit (API graph copy; 원본 워크플로우 미수정)",
+  "date": "2026-10-06",
+  "purpose": "COSTUME_01B 서윤 외투·운동화 착용 상태 참조 턴어라운드",
+  "settings": {
+    "width": 2560,
+    "height": 1536,
+    "steps": 60,
+    "cfg": 1,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "denoise": 1,
+    "cache": "cpu/default",
+    "encoder_resolution": 0,
+    "image_1_scale": 0.75
+  },
+  "crops": {
+    "look1_coat": [
+      0,
+      0,
+      360,
+      705
+    ],
+    "look3_sneaker": [
+      912,
+      876,
+      150,
+      134
+    ],
+    "face": [
+      320,
+      0,
+      384,
+      384
+    ]
+  },
+  "runs": [
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_a",
+      "seed": 2026100601,
+      "prompt_id": "0e28d320-640f-40a8-8c66-6f7e371e00ec",
+      "node_errors": {},
+      "references": {
+        "turnaround": {
+          "source": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "uploaded_name": "CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f"
+        },
+        "lookbook": {
+          "source": "costume_seoyun_outer\\USER_LOOKBOOK_4LOOKS.webp",
+          "uploaded_name": "USER_LOOKBOOK_4LOOKS.webp",
+          "sha256": "5be11f61ab571a3a009da3cdb92f4076141b2fc96e5662c43c77867a975a57a7"
+        },
+        "casting": {
+          "source": "turnaround_qwen_v02\\references\\D11_CHAR_01_FINAL.png",
+          "uploaded_name": "D11_CHAR_01_FINAL.png",
+          "sha256": "3befd9d098183bc6126742f4de93ac5174f2a1e873a7ee81a1ea7d2e8ecd69f6"
+        },
+        "slots": {
+          "image_1": "turnaround → ImageScaleBy 0.75",
+          "image_2": "lookbook → ImageCrop look1_coat",
+          "image_3": "lookbook → ImageCrop look3_sneaker",
+          "image_4": "casting → ImageCrop face"
+        }
+      },
+      "status": "generated",
+      "visual_review": "불채택. 보호대는 왼쪽 측면에만 있고 정면·후면에 없음. 코트가 종아리 중간 길이로 시안보다 짧음. 얼굴: 확정 v02보다 둥글고 짧은 얼굴, 크고 둥근 눈, 피부 광택 증가.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_a.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 335.2,
+      "sha256": "31a8b52b0585309f9215022971fbd50cbcc1520e80b5bc6cb33ae919f6274737"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_b",
+      "seed": 2026100602,
+      "prompt_id": "5c33189b-22bb-4798-937f-ce4af35e1b05",
+      "node_errors": {},
+      "references": {
+        "turnaround": {
+          "source": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "uploaded_name": "CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f"
+        },
+        "lookbook": {
+          "source": "costume_seoyun_outer\\USER_LOOKBOOK_4LOOKS.webp",
+          "uploaded_name": "USER_LOOKBOOK_4LOOKS.webp",
+          "sha256": "5be11f61ab571a3a009da3cdb92f4076141b2fc96e5662c43c77867a975a57a7"
+        },
+        "casting": {
+          "source": "turnaround_qwen_v02\\references\\D11_CHAR_01_FINAL.png",
+          "uploaded_name": "D11_CHAR_01_FINAL.png",
+          "sha256": "3befd9d098183bc6126742f4de93ac5174f2a1e873a7ee81a1ea7d2e8ecd69f6"
+        },
+        "slots": {
+          "image_1": "turnaround → ImageScaleBy 0.75",
+          "image_2": "lookbook → ImageCrop look1_coat",
+          "image_3": "lookbook → ImageCrop look3_sneaker",
+          "image_4": "casting → ImageCrop face"
+        }
+      },
+      "status": "generated",
+      "visual_review": "불채택. 코트 길이·정면 보호대·흰 운동화·가방 없음은 맞음. 왼쪽 측면·후면 보호대 누락. 얼굴(사용자 지적 2026-10-06, 재검수 확인): 정면은 눈이 작고 가늘어짐, 코끝이 둥글고 짧아짐, 입술이 도톰해짐, 중안부·턱이 넓어져 확정 v02의 갸름한 V라인과 다름, 이마·볼·콧등 광택 증가, 고개가 약간 기욺. 측면은 콧대가 낮고 코끝이 들림, 입술이 더 나옴, 턱선이 둥글어짐.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_b.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 215.1,
+      "sha256": "72899c105de62bf2457041477d9b39c3da556a9af6a00354aa79712f127eda44"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_b_repaired",
+      "type": "panel repair (left profile + rear brace)",
+      "prompt_id": "472c5446-8414-4b8d-b818-83958f0f9255",
+      "node_errors": {},
+      "references": {
+        "target": {
+          "source": "costume_seoyun_outer\\outputs\\CHAR_01_서윤_COSTUME_01B_turnaround_b.png",
+          "uploaded_name": "CHAR_01_서윤_COSTUME_01B_turnaround_b.png",
+          "sha256": "72899c105de62bf2457041477d9b39c3da556a9af6a00354aa79712f127eda44",
+          "slot": "ImageCrop 640x1536 per panel → images.image_1"
+        },
+        "approved_brace": {
+          "source": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "uploaded_name": "CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop brace detail per panel → images.image_2"
+        }
+      },
+      "panels": {
+        "profile_left": {
+          "x": 640,
+          "seed": 2026100611,
+          "brace_crop": [
+            860,
+            600,
+            160,
+            240
+          ]
+        },
+        "rear": {
+          "x": 1280,
+          "seed": 2026100612,
+          "brace_crop": [
+            1390,
+            600,
+            160,
+            240
+          ]
+        }
+      },
+      "unchanged_panels": [
+        "front x=0",
+        "profile_right x=1920"
+      ],
+      "status": "generated",
+      "visual_review": "불채택. 보호대는 정면·왼쪽 측면·후면에서 해부학적 왼손목에 확인됨. 정면·오른쪽 측면 패널은 픽셀 변화 0. 그러나 보완 편집이 패널 전체(640x1536)를 다시 그려 왼쪽 측면의 얼굴·머리카락까지 바뀜(머리 영역 행 포함 전 구간 픽셀 변화). b에서 생긴 얼굴 변화도 그대로 남음.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_b_repaired.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 90.1,
+      "sha256": "d9acfbaf554a327476d89f92e23189a3b584df17a82b63db7b6d5df6c1412df9"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v2_a",
+      "type": "masked inpaint below neck on approved v02 sheet",
+      "seed": 2026100621,
+      "prompt_id": "ddce9fe2-93c3-475d-a564-c5798c07b1a3",
+      "node_errors": {},
+      "references": {
+        "edit_target": {
+          "source": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "VAEEncode + images.image_1 (×0.75) + composite destination"
+        },
+        "costume_guide": {
+          "source": "costume_seoyun_outer\\outputs\\CHAR_01_서윤_COSTUME_01B_turnaround_b_repaired.png",
+          "sha256": "d9acfbaf554a327476d89f92e23189a3b584df17a82b63db7b6d5df6c1412df9",
+          "slot": "images.image_2 (×0.5)"
+        },
+        "lookbook": {
+          "source": "costume_seoyun_outer\\USER_LOOKBOOK_4LOOKS.webp",
+          "sha256": "5be11f61ab571a3a009da3cdb92f4076141b2fc96e5662c43c77867a975a57a7",
+          "slot": "images.image_3 crop (0, 150, 360, 555) (no face), images.image_4 crop (912, 876, 150, 134)"
+        },
+        "mask": {
+          "source": "costume_seoyun_outer\\inpaint\\mask_below_neck.png",
+          "sha256": "95ed84f61bc9407fb4b9ad7a1568e6ad035ae122cb3b3ace8dbeaa18f2d883f1",
+          "lines": {
+            "0": 300,
+            "640": 268,
+            "1280": 268,
+            "1920": 268
+          },
+          "blur": 12
+        }
+      },
+      "settings": {
+        "steps": 60,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "중간 결과. 얼굴: 마스크 밖 픽셀 변화 0, 블러 가장자리 최대 차이 3(0~765) — 확정 v02 얼굴 유지. 목 경계 자연스러움. 정면(화면 오른쪽)·후면(화면 왼쪽) 보호대 맞음. 왼쪽 측면 앞쪽 팔 보호대 없음 → brace 국소 보완.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v2_a.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 225.2,
+      "sha256": "78d935cf1ea40182fae87d11efb7deffc0a9d234ff7a3a52fb315bb5d18b0660"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v2_b",
+      "type": "masked inpaint below neck on approved v02 sheet",
+      "seed": 2026100622,
+      "prompt_id": "aa4dcd40-a6af-4e9e-bf51-7ba11874ddeb",
+      "node_errors": {},
+      "references": {
+        "edit_target": {
+          "source": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "VAEEncode + images.image_1 (×0.75) + composite destination"
+        },
+        "costume_guide": {
+          "source": "costume_seoyun_outer\\outputs\\CHAR_01_서윤_COSTUME_01B_turnaround_b_repaired.png",
+          "sha256": "d9acfbaf554a327476d89f92e23189a3b584df17a82b63db7b6d5df6c1412df9",
+          "slot": "images.image_2 (×0.5)"
+        },
+        "lookbook": {
+          "source": "costume_seoyun_outer\\USER_LOOKBOOK_4LOOKS.webp",
+          "sha256": "5be11f61ab571a3a009da3cdb92f4076141b2fc96e5662c43c77867a975a57a7",
+          "slot": "images.image_3 crop (0, 150, 360, 555) (no face), images.image_4 crop (912, 876, 150, 134)"
+        },
+        "mask": {
+          "source": "costume_seoyun_outer\\inpaint\\mask_below_neck.png",
+          "sha256": "95ed84f61bc9407fb4b9ad7a1568e6ad035ae122cb3b3ace8dbeaa18f2d883f1",
+          "lines": {
+            "0": 300,
+            "640": 268,
+            "1280": 268,
+            "1920": 268
+          },
+          "blur": 12
+        }
+      },
+      "settings": {
+        "steps": 60,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "denoise": 1.0,
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 얼굴은 유지되지만 후면 보호대가 화면 오른쪽(해부학적 오른손목)에 생성됨, 왼쪽 측면 보호대 없음.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v2_b.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 210.2,
+      "sha256": "25c19664084a4359ea9105bb8b9b06f62e1a829455b67c2863c77079959255b2"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v2_a_brace1",
+      "type": "local masked inpaint, left-profile near wrist only",
+      "seed": 2026100631,
+      "prompt_id": "07d2e650-5a8d-424d-89cb-ab162b03af7a",
+      "node_errors": {},
+      "references": {
+        "edit_target": {
+          "source": "costume_seoyun_outer\\outputs\\CHAR_01_서윤_COSTUME_01B_turnaround_v2_a.png",
+          "sha256": "78d935cf1ea40182fae87d11efb7deffc0a9d234ff7a3a52fb315bb5d18b0660",
+          "slot": "ImageCrop panel x=640 → VAEEncode + images.image_1"
+        },
+        "brace": {
+          "source": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (860, 600, 160, 240) → images.image_2"
+        },
+        "mask": {
+          "source": "costume_seoyun_outer\\inpaint\\mask_profileL_wrist.png",
+          "sha256": "d16679275aebb2528bcea4d18161a420b9a341050be37131f09e787baa11dbe6",
+          "rect_sheet": [
+            860,
+            690,
+            980,
+            835
+          ],
+          "blur": 6
+        }
+      },
+      "settings": {
+        "steps": 50,
+        "denoise": 0.9,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0
+      },
+      "status": "generated",
+      "visual_review": "추천(사용자 확인 전). v2_a 대비 변화는 손목 주변 x845-995, y675-850 안에만 있음. 왼쪽 측면 보호대가 확정 v02 측면 보호대(버클 스트랩·엄지 구멍)와 같은 형태, 손가락 자연스러움. 보호대 3면(정면·왼쪽 측면·후면) 모두 해부학적 왼손목, 오른손목 맨살. 카멜 롱코트(앞 열림·노치드 라펠·옆 주머니·후면 중앙 솔기), 흰 끈 운동화, 가방 없음. 남은 차이: 코트 밑단은 시안보다 약간 높은 종아리 아래~발목 위. 어깨 아래 머리카락은 인페인팅으로 새로 그려짐. → 재검수(2026-10-06)에서 밑단 길이·후면 보호대 형태·정면 목둘레 번짐 지적, v3·v4로 수정.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v2_a_brace1.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 44.1,
+      "sha256": "281ea17b83fcd66bead53de37e915ce13b6ada2f07b02dec9987ebebee3e7ad7"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v2_a_brace2",
+      "type": "local masked inpaint, left-profile near wrist only",
+      "seed": 2026100632,
+      "prompt_id": "fb752f41-9864-4294-a2ce-376aaff0891c",
+      "node_errors": {},
+      "references": {
+        "edit_target": {
+          "source": "costume_seoyun_outer\\outputs\\CHAR_01_서윤_COSTUME_01B_turnaround_v2_a.png",
+          "sha256": "78d935cf1ea40182fae87d11efb7deffc0a9d234ff7a3a52fb315bb5d18b0660",
+          "slot": "ImageCrop panel x=640 → VAEEncode + images.image_1"
+        },
+        "brace": {
+          "source": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (860, 600, 160, 240) → images.image_2"
+        },
+        "mask": {
+          "source": "costume_seoyun_outer\\inpaint\\mask_profileL_wrist.png",
+          "sha256": "d16679275aebb2528bcea4d18161a420b9a341050be37131f09e787baa11dbe6",
+          "rect_sheet": [
+            860,
+            690,
+            980,
+            835
+          ],
+          "blur": 6
+        }
+      },
+      "settings": {
+        "steps": 50,
+        "denoise": 0.9,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 보호대가 손을 과하게 덮어 손가락이 짧아 보임.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v2_a_brace2.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 32.1,
+      "sha256": "e76ae45a9ba7d43c78004097c40feeba35cb8efd0c662c2305a908c14c3bc3a0"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v3",
+      "type": "local fixes on v2_a_brace1: hem lengthening (guide shift + inpaint), rear brace, front collar",
+      "prompt_id": "1fc3bbfa-26d0-4ff3-8cd6-b35ccc797cff",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer\\outputs\\CHAR_01_서윤_COSTUME_01B_turnaround_v2_a_brace1.png",
+          "sha256": "281ea17b83fcd66bead53de37e915ce13b6ada2f07b02dec9987ebebee3e7ad7"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v3_hem.png",
+          "sha256": "b462d16915f1288ebded5c017806e8226aed0e7638c9c42439fcda069a0df364",
+          "method": "PIL: 패널별 밑단 위 300px 구간(패널 전체 폭)을 세로 348px로 늘림(lanczos)"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "hem0",
+          "px": 0,
+          "rect": [
+            0,
+            1095,
+            639,
+            1305
+          ],
+          "blur": 8,
+          "denoise": 0.5,
+          "seed": 2026100640,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_hem0.png",
+          "mask_sha256": "8dade98f10da24507dc66142db1703e3dc01729e59451c2737f8a47801672470"
+        },
+        {
+          "tag": "hem1",
+          "px": 640,
+          "rect": [
+            640,
+            1096,
+            1279,
+            1306
+          ],
+          "blur": 8,
+          "denoise": 0.5,
+          "seed": 2026100641,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_hem1.png",
+          "mask_sha256": "379693966e1861a59cf596951cb2b59bf9abc3b37192064be77feabb9fd3b635"
+        },
+        {
+          "tag": "hem2",
+          "px": 1280,
+          "rect": [
+            1280,
+            1111,
+            1919,
+            1321
+          ],
+          "blur": 8,
+          "denoise": 0.5,
+          "seed": 2026100642,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_hem2.png",
+          "mask_sha256": "00b44678816728babb06648bdb9888b20f2ddd1c0f96e991f722b34ff9740f2f"
+        },
+        {
+          "tag": "hem3",
+          "px": 1920,
+          "rect": [
+            1920,
+            1098,
+            2559,
+            1308
+          ],
+          "blur": 8,
+          "denoise": 0.5,
+          "seed": 2026100643,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_hem3.png",
+          "mask_sha256": "1da45c2f0ae9852ee2a08d73dc354be1025307370c017d06acf789f79591d1a7"
+        },
+        {
+          "tag": "brace_rear",
+          "px": 1280,
+          "rect": [
+            1372,
+            660,
+            1505,
+            815
+          ],
+          "blur": 6,
+          "denoise": 0.9,
+          "seed": 2026100650,
+          "ref2": [
+            1390,
+            600,
+            160,
+            240
+          ],
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_brace_rear.png",
+          "mask_sha256": "1e2d3a7b8ffc31846637214b100071f436341f26c13c2c90fecd316b1075a80d"
+        },
+        {
+          "tag": "collar_front",
+          "px": 0,
+          "rect": [
+            300,
+            282,
+            480,
+            340
+          ],
+          "blur": 5,
+          "denoise": 0.7,
+          "seed": 2026100651,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_collar_front.png",
+          "mask_sha256": "f61a6feb70c68786b45063f8e870430fe06ba0c905aa9f55e05590e95d05f78b"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "중간 결과. 얼굴 3면 확정 v02와 픽셀 동일(변화 0). 코트 밑단 48px 연장(바지 노출 약 115→약 60px), 후면 보호대가 확정 v02 후면과 같은 컨투어·엄지 감쌈·스트랩 형태로 수정, 손 크기 정상. 남은 문제: 밑단+48px 높이의 바닥 가로 명암 경계, 정면 양어깨 위 오트밀 니트 잔상.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v3.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 235.1,
+      "sha256": "450d95fbe3b96e0ead32c4c78b620fb46d4df8715f1a9a7bff4d8a60070ea392"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v4",
+      "type": "local fixes on v3: floor seam band (bg-restore guide + inpaint 0.4), front shoulders band (inpaint 0.65)",
+      "prompt_id": "34bf4f5a-462e-4376-a6e4-8aedd9050cda",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v3.png",
+          "sha256": "450d95fbe3b96e0ead32c4c78b620fb46d4df8715f1a9a7bff4d8a60070ea392"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v4_bg_restore.png",
+          "sha256": "9cbef7bb8a73c71d54c51856bbb1e1f32dc08a1283531f3a0c650f5241f518bf",
+          "method": "PIL: v3의 늘린 구간(밑단-300~밑단+54)에서 v3·v2_a_brace1 모두 배경(저채도, 밝기>150)인 픽셀만 v2_a_brace1 값으로 복원"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v4_seam0",
+          "px": 0,
+          "rect": [
+            0,
+            1261,
+            639,
+            1309
+          ],
+          "blur": 6,
+          "denoise": 0.4,
+          "seed": 2026100660,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v4_seam0.png",
+          "mask_sha256": "25c89bb607d0641b922339caf2587c64c6e1917401850e12e9848364ada10297"
+        },
+        {
+          "tag": "v4_seam1",
+          "px": 640,
+          "rect": [
+            640,
+            1262,
+            1279,
+            1310
+          ],
+          "blur": 6,
+          "denoise": 0.4,
+          "seed": 2026100661,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v4_seam1.png",
+          "mask_sha256": "fe5bd551c6e89dcd751f63d49b7ce066a0296d78ae820e5dc7e432d13d533dc7"
+        },
+        {
+          "tag": "v4_seam2",
+          "px": 1280,
+          "rect": [
+            1280,
+            1277,
+            1919,
+            1325
+          ],
+          "blur": 6,
+          "denoise": 0.4,
+          "seed": 2026100662,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v4_seam2.png",
+          "mask_sha256": "189637a2e2b64078651e03a782b3110ce625360c5231140f03d4f0476a859487"
+        },
+        {
+          "tag": "v4_seam3",
+          "px": 1920,
+          "rect": [
+            1920,
+            1264,
+            2559,
+            1312
+          ],
+          "blur": 6,
+          "denoise": 0.4,
+          "seed": 2026100663,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v4_seam3.png",
+          "mask_sha256": "08d0deb2127fce28013287803d4bf45afd9c452c1fd6fb9b12e3e700f5e66985"
+        },
+        {
+          "tag": "v4_shoulders_front",
+          "px": 0,
+          "rect": [
+            140,
+            280,
+            520,
+            330
+          ],
+          "blur": 4,
+          "denoise": 0.65,
+          "seed": 2026100665,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v4_shoulders_front.png",
+          "mask_sha256": "8507840651aa0395c8dbb9b58b42337af794060f41625f390c3db23a2c692f05"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "추천(사용자 확정 전). v3 대비 변경은 y270~1340 안의 경계 띠와 정면 어깨 띠뿐, 후면 보호대 영역 변화 0. 얼굴 3면 확정 v02와 픽셀 동일(변화 0). 바닥 경계: 대비 2.5배 확대에서도 보이지 않음, 배경 행별 최대 밝기 단차 0.7~2.6(원본 0.4~1.0). 정면 양어깨 코트로 덮임. 보호대 3면 해부학적 왼손목. 남은 차이: 어깨 아래 머리카락은 v2 인페인팅에서 새로 그려진 것. → 사용자 지적(2026-10-06): 보호대가 코트 소매 바깥에 덧대어짐, 어깨·깃 허연 번짐 → v5~v8b로 수정.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v4.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 190.1,
+      "sha256": "183bfcbe4901563f2772d3f3986a066159877c1d265675b2d436780fdbc7f25f"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v5a",
+      "type": "local fixes on v4 (user feedback): brace tucked inside coat cuff (3 views), whitish haze on collar/shoulder lines (4 views)",
+      "prompt_id": "51d7251f-8567-4acf-9f78-926fed02d8fc",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v4.png",
+          "sha256": "183bfcbe4901563f2772d3f3986a066159877c1d265675b2d436780fdbc7f25f"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\outputs\\CHAR_01_서윤_COSTUME_01B_turnaround_v4.png",
+          "sha256": "183bfcbe4901563f2772d3f3986a066159877c1d265675b2d436780fdbc7f25f",
+          "method": "가이드 전처리 없음: v4를 그대로 편집 대상으로 사용"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v5a_collar_front",
+          "px": 0,
+          "rect": [
+            330,
+            276,
+            520,
+            335
+          ],
+          "blur": 5,
+          "denoise": 0.7,
+          "seed": 2026100670,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5a_collar_front.png",
+          "mask_sha256": "70ba8d929b99d3983fa1fb93299ecd6a752a51db051e6f5dd3ce0f86c23018c3"
+        },
+        {
+          "tag": "v5a_collar_profL",
+          "px": 640,
+          "rect": [
+            880,
+            252,
+            1060,
+            310
+          ],
+          "blur": 5,
+          "denoise": 0.7,
+          "seed": 2026100671,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5a_collar_profL.png",
+          "mask_sha256": "6e53a1324cda767bb4deed567c55a07d1b6b52115948e6f64fea4365cfacf009"
+        },
+        {
+          "tag": "v5a_shoulders_rear",
+          "px": 1280,
+          "rect": [
+            1410,
+            262,
+            1810,
+            318
+          ],
+          "blur": 5,
+          "denoise": 0.6,
+          "seed": 2026100672,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5a_shoulders_rear.png",
+          "mask_sha256": "ff18fba374a16a72cae1707e6203d14bb511412946ed1f794c5285ee7f3113f2"
+        },
+        {
+          "tag": "v5a_collar_profR",
+          "px": 1920,
+          "rect": [
+            2170,
+            252,
+            2340,
+            315
+          ],
+          "blur": 5,
+          "denoise": 0.7,
+          "seed": 2026100673,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5a_collar_profR.png",
+          "mask_sha256": "6e69bacb2c9f9011276e6172c74f0dc1df08a6344de09ea3b707a80241abd35a"
+        },
+        {
+          "tag": "v5a_brace_front",
+          "px": 0,
+          "rect": [
+            440,
+            630,
+            560,
+            735
+          ],
+          "blur": 5,
+          "denoise": 0.75,
+          "seed": 2026100674,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5a_brace_front.png",
+          "mask_sha256": "e58a73773128d6308c6c6ad3f78c42a9686eadfa7c8fc6062ef01b5a5371ce2c"
+        },
+        {
+          "tag": "v5a_brace_profL",
+          "px": 640,
+          "rect": [
+            868,
+            668,
+            992,
+            772
+          ],
+          "blur": 5,
+          "denoise": 0.75,
+          "seed": 2026100675,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5a_brace_profL.png",
+          "mask_sha256": "e247de002f661c396ad394a8add93e2544169e0d15dfb3050e05d175c04a8b48"
+        },
+        {
+          "tag": "v5a_brace_rear",
+          "px": 1280,
+          "rect": [
+            1368,
+            612,
+            1497,
+            722
+          ],
+          "blur": 5,
+          "denoise": 0.75,
+          "seed": 2026100676,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5a_brace_rear.png",
+          "mask_sha256": "9b37ebdda0c95dc44c7088c24117bbccda63ab6d92fb12af51f6300bdf524509"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 정면·후면 보호대는 소매 안으로 들어갔으나 정면·오른쪽 측면 깃 윗선 번짐이 남고 왼쪽 측면 보호대가 소매 위에 덧대어진 채.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v5a.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 275.3,
+      "sha256": "7ebb664bcb959072706e1e07ecea0fd6eaae26dbd8ac9f0a1d4b7459bc07e5ce"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v5b",
+      "type": "local fixes on v4 (user feedback): brace tucked inside coat cuff (3 views), whitish haze on collar/shoulder lines (4 views)",
+      "prompt_id": "224d00ba-d366-474c-a911-190257213b13",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v4.png",
+          "sha256": "183bfcbe4901563f2772d3f3986a066159877c1d265675b2d436780fdbc7f25f"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\outputs\\CHAR_01_서윤_COSTUME_01B_turnaround_v4.png",
+          "sha256": "183bfcbe4901563f2772d3f3986a066159877c1d265675b2d436780fdbc7f25f",
+          "method": "가이드 전처리 없음: v4를 그대로 편집 대상으로 사용"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v5b_collar_front",
+          "px": 0,
+          "rect": [
+            330,
+            276,
+            520,
+            335
+          ],
+          "blur": 5,
+          "denoise": 0.7,
+          "seed": 2026100680,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5b_collar_front.png",
+          "mask_sha256": "70ba8d929b99d3983fa1fb93299ecd6a752a51db051e6f5dd3ce0f86c23018c3"
+        },
+        {
+          "tag": "v5b_collar_profL",
+          "px": 640,
+          "rect": [
+            880,
+            252,
+            1060,
+            310
+          ],
+          "blur": 5,
+          "denoise": 0.7,
+          "seed": 2026100681,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5b_collar_profL.png",
+          "mask_sha256": "6e53a1324cda767bb4deed567c55a07d1b6b52115948e6f64fea4365cfacf009"
+        },
+        {
+          "tag": "v5b_shoulders_rear",
+          "px": 1280,
+          "rect": [
+            1410,
+            262,
+            1810,
+            318
+          ],
+          "blur": 5,
+          "denoise": 0.6,
+          "seed": 2026100682,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5b_shoulders_rear.png",
+          "mask_sha256": "ff18fba374a16a72cae1707e6203d14bb511412946ed1f794c5285ee7f3113f2"
+        },
+        {
+          "tag": "v5b_collar_profR",
+          "px": 1920,
+          "rect": [
+            2170,
+            252,
+            2340,
+            315
+          ],
+          "blur": 5,
+          "denoise": 0.7,
+          "seed": 2026100683,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5b_collar_profR.png",
+          "mask_sha256": "6e69bacb2c9f9011276e6172c74f0dc1df08a6344de09ea3b707a80241abd35a"
+        },
+        {
+          "tag": "v5b_brace_front",
+          "px": 0,
+          "rect": [
+            440,
+            630,
+            560,
+            735
+          ],
+          "blur": 5,
+          "denoise": 0.75,
+          "seed": 2026100684,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5b_brace_front.png",
+          "mask_sha256": "e58a73773128d6308c6c6ad3f78c42a9686eadfa7c8fc6062ef01b5a5371ce2c"
+        },
+        {
+          "tag": "v5b_brace_profL",
+          "px": 640,
+          "rect": [
+            868,
+            668,
+            992,
+            772
+          ],
+          "blur": 5,
+          "denoise": 0.75,
+          "seed": 2026100685,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5b_brace_profL.png",
+          "mask_sha256": "e247de002f661c396ad394a8add93e2544169e0d15dfb3050e05d175c04a8b48"
+        },
+        {
+          "tag": "v5b_brace_rear",
+          "px": 1280,
+          "rect": [
+            1368,
+            612,
+            1497,
+            722
+          ],
+          "blur": 5,
+          "denoise": 0.75,
+          "seed": 2026100686,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v5b_brace_rear.png",
+          "mask_sha256": "9b37ebdda0c95dc44c7088c24117bbccda63ab6d92fb12af51f6300bdf524509"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "중간 결과. 깃·어깨 허연 번짐 4면 모두 제거(불투명한 코트색), 정면·후면 보호대가 소매 끝 아래에서 나옴. 왼쪽 측면 보호대만 소매 위에 덧대어진 채.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v5b.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 275.2,
+      "sha256": "09a5867c02245c92ff8b48302fa3ebfe1b6e7d45001eb5d4de55f5eac6ed2452"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v6",
+      "type": "local fix on v5b (user feedback): left-profile brace tucked inside sleeve (sleeve-texture guide + inpaint 0.55)",
+      "prompt_id": "c2411937-2ac2-4b4e-83be-09a44aec9500",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v5b.png",
+          "sha256": "09a5867c02245c92ff8b48302fa3ebfe1b6e7d45001eb5d4de55f5eac6ed2452"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v6_profL_sleeve.png",
+          "sha256": "93d7c1beb8083cf66637f4ec459fc0870c1924cca087ad19ac880f6e2ed58bf2",
+          "method": "PIL: 소매 영역(x885~975, y632~690)을 왼쪽 11px 옮겨 y690~748에 복사(소매가 보호대 윗부분을 덮는 형태)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v6_brace_profL",
+          "px": 640,
+          "rect": [
+            870,
+            680,
+            985,
+            770
+          ],
+          "blur": 5,
+          "denoise": 0.55,
+          "seed": 2026100690,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v6_brace_profL.png",
+          "mask_sha256": "f40833a50636a7d4f2b372fc801fd6bf6209f6229f03877a14a1c89676e2028b"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 왼쪽 측면 보호대는 소매 안으로 들어갔으나 수평 사각형 가이드 때문에 소매 왼쪽 가장자리에 꺾인 선.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v6.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 45.1,
+      "sha256": "6b572bc8304382be7ff7472011d165f9a5660cee2e14e74539dbcba4b9b6bb2d"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v7",
+      "type": "local fix on v6: remove guide outline at left-profile sleeve edge (inpaint 0.8)",
+      "prompt_id": "61e935b6-677c-44a5-bcbe-1bf11bd726c0",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v6.png",
+          "sha256": "6b572bc8304382be7ff7472011d165f9a5660cee2e14e74539dbcba4b9b6bb2d"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\outputs\\CHAR_01_서윤_COSTUME_01B_turnaround_v6.png",
+          "sha256": "6b572bc8304382be7ff7472011d165f9a5660cee2e14e74539dbcba4b9b6bb2d",
+          "method": "가이드 전처리 없음: v6를 그대로 편집 대상으로 사용"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v7_sleeve_edge_profL",
+          "px": 640,
+          "rect": [
+            864,
+            676,
+            902,
+            748
+          ],
+          "blur": 4,
+          "denoise": 0.8,
+          "seed": 2026100695,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v7_sleeve_edge_profL.png",
+          "mask_sha256": "737195599d2f7464b2315ace53811d22e8414075a0076d567ab4c80cd1dc9475"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. denoise 0.8 재인페인팅으로도 꺾인 선 유지(Qwen 편집이 image_1 구조를 재현).",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v7.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 40.1,
+      "sha256": "dc12c956758b4c670e0f293d267acfa2f8182b13d3f032c6839fa5300a904bd5"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v7b",
+      "type": "local fix on v6: restore original sleeve-edge strip from v5b, blend (inpaint 0.45)",
+      "prompt_id": "0dbb3173-fd6f-432a-8c26-12f7a6a446cf",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v6.png",
+          "sha256": "6b572bc8304382be7ff7472011d165f9a5660cee2e14e74539dbcba4b9b6bb2d"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v7b_profL_edge.png",
+          "sha256": "c5fd9b58974e04d99d1177c482210c792b64814568d68d638bf6dbbd8c0a612b",
+          "method": "PIL: v6의 (864,680)-(890,748) 띠를 v5b 원래 픽셀로 복원"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v7b_sleeve_edge_profL",
+          "px": 640,
+          "rect": [
+            862,
+            676,
+            902,
+            752
+          ],
+          "blur": 4,
+          "denoise": 0.45,
+          "seed": 2026100696,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v7b_sleeve_edge_profL.png",
+          "mask_sha256": "8a67e9d8d8146d0198401abeb2d5689436a629c20c37eef30bb2385924c00d26"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 꺾인 선은 제거됐으나 소매 끝 왼쪽 모서리 턱(약 10px).",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v7b.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 40.7,
+      "sha256": "fc7027b5e93ff1b9c3154a9adc88b9d0e11627ffd1d3c6f9b40a1482adae06ff"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v7c",
+      "type": "local fix on v7b: square the left-profile cuff corner (inpaint 0.45)",
+      "prompt_id": "c0280e17-bc30-4f16-840e-5ac9dcb6c0de",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v7b.png",
+          "sha256": "fc7027b5e93ff1b9c3154a9adc88b9d0e11627ffd1d3c6f9b40a1482adae06ff"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v7c_profL_cuff.png",
+          "sha256": "2c26a2743852091c5107a773c32ab9b6df3e5396b31fce241d9ee7a53ed22646",
+          "method": "PIL: (874,700)-(892,713) 소매 띠를 (874,735)에 복사"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v7c_cuff_corner_profL",
+          "px": 640,
+          "rect": [
+            868,
+            724,
+            904,
+            758
+          ],
+          "blur": 3,
+          "denoise": 0.45,
+          "seed": 2026100697,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v7c_cuff_corner_profL.png",
+          "mask_sha256": "2089f3604ba1fcfb5da3567930dc9b7360d38218cb0b8dfdacb4329b8137a9c4"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택(사용자 다시 시도 요청). 모서리 정리 중 새 턱 발생. 원인: 실제 소매 끝선이 비스듬한데 수평으로 붙임.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v7c.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 40.7,
+      "sha256": "214428782d4c3ef2036b1b9866d19bc1ee273cf587f439d5eceae32fbac77003"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v8",
+      "type": "local fix on v5b (user retry): left-profile brace tucked inside sleeve with the original slanted cuff line (polygon sleeve guide + inpaint 0.4)",
+      "prompt_id": "e440a9bf-057b-4024-8f95-8eb474db5ac7",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v5b.png",
+          "sha256": "09a5867c02245c92ff8b48302fa3ebfe1b6e7d45001eb5d4de55f5eac6ed2452"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v8_profL_sleeve_poly.png",
+          "sha256": "a0d5e7b7e423332cd5904e701dc78b2648a1eb6d2b226c70fea4b60002fb53aa",
+          "method": "numpy: v5b 소매 끝선 위 다각형 [(887,688),(974,688),(968,755),(878,738)]을 (dx+12, dy-66) 소매 픽셀로 채움"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v8_brace_tuck_profL",
+          "px": 640,
+          "rect": [
+            866,
+            682,
+            982,
+            768
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100698,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v8_brace_tuck_profL.png",
+          "mask_sha256": "3503ca3046ba11783c3e667ac4d5e4b5f5f6adc3a1ef248e3de7ea7ff5c404fa"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 다각형 왼쪽 경계가 실제 소매 가장자리 띠와 겹쳐 그림자선이 이중으로 생김.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v8.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 45.0,
+      "sha256": "4b1de430376fc545deebf16e077554e91976de67b19c4eb198f5e3a91bd78e2c"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v8b",
+      "type": "local fix on v5b (user retry): left-profile brace tucked inside sleeve, original slanted cuff and sleeve edges kept (polygon guide + inpaint 0.4)",
+      "prompt_id": "ede40756-f8ba-490a-8ac1-32e36e2a78f9",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v5b.png",
+          "sha256": "09a5867c02245c92ff8b48302fa3ebfe1b6e7d45001eb5d4de55f5eac6ed2452"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v8_profL_sleeve_poly.png",
+          "sha256": "8b17887b477c4c764b361e6ecc65f4acc528276d4471c70a1cf87cc07972bf70",
+          "method": "numpy: v5b 다각형 [(892,688),(958,688),(958,753),(886,740)]을 (dx+13, dy-66) 소매 안쪽 픽셀로 채움"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v8b_brace_tuck_profL",
+          "px": 640,
+          "rect": [
+            888,
+            682,
+            966,
+            762
+          ],
+          "blur": 3,
+          "denoise": 0.4,
+          "seed": 2026100699,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v8b_brace_tuck_profL.png",
+          "mask_sha256": "7359b1e30a6982dd16b5d35019ef1d335a6f05aa49be0d75f2e60e17319698c5"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "추천(사용자 확정 전). v5b 대비 변경은 (880,674)-(974,770) 안뿐. 왼쪽 측면: 소매가 원래 좌우 가장자리와 비스듬한 소매 끝선 그대로 보호대 윗부분을 덮고, 보호대 아랫부분(엄지 구멍)이 소매 아래로 나옴. 이중선·턱 없음. 정면·후면 보호대도 소매 끝 아래에서 나옴. 깃·어깨 번짐 4면 제거. 얼굴 3면 확정 v02와 픽셀 동일. → 사용자 지적(2026-10-06): 정면·후면 소매가 측면보다 짧음 → v9~v13a로 수정.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v8b.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 45.0,
+      "sha256": "a1a893d2eb8c3b2abe80664efd4533ccf2605c003b711a6c3fb006d88223d776"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v9a",
+      "type": "sleeve length match (user feedback): front both sleeves + rear left sleeve lengthened to wrist like profiles; rear brace lower end redrawn below cuff",
+      "prompt_id": "0cb4361b-9f84-43c6-9c44-96d9e1ba3973",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v8b.png",
+          "sha256": "a1a893d2eb8c3b2abe80664efd4533ccf2605c003b711a6c3fb006d88223d776"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v9_sleeves.png",
+          "sha256": "b901250a922a54f8aa340ac7076de4e852d271017060ee1fe86fb86a2eb2f42f",
+          "method": "PIL: 소매 폭 띠 (x0, 소매끝-30-Δ)~(x1, 소매끝+3)을 Δ만큼 아래로 이동 — 정면 화면왼쪽 (112-188, 705→740), 정면 화면오른쪽 (476-534, 682→740), 후면 화면왼쪽 (1399-1462, 656→745)"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v9_ext_front_imgL",
+          "px": 0,
+          "rect": [
+            104,
+            667,
+            196,
+            762
+          ],
+          "blur": 4,
+          "denoise": 0.5,
+          "seed": 2026100700,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v9_ext_front_imgL.png",
+          "mask_sha256": "3dd994f1dc4a0f574937b69d93cad94ac2c90b0dc890c104327e0ed648143b04"
+        },
+        {
+          "tag": "v9_ext_front_imgR",
+          "px": 0,
+          "rect": [
+            468,
+            644,
+            542,
+            762
+          ],
+          "blur": 4,
+          "denoise": 0.5,
+          "seed": 2026100701,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v9_ext_front_imgR.png",
+          "mask_sha256": "f9f68f51edcb5f95a7e619dc6a1d637669cd6f19a357c5abf109480aff352213"
+        },
+        {
+          "tag": "v9_ext_rear_imgL",
+          "px": 1280,
+          "rect": [
+            1391,
+            618,
+            1470,
+            760
+          ],
+          "blur": 4,
+          "denoise": 0.5,
+          "seed": 2026100702,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v9_ext_rear_imgL.png",
+          "mask_sha256": "7babbf3e517477d08b14e5be205decced99e2fdedffaf039b2b0032bd263f06e"
+        },
+        {
+          "tag": "v9_brace_rear_hand",
+          "px": 1280,
+          "rect": [
+            1382,
+            738,
+            1478,
+            800
+          ],
+          "blur": 4,
+          "denoise": 0.9,
+          "seed": 2026100703,
+          "ref2": [
+            1390,
+            600,
+            160,
+            240
+          ],
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v9_brace_rear_hand.png",
+          "mask_sha256": "4d2b4243c2f9c2cce1df3ab5e2f583d8dbf6dd8f297f394a4ad2c2a3de8e8703"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 수직 띠 이동으로 소매 가장자리 계단, 후면 보호대 소실·손 자국.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v9a.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 175.1,
+      "sha256": "0b3d3fcf6ba7e8c2368edc6b6e11a6dd6c610f1d1235ad0516943c1e7a44d7d5"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v9b",
+      "type": "sleeve length match (user feedback): front both sleeves + rear left sleeve lengthened to wrist like profiles; rear brace lower end redrawn below cuff",
+      "prompt_id": "3fe7217e-1518-45b9-b33f-178fe4e518bb",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v8b.png",
+          "sha256": "a1a893d2eb8c3b2abe80664efd4533ccf2605c003b711a6c3fb006d88223d776"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v9_sleeves.png",
+          "sha256": "b901250a922a54f8aa340ac7076de4e852d271017060ee1fe86fb86a2eb2f42f",
+          "method": "PIL: 소매 폭 띠 (x0, 소매끝-30-Δ)~(x1, 소매끝+3)을 Δ만큼 아래로 이동 — 정면 화면왼쪽 (112-188, 705→740), 정면 화면오른쪽 (476-534, 682→740), 후면 화면왼쪽 (1399-1462, 656→745)"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v9_ext_front_imgL",
+          "px": 0,
+          "rect": [
+            104,
+            667,
+            196,
+            762
+          ],
+          "blur": 4,
+          "denoise": 0.5,
+          "seed": 2026100710,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v9_ext_front_imgL.png",
+          "mask_sha256": "3dd994f1dc4a0f574937b69d93cad94ac2c90b0dc890c104327e0ed648143b04"
+        },
+        {
+          "tag": "v9_ext_front_imgR",
+          "px": 0,
+          "rect": [
+            468,
+            644,
+            542,
+            762
+          ],
+          "blur": 4,
+          "denoise": 0.5,
+          "seed": 2026100711,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v9_ext_front_imgR.png",
+          "mask_sha256": "f9f68f51edcb5f95a7e619dc6a1d637669cd6f19a357c5abf109480aff352213"
+        },
+        {
+          "tag": "v9_ext_rear_imgL",
+          "px": 1280,
+          "rect": [
+            1391,
+            618,
+            1470,
+            760
+          ],
+          "blur": 4,
+          "denoise": 0.5,
+          "seed": 2026100712,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v9_ext_rear_imgL.png",
+          "mask_sha256": "7babbf3e517477d08b14e5be205decced99e2fdedffaf039b2b0032bd263f06e"
+        },
+        {
+          "tag": "v9_brace_rear_hand",
+          "px": 1280,
+          "rect": [
+            1382,
+            738,
+            1478,
+            800
+          ],
+          "blur": 4,
+          "denoise": 0.9,
+          "seed": 2026100713,
+          "ref2": [
+            1390,
+            600,
+            160,
+            240
+          ],
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v9_brace_rear_hand.png",
+          "mask_sha256": "4d2b4243c2f9c2cce1df3ab5e2f583d8dbf6dd8f297f394a4ad2c2a3de8e8703"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 후면 보호대는 보이나 정면 화면왼쪽(y≈675)·후면(y≈625) 띠 경계 계단과 후면 안쪽 세로선.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v9b.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 160.1,
+      "sha256": "ac16bd80306a2b60afad259521d61370df3b85f555804948f409abc155ff1bdb"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v10a",
+      "type": "sleeve length match (user feedback), edge-aligned: front both sleeves + rear left sleeve to wrist; rear brace lower end below cuff",
+      "prompt_id": "ae1246d1-0cf7-40d3-a33b-82163b05c82d",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v8b.png",
+          "sha256": "a1a893d2eb8c3b2abe80664efd4533ccf2605c003b711a6c3fb006d88223d776"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v10_sleeves.png",
+          "sha256": "281f5c0f4bf60b1e67e76de101f21a97057c68bcaa1aec1e58cd5d0a49b71f5d",
+          "method": "numpy: 측정한 소매 좌우 가장자리 직선 사이를 상대 위치 유지하며 Δ만큼 아래로 이동 — 정면 화면왼쪽 713→740, 정면 화면오른쪽 686→740, 후면 화면왼쪽 661→745, 시작 행 소매끝-20"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v10_ext_front_imgL",
+          "px": 0,
+          "rect": [
+            112,
+            686,
+            198,
+            752
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100720,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v10_ext_front_imgL.png",
+          "mask_sha256": "d4a89393dc42095de9262314ac8cfef43578cef369459457676660ed3eb293f1"
+        },
+        {
+          "tag": "v10_ext_front_imgR",
+          "px": 0,
+          "rect": [
+            466,
+            660,
+            536,
+            752
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100721,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v10_ext_front_imgR.png",
+          "mask_sha256": "c7025c4b7bf1330f08168a696d1dfe423e6137ec697ed6753430c1465910cfaf"
+        },
+        {
+          "tag": "v10_ext_rear_imgL",
+          "px": 1280,
+          "rect": [
+            1384,
+            634,
+            1480,
+            756
+          ],
+          "blur": 4,
+          "denoise": 0.5,
+          "seed": 2026100722,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v10_ext_rear_imgL.png",
+          "mask_sha256": "7b48ce512e183555087a9a806358836761e6923c9e11d6d95966cdcbf9cd5d35"
+        },
+        {
+          "tag": "v10_brace_rear_hand",
+          "px": 1280,
+          "rect": [
+            1382,
+            742,
+            1478,
+            800
+          ],
+          "blur": 4,
+          "denoise": 0.9,
+          "seed": 2026100723,
+          "ref2": [
+            1390,
+            600,
+            160,
+            240
+          ],
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v10_brace_rear_hand.png",
+          "mask_sha256": "674b35b348c7edd5d722d6e8a0b3452e64cf60450c74a770bc0d3bce7242bd77"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "중간 결과. 정면 두 소매 손목까지 연장, 후면 보호대 버클 스트랩 자연스러움. 후면 안쪽선 어긋남·연장부 위 가로줄, 정면 안쪽 가장자리 작은 점 2곳.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v10a.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 170.2,
+      "sha256": "bdcdc26e31b85498b9731ac2ade954b357c9142c447ebd0c5f46a24f08a30213"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v10b",
+      "type": "sleeve length match (user feedback), edge-aligned: front both sleeves + rear left sleeve to wrist; rear brace lower end below cuff",
+      "prompt_id": "d48d7347-83f3-4986-9fc1-0ab204077408",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v8b.png",
+          "sha256": "a1a893d2eb8c3b2abe80664efd4533ccf2605c003b711a6c3fb006d88223d776"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v10_sleeves.png",
+          "sha256": "281f5c0f4bf60b1e67e76de101f21a97057c68bcaa1aec1e58cd5d0a49b71f5d",
+          "method": "numpy: 측정한 소매 좌우 가장자리 직선 사이를 상대 위치 유지하며 Δ만큼 아래로 이동 — 정면 화면왼쪽 713→740, 정면 화면오른쪽 686→740, 후면 화면왼쪽 661→745, 시작 행 소매끝-20"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v10_ext_front_imgL",
+          "px": 0,
+          "rect": [
+            112,
+            686,
+            198,
+            752
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100730,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v10_ext_front_imgL.png",
+          "mask_sha256": "d4a89393dc42095de9262314ac8cfef43578cef369459457676660ed3eb293f1"
+        },
+        {
+          "tag": "v10_ext_front_imgR",
+          "px": 0,
+          "rect": [
+            466,
+            660,
+            536,
+            752
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100731,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v10_ext_front_imgR.png",
+          "mask_sha256": "c7025c4b7bf1330f08168a696d1dfe423e6137ec697ed6753430c1465910cfaf"
+        },
+        {
+          "tag": "v10_ext_rear_imgL",
+          "px": 1280,
+          "rect": [
+            1384,
+            634,
+            1480,
+            756
+          ],
+          "blur": 4,
+          "denoise": 0.5,
+          "seed": 2026100732,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v10_ext_rear_imgL.png",
+          "mask_sha256": "7b48ce512e183555087a9a806358836761e6923c9e11d6d95966cdcbf9cd5d35"
+        },
+        {
+          "tag": "v10_brace_rear_hand",
+          "px": 1280,
+          "rect": [
+            1382,
+            742,
+            1478,
+            800
+          ],
+          "blur": 4,
+          "denoise": 0.9,
+          "seed": 2026100733,
+          "ref2": [
+            1390,
+            600,
+            160,
+            240
+          ],
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v10_brace_rear_hand.png",
+          "mask_sha256": "674b35b348c7edd5d722d6e8a0b3452e64cf60450c74a770bc0d3bce7242bd77"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 후면 보호대가 각진 플라스틱 느낌, v10a와 같은 후면 안쪽선 문제.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v10b.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 155.1,
+      "sha256": "646ea870d49300afcf9483f55174420864e09d43b13f58cef38d62bc2d8779a4"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v11a",
+      "type": "rear left sleeve extension redo on v10a with measured inner edge (R=1472-0.055(y-550))",
+      "prompt_id": "ed83eb70-2dfe-45d0-ae12-a5c6538278b4",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v10a.png",
+          "sha256": "bdcdc26e31b85498b9731ac2ade954b357c9142c447ebd0c5f46a24f08a30213"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v11_rear_sleeve.png",
+          "sha256": "d6be91e948cce9a5af45dc94f030b4090f8ba8ba4a9c2dfab9461e69caf7b4db",
+          "method": "numpy: v10a 바탕, 후면 행 641~747만 v8b 소스에서 가장자리 정렬 복사(바깥 여백 6px, 안쪽 2px)"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v11a_ext_rear_imgL",
+          "px": 1280,
+          "rect": [
+            1384,
+            634,
+            1480,
+            750
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100740,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v11a_ext_rear_imgL.png",
+          "mask_sha256": "7043f4ee045ab97c6b77d99a5bb7f79372c3d5a5043f9d938c528066fe3eb477"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 안쪽선은 정리됐으나 채우기 시작 행(641) 명암 단차.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v11a.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 45.0,
+      "sha256": "840a4d989066fe1cdea2a27c4b0355fe9aea83402fdaad02ff088b1cd7428f96"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v11b",
+      "type": "rear left sleeve extension redo on v10a with measured inner edge (R=1472-0.055(y-550))",
+      "prompt_id": "54b03b82-e402-45ab-b483-284e11329fea",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v10a.png",
+          "sha256": "bdcdc26e31b85498b9731ac2ade954b357c9142c447ebd0c5f46a24f08a30213"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v11_rear_sleeve.png",
+          "sha256": "d6be91e948cce9a5af45dc94f030b4090f8ba8ba4a9c2dfab9461e69caf7b4db",
+          "method": "numpy: v10a 바탕, 후면 행 641~747만 v8b 소스에서 가장자리 정렬 복사(바깥 여백 6px, 안쪽 2px)"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v11b_ext_rear_imgL",
+          "px": 1280,
+          "rect": [
+            1384,
+            634,
+            1480,
+            750
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100741,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v11b_ext_rear_imgL.png",
+          "mask_sha256": "7043f4ee045ab97c6b77d99a5bb7f79372c3d5a5043f9d938c528066fe3eb477"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 안쪽선은 정리됐으나 채우기 시작 행(641) 명암 단차.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v11b.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 30.6,
+      "sha256": "42f12851bfec36baeb93feb0506880ac52e9355c00fc9de15cfdafdafe1e8a9a"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v12a",
+      "type": "v10a 바탕: 후면 소매 연장 재채움(시작 소매끝-30, 옛 박음선 덮음) + 정면 안쪽 가장자리 작은 점 2곳",
+      "prompt_id": "5dd9332e-0ace-418b-a0f3-468b181f7813",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v10a.png",
+          "sha256": "bdcdc26e31b85498b9731ac2ade954b357c9142c447ebd0c5f46a24f08a30213"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v12_rear_sleeve.png",
+          "sha256": "bc4c88a173ba690af347046d8554c69b4996ed83f99b7bad7fabd127e71491a5",
+          "method": "numpy: v10a 바탕, 후면 행 631~747을 v8b 소스에서 가장자리 정렬 복사(L=1408-0.09(y-550), R=1472-0.055(y-550))"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v12a_ext_rear_imgL",
+          "px": 1280,
+          "rect": [
+            1384,
+            622,
+            1480,
+            750
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100740,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v12a_ext_rear_imgL.png",
+          "mask_sha256": "0a3be55c8f84e19a114a6ad4c53763543e03e021a361d5ade447b8e574c92ed8"
+        },
+        {
+          "tag": "v12a_notch_front_imgL",
+          "px": 0,
+          "rect": [
+            180,
+            684,
+            196,
+            702
+          ],
+          "blur": 2,
+          "denoise": 0.6,
+          "seed": 2026100741,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v12a_notch_front_imgL.png",
+          "mask_sha256": "b20325e48b5cca88c02adc020dc2a0bbc96dc65a9f6c8c092d32d9b5ff025e7d"
+        },
+        {
+          "tag": "v12a_notch_front_imgR",
+          "px": 0,
+          "rect": [
+            469,
+            656,
+            485,
+            674
+          ],
+          "blur": 2,
+          "denoise": 0.6,
+          "seed": 2026100742,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v12a_notch_front_imgR.png",
+          "mask_sha256": "720099e78c6fd00e60de800c575ce5a6621e8eba6bb8dd3b128d1ce44782e6c9"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 시작 행을 올려도 시작 행(631) 명암 단차 유지, 정면 점 denoise 0.6으로 미제거.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v12a.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 130.1,
+      "sha256": "06310168720ae3ceae5c1c7f1ea2850adc77fe0e41e5253f3d765426b4d9d124"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v12b",
+      "type": "v10a 바탕: 후면 소매 연장 재채움(시작 소매끝-30, 옛 박음선 덮음) + 정면 안쪽 가장자리 작은 점 2곳",
+      "prompt_id": "eb4a2fd8-e220-4dd0-a5f4-e0f8ee93a0a1",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v10a.png",
+          "sha256": "bdcdc26e31b85498b9731ac2ade954b357c9142c447ebd0c5f46a24f08a30213"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v12_rear_sleeve.png",
+          "sha256": "bc4c88a173ba690af347046d8554c69b4996ed83f99b7bad7fabd127e71491a5",
+          "method": "numpy: v10a 바탕, 후면 행 631~747을 v8b 소스에서 가장자리 정렬 복사(L=1408-0.09(y-550), R=1472-0.055(y-550))"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v12b_ext_rear_imgL",
+          "px": 1280,
+          "rect": [
+            1384,
+            622,
+            1480,
+            750
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100750,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v12b_ext_rear_imgL.png",
+          "mask_sha256": "0a3be55c8f84e19a114a6ad4c53763543e03e021a361d5ade447b8e574c92ed8"
+        },
+        {
+          "tag": "v12b_notch_front_imgL",
+          "px": 0,
+          "rect": [
+            180,
+            684,
+            196,
+            702
+          ],
+          "blur": 2,
+          "denoise": 0.6,
+          "seed": 2026100751,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v12b_notch_front_imgL.png",
+          "mask_sha256": "b20325e48b5cca88c02adc020dc2a0bbc96dc65a9f6c8c092d32d9b5ff025e7d"
+        },
+        {
+          "tag": "v12b_notch_front_imgR",
+          "px": 0,
+          "rect": [
+            469,
+            656,
+            485,
+            674
+          ],
+          "blur": 2,
+          "denoise": 0.6,
+          "seed": 2026100752,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v12b_notch_front_imgR.png",
+          "mask_sha256": "720099e78c6fd00e60de800c575ce5a6621e8eba6bb8dd3b128d1ce44782e6c9"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "불채택. 시작 행을 올려도 시작 행(631) 명암 단차 유지, 정면 점 denoise 0.6으로 미제거.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v12b.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 115.1,
+      "sha256": "499dd57cffafda2e126fc613b232ccf8a5b2c9936106dd1a0eacf74a4cf1ad6e"
+    },
+    {
+      "id": "CHAR_01_서윤_COSTUME_01B_turnaround_v13a",
+      "type": "v10a 바탕: 후면 소매 연장 재채움(시작 소매끝-30, 16행 크로스페이드) + 정면 작은 점 2곳 픽셀 덮기, 저강도 인페인팅",
+      "prompt_id": "999a0b11-d4a4-4780-86b0-81584e8b1c77",
+      "node_errors": {},
+      "references": {
+        "source": {
+          "file": "costume_seoyun_outer/outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v10a.png",
+          "sha256": "bdcdc26e31b85498b9731ac2ade954b357c9142c447ebd0c5f46a24f08a30213"
+        },
+        "guide": {
+          "file": "costume_seoyun_outer\\inpaint\\guide_v13.png",
+          "sha256": "21811c46fffc64ae90ae40bb7fa91f9220789224b1b57708d5fbd7071040b007",
+          "method": "numpy: 후면 행 631~747 가장자리 정렬 복사(v8b 소스) + 시작 16행 원본과 선형 크로스페이드; 정면 (183,684)-(197,702)←(183,704), (473,661)-(481,673)←(473,647) 픽셀 복사"
+        },
+        "approved_brace": {
+          "file": "turnaround_qwen_v02\\outputs\\CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+          "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+          "slot": "ImageCrop (1390,600,160,240) → images.image_2 (brace_rear만)"
+        }
+      },
+      "regions": [
+        {
+          "tag": "v13a_ext_rear_imgL",
+          "px": 1280,
+          "rect": [
+            1384,
+            622,
+            1480,
+            750
+          ],
+          "blur": 4,
+          "denoise": 0.4,
+          "seed": 2026100760,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v13a_ext_rear_imgL.png",
+          "mask_sha256": "0a3be55c8f84e19a114a6ad4c53763543e03e021a361d5ade447b8e574c92ed8"
+        },
+        {
+          "tag": "v13a_patch_front_imgL",
+          "px": 0,
+          "rect": [
+            178,
+            680,
+            200,
+            706
+          ],
+          "blur": 3,
+          "denoise": 0.4,
+          "seed": 2026100761,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v13a_patch_front_imgL.png",
+          "mask_sha256": "f9dd5d53dfd78fdccf72dd0cf54443e4320082f8739f3e3807bc43c3f39fd7b8"
+        },
+        {
+          "tag": "v13a_patch_front_imgR",
+          "px": 0,
+          "rect": [
+            468,
+            656,
+            486,
+            678
+          ],
+          "blur": 3,
+          "denoise": 0.4,
+          "seed": 2026100762,
+          "ref2": null,
+          "mask": "costume_seoyun_outer\\inpaint\\mask_v3_v13a_patch_front_imgR.png",
+          "mask_sha256": "8a003349cddc7e1b2a60179817306cd17fa2ecd6ee656637ef4f49e0c45458e2"
+        }
+      ],
+      "settings": {
+        "steps": 50,
+        "cfg": 1,
+        "sampler": "euler",
+        "scheduler": "simple",
+        "differential_diffusion": 1.0,
+        "encoder_resolution": 0
+      },
+      "status": "generated",
+      "visual_review": "사용자 최종 확정(2026-10-06). 소매 끝 높이(측정): 정면 734/731, 왼쪽 측면 745, 후면 742/752, 오른쪽 측면 733 — 6개 소매 모두 손목(편차 약 20px 이내). 보호대 3면 모두 소매 끝 아래에서 아랫부분만 보임. 후면 연장부 경계·정면 작은 점은 명암 1.8배 확대에서 거의 보이지 않음. 얼굴 3면 확정 v02와 픽셀 동일.",
+      "output": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v13a.png",
+      "actual_size": [
+        2560,
+        1536
+      ],
+      "elapsed_seconds": 130.7,
+      "sha256": "1c964d51e913d5c83808c0739ee61d61b40acc56baca38e74f2eb2b212f831d4"
+    }
+  ],
+  "face_drift_analysis": {
+    "date": "2026-10-06",
+    "trigger": "사용자 지적: 최종 이미지 얼굴 생김새가 바뀜",
+    "confirmed": [
+      "빈 latent·denoise 1 생성이라 얼굴이 매번 새로 그려짐(참조는 유도일 뿐 복사가 아님)",
+      "보완 단계가 마스크 없이 패널 전체를 재생성해 측면 얼굴이 한 번 더 바뀜(픽셀 비교로 확인)"
+    ],
+    "likely_contributors_unverified": [
+      "image_1을 0.75배로 줄여 얼굴 정보가 작아짐",
+      "image_2(LOOK 1 크롭)에 시안 모델의 다른 얼굴이 포함됨",
+      "image_4 얼굴 크롭이 캐스팅 A 원본이라 확정 v02 얼굴과 기준이 둘로 나뉨"
+    ],
+    "proposed_fix": "확정 v02 시트를 편집 대상으로 두고 머리·얼굴을 마스크 밖에 남긴 채 목 아래만 인페인팅(SetLatentNoiseMask)해 코트·운동화를 입힘. 얼굴은 확정 픽셀을 그대로 유지. 코트 참조는 얼굴이 없는 크롭으로 교체."
+  },
+  "final": {
+    "file": "outputs/CHAR_01_서윤_COSTUME_01B_turnaround_v13a.png",
+    "sha256": "1c964d51e913d5c83808c0739ee61d61b40acc56baca38e74f2eb2b212f831d4",
+    "status": "user confirmed final (2026-10-06)"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "status": "제작 준비 / 사용자 미선택",
+  "interpretation": "인물별 서로 다른 캐스팅 후보 A~D. 낯선 남자는 얼굴 비공개 실루엣 후보.",
+  "tool": "built-in image_gen; exact model version not exposed",
+  "jobs": [
+    {
+      "character_id": "CHAR_01",
+      "name": "한서윤",
+      "variant": "A",
+      "filename": "CHAR_01_한서윤_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 32-year-old Korean woman, soft oval face, mostly straight eyebrows, attentive expressive eyes, dark brown hair below collarbones tied in a loose low ponytail with a natural side part. Oatmeal thin cotton long-sleeved top, charcoal comfortable trousers. Gray soft wrist brace ONLY on her anatomical LEFT wrist (viewer RIGHT in this frontal portrait); right wrist bare. No cast, hospital bracelet, scars or large bruises. Slight tiredness of recovery, composed everyday expression, vulnerability and quiet resolve.\nCasting candidate A: Soft rounded oval face, gentle slightly downturned eyes, softly full cheeks, small natural lips, approachable everyday beauty."
+    },
+    {
+      "character_id": "CHAR_01",
+      "name": "한서윤",
+      "variant": "B",
+      "filename": "CHAR_01_한서윤_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 32-year-old Korean woman, soft oval face, mostly straight eyebrows, attentive expressive eyes, dark brown hair below collarbones tied in a loose low ponytail with a natural side part. Oatmeal thin cotton long-sleeved top, charcoal comfortable trousers. Gray soft wrist brace ONLY on her anatomical LEFT wrist (viewer RIGHT in this frontal portrait); right wrist bare. No cast, hospital bracelet, scars or large bruises. Slight tiredness of recovery, composed everyday expression, vulnerability and quiet resolve.\nCasting candidate B: Slightly longer soft oval face, long attentive eyes, subtly defined cheekbones, a calm intelligent impression."
+    },
+    {
+      "character_id": "CHAR_01",
+      "name": "한서윤",
+      "variant": "C",
+      "filename": "CHAR_01_한서윤_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 32-year-old Korean woman, soft oval face, mostly straight eyebrows, attentive expressive eyes, dark brown hair below collarbones tied in a loose low ponytail with a natural side part. Oatmeal thin cotton long-sleeved top, charcoal comfortable trousers. Gray soft wrist brace ONLY on her anatomical LEFT wrist (viewer RIGHT in this frontal portrait); right wrist bare. No cast, hospital bracelet, scars or large bruises. Slight tiredness of recovery, composed everyday expression, vulnerability and quiet resolve.\nCasting candidate C: Soft oval face, slightly wider-set eyes, subtly fuller lips, delicate everyday facial features, warm approachable impression."
+    },
+    {
+      "character_id": "CHAR_01",
+      "name": "한서윤",
+      "variant": "D",
+      "filename": "CHAR_01_한서윤_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 32-year-old Korean woman, soft oval face, mostly straight eyebrows, attentive expressive eyes, dark brown hair below collarbones tied in a loose low ponytail with a natural side part. Oatmeal thin cotton long-sleeved top, charcoal comfortable trousers. Gray soft wrist brace ONLY on her anatomical LEFT wrist (viewer RIGHT in this frontal portrait); right wrist bare. No cast, hospital bracelet, scars or large bruises. Slight tiredness of recovery, composed everyday expression, vulnerability and quiet resolve.\nCasting candidate D: Soft oval face with a subtly defined jaw, steady deep-set eyes, straighter nose, resilient mature everyday impression."
+    },
+    {
+      "character_id": "CHAR_02",
+      "name": "김도현",
+      "variant": "A",
+      "filename": "CHAR_02_김도현_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 35-year-old Korean man, balanced average build, neat short black hair with a natural side part, clean-shaven, straight eyebrows and approachable face, relaxed soft eye corners. Slate-blue button-down shirt, dark navy trousers, simple black wristwatch. Calm mild everyday expression, husband who appears reliable and caring, without a villain grin or overt menace. No scars, gloves or exaggerated muscles.\nCasting candidate A: Slightly rounded face, soft eyes, natural modest nose, trustworthy friendly neighbor impression."
+    },
+    {
+      "character_id": "CHAR_02",
+      "name": "김도현",
+      "variant": "B",
+      "filename": "CHAR_02_김도현_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 35-year-old Korean man, balanced average build, neat short black hair with a natural side part, clean-shaven, straight eyebrows and approachable face, relaxed soft eye corners. Slate-blue button-down shirt, dark navy trousers, simple black wristwatch. Calm mild everyday expression, husband who appears reliable and caring, without a villain grin or overt menace. No scars, gloves or exaggerated muscles.\nCasting candidate B: Moderately long oval face, refined balanced features, slightly narrow eyes, composed professional impression."
+    },
+    {
+      "character_id": "CHAR_02",
+      "name": "김도현",
+      "variant": "C",
+      "filename": "CHAR_02_김도현_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 35-year-old Korean man, balanced average build, neat short black hair with a natural side part, clean-shaven, straight eyebrows and approachable face, relaxed soft eye corners. Slate-blue button-down shirt, dark navy trousers, simple black wristwatch. Calm mild everyday expression, husband who appears reliable and caring, without a villain grin or overt menace. No scars, gloves or exaggerated muscles.\nCasting candidate C: Soft square face, fuller brows, warm eyes, healthy ordinary build, dependable everyday impression."
+    },
+    {
+      "character_id": "CHAR_02",
+      "name": "김도현",
+      "variant": "D",
+      "filename": "CHAR_02_김도현_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 35-year-old Korean man, balanced average build, neat short black hair with a natural side part, clean-shaven, straight eyebrows and approachable face, relaxed soft eye corners. Slate-blue button-down shirt, dark navy trousers, simple black wristwatch. Calm mild everyday expression, husband who appears reliable and caring, without a villain grin or overt menace. No scars, gloves or exaggerated muscles.\nCasting candidate D: Oval face with subtle cheekbones, clear attentive eyes, a gentle restrained smile, quiet considerate impression."
+    },
+    {
+      "character_id": "CHAR_03",
+      "name": "지수",
+      "variant": "A",
+      "filename": "CHAR_03_지수_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 32-year-old Korean woman, chin-length dark brown bob, distinct eyebrows and alert responsive eyes. Dark olive short jacket, ivory T-shirt, dark indigo jeans, small plain crossbody bag. Direct warm expression, practical attentive friend, ordinary everyday styling. Face and silhouette clearly different from the long-haired Seo-yun.\nCasting candidate A: Round-oval face, bright direct eyes, energetic approachable impression."
+    },
+    {
+      "character_id": "CHAR_03",
+      "name": "지수",
+      "variant": "B",
+      "filename": "CHAR_03_지수_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 32-year-old Korean woman, chin-length dark brown bob, distinct eyebrows and alert responsive eyes. Dark olive short jacket, ivory T-shirt, dark indigo jeans, small plain crossbody bag. Direct warm expression, practical attentive friend, ordinary everyday styling. Face and silhouette clearly different from the long-haired Seo-yun.\nCasting candidate B: Slightly angular oval face, long eyes, defined eyebrows, calm quick-thinking impression."
+    },
+    {
+      "character_id": "CHAR_03",
+      "name": "지수",
+      "variant": "C",
+      "filename": "CHAR_03_지수_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 32-year-old Korean woman, chin-length dark brown bob, distinct eyebrows and alert responsive eyes. Dark olive short jacket, ivory T-shirt, dark indigo jeans, small plain crossbody bag. Direct warm expression, practical attentive friend, ordinary everyday styling. Face and silhouette clearly different from the long-haired Seo-yun.\nCasting candidate C: Oval face, warm wider eyes, subtle full lips, candid reassuring impression."
+    },
+    {
+      "character_id": "CHAR_03",
+      "name": "지수",
+      "variant": "D",
+      "filename": "CHAR_03_지수_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 32-year-old Korean woman, chin-length dark brown bob, distinct eyebrows and alert responsive eyes. Dark olive short jacket, ivory T-shirt, dark indigo jeans, small plain crossbody bag. Direct warm expression, practical attentive friend, ordinary everyday styling. Face and silhouette clearly different from the long-haired Seo-yun.\nCasting candidate D: Soft square face, subtly defined cheekbones, clear steady eyes, confident practical impression."
+    },
+    {
+      "character_id": "CHAR_04",
+      "name": "민재",
+      "variant": "A",
+      "filename": "CHAR_04_민재_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 29-year-old Korean male automotive electronics repair technician, original provisional casting visualization although this character currently appears only as phone voice. Ordinary practical appearance, short natural dark hair, charcoal unbranded cotton work jacket over a gray T-shirt. Calm matter-of-fact expression, no criminal associations. Newly proposed face and clothing are candidate designs, not established story facts.\nCasting candidate A: Round-oval face, bright open eyes, youthful approachable working technician impression."
+    },
+    {
+      "character_id": "CHAR_04",
+      "name": "민재",
+      "variant": "B",
+      "filename": "CHAR_04_민재_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 29-year-old Korean male automotive electronics repair technician, original provisional casting visualization although this character currently appears only as phone voice. Ordinary practical appearance, short natural dark hair, charcoal unbranded cotton work jacket over a gray T-shirt. Calm matter-of-fact expression, no criminal associations. Newly proposed face and clothing are candidate designs, not established story facts.\nCasting candidate B: Long oval face, narrow attentive eyes, slim ordinary build, patient analytical impression."
+    },
+    {
+      "character_id": "CHAR_04",
+      "name": "민재",
+      "variant": "C",
+      "filename": "CHAR_04_민재_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 29-year-old Korean male automotive electronics repair technician, original provisional casting visualization although this character currently appears only as phone voice. Ordinary practical appearance, short natural dark hair, charcoal unbranded cotton work jacket over a gray T-shirt. Calm matter-of-fact expression, no criminal associations. Newly proposed face and clothing are candidate designs, not established story facts.\nCasting candidate C: Soft square face, thicker straight eyebrows, balanced everyday build, friendly practical impression."
+    },
+    {
+      "character_id": "CHAR_04",
+      "name": "민재",
+      "variant": "D",
+      "filename": "CHAR_04_민재_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: 29-year-old Korean male automotive electronics repair technician, original provisional casting visualization although this character currently appears only as phone voice. Ordinary practical appearance, short natural dark hair, charcoal unbranded cotton work jacket over a gray T-shirt. Calm matter-of-fact expression, no criminal associations. Newly proposed face and clothing are candidate designs, not established story facts.\nCasting candidate D: Oval face, mild slightly downturned eyes, subtly fuller cheeks, modest quiet impression."
+    },
+    {
+      "character_id": "CHAR_05",
+      "name": "낯선_남자",
+      "variant": "A",
+      "filename": "CHAR_05_낯선_남자_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Adult Korean male of unspecified exact age, unidentified dialogue partner in recovered dashcam video. Face MUST remain completely outside the upper crop: crop from below chin to hips so neither eyes nor identifiable face appears. Matte charcoal plain work jacket over a dark neutral shirt, ordinary build, arms relaxed, no gloves, no weapons, no logos. Candidate anonymous body and clothing silhouette study, no new identity or job claim, no criminal caricature.\nCasting candidate A: Average body build, jacket zipped halfway, simple straight silhouette."
+    },
+    {
+      "character_id": "CHAR_05",
+      "name": "낯선_남자",
+      "variant": "B",
+      "filename": "CHAR_05_낯선_남자_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Adult Korean male of unspecified exact age, unidentified dialogue partner in recovered dashcam video. Face MUST remain completely outside the upper crop: crop from below chin to hips so neither eyes nor identifiable face appears. Matte charcoal plain work jacket over a dark neutral shirt, ordinary build, arms relaxed, no gloves, no weapons, no logos. Candidate anonymous body and clothing silhouette study, no new identity or job claim, no criminal caricature.\nCasting candidate B: Slightly leaner build, plain work jacket worn open, restrained narrow silhouette."
+    },
+    {
+      "character_id": "CHAR_05",
+      "name": "낯선_남자",
+      "variant": "C",
+      "filename": "CHAR_05_낯선_남자_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Adult Korean male of unspecified exact age, unidentified dialogue partner in recovered dashcam video. Face MUST remain completely outside the upper crop: crop from below chin to hips so neither eyes nor identifiable face appears. Matte charcoal plain work jacket over a dark neutral shirt, ordinary build, arms relaxed, no gloves, no weapons, no logos. Candidate anonymous body and clothing silhouette study, no new identity or job claim, no criminal caricature.\nCasting candidate C: Slightly broader ordinary shoulders, jacket lightly zipped, natural sturdy silhouette without exaggerated muscles."
+    },
+    {
+      "character_id": "CHAR_05",
+      "name": "낯선_남자",
+      "variant": "D",
+      "filename": "CHAR_05_낯선_남자_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Adult Korean male of unspecified exact age, unidentified dialogue partner in recovered dashcam video. Face MUST remain completely outside the upper crop: crop from below chin to hips so neither eyes nor identifiable face appears. Matte charcoal plain work jacket over a dark neutral shirt, ordinary build, arms relaxed, no gloves, no weapons, no logos. Candidate anonymous body and clothing silhouette study, no new identity or job claim, no criminal caricature.\nCasting candidate D: Medium build, lightly worn matte charcoal jacket, relaxed everyday silhouette."
+    },
+    {
+      "character_id": "CHAR_06",
+      "name": "경찰_A",
+      "variant": "A",
+      "filename": "CHAR_06_경찰_A_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Korean female police officer in her thirties, composed professional expression, contemporary South Korean police service uniform suggested: light blue-gray short-sleeved uniform shirt with dark navy shoulder tabs and dark navy trousers, practical tidy hair tied low. No hat, no weapon in hands, no prominent readable badges or text. Provisional uniform concept, no claim of exact insignia accuracy.\nCasting candidate A: Oval face, attentive warm eyes, slim ordinary build, calm listening impression."
+    },
+    {
+      "character_id": "CHAR_06",
+      "name": "경찰_A",
+      "variant": "B",
+      "filename": "CHAR_06_경찰_A_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Korean female police officer in her thirties, composed professional expression, contemporary South Korean police service uniform suggested: light blue-gray short-sleeved uniform shirt with dark navy shoulder tabs and dark navy trousers, practical tidy hair tied low. No hat, no weapon in hands, no prominent readable badges or text. Provisional uniform concept, no claim of exact insignia accuracy.\nCasting candidate B: Soft square face, clear steady eyes, medium ordinary build, measured professional impression."
+    },
+    {
+      "character_id": "CHAR_06",
+      "name": "경찰_A",
+      "variant": "C",
+      "filename": "CHAR_06_경찰_A_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Korean female police officer in her thirties, composed professional expression, contemporary South Korean police service uniform suggested: light blue-gray short-sleeved uniform shirt with dark navy shoulder tabs and dark navy trousers, practical tidy hair tied low. No hat, no weapon in hands, no prominent readable badges or text. Provisional uniform concept, no claim of exact insignia accuracy.\nCasting candidate C: Round-oval face, straight eyebrows, reassuring direct eyes, relaxed professional impression."
+    },
+    {
+      "character_id": "CHAR_06",
+      "name": "경찰_A",
+      "variant": "D",
+      "filename": "CHAR_06_경찰_A_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Korean female police officer in her thirties, composed professional expression, contemporary South Korean police service uniform suggested: light blue-gray short-sleeved uniform shirt with dark navy shoulder tabs and dark navy trousers, practical tidy hair tied low. No hat, no weapon in hands, no prominent readable badges or text. Provisional uniform concept, no claim of exact insignia accuracy.\nCasting candidate D: Long oval face, balanced cheekbones, quietly focused eyes, clear composed impression."
+    },
+    {
+      "character_id": "CHAR_07",
+      "name": "경찰_B",
+      "variant": "A",
+      "filename": "CHAR_07_경찰_B_A.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Korean male police officer in his forties, composed professional expression, contemporary South Korean police service uniform suggested: light blue-gray short-sleeved uniform shirt with dark navy shoulder tabs and dark navy trousers, neat short black hair, clean-shaven. No hat, no weapon in hands, no prominent readable badges or text. Provisional uniform concept, no claim of exact insignia accuracy.\nCasting candidate A: Soft square face, full straight eyebrows, average sturdy build, calm dependable impression."
+    },
+    {
+      "character_id": "CHAR_07",
+      "name": "경찰_B",
+      "variant": "B",
+      "filename": "CHAR_07_경찰_B_B.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Korean male police officer in his forties, composed professional expression, contemporary South Korean police service uniform suggested: light blue-gray short-sleeved uniform shirt with dark navy shoulder tabs and dark navy trousers, neat short black hair, clean-shaven. No hat, no weapon in hands, no prominent readable badges or text. Provisional uniform concept, no claim of exact insignia accuracy.\nCasting candidate B: Oval face, balanced natural features, lean ordinary build, attentive composed impression."
+    },
+    {
+      "character_id": "CHAR_07",
+      "name": "경찰_B",
+      "variant": "C",
+      "filename": "CHAR_07_경찰_B_C.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Korean male police officer in his forties, composed professional expression, contemporary South Korean police service uniform suggested: light blue-gray short-sleeved uniform shirt with dark navy shoulder tabs and dark navy trousers, neat short black hair, clean-shaven. No hat, no weapon in hands, no prominent readable badges or text. Provisional uniform concept, no claim of exact insignia accuracy.\nCasting candidate C: Round-oval face, mildly mature eye corners, average build, patient professional impression."
+    },
+    {
+      "character_id": "CHAR_07",
+      "name": "경찰_B",
+      "variant": "D",
+      "filename": "CHAR_07_경찰_B_D.png",
+      "prompt": "Use case: photorealistic-natural. Asset type: fictional Korean web-drama casting visual, an individual portrait photograph, NOT a collage, NOT a contact sheet. Contemporary realistic Korean domestic suspense drama '삭제된 11초'. Original fictional adult, no celebrity likeness. Single person only, vertical portrait framed from just above head to below waist with hands and wrists visible, looking toward the camera, neutral relaxed pose. Pale warm-gray plain studio background, soft neutral daylight, realistic skin pores and matte cotton texture, restrained photographic color, clear eyes and face, no beauty retouching, no text, no labels, no watermark, no extra people.\nSubject fixed design: Korean male police officer in his forties, composed professional expression, contemporary South Korean police service uniform suggested: light blue-gray short-sleeved uniform shirt with dark navy shoulder tabs and dark navy trousers, neat short black hair, clean-shaven. No hat, no weapon in hands, no prominent readable badges or text. Provisional uniform concept, no claim of exact insignia accuracy.\nCasting candidate D: Long oval face, subtly defined jaw, steady deep-set eyes, measured practical impression."
+    }
+  ]
+}

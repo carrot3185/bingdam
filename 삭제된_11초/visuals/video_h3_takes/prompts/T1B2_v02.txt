@@ -1,0 +1,7 @@
+[reference generation] <Picture 1> is the apartment where the scene takes place: a warm evening interior with a light oak dining table, a gray fabric sofa, a dark bronze metal shelf with two ceramic vases, a small olive tree and a large window with blue evening city light. The whole video is one continuous live-action shot in the apartment of <Picture 1> in the evening, photographed like a restrained Korean TV drama: soft warm pendant and ceiling cove light mixed with faint blue evening light, shallow depth of field.
+
+integrated_multimodal_description: [Shot 1] Close insert shot on the light oak dining table from <Picture 1>, static camera. At the left of the frame, a silver laptop stands OPEN, its screen upright and glowing, playing a video, seen from the side so the screen content is not visible. To the right of the laptop, a black smartphone lies face up on the table; a glass of water stands nearby. The scene is still. At 00:01.000, the phone lights up with an incoming call: its screen glows plain and bright, and it vibrates against the wood, buzzing and moving slightly, again and again, until the end. The laptop stays open the whole time. No person is in frame.
+
+overall_soundscape: Quiet apartment room tone in the evening, the loud buzzing vibration of the phone against the wooden table. No voices are heard.
+
+non_diegetic_music: N/A

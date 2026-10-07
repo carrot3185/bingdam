@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Asia/Seoul",
+  "status": "all location backgrounds user confirmed final",
+  "approval": "사용자: \"배경 이미지는 최종 fix\" (2026-10-06). 집 내부 4뷰는 2026-10-05에 먼저 확정.",
+  "views": [
+    {
+      "id": "HOME_MASTER",
+      "name": "집 전체 · 현관에서 거실",
+      "source": "outputs/HOME_MASTER_b.png",
+      "source_size": [
+        2560,
+        1440
+      ],
+      "source_sha256": "32cdac49777d410d8d96e196e3e63f3d83250413ab2bdb540a47b00eb97f3ca9",
+      "final_5k": "outputs_5k/HOME_MASTER_b_5k.png",
+      "final_5k_sha256": "7a8c53e3f7ff81324069749ced4ea1b710dd527728924712af978e54cd67d4df",
+      "engine": "로컬 ComfyUI Deno Qwen-Image 2.1 T2I + Edit"
+    },
+    {
+      "id": "HOME_REVERSE",
+      "name": "집 역방향 · 거실에서 현관",
+      "source": "outputs/HOME_REVERSE_v02.png",
+      "source_size": [
+        2560,
+        1440
+      ],
+      "source_sha256": "c0d20dea94d034816b6a5cd526bbb928a77a8004a1d31aef3e0ccc4dfdee1317",
+      "final_5k": "outputs_5k/HOME_REVERSE_v02_5k.png",
+      "final_5k_sha256": "9d0e9d91e25dde21964dcecaec1d86b98c5d71ad24f39bf7207be77d97a37dcd",
+      "engine": "로컬 ComfyUI Deno Qwen-Image 2.1 T2I + Edit"
+    },
+    {
+      "id": "LOC_02_KITCHEN",
+      "name": "주방에서 식탁·거실",
+      "source": "outputs/LOC_02_KITCHEN.png",
+      "source_size": [
+        2560,
+        1440
+      ],
+      "source_sha256": "a17cb8d0c8888d40265000327a54a1cd7f6138fb7d7cfde65a2c840662d20392",
+      "final_5k": "outputs_5k/LOC_02_KITCHEN_5k.png",
+      "final_5k_sha256": "c0e928e09d119187a2b263dac8a1379da4024058c922b4a257025a4d82e8549c",
+      "engine": "로컬 ComfyUI Deno Qwen-Image 2.1 T2I + Edit"
+    },
+    {
+      "id": "LOC_03_ENTRY",
+      "name": "현관과 출구",
+      "source": "outputs/LOC_03_ENTRY_v02.png",
+      "source_size": [
+        2560,
+        1440
+      ],
+      "source_sha256": "4b178951fcf217b24637a26ed46aa327e0abedd5f05ab861b9002676b95fcfe9",
+      "final_5k": "outputs_5k/LOC_03_ENTRY_v02_5k.png",
+      "final_5k_sha256": "45e9ab06f92252606dd38c3306f0c26021eb765916b386eda14fe7ab9593efad",
+      "engine": "로컬 ComfyUI Deno Qwen-Image 2.1 T2I + Edit"
+    },
+    {
+      "id": "LOC_04_CORRIDOR",
+      "name": "복도와 엘리베이터 동선",
+      "source": "outputs/LOC_04_CORRIDOR_v04b.png",
+      "source_size": [
+        2560,
+        1440
+      ],
+      "source_sha256": "9b9ba628d661e1914746644a595223daa2e6e6a1a2d908ca9feac077251e30e1",
+      "final_5k": "outputs_5k/LOC_04_CORRIDOR_v04b_5k.png",
+      "final_5k_sha256": "c10398148ede97af835105ce1b620c0e1d33f06fa05b65a28eb6f4d3ee4b3a48",
+      "engine": "로컬 ComfyUI Deno Qwen-Image 2.1 T2I + Edit"
+    },
+    {
+      "id": "LOC_05_ELEVATOR",
+      "name": "엘리베이터 내부",
+      "source": "outputs/LOC_05_ELEVATOR_v02.png",
+      "source_size": [
+        2560,
+        1440
+      ],
+      "source_sha256": "7f5bb2815fb2c80f532e6d6046adc3fcea47933d2a86fee6c1bbcecf17aa38ac",
+      "final_5k": "outputs_5k/LOC_05_ELEVATOR_v02_5k.png",
+      "final_5k_sha256": "a79ef354769860b8e6c18c43b9896be523c9ded7224a0158f2730b29d6baaa5a",
+      "engine": "로컬 ComfyUI Deno Qwen-Image 2.1 T2I + Edit"
+    },
+    {
+      "id": "LOC_06_GARAGE_MASTER",
+      "name": "지하주차장 기준 뷰",
+      "source": "gpt_image/LOC_06_GARAGE_MASTER_gpt_a.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "source_sha256": "fa02063837af047d2761704cd26d6b05e8328aa938a93cb2fd126f8edf8b3635",
+      "final_5k": "outputs_5k/LOC_06_GARAGE_MASTER_gpt_a_5k.png",
+      "final_5k_sha256": "8d193ce5f49bcbdaa175e6d831340837f9ba44f5e2bb1c8c6e99d99fdb3d60b3",
+      "engine": "ChatGPT 웹 이미지 생성 (모델 버전 미노출)"
+    },
+    {
+      "id": "LOC_06_GARAGE_DASHCAM",
+      "name": "블랙박스 시점 지하주차장 (S#1 복구 영상)",
+      "source": "gpt_image/LOC_06_GARAGE_DASHCAM_gpt_a.png",
+      "source_size": [
+        1672,
+        941
+      ],
+      "source_sha256": "6fc6ab6ba210ac80db7860d834e97214a9a114ba0da91f35e86bd26bfbffbc69",
+      "final_5k": "outputs_5k/LOC_06_GARAGE_DASHCAM_gpt_a_5k.png",
+      "final_5k_sha256": "fd8ad9eb6186a5c7f5ce35594622c2b192fd6dca6aa3249c4ed25e05452a8100",
+      "engine": "ChatGPT 웹 이미지 생성 (모델 버전 미노출)"
+    }
+  ],
+  "fixed_scope": [
+    "공간 구조와 동선(현관 기준 왼쪽 주방·식탁, 오른쪽 소파, 안쪽 창)",
+    "가구·소품 디자인과 배치",
+    "마감 재질·색",
+    "조명 분위기(저녁/야간, 간접조명 코브, 주차장 선형 LED)",
+    "복도 현관문 바깥여닫이·경첩 측",
+    "주차장 디자인과 블랙박스 구도(후진 주차 차량에서 통로 건너편)"
+  ],
+  "variable_scope": [
+    "카메라 위치·화각(같은 공간 안의 새 샷)",
+    "장면별 소품 상태(장바구니·봉지·노트북 개폐 등)",
+    "인물 배치·동작",
+    "시간 경과에 따른 창밖 빛의 완만한 변화"
+  ],
+  "known_residuals": [
+    "현관 높이: 기준 뷰는 현관 타일이 살짝 높아 보이고 현관 뷰는 거실과 같은 높이",
+    "현관 내부 벽 마감이 역방향 뷰(석재풍)와 현관 뷰(아이보리)에서 다름",
+    "주방 뷰의 전경 카운터 연장부가 기준 뷰에 보이지 않음",
+    "엘리베이터 버튼 패널이 문 옆이 아닌 안쪽 측벽 — 한 걸음 들어가 오른손으로 누름",
+    "블랙박스 시점의 대시보드 띠가 두껍고 블랙박스 질감이 약함 — 영상 단계에서 합성 가능",
+    "주차장 GPT 원본은 1672x941, 5K본은 약 3배 확대라 다소 부드러움",
+    "주차장이 집과 같은 건물인지는 미정"
+  ],
+  "reference_usage": "샷 생성 시 실제 최종 이미지 파일을 참조로 입력한다. LOC ID만으로 참조가 연결되지 않는다."
+}

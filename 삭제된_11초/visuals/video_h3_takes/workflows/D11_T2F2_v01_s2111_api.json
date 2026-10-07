@@ -1,0 +1,546 @@
+{
+ "119": {
+  "inputs": {
+   "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+  },
+  "class_type": "VAELoader",
+  "_meta": {
+   "title": "Load VAE"
+  }
+ },
+ "120": {
+  "inputs": {
+   "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
+  },
+  "class_type": "VAELoader",
+  "_meta": {
+   "title": "Load VAE"
+  }
+ },
+ "129": {
+  "inputs": {
+   "noise_seed": 2111
+  },
+  "class_type": "RandomNoise",
+  "_meta": {
+   "title": "RandomNoise"
+  }
+ },
+ "121": {
+  "inputs": {
+   "samples": [
+    "204",
+    0
+   ],
+   "vae": [
+    "120",
+    0
+   ]
+  },
+  "class_type": "VAEDecodeAudio",
+  "_meta": {
+   "title": "VAE Decode Audio"
+  }
+ },
+ "128": {
+  "inputs": {
+   "clip_name": "qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+   "type": "minimax",
+   "device": "default"
+  },
+  "class_type": "CLIPLoader",
+  "_meta": {
+   "title": "Load CLIP"
+  }
+ },
+ "126": {
+  "inputs": {
+   "model": [
+    "193",
+    0
+   ],
+   "conditioning": [
+    "195",
+    0
+   ]
+  },
+  "class_type": "BasicGuider",
+  "_meta": {
+   "title": "Basic Guider"
+  }
+ },
+ "131": {
+  "inputs": {
+   "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+   "values.a": [
+    "132",
+    0
+   ]
+  },
+  "class_type": "ComfyMathExpression",
+  "_meta": {
+   "title": "Math Expression"
+  }
+ },
+ "141": {
+  "inputs": {
+   "ref_image_size": "match",
+   "clip": [
+    "128",
+    0
+   ],
+   "prompt": [
+    "186",
+    0
+   ],
+   "width": [
+    "145",
+    1
+   ],
+   "height": [
+    "145",
+    2
+   ],
+   "length": [
+    "131",
+    1
+   ],
+   "vae": [
+    "119",
+    0
+   ],
+   "audio_vae": [
+    "120",
+    0
+   ],
+   "ref_images": [
+    "142",
+    0
+   ],
+   "ref_audios.ref_audio_0": [
+    "900",
+    0
+   ]
+  },
+  "class_type": "DenoMiniMaxH3ReferenceToVideo",
+  "_meta": {
+   "title": "(Deno) MiniMax H3 Reference to Video"
+  }
+ },
+ "144": {
+  "inputs": {
+   "frame_rate": 24,
+   "loop_count": 0,
+   "filename_prefix": "D11_h3/T2F2_v01_s2111",
+   "format": "video/h264-mp4",
+   "pingpong": false,
+   "save_output": true,
+   "images": [
+    "122",
+    0
+   ],
+   "audio": [
+    "121",
+    0
+   ],
+   "pix_fmt": "yuv420p",
+   "crf": 15,
+   "save_metadata": true,
+   "trim_to_audio": false
+  },
+  "class_type": "VHS_VideoCombine",
+  "_meta": {
+   "title": "Video Combine 🎥🅥🅗🅢"
+  }
+ },
+ "127": {
+  "inputs": {
+   "unet_name": "Minimax-h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors",
+   "weight_dtype": "default"
+  },
+  "class_type": "UNETLoader",
+  "_meta": {
+   "title": "Load Diffusion Model"
+  }
+ },
+ "196": {
+  "inputs": {
+   "av_latent": [
+    "125",
+    1
+   ]
+  },
+  "class_type": "LTXVSeparateAVLatent",
+  "_meta": {
+   "title": "Separate AV Latent"
+  }
+ },
+ "198": {
+  "inputs": {
+   "video_latent": [
+    "197",
+    0
+   ],
+   "audio_latent": [
+    "196",
+    1
+   ]
+  },
+  "class_type": "LTXVConcatAVLatent",
+  "_meta": {
+   "title": "Concat AV Latent"
+  }
+ },
+ "200": {
+  "inputs": {
+   "shift_video": 12,
+   "shift_audio": 3,
+   "model": [
+    "199",
+    0
+   ]
+  },
+  "class_type": "MiniMaxH3SigmaShift",
+  "_meta": {
+   "title": "ModelSamplingMiniMaxH3"
+  }
+ },
+ "203": {
+  "inputs": {
+   "noise": [
+    "129",
+    0
+   ],
+   "guider": [
+    "202",
+    0
+   ],
+   "sampler": [
+    "184",
+    0
+   ],
+   "sigmas": [
+    "194",
+    1
+   ],
+   "latent_image": [
+    "198",
+    0
+   ]
+  },
+  "class_type": "SamplerCustomAdvanced",
+  "_meta": {
+   "title": "SamplerCustomAdvanced"
+  }
+ },
+ "193": {
+  "inputs": {
+   "shift_video": 12,
+   "shift_audio": 3,
+   "model": [
+    "192",
+    0
+   ]
+  },
+  "class_type": "MiniMaxH3SigmaShift",
+  "_meta": {
+   "title": "ModelSamplingMiniMaxH3"
+  }
+ },
+ "192": {
+  "inputs": {
+   "lora_name": "Camera_Control.safetensors",
+   "strength_model": 1,
+   "model": [
+    "191",
+    0
+   ]
+  },
+  "class_type": "LoraLoaderModelOnly",
+  "_meta": {
+   "title": "Load LoRA"
+  }
+ },
+ "195": {
+  "inputs": {
+   "positive_conditioning": [
+    "141",
+    0
+   ],
+   "text_encoder": [
+    "128",
+    0
+   ]
+  },
+  "class_type": "DenoTextEncoderUnload",
+  "_meta": {
+   "title": "(Deno) Text Encoder Unload"
+  }
+ },
+ "142": {
+  "inputs": {
+   "image_paths": "D11_h3/CHAR_02_dohyun_turnaround_v02_HQ.png\nD11_h3/LOC_02_KITCHEN.png\nD11_h3/CHAR_01_seoyun_turnaround_v02_HQ_repaired.png",
+   "disabled_image_paths": ""
+  },
+  "class_type": "DenoMiniMaxH3ReferenceImageLoader",
+  "_meta": {
+   "title": "(Deno) MiniMax H3 Multi Reference Image Loader"
+  }
+ },
+ "191": {
+  "inputs": {
+   "attention": "comfy kitchen attention",
+   "model": [
+    "127",
+    0
+   ]
+  },
+  "class_type": "ModelAttentionBackend",
+  "_meta": {
+   "title": "Model Attention Backend"
+  }
+ },
+ "184": {
+  "inputs": {
+   "sampler_name": "euler"
+  },
+  "class_type": "KSamplerSelect",
+  "_meta": {
+   "title": "KSamplerSelect"
+  }
+ },
+ "199": {
+  "inputs": {
+   "lora_name": "H3_R2V_AB\\minimax_h3_dmd_ref2va_8step_turbo_pruned.safetensors",
+   "strength_model": 1,
+   "model": [
+    "127",
+    0
+   ]
+  },
+  "class_type": "LoraLoaderModelOnly",
+  "_meta": {
+   "title": "Load LoRA"
+  }
+ },
+ "204": {
+  "inputs": {
+   "empty_cache": true,
+   "gc_collect": true,
+   "unload_all_models": true,
+   "any_input": [
+    "203",
+    1
+   ]
+  },
+  "class_type": "VRAM_Debug",
+  "_meta": {
+   "title": "VRAM Debug"
+  }
+ },
+ "122": {
+  "inputs": {
+   "samples": [
+    "204",
+    0
+   ],
+   "vae": [
+    "119",
+    0
+   ]
+  },
+  "class_type": "VAEDecode",
+  "_meta": {
+   "title": "VAE Decode"
+  }
+ },
+ "201": {
+  "inputs": {
+   "fused_qkv": "auto",
+   "mlp_memory": "auto",
+   "chunk_rows": 2048,
+   "preserve_precision": true,
+   "precision_mode": "Preserve native",
+   "qkv_streaming_mode": "Forced",
+   "embedding_memory_mode": "Auto",
+   "kitchen_v_memory_mode": "Lower VRAM (slower)",
+   "model": [
+    "200",
+    0
+   ]
+  },
+  "class_type": "H3MemoryOptimization",
+  "_meta": {
+   "title": "H3 Memory Optimization"
+  }
+ },
+ "205": {
+  "inputs": {
+   "options": "Intermediate and Utility",
+   "filenames": [
+    "144",
+    0
+   ]
+  },
+  "class_type": "VHS_PruneOutputs",
+  "_meta": {
+   "title": "Prune Outputs 🎥🅥🅗🅢"
+  }
+ },
+ "202": {
+  "inputs": {
+   "model": [
+    "209",
+    0
+   ],
+   "conditioning": [
+    "195",
+    0
+   ]
+  },
+  "class_type": "BasicGuider",
+  "_meta": {
+   "title": "Basic Guider"
+  }
+ },
+ "186": {
+  "inputs": {
+   "text": "[reference generation + audio reference] <Picture 1> is the character turnaround sheet of S1, Dohyun, a Korean man in his mid-thirties; it is used only for his identity: face, eyes, short black hair with a natural side part, clean-shaven skin, slim build, slate-blue button-up shirt with the sleeves rolled to the forearms, navy trousers, and a black wristwatch on his LEFT wrist. Indoors he wears navy socks instead of the shoes in the sheet. <Picture 2> is the apartment where the scene takes place: a warm evening interior with white flat-panel kitchen cabinets, a warm LED strip under the upper cabinets, a gray stone backsplash, and a light oak dining table. <Picture 3> is the character turnaround sheet of S2, Seoyun, his wife; it defines how she looks whenever any part of her is in frame: long straight black hair worn down, an oatmeal thin cotton long-sleeve top, and a gray fabric wrist brace on her LEFT wrist. <Audio 1> is a recording of S1's own voice saying a different line; it defines S1's voice identity only: the same timbre, pitch, warmth and natural Korean speaking rhythm. S1 speaks with exactly that voice, and the words he says are only the new lines written below. The whole video is one continuous live-action shot in that apartment in the evening, photographed like a restrained Korean TV drama: natural skin texture with a matte finish, natural lip color, soft warm pendant and ceiling cove light mixed with faint blue evening light from the window, shallow depth of field. Throughout the entire video S1 is the identical person from <Picture 1> — the exact same face, eyes, hairstyle and outfit. Never replace S1 with a different person. This identity lock applies ONLY to the face, hair and outfit — it never restricts poses, expressions, movement or energy.\n\nintegrated_multimodal_description: [Shot 1] Close-up from the chest up, static camera with a very slight handheld drift, slightly low angle from sitting height. S1 stands at the end of the dining table holding a small pint of ice cream. The camera is placed just behind S2's left shoulder as she sits at the table: at the right edge of the frame, out of focus and with her back to the camera, are her shoulder in the oatmeal top from <Picture 3> and the back of her long straight black hair; her face stays out of view and she stays silent. Behind S1, softly out of focus, are the white kitchen cabinets and the gray stone backsplash from <Picture 2>. His fond smile fades slightly as his eyes drop to the smartphone she has just turned face down on the table, and his gaze rests on it for a long beat — not a glare, only quiet attention. At 00:03.000, he lifts his eyes back to her and, in an easy, light tone, with clear natural Korean mouth movements, S1 says: <d>[Korean] 누구야?</d> He speaks in his own calm, comfortable mid-low voice from <Audio 1>. At 00:04.300, he waits for her answer with a mild, pleasant expression, until the end.\n\noverall_soundscape: Quiet apartment room tone in the evening, a faint refrigerator hum. Only S1's voice is heard; S2 makes no sound.\n\nnon_diegetic_music: N/A"
+  },
+  "class_type": "DenoPromptText",
+  "_meta": {
+   "title": "Main prompt (manual)"
+  }
+ },
+ "209": {
+  "inputs": {
+   "selection": "sol-attn",
+   "start_percent": 0.2,
+   "end_percent": 1,
+   "dense_blocks": "",
+   "min_tokens": 12288,
+   "extra_tokens": 256,
+   "sink_conditioning": "exact_kv_and_rows",
+   "verbose": false,
+   "model": [
+    "201",
+    0
+   ],
+   "selection.tau": 1.3
+  },
+  "class_type": "BlockSparseAttention",
+  "_meta": {
+   "title": "Model Sparse Attention"
+  }
+ },
+ "185": {
+  "inputs": {
+   "scheduler": "simple",
+   "steps": 8,
+   "denoise": 1,
+   "model": [
+    "193",
+    0
+   ]
+  },
+  "class_type": "BasicScheduler",
+  "_meta": {
+   "title": "BasicScheduler"
+  }
+ },
+ "194": {
+  "inputs": {
+   "step": 7,
+   "sigmas": [
+    "185",
+    0
+   ]
+  },
+  "class_type": "SplitSigmas",
+  "_meta": {
+   "title": "SplitSigmas"
+  }
+ },
+ "125": {
+  "inputs": {
+   "noise": [
+    "129",
+    0
+   ],
+   "guider": [
+    "126",
+    0
+   ],
+   "sampler": [
+    "184",
+    0
+   ],
+   "sigmas": [
+    "194",
+    0
+   ],
+   "latent_image": [
+    "141",
+    1
+   ]
+  },
+  "class_type": "SamplerCustomAdvanced",
+  "_meta": {
+   "title": "SamplerCustomAdvanced"
+  }
+ },
+ "145": {
+  "inputs": {
+   "mode": "Preset Ratio",
+   "ratio_preset": "16:9",
+   "megapixels": 0.51,
+   "width": 1024,
+   "height": 1024,
+   "divisible_by": "32",
+   "resize_method": "Center Crop (Fill)",
+   "interpolation": "lanczos",
+   "crop_x": 0.5,
+   "crop_y": 0.5,
+   "crop_zoom": 1
+  },
+  "class_type": "DenoResolutionSetup",
+  "_meta": {
+   "title": "(Deno) Resize Box"
+  }
+ },
+ "132": {
+  "inputs": {
+   "value": 6.5
+  },
+  "class_type": "PrimitiveFloat",
+  "_meta": {
+   "title": "Seconds"
+  }
+ },
+ "197": {
+  "inputs": {
+   "model_name": "minimax_h3_latent_upscaler_3d_bf16.safetensors",
+   "mode": "scale by multiplier",
+   "align": 32,
+   "enable_temporal_chunking": true,
+   "force_unload": true,
+   "device": "cuda",
+   "precision": "bf16",
+   "latent": [
+    "196",
+    0
+   ],
+   "mode.scale": 2
+  },
+  "class_type": "MinimaxH3LatentUpscaler3D",
+  "_meta": {
+   "title": "Minimax H3 Latent Upscaler (3D)"
+  }
+ },
+ "900": {
+  "class_type": "LoadAudio",
+  "inputs": {
+   "audio": "D11_VOICE_CHAR_02_dohyun_anchor_v01.wav"
+  }
+ }
+}

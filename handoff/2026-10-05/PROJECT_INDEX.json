@@ -1,0 +1,1191 @@
+{
+  "date": "2026-10-05",
+  "timezone": "Asia/Seoul",
+  "project_root": "D:\\work\\Youtube\\New_롱폼",
+  "scope": "Existing production files; excludes handoff artifacts, CLAUDE.md, and Python cache",
+  "file_count": 185,
+  "total_bytes": 182749842.0,
+  "characters_manifest_base": "삭제된_11초/visuals/turnaround_qwen_v02",
+  "confirmed_characters": {
+    "date": "2026-10-05",
+    "timezone": "Asia/Seoul",
+    "status": "all three characters user confirmed final",
+    "approval": "User accepted the displayed v02 character sheets and instructed fixing all three characters in these designs.",
+    "characters": [
+      {
+        "id": "CHAR_01",
+        "name": "서윤",
+        "casting_candidate": "A",
+        "casting_reference": "references/D11_CHAR_01_FINAL.png",
+        "final_turnaround": "outputs/CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+        "turnaround_sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+        "status": "user confirmed final"
+      },
+      {
+        "id": "CHAR_02",
+        "name": "도현",
+        "casting_candidate": "D",
+        "casting_reference": "references/D11_CHAR_02_FINAL.png",
+        "final_turnaround": "outputs/CHAR_02_도현_turnaround_v02_HQ.png",
+        "turnaround_sha256": "2bcc683de8cc8a7a73d043e787ca1e0b261623d1d5c804e5795624d5aab987ca",
+        "status": "user confirmed final"
+      },
+      {
+        "id": "CHAR_03",
+        "name": "지수",
+        "casting_candidate": "B",
+        "casting_reference": "references/D11_CHAR_03_FINAL.png",
+        "final_turnaround": "outputs/CHAR_03_지수_turnaround_v02_HQ.png",
+        "turnaround_sha256": "6198dd2232480b978c31e3cec30c98100256c2a38c56bf9072d0b18066007f6c",
+        "status": "user confirmed final"
+      }
+    ],
+    "fixed_scope": [
+      "facial identity",
+      "hairstyle and hair color",
+      "body design and proportions",
+      "current base outfit, colors, fit and material appearance",
+      "character accessories and anatomical ownership side",
+      "approved profile and rear visual design"
+    ],
+    "variable_scope": [
+      "scene pose and action",
+      "expression and gaze",
+      "camera and lighting",
+      "script-required costume state explicitly specified for a scene"
+    ],
+    "continuity": {
+      "CHAR_01": "Gray brace on anatomical LEFT wrist; baseline indoor outfit and bare feet.",
+      "CHAR_02": "Watch on anatomical LEFT wrist; blue shirt, navy trousers, black shoes.",
+      "CHAR_03": "Male character; olive jacket, ivory T-shirt, indigo jeans, dark sneakers. Crossbody strap LEFT shoulder to bag at RIGHT hip."
+    },
+    "reference_usage": "Use actual final image files as generation inputs; stable CHAR IDs alone do not connect references."
+  },
+  "locations_manifest_base": "삭제된_11초/visuals/locations_qwen_v01",
+  "location_proposals": {
+    "status": "generated, visually reviewed design proposals; not user-confirmed",
+    "selected_outputs": {
+      "HOME_MASTER": "outputs/HOME_MASTER.png",
+      "HOME_REVERSE_v02": "outputs/HOME_REVERSE_v02.png",
+      "LOC_02_KITCHEN_v03": "outputs/LOC_02_KITCHEN_v03.png",
+      "LOC_03_ENTRY": "outputs/LOC_03_ENTRY.png",
+      "LOC_04_CORRIDOR": "outputs/LOC_04_CORRIDOR.png",
+      "LOC_05_ELEVATOR": "outputs/LOC_05_ELEVATOR.png",
+      "LOC_06_GARAGE_v02": "outputs/LOC_06_GARAGE_v02.png"
+    },
+    "actual_generation_count": 11,
+    "selected_view_count": 7
+  },
+  "files": [
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/결과/GPT/A_CONTROL_V2_03.png",
+      "bytes": 1701658,
+      "sha256": "f96b4912ba5cbd000b12a5a74381b485e964b0d858ea81ec05cfd3eaa9adc1e6",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/결과/GPT/A_V3_01.png",
+      "bytes": 1719145,
+      "sha256": "1fcaf8250de15b3f59799e91983661c1fa63470f374826209400ad7626eb24fd",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/결과/GPT/A_V3_02.png",
+      "bytes": 1707176,
+      "sha256": "9a5dfd2caf39fbd0a9faa32a0aef370715d234008222609a163bb347a599f9c3",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/결과/GPT/A_V3_03.png",
+      "bytes": 1730907,
+      "sha256": "de8057326a85db5c3cd44451bbf0f18808df6e73666c9069de81f3ecc9fa12e2",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/결과/Qwen/B_CONTROL_V2_03.png",
+      "bytes": 1884845,
+      "sha256": "2a4e0012d0537c40339f0faa3731890de3507702d0ad9979b3345e09e13cc6ae",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/결과/Qwen/B_V3_01.png",
+      "bytes": 1885275,
+      "sha256": "c2e66f95c9b3a329c8a7f742ce58afef5be2b3358c599fe183cb3207e1953a9d",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/결과/Qwen/B_V3_02.png",
+      "bytes": 1887983,
+      "sha256": "e3cdfc884363cf6bebbe5ca6278882f2329d52e97c9a3519d7774c6a8f28b21a",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/결과/Qwen/B_V3_03.png",
+      "bytes": 1886905,
+      "sha256": "2c2a9d4fd40f5ebaca77c0f1acc39ab6e124a730d4c6093a7237589f9f45e68a",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/워크플로우/00_CONTROL_V2_TEAR_FALL.json",
+      "bytes": 69841,
+      "sha256": "2be63f0b6efa4a63f02124ea5a7d6c9198e94ad245121e3d038847bee2cd663b",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/워크플로우/01_V3_TEARS_EDIT.json",
+      "bytes": 70421,
+      "sha256": "b2facdbdd84d9670c91ed5242f07314728f091d3b2f137dd71ef399921128510",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/워크플로우/02_V3_SMILE_EDIT.json",
+      "bytes": 70505,
+      "sha256": "4df0ce723079884cc0fe6a4f01288e4eb29acc56c50bcc2444a6bb9b4f873da4",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/워크플로우/03_V3_TEAR_FALL_EDIT.json",
+      "bytes": 70581,
+      "sha256": "747333c4251069f60de2629c8a4216ebceab51c1418b63610e3eec0775e5790a",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/프롬프트/00_CONTROL_V2_TEAR_FALL.txt",
+      "bytes": 1004,
+      "sha256": "91a9caff45534576944246d0be6c2e65540b7974f8471e3f43d65db4046d952a",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/프롬프트/01_V3_TEARS_EDIT.txt",
+      "bytes": 1302,
+      "sha256": "0f8ae8a3eb62e8a27855478b25f93e932904792ef9f738a0b923fae5ac546383",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/프롬프트/02_V3_SMILE_EDIT.txt",
+      "bytes": 1344,
+      "sha256": "c16edf6198948bee48bae03c72bff8c66cca4c302cfbd141b66578d8001b8048",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/프롬프트/03_V3_TEAR_FALL_EDIT.txt",
+      "bytes": 1382,
+      "sha256": "f859ecdb35d59439bdbb0330f3675e7f00a4053f6449169e3fb53f16a85cb42e",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/COMMON_REFERENCE.png",
+      "bytes": 1829409,
+      "sha256": "81e135e8c58fb1037eca165588c93169c2615b4712ecbef06c7623a3c6ba89a2",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/GENERATION_RECORD.json",
+      "bytes": 32887,
+      "sha256": "2bad742e1ffa60c069f25956ed3b4c660396c190a66bf9f624031c4f8c144218",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/PREPARATION_RECORD.json",
+      "bytes": 1579,
+      "sha256": "892849e41e2da1db8bc612e45bb06a560eb9369b8e65b2304fdc71b6ff4b2596",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/RESULTS.md",
+      "bytes": 6024,
+      "sha256": "fafd2ec2b59784da5e495acdb0301a6c60248a553b385281dca915c03127c6ec",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/2차_톤질감보존/TEST_PLAN.md",
+      "bytes": 8169,
+      "sha256": "0448bcde1d6199ee41d9534a0afb7d49bf0f48ed829b307575fd97d0bcdbd671",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/이미지/GPT/감격의 미소와 눈물.png",
+      "bytes": 1678241,
+      "sha256": "04546d5a4bf9f02d162b68fc441d47fbe49f471120f46212a0972c7f82a89488",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/이미지/GPT/눈물 어린 따뜻한 미소.png",
+      "bytes": 1626613,
+      "sha256": "cd66053655d854e39ef8f9fb84186819fea31c02b87554606eea57376d19f276",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/이미지/GPT/눈물 어린 조용한 위로.png",
+      "bytes": 1664828,
+      "sha256": "b62afaf2a16c7adba764ddc122edce00b5889fd66d0f72ffa9ccdd5cb7e9cebe",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/이미지/GPT/차분한 자연광의 여성 초상.png",
+      "bytes": 1829409,
+      "sha256": "81e135e8c58fb1037eca165588c93169c2615b4712ecbef06c7623a3c6ba89a2",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/이미지/Qwen/B_00_neutral_00001_.png",
+      "bytes": 1826956,
+      "sha256": "36d032e879b4f69f3b3658151ded7010bb3a70dfa0e5ca3381544f4f93054bfb",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/이미지/Qwen/B_00_neutral_00002_.png",
+      "bytes": 2010691,
+      "sha256": "4c451cca8896fd628787be57c247ca17bb6d4f24078f93ba5849c1de2bf483ab",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/이미지/Qwen/B_00_neutral_00003_.png",
+      "bytes": 2008595,
+      "sha256": "e478006dc738669500bed041db71527268c002a8aed11af08833952c622cea16",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/이미지/Qwen/B_00_neutral_00004_.png",
+      "bytes": 2059808,
+      "sha256": "5fb3c3651f80f4b1a7198072575d6bf939141c057dd2f44f6ca812e98323a652",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/IMAGE_AB_REVIEW.md",
+      "bytes": 10135,
+      "sha256": "398e2cad0bcefbc93e9d61efbcec2c78be641cf01c8e5cf13de173927edef06a",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/IMAGE_FIDELITY_CHECK.json",
+      "bytes": 6677,
+      "sha256": "7a2325bcaef6e77f75c3a6f9c5bf942318fbe98da275314aa606cfe6bc79c52b",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "_테스트/1. 인물/1. 감정연기/IMAGE_METADATA.json",
+      "bytes": 9579,
+      "sha256": "071e9e90c609666d453114c12bd601cc4a1af68e8b05b001e27cb93934df07ee",
+      "category": "actual_emotion_tests"
+    },
+    {
+      "path": "삭제된_11초/CHARACTER_BIBLE.md",
+      "bytes": 16586,
+      "sha256": "c61ac0f85ad96d59013e4257e82311355020d56382ea3eaf9e557894b159fc7e",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/LOCATION_BIBLE.md",
+      "bytes": 13387,
+      "sha256": "21733f1a5702ef4403af6a2afda5903e624f8e521175c61f875dc4e7a37565df",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/SCRIPT_BASELINE.md",
+      "bytes": 12924,
+      "sha256": "f44be111747226fd73041813a31e8af816a4c5974aa7b761440eafa2377ef03a",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/build_turnaround_v02.py",
+      "bytes": 6238,
+      "sha256": "10eefd727ed76e8136b6965b9da1db20a8900e3452ca97bec1d9278884039896",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v01/CHAR_01_한서윤_A.png",
+      "bytes": 2169332,
+      "sha256": "2de9610afa9e558213121dc76580f63acd63b038851397dfa4ad410ce6b04d5a",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v01/CHAR_02_김도현_A.png",
+      "bytes": 2094553,
+      "sha256": "2e4d06a0a8db285670f61108d43cb9a8d051980394b9a44d7bca97a8678ddeac",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v01/CHAR_02_김도현_B.png",
+      "bytes": 2057282,
+      "sha256": "f22ba1a3a582a9b68c109424c812ea73675988d67d2150976cc52da1bd0a36c4",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v01/CHAR_02_김도현_C.png",
+      "bytes": 2073178,
+      "sha256": "de2d6fc0b51936491721b0185ae124a8ec4de5b998602bb669e0948c968e8897",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v01/PROMPTS_V02.json",
+      "bytes": 40206,
+      "sha256": "75a3ed399cf9af8720975998366abf0e5317e43b59c0ae1883ec522f0e70f7bd",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v01/PROMPTS.json",
+      "bytes": 39339,
+      "sha256": "8d6aa581e7cee610ea1ec07ab3f7f65ac24c010dbc54c452e2c581ee2e649efd",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v01/rejected/CHAR_01_한서윤_B.png",
+      "bytes": 2179393,
+      "sha256": "9d498b85a7b3baa01247c98dfb8dd6f93937c98b23cf1144967d9b3679e75b38",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v01/rejected/CHAR_01_한서윤_C.png",
+      "bytes": 2080859,
+      "sha256": "1fef1fb62dd67df7f8ad9450f170f33b03601275cc0f212d7b5f52389451eae4",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v01/rejected/CHAR_01_한서윤_D.png",
+      "bytes": 2112632,
+      "sha256": "d1a08dac6feff4df575a38411a8a30f773af77b8469ea3442a862698aa48442b",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_01_서윤_A.png",
+      "bytes": 1859541,
+      "sha256": "3befd9d098183bc6126742f4de93ac5174f2a1e873a7ee81a1ea7d2e8ecd69f6",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_01_서윤_B.png",
+      "bytes": 1921038,
+      "sha256": "d32e4345a6d542458f7046d237f79d7cbfd54345cb29a86d53d17e8cfbb4ae71",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_01_서윤_C.png",
+      "bytes": 1809910,
+      "sha256": "33989e95d565d0956085ea5f309374a5597fb314f23681f5f2f9d2881736fcb6",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_01_서윤_D.png",
+      "bytes": 1855238,
+      "sha256": "11af1af2ac0bc3441098c35295c70555c16cb2a311733333088ae388338b4f07",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_01_RECORD.json",
+      "bytes": 10047,
+      "sha256": "7f674039e1c2448d50ee8585d9299be5249df4d0ce190ab909d64b42fef1d1c7",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_02_도현_A.png",
+      "bytes": 1736709,
+      "sha256": "623f0825b9b2f6e64c60d1e428a763d2a9aa7b04dee37ea748b62116ff3d4dfa",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_02_도현_B.png",
+      "bytes": 1725800,
+      "sha256": "639ca5baae9e0a898a0c2c7e22a46dd349545e7851ca87b51502707181a2d36b",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_02_도현_C.png",
+      "bytes": 1793848,
+      "sha256": "13e8be7a9a8883486c4107a03031e5fe8340bb2c650fbf7a75a0b6adb2c16e83",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_02_도현_D.png",
+      "bytes": 1735828,
+      "sha256": "19e55c85fe02aa3152e49fcd9d8c0a9369cd346436dd44b6f794c4fd4fad447d",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_02_RECORD.json",
+      "bytes": 9437,
+      "sha256": "887946e8ec34eb82650783b2566b24bd9e8847003b1e82d6d7048b08070f2f32",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_03_지수_A.png",
+      "bytes": 1870414,
+      "sha256": "9da8db8820cb8249c2dd50707eedff1fe302e5d53ebb6e2751056188855f8ed9",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_03_지수_B.png",
+      "bytes": 1853468,
+      "sha256": "a3ccdee45b2bd3b4b9b824d76f7faf6e73d407ec21e0bd2a532ae449f2557648",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_03_지수_C.png",
+      "bytes": 1894034,
+      "sha256": "e276a5aa29533d4b7f21c250537df524f056eb4a62a59d4fec980c72ddbae9be",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_03_지수_D.png",
+      "bytes": 1844260,
+      "sha256": "3e1e7db6f00f16555e9c74036aaf4b6688f0cde857cb8987d817d8a72e9418b8",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/CHAR_03_RECORD.json",
+      "bytes": 9934,
+      "sha256": "b617903b35c7405e275266c488442641bce045da7b39b4a18009e8a11c96b190",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/DIRECTION.md",
+      "bytes": 1292,
+      "sha256": "00e6872682ce3f617a286d1bf56ddb4e9b860f8b9df4bf3d1d570313d0ca810e",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/index.html",
+      "bytes": 7961,
+      "sha256": "1493e70ad292a61d6a46e01d16c9271d887f59337b05501cf4dc56ef474ea96b",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/MANIFEST.json",
+      "bytes": 6422,
+      "sha256": "f60243e8d1da2a29c4a9fc7a69a0c8765f3834b0abd1c7c58719ba235eba6a6f",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/casting_v02/PROMPTS.json",
+      "bytes": 25182,
+      "sha256": "c693251a7b1ed544b03be2fa5552f8f449cc40f68275d67d17f2f25274b0b83a",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/CHAR_01_서윤/CHAR_01_FACE_REFERENCE_USER.png",
+      "bytes": 2633381,
+      "sha256": "7e40b8171e83af18afa14953131256ceaa27db5a99e2b7df6ee9c1d73b0a6cc5",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/CHAR_01_서윤/CHAR_01_INDOOR_COSTUME_v01.png",
+      "bytes": 2380140,
+      "sha256": "f9085115c2ec1601be12fab31866f7d49140e8e837a42b66d80a52a6891824b3",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/CHAR_01_서윤/EDIT_RECORD.md",
+      "bytes": 1799,
+      "sha256": "3ea22ea9fb671f0c19411363a1c48eec9cc6ce3315fc335ce1fca7cf3ad01c59",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/CHAR_01_서윤/INDOOR_COSTUME_EDIT_PROMPT.txt",
+      "bytes": 1915,
+      "sha256": "9eaaad476794a7b9f33c7afbebe8961cc7d7babaa0fa4f4d48c7ebfcfc2a0a17",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/CHAR_01_한서윤/CHAR_01_fullbody_v01.png",
+      "bytes": 1862376,
+      "sha256": "ecaddd1fc866f31c2726167d03186c1649a409378ef638dd3fd78965cb28e217",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/CHAR_01_한서윤/GENERATION_RECORD.json",
+      "bytes": 3582,
+      "sha256": "639eb930f02ac1854e5660c944c9273cd9e6ff99ba99ebda8ad350a61f89e47c",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/CHAR_01_한서윤/references/CHAR_01_face_hair_user_ref.png",
+      "bytes": 2633381,
+      "sha256": "7e40b8171e83af18afa14953131256ceaa27db5a99e2b7df6ee9c1d73b0a6cc5",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/HOME_MASTER.json",
+      "bytes": 4698,
+      "sha256": "49dac41ceb14eba2635af1f8d55008ee4580e67f63719bac0f395893e50e8b9c",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/HOME_REVERSE_v02.json",
+      "bytes": 3775,
+      "sha256": "4aa18ccece9668fb5625135bc9767913e3497235de8f1eebd411670da8652b2c",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/HOME_REVERSE.json",
+      "bytes": 4647,
+      "sha256": "2dedd5d539dad7e68089ee04c0ec7bf06c84ab2698cce8894c8573a854409126",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/LOC_02_KITCHEN_v02.json",
+      "bytes": 4165,
+      "sha256": "2543b2d3d92dc84eb40150b8b657881b5709abfb1aa8246387af4ac1042be137",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/LOC_02_KITCHEN_v03.json",
+      "bytes": 3578,
+      "sha256": "5f6ecbf0fdad2e846465d39ee8fe380599ababfdade7f038678412054e47af11",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/LOC_02_KITCHEN.json",
+      "bytes": 4468,
+      "sha256": "88ca67f63c963ad23087720bb4734315445bc27599f6d0f03d55dc3555643aef",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/LOC_03_ENTRY.json",
+      "bytes": 4616,
+      "sha256": "702742b19b0d5fca788cf29b789c9bcb22208ad3d3b35917622213acf7be8990",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/LOC_04_CORRIDOR.json",
+      "bytes": 4473,
+      "sha256": "d27f1cff7bce33d3e99cd3cd8b2038eac50e034b22c9f4d9acf95ae7c98cf6a2",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/LOC_05_ELEVATOR.json",
+      "bytes": 4353,
+      "sha256": "97a2d9fcaf2920d03c5b519dfab3a12eb9f6f9107fe6c4cc86fae00e2eb95806",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/LOC_06_GARAGE_v02.json",
+      "bytes": 3737,
+      "sha256": "f0759d66ae0de3dddd6de84560c71cfdd0236560ea8632d748c2b666abad88c7",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/api/LOC_06_GARAGE.json",
+      "bytes": 4183,
+      "sha256": "6c5f4c7531bf2052cbbb4ce4586f255766facea6c14f4b78873043d21048e2f3",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/finalize_records.py",
+      "bytes": 2815,
+      "sha256": "c489269c434e4f4d2bbd096f2e3009e319125e59b5e74433c4cde3d80e8dc28e",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/generate_locations.py",
+      "bytes": 18101,
+      "sha256": "ca232a06c11c09b4c107d61c49a3a6f7e42c530c81a83bef0c324ae55d27ab25",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/GENERATION_RECORD.json",
+      "bytes": 7392,
+      "sha256": "af69c1531ae7932dca58326ad429a948b8fdfbc20aae3571bbff223e5c373fcd",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/index.html",
+      "bytes": 4139,
+      "sha256": "e7cfbc960d5ce52cdb34162275fc5df989aeb1c428d6313a08b254ba657b7c35",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/METADATA_CHECKS.json",
+      "bytes": 3439,
+      "sha256": "1ec0f63dbfcc6c02f4cabb57e2da30acfde20137e2c16902bb7bd77853970ef0",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/HOME_MASTER.png",
+      "bytes": 2947468,
+      "sha256": "940b3f35701490577be6471c63b9c6d110fafe1cab161f07681eef1fa0fed0b9",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/HOME_REVERSE_v02.png",
+      "bytes": 3634786,
+      "sha256": "76a33ff9c4a95e958827d5240b192003f1d5641922c4500ca630f6dd09205cb8",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/HOME_REVERSE.png",
+      "bytes": 3274260,
+      "sha256": "20ecc66006424a7889e2e2ecdf1d115a7bd875e41a7ca46beda46a18d0478177",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/LOC_02_KITCHEN_v02.png",
+      "bytes": 3080429,
+      "sha256": "24b33cd90a5876e3cbe05e748c78a7deedd85682fd74d79f1dddd852d5485405",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/LOC_02_KITCHEN_v03.png",
+      "bytes": 3378152,
+      "sha256": "36f88c2b691be28cf3169b2c911d53d7ddcc5e8c18c0e37f7f1dfc739f6568c1",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/LOC_02_KITCHEN.png",
+      "bytes": 3002228,
+      "sha256": "11e6427385e8e5cb3b181aa0287df1914d8f64a3543dbf81702f087590379ab4",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/LOC_03_ENTRY.png",
+      "bytes": 2785883,
+      "sha256": "2c22df802c9bc00217ecb5cfe3b09204a22afdbd1e206c7ecbaef8f2e1ccd3ab",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/LOC_04_CORRIDOR.png",
+      "bytes": 2613191,
+      "sha256": "ca54f04ded996211aa586354a9b94a5926efbe43114023da65d1ef9ebd85f7c6",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/LOC_05_ELEVATOR.png",
+      "bytes": 2918711,
+      "sha256": "68f60825b1167dc5275dc08a9db7b90cbc341d52a3e085f25342161b5a4b17b4",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/LOC_06_GARAGE_v02.png",
+      "bytes": 3530159,
+      "sha256": "5117a678f880d7a29b0218c1b200141687a25c067a91c91ace5c34cc1fa92496",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/outputs/LOC_06_GARAGE.png",
+      "bytes": 3176762,
+      "sha256": "00ccfe65c03afc056e269761f8390b9d35485f42657f2e7d58a079cb92eb35b1",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/HOME_MASTER.txt",
+      "bytes": 2037,
+      "sha256": "fc89eb9f6a9efed713e6cff2b62a75fdbe14933724ee4da385d5b99b77a040ba",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/HOME_REVERSE_v02.txt",
+      "bytes": 940,
+      "sha256": "b75b04b1d54ea70f81576a537872083a4a3fba1cda1fe6a3da8e14706338cb2c",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/HOME_REVERSE.txt",
+      "bytes": 1817,
+      "sha256": "90fe1b042ebdb674c180fadb8d109231754f140ee5f22d5a219392dcb66ec5dc",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/LOC_02_KITCHEN_v02.txt",
+      "bytes": 1329,
+      "sha256": "084f4c351b0de1dfdd399ae52e6138e4bceca17ee0bf4ba28eb8e2b295048c8a",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/LOC_02_KITCHEN_v03.txt",
+      "bytes": 735,
+      "sha256": "e13e0e7a30e2bfc225fc5103e9ae2b55f725451fd3f4e24ba5d272d9b88572e8",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/LOC_02_KITCHEN.txt",
+      "bytes": 1636,
+      "sha256": "f8e2026946944f1be565beb0a7cc4094be0312d30b95f3fdf0c3ef9a4b32e5a8",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/LOC_03_ENTRY.txt",
+      "bytes": 1786,
+      "sha256": "d7ca3c2486a328846bb88fe1ddf811ce4a258f025abd27a1bb66621cccb26d31",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/LOC_04_CORRIDOR.txt",
+      "bytes": 1808,
+      "sha256": "8be219414666b08d339575c0c7719e0b23f00fabfb45c5c3ed8f90228ebf43c2",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/LOC_05_ELEVATOR.txt",
+      "bytes": 1516,
+      "sha256": "ad758bc98b777bf21c6ab64f92e9abea33d2f259e0a20c6ffc8d39d788f0953b",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/LOC_06_GARAGE_v02.txt",
+      "bytes": 900,
+      "sha256": "868a111b09f7c44033e2820bfa305a5dda352f818f3cbf6fef85289ce4270c20",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/prompts/LOC_06_GARAGE.txt",
+      "bytes": 1520,
+      "sha256": "20957ccef378f176992d23a3684b6b0dfb6206a74fd7c7489bb47cd469858fd6",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/README.md",
+      "bytes": 6527,
+      "sha256": "17b5725e7de4cc45e4fe75cb457f24d375e8f9f097054ffcbe55ff0bd5cd05ea",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/references/HOME_MASTER.png",
+      "bytes": 2947468,
+      "sha256": "940b3f35701490577be6471c63b9c6d110fafe1cab161f07681eef1fa0fed0b9",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/references/LOC_04_CORRIDOR.png",
+      "bytes": 2613191,
+      "sha256": "ca54f04ded996211aa586354a9b94a5926efbe43114023da65d1ef9ebd85f7c6",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/refine_locations.py",
+      "bytes": 4695,
+      "sha256": "5f4faca77f3662b53e520e7d5a2a679c4ae3a69a6686269950ea099e0998cd55",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/REFINEMENTS.json",
+      "bytes": 3675,
+      "sha256": "0427e596638a79f2f20f704a465c47f1593a9b7e7728bb1415e780c21502912b",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/SELECTION.json",
+      "bytes": 561,
+      "sha256": "3b5a8d2dd702e1fc93bd8185a743d8a01c5e2db6f46aed425514da226c73f2a7",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/HOME_MASTER.json",
+      "bytes": 46176,
+      "sha256": "de33a1d7f5bdbe22bbfb9626c73c72c67e99caa2106363e6a561f23b0566cd73",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/HOME_REVERSE_v02.json",
+      "bytes": 45085,
+      "sha256": "13ed2092e23b365c2795777dba926c14c01aa3881a751831b22e5e627411296a",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/HOME_REVERSE.json",
+      "bytes": 45957,
+      "sha256": "0d6b798eac172be04fcf7bf9a6eb8c91b6736c3f3be3b2f0cce6543286b2575c",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/LOC_02_KITCHEN_v02.json",
+      "bytes": 45475,
+      "sha256": "fc74c90659f66fcf7638f0ea1c6cd81efba18f9707aa62950b5841461b87bbe7",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/LOC_02_KITCHEN_v03.json",
+      "bytes": 44888,
+      "sha256": "0c8fcd1d6bb157c4ea192aa0336e4a95ae6bb973403a030aa30ada6a91205ed8",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/LOC_02_KITCHEN.json",
+      "bytes": 45778,
+      "sha256": "68b2265e156a58c3112984266b829ade211f8b46ede10e293e116f5ebcedbc65",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/LOC_03_ENTRY.json",
+      "bytes": 45926,
+      "sha256": "b6e35db6738d1e651f58f08285c4a07245b33c5bc74df61e49f6e7c3c9d13018",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/LOC_04_CORRIDOR.json",
+      "bytes": 45951,
+      "sha256": "95891928d8a3e7307386b6acaa724838b6f1a4a036329af88163457a9fd8fe5e",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/LOC_05_ELEVATOR.json",
+      "bytes": 45663,
+      "sha256": "542753c69d962891dcb6e4b674297d86076c681006f81546b73dd4261f2087e0",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/LOC_06_GARAGE_v02.json",
+      "bytes": 45047,
+      "sha256": "7169f40bbeaaf2643ff72d0bd57c772e131750156931e3532b66e6dd916f56eb",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/locations_qwen_v01/workflows/LOC_06_GARAGE.json",
+      "bytes": 45661,
+      "sha256": "b948b793ad3d3708f0baf67f64aad4e32b3895baaf24f73e5a4997e9bf27ae96",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/FINAL_SELECTION.json",
+      "bytes": 893,
+      "sha256": "1faeef8665d1315f92caebe37fb138c8f7a1166a77bcbd5e5499e2f2aded7b51",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/index.html",
+      "bytes": 3673,
+      "sha256": "417194c6dee9b19c5f0c56dfe01b089be3032a4fa2f77d999137fa4fb48b0947",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/METADATA_CHECKS.json",
+      "bytes": 3084,
+      "sha256": "95413704104b4f84e9926e788eae2d1b290dd137a616320d7474955c3675665e",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/outputs/12562571_000.png",
+      "bytes": 1930087,
+      "sha256": "22aa40a7bc4a2fb84d8b80664b6d1598cf95ef615a1ae0c3993465747169ead7",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/outputs/134b2205_000.png",
+      "bytes": 2068306,
+      "sha256": "59a35169649ae60b6faa9c9642c6e05c40a7b02ba34016066a34f919f0a35190",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/outputs/CHAR_01_서윤_turnaround_v01.png",
+      "bytes": 2068306,
+      "sha256": "59a35169649ae60b6faa9c9642c6e05c40a7b02ba34016066a34f919f0a35190",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/outputs/CHAR_02_도현_turnaround_v01.png",
+      "bytes": 1930087,
+      "sha256": "22aa40a7bc4a2fb84d8b80664b6d1598cf95ef615a1ae0c3993465747169ead7",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/outputs/CHAR_03_지수_turnaround_v01.png",
+      "bytes": 2091813,
+      "sha256": "15bf08a5414048e7dfc6b41d94c2140a910db60c8afa5fa6c806d6d7f433c22a",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/outputs/d75efb3c_000.png",
+      "bytes": 2091813,
+      "sha256": "15bf08a5414048e7dfc6b41d94c2140a910db60c8afa5fa6c806d6d7f433c22a",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/prompts/CHAR_01.txt",
+      "bytes": 2247,
+      "sha256": "08ccad2b52dc6d38d4bf4d63bb1ab4422c77ff26f7dbee8df92c5f4fad6870db",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/prompts/CHAR_02.txt",
+      "bytes": 2295,
+      "sha256": "da38fe79c853817c41c2a8780b11fa89d32cfa2e50aa61dd6bbdc2c7b6fe0e8f",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/prompts/CHAR_03.txt",
+      "bytes": 2421,
+      "sha256": "21bec2e7c0236fac9c81833e0c09b4b834d93545dfaa3303da77b6f7235d37a8",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/README.md",
+      "bytes": 2285,
+      "sha256": "7f4861a002ea5621c8dd60a5d1be51aaa5f27742a571d8c910986d0ac8e89919",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/REFERENCE_HASHES.json",
+      "bytes": 662,
+      "sha256": "59b8f6dac1278bc378d30eb8658d3345eddd1337ced908b1a7c700390d88f7e6",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/references/D11_CHAR_01_FINAL.png",
+      "bytes": 1859541,
+      "sha256": "3befd9d098183bc6126742f4de93ac5174f2a1e873a7ee81a1ea7d2e8ecd69f6",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/references/D11_CHAR_02_FINAL.png",
+      "bytes": 1735828,
+      "sha256": "19e55c85fe02aa3152e49fcd9d8c0a9369cd346436dd44b6f794c4fd4fad447d",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/references/D11_CHAR_03_FINAL.png",
+      "bytes": 1853468,
+      "sha256": "a3ccdee45b2bd3b4b9b824d76f7faf6e73d407ec21e0bd2a532ae449f2557648",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/RUNS.json",
+      "bytes": 2114,
+      "sha256": "acaf71fac4370036cd55ec66bec771bf13fbe80caafaae532107589f98b181bc",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/workflows/CHAR_01_turnaround.json",
+      "bytes": 71453,
+      "sha256": "4eec4b3069bbac8cc7589351336bd8e10987cfa271c54f79263b2451c55c8437",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/workflows/CHAR_02_turnaround.json",
+      "bytes": 71501,
+      "sha256": "c76bbd06e69b92cca0de17de3fbb6b2351ecd680336e6d25727de8ff2f070854",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v01/workflows/CHAR_03_turnaround.json",
+      "bytes": 71627,
+      "sha256": "2c7ae415307a859ca5a9092cc41a3907e101935c6f0b7eaf6992552df3226c7e",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/build_dohyeon.py",
+      "bytes": 2621,
+      "sha256": "6e9a3849ae191015fc69922fb48675d9aaaa2ddf7d7c679e2561b6fdc27f08a4",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/build_rear_repair.py",
+      "bytes": 3854,
+      "sha256": "9152230707ed88bad6ef4c2b3c03cde905f6495c520a867709894d37763055c3",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/CHANGES.json",
+      "bytes": 2628,
+      "sha256": "cf4342b38f7b9d20d2442dd57276ad4c5094d976cec7d9773299ce6874b0bf2d",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/CHAR_02_REFERENCE_CHECK.json",
+      "bytes": 402,
+      "sha256": "559c9205fc5a62596383490a142c3dac9ae53206543276ccc540081809adde79",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/FINAL_SELECTION.json",
+      "bytes": 2346,
+      "sha256": "9b88326d12793109499839c66c979ec330bf5e7311e2f5651f48f684d617672b",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/index.html",
+      "bytes": 2388,
+      "sha256": "4c7c8419ef6b31e0287e1031cc7593e3cd957e25cc358bc5be957dc3b5c17c44",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/METADATA_CHECKS.json",
+      "bytes": 4302,
+      "sha256": "cbb6a5a1d2fac8898a484c97d0c9c01f3123f5461fe1aac66070b9f90fdce2a3",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/outputs/0d1bcb60_000.png",
+      "bytes": 4831245,
+      "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/outputs/2393106e_000.png",
+      "bytes": 4948604,
+      "sha256": "2bcc683de8cc8a7a73d043e787ca1e0b261623d1d5c804e5795624d5aab987ca",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/outputs/a5a3efa3_000.png",
+      "bytes": 5322684,
+      "sha256": "644d52a40e08ea4a031cb775a55069b8781e8e93fcabd917d0f9aafadc587fad",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/outputs/ac68b225_000.png",
+      "bytes": 5296528,
+      "sha256": "6198dd2232480b978c31e3cec30c98100256c2a38c56bf9072d0b18066007f6c",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/outputs/CHAR_01_서윤_turnaround_v02_HQ_repaired.png",
+      "bytes": 4831245,
+      "sha256": "8045b4e65e4b3bd24f8b3390dad17fbd4869667b9c01c56d7dff48e63cbbd23f",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/outputs/CHAR_01_서윤_turnaround_v02_HQ.png",
+      "bytes": 5322684,
+      "sha256": "644d52a40e08ea4a031cb775a55069b8781e8e93fcabd917d0f9aafadc587fad",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/outputs/CHAR_02_도현_turnaround_v02_HQ.png",
+      "bytes": 4948604,
+      "sha256": "2bcc683de8cc8a7a73d043e787ca1e0b261623d1d5c804e5795624d5aab987ca",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/outputs/CHAR_03_지수_turnaround_v02_HQ.png",
+      "bytes": 5296528,
+      "sha256": "6198dd2232480b978c31e3cec30c98100256c2a38c56bf9072d0b18066007f6c",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/prompts/CHAR_01_rear_brace_repair.txt",
+      "bytes": 926,
+      "sha256": "77413736e28ad1b8160ff379158a58e180e44089078cd13aaa5bed5e3a61da26",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/prompts/CHAR_01.txt",
+      "bytes": 2336,
+      "sha256": "ef76653d2e616d57c38a1a32a177ef86df57d4fa22296644093a65620bd3be34",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/prompts/CHAR_02.txt",
+      "bytes": 2438,
+      "sha256": "88153d75e9e3144e93a769b6071ec4e81c15af4904c81b1fb6ab3a3a3b815b56",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/prompts/CHAR_03.txt",
+      "bytes": 2158,
+      "sha256": "f9e0db32fb91ba942a4d17885c5dfc638df98d332eee4ad48bc51178ea923116",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/README.md",
+      "bytes": 5287,
+      "sha256": "a969be9c62964cd927aee95ad572c8a3b240cdc578e1acc3d01176114d27bb28",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/references/D11_CHAR_01_FINAL.png",
+      "bytes": 1859541,
+      "sha256": "3befd9d098183bc6126742f4de93ac5174f2a1e873a7ee81a1ea7d2e8ecd69f6",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/references/D11_CHAR_02_FINAL.png",
+      "bytes": 1735828,
+      "sha256": "19e55c85fe02aa3152e49fcd9d8c0a9369cd346436dd44b6f794c4fd4fad447d",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/references/D11_CHAR_03_FINAL.png",
+      "bytes": 1853468,
+      "sha256": "a3ccdee45b2bd3b4b9b824d76f7faf6e73d407ec21e0bd2a532ae449f2557648",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/RUNS.json",
+      "bytes": 3013,
+      "sha256": "ce02d5fa3bad7cb56d4c57b5d395ff4f97c02d8b01ae00243deffb0344e761c7",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/workflows/CHAR_01_rear_brace_repair.json",
+      "bytes": 74590,
+      "sha256": "6239212f2c88c6dfe13d5bc1860be2ae8e9db4eec6cd3a29946b47b859116847",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/workflows/CHAR_01_turnaround_HQ.json",
+      "bytes": 73118,
+      "sha256": "fafc191cea57534f427db951fc0de7ab1032ad166723ff94435ca091dda93ac6",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/workflows/CHAR_02_turnaround_HQ.json",
+      "bytes": 73220,
+      "sha256": "20da1c9c7f6f4995f8e781f736845cd3e039cd1d2751903b9324e4d61086073e",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "삭제된_11초/visuals/turnaround_qwen_v02/workflows/CHAR_03_turnaround_HQ.json",
+      "bytes": 72940,
+      "sha256": "1ee482e508ed9d11be920adc37b95576bdaceb90898eb7380b00bc9206f09b98",
+      "category": "drama_assets_and_records"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 3326,
+      "sha256": "cbc490505b63d462d080a10b85146761675ec14c7cc35140310b864926370da3",
+      "category": "project_instructions"
+    },
+    {
+      "path": "docs/AI_DRAMA_PRODUCTION_GUIDE.md",
+      "bytes": 14801,
+      "sha256": "445f5dfc01fb37c372e53d323b1366b8aff73924c0d6bc55bd406fd582d13524",
+      "category": "project_instructions"
+    },
+    {
+      "path": "docs/PRODUCTION_SYSTEM.md",
+      "bytes": 1961,
+      "sha256": "768793ce489fa51550bec52af92975a31a4dd26140b5347dd2af77b5b1a2bb2a",
+      "category": "project_instructions"
+    },
+    {
+      "path": "experiments/emotional_acting_01/PROMPT_SETTINGS.md",
+      "bytes": 3807,
+      "sha256": "4c99411dffeb9e8c05018c97442854724e7c6d79dcccc9a1ae54855d2a7490b0",
+      "category": "emotion_test_plan_and_prompts"
+    },
+    {
+      "path": "experiments/emotional_acting_01/prompts/00_NEUTRAL_T2I.txt",
+      "bytes": 1235,
+      "sha256": "36d09bdf5c04097132399ab3a0ed27e1209e557e874923278b40786e004ba1e3",
+      "category": "emotion_test_plan_and_prompts"
+    },
+    {
+      "path": "experiments/emotional_acting_01/prompts/01_TEARS_EDIT.txt",
+      "bytes": 924,
+      "sha256": "22dd7b9cc963f1b180d8c381d22afd8961980c93eeba11985725ee34a79361a4",
+      "category": "emotion_test_plan_and_prompts"
+    },
+    {
+      "path": "experiments/emotional_acting_01/prompts/02_SMILE_EDIT.txt",
+      "bytes": 966,
+      "sha256": "6730b5f63f417cb393f82f58b15d83a9fa9a89f217ce38cb785dbccfe9ccf60a",
+      "category": "emotion_test_plan_and_prompts"
+    },
+    {
+      "path": "experiments/emotional_acting_01/prompts/03_TEAR_FALL_EDIT.txt",
+      "bytes": 1004,
+      "sha256": "91a9caff45534576944246d0be6c2e65540b7974f8471e3f43d65db4046d952a",
+      "category": "emotion_test_plan_and_prompts"
+    },
+    {
+      "path": "experiments/emotional_acting_01/TEST_PLAN.md",
+      "bytes": 11423,
+      "sha256": "ba9a7882affe403fc0b9437215291507002912a1e56c2ddf407a80de97ead5ce",
+      "category": "emotion_test_plan_and_prompts"
+    },
+    {
+      "path": "experiments/emotional_acting_01/workflows/Qwen_Emotion_AB_00_T2I.json",
+      "bytes": 70289,
+      "sha256": "bddb3b5bcff0aa73b0f36a20ef113fe6b7bd0d401670d1c6fcf4252d5ea3daf6",
+      "category": "emotion_test_plan_and_prompts"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": 1024,
+      "height": 1024
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "40": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "CHAR_07_turnaround_v02.png"
+    }
+  },
+  "41": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "40",
+        0
+      ],
+      "width": 512,
+      "height": 512,
+      "x": 96,
+      "y": 200
+    }
+  },
+  "42": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "41",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 1024,
+      "height": 1024,
+      "crop": "disabled"
+    }
+  },
+  "43": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "CHAR_06_turnaround_v02.png"
+    }
+  },
+  "44": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "43",
+        0
+      ],
+      "width": 110,
+      "height": 85,
+      "x": 290,
+      "y": 375
+    }
+  },
+  "45": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "44",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 440,
+      "height": 340,
+      "crop": "disabled"
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Using image one as the edit target and image two as the exact lettering reference, change only the white rectangular name patch on the vest so that its upper line reads the Korean word 경찰 in the same bold black Korean lettering as image two, with POLICE below it exactly as now. The second Korean syllable must be 찰, not 차 or 착. Keep the patch size, position, white color, border, perspective and fabric texture. Keep the zipper, radio, eagle badge, reflective band, gray jacket, face, lighting and every other pixel of image one unchanged. No other text, no watermark.",
+      "negative_prompt": "",
+      "resolution": 0,
+      "images.image_1": [
+        "42",
+        0
+      ],
+      "images.image_2": [
+        "45",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "16",
+        2
+      ],
+      "seed": 2026100641,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "46": {
+    "class_type": "ImageScale",
+    "inputs": {
+      "image": [
+        "21",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "width": 512,
+      "height": 512,
+      "crop": "disabled"
+    }
+  },
+  "47": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 0.0,
+      "width": 512,
+      "height": 512
+    }
+  },
+  "48": {
+    "class_type": "SolidMask",
+    "inputs": {
+      "value": 1.0,
+      "width": 100,
+      "height": 80
+    }
+  },
+  "49": {
+    "class_type": "FeatherMask",
+    "inputs": {
+      "mask": [
+        "48",
+        0
+      ],
+      "left": 10,
+      "top": 10,
+      "right": 10,
+      "bottom": 10
+    }
+  },
+  "50": {
+    "class_type": "MaskComposite",
+    "inputs": {
+      "destination": [
+        "47",
+        0
+      ],
+      "source": [
+        "49",
+        0
+      ],
+      "x": 206,
+      "y": 180,
+      "operation": "add"
+    }
+  },
+  "51": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "40",
+        0
+      ],
+      "source": [
+        "46",
+        0
+      ],
+      "x": 96,
+      "y": 200,
+      "resize_source": false,
+      "mask": [
+        "50",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "51",
+        0
+      ],
+      "filename_prefix": "deleted_11s_police_v02/CHAR_07_turnaround_v02_patchfix"
+    }
+  },
+  "52": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "46",
+        0
+      ],
+      "filename_prefix": "deleted_11s_police_v02/CHAR_07_turnaround_v02_patchfix_editcrop"
+    }
+  }
+}

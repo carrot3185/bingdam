@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-06",
+  "tool": "ChatGPT 웹(chatgpt.com, 사용자 Plus 계정) 이미지 생성, Claude in Chrome으로 조작",
+  "tool_note": "ChatGPT 데스크톱 앱은 화면 캡처에 내용이 나오지 않아 조작 불가 → 사용자 승인으로 웹 사용. 정확한 이미지 모델 버전은 화면에 노출되지 않음. 사용자 확정 \"GPT Image 2.5 데스크톱 앱\"과 동일 실행인지는 미확인.",
+  "conversation": "https://chatgpt.com/c/6ac3c7cb-22d0-83ec-8861-6ac44b9e25ab (제목 \"Create Architectural Image\")",
+  "prompts": "PROMPTS.md (각 프롬프트 앞에 \"Create an image. \" 추가, 2번은 \"Using the same garage as your previous image\"로 시작)",
+  "runs": [
+    {
+      "output": "gpt_image/LOC_06_GARAGE_MASTER_gpt_a.png",
+      "input_attachment": "outputs/LOC_06_GARAGE_MASTER.png",
+      "input_sha256": "7d3b1e9e524ad02f6936649c8447fc2ff751ab3fe0ff3df7028d906049dc2d3c",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "fa02063837af047d2761704cd26d6b05e8328aa938a93cb2fd126f8edf8b3635",
+      "upscaled_5k": "outputs_5k/LOC_06_GARAGE_MASTER_gpt_a_5k.png",
+      "visual_review": "채택(대표, 사용자 선택 2026-10-06)",
+      "observed": "구도·카메라·요소 배치 유지(루버 천장·LED·CCTV, 화강석 통로, 차콜 기둥·보호대, 왼쪽 SUV·엘리베이터 홀, 오른쪽 차량 열, 블루 LED 목재 끝벽). 바닥 반사·차량 도장·패널 라인이 Qwen보다 일관되고 사실적. Qwen의 특정 브랜드를 연상시키던 그릴 형태가 일반형으로 바뀜. 번호판 빈칸. 지시와 달리 일부 차량에 식별되지 않는 일반형 엠블럼이 있음. 출력 1672x941(첨부는 ChatGPT가 2048x1152로 축소)."
+    },
+    {
+      "output": "gpt_image/LOC_06_GARAGE_DASHCAM_gpt_a.png",
+      "input_attachment": "outputs/LOC_06_GARAGE_DASHCAM_v03.png",
+      "input_sha256": "dd0adb10c4e7b01a13b4bdeb4f8b820ad64c63831d28111ffcce98d9fa75ef37",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "6fc6ab6ba210ac80db7860d834e97214a9a114ba0da91f35e86bd26bfbffbc69",
+      "upscaled_5k": "outputs_5k/LOC_06_GARAGE_DASHCAM_gpt_a_5k.png",
+      "visual_review": "채택(대표, 사용자 선택 2026-10-06)",
+      "observed": "후진 주차 차량에서 통로 건너 맞은편 주차열을 보는 구도 유지. 인물 없음, 오버레이 없음. 바닥·기둥·차량 질감 향상. 블랙박스 질감(압축·블룸)은 약하고 깨끗한 사진에 가까움. 하단 대시보드 띠는 여전히 두꺼움. 출력 1672x941."
+    }
+  ]
+}

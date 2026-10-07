@@ -1,0 +1,778 @@
+{
+ "purpose": "본 작업 테이크 생성 기록 (TAKE_PLAN.md v0.2)",
+ "entries": [
+  {
+   "take": "T3C3",
+   "version": "v01",
+   "seed": 610317,
+   "length": "15.0초 입력 → 362프레임(15.08초)",
+   "prompt": "prompts/T3C3_v01.txt",
+   "workflow_api": "workflows/D11_T3C3_v01_s610317_api.json",
+   "references": [
+    "D11_h3/CHAR_01_seoyun_turnaround_v02_HQ_repaired.png",
+    "D11_h3/HOME_MASTER_b.png",
+    "D11_h3/CHAR_02_dohyun_turnaround_v02_HQ.png",
+    "audio D11_VOICE_CHAR_01_seoyun_anchor_v01.wav"
+   ],
+   "result": "interrupted (사용자 규칙: 실행 60분 초과 시 취소)",
+   "started": "2026-10-07 04:05:14",
+   "interrupted_after_s": 3693,
+   "observed": "ComfyUI 로그: 1단계 7스텝은 5분 39초(약 49초/스텝)에 완료. 잠재 ×2 업스케일 뒤 마지막 1스텝이 'Model Initializing'에서 55분 넘게 진행되지 않음. 그동안 ComfyUI API 응답이 반복적으로 30초 타임아웃.",
+   "interpretation": "15초 분량을 2배 해상도(1920×1088)로 처리하는 마지막 스텝에서 RTX 4070 12GB의 메모리 한계로 오프로딩이 심해진 것으로 추정(직접 측정은 아님).",
+   "action": "사용자 지시대로 10초 안쪽으로 분할: T3C3a(8.5초 입력)·T3C3b(6.5초 입력)"
+  },
+  {
+   "take": "T-VD",
+   "version": "v01",
+   "seed": 710101,
+   "length": "11.0초 입력 → 277프레임(11.54초)",
+   "prompt": "prompts/T-VD_v01.txt",
+   "result": "interrupted (마지막 스텝 정지)",
+   "run_s_from_history": 1204,
+   "observed": "1단계 7스텝 3분 46초 완료. ×2 업스케일 뒤 마지막 1스텝이 15분 넘게 진행되지 않아 수동 중단(05:26).",
+   "action": "T-VD1·T-VD2(각 6.5초 입력)로 분할"
+  },
+  {
+   "take": "T7E2",
+   "version": "v01",
+   "seed": 810701,
+   "length": "7.0초 입력 → 175프레임(7.29초)",
+   "prompt": "prompts/T7E2_v01.txt",
+   "workflow_api": "workflows/D11_T7E2_v01_s810701_api.json",
+   "output": "outputs/T7E2_v01_s810701_00001-audio.mp4",
+   "output_sha256": "6787f8e7a9a5af399c74954e8001e4302eee5ec32cc7d390846269d4e0f2168e",
+   "result": "success",
+   "run_s_from_history": 374,
+   "transcript_faster_whisper_base": "진짜 버렸어.",
+   "visual_observation": "지수 얼굴·올리브 재킷·아이보리 티·크로스백 끈 유지. OTS 서윤 긴 검은 머리, 두 시드에서 카멜 코트 어깨 보임. 배경 복도 끝 엘리베이터."
+  },
+  {
+   "take": "T7E2",
+   "version": "v01",
+   "seed": 820701,
+   "length": "7.0초 입력 → 175프레임(7.29초)",
+   "prompt": "prompts/T7E2_v01.txt",
+   "workflow_api": "workflows/D11_T7E2_v01_s820701_api.json",
+   "output": "outputs/T7E2_v01_s820701_00001-audio.mp4",
+   "output_sha256": "c5402b69b60d128afe5a19af9f5560e3ba70f99838e45c98fb2946b6ec8cd5ff",
+   "result": "success",
+   "run_s_from_history": 424,
+   "transcript_faster_whisper_base": "진짜 버렸어.",
+   "visual_observation": "지수 얼굴·올리브 재킷·아이보리 티·크로스백 끈 유지. OTS 서윤 긴 검은 머리, 두 시드에서 카멜 코트 어깨 보임. 배경 복도 끝 엘리베이터."
+  },
+  {
+   "take": "T7E2",
+   "version": "v01",
+   "seed": 830701,
+   "length": "7.0초 입력 → 175프레임(7.29초)",
+   "prompt": "prompts/T7E2_v01.txt",
+   "workflow_api": "workflows/D11_T7E2_v01_s830701_api.json",
+   "output": "outputs/T7E2_v01_s830701_00001-audio.mp4",
+   "output_sha256": "dc6edd30ec7216f5058b7cc83b5aecc6c4e9534cdc71151d00f5ccbb88afc8a9",
+   "result": "success",
+   "run_s_from_history": 344,
+   "transcript_faster_whisper_base": "진짜 버렸어.",
+   "visual_observation": "지수 얼굴·올리브 재킷·아이보리 티·크로스백 끈 유지. OTS 서윤 긴 검은 머리, 두 시드에서 카멜 코트 어깨 보임. 배경 복도 끝 엘리베이터."
+  },
+  {
+   "take": "T-VO-P",
+   "version": "v01",
+   "seed": 910601,
+   "length": "9.0초 입력 → 226프레임(9.42초)",
+   "prompt": "prompts/T-VO-P_v01.txt",
+   "workflow_api": "workflows/D11_T-VO-P_v01_s910601_api.json",
+   "output": "outputs/T-VO-P_v01_s910601_00001-audio.mp4",
+   "output_sha256": "414df3d04f04b6263c986b11c3a6bbf90faa61a1b97dbea27c7db17eb8fa2b4e",
+   "result": "success",
+   "run_s_from_history": 549,
+   "transcript_faster_whisper_base": "경찰입니다. 한서연 씨 계십니까? 문에서 물러나세요.",
+   "visual_observation": "경찰 A 근무복·모자 유지, 문을 두드림. 화면은 음성 소스용(편집에서 화면 미사용)."
+  },
+  {
+   "take": "T-VO-P",
+   "version": "v01",
+   "seed": 920601,
+   "length": "9.0초 입력 → 226프레임(9.42초)",
+   "prompt": "prompts/T-VO-P_v01.txt",
+   "workflow_api": "workflows/D11_T-VO-P_v01_s920601_api.json",
+   "output": "outputs/T-VO-P_v01_s920601_00001-audio.mp4",
+   "output_sha256": "59426ff6e889a45a36bf6c9f9ff0e0e79179da72baa8a5df81b92a94dedc2249",
+   "result": "success",
+   "run_s_from_history": 531,
+   "transcript_faster_whisper_base": "경찰입니다 한 서윤 씨 계십니까? 문에서 물러나세요.",
+   "visual_observation": "경찰 A 근무복·모자 유지, 문을 두드림. 화면은 음성 소스용(편집에서 화면 미사용)."
+  },
+  {
+   "take": "T-VO-P",
+   "version": "v01",
+   "seed": 930601,
+   "length": "9.0초 입력 → 226프레임(9.42초)",
+   "prompt": "prompts/T-VO-P_v01.txt",
+   "workflow_api": "workflows/D11_T-VO-P_v01_s930601_api.json",
+   "output": "outputs/T-VO-P_v01_s930601_00001-audio.mp4",
+   "output_sha256": "8a8ea00db386502430d12fa96ada6e4096d81409b6ca35afe0d559f7f3d33c36",
+   "result": "success",
+   "run_s_from_history": 516,
+   "transcript_faster_whisper_base": "경찰입니다 한서현 씨 계십니까? 문에서 물러나세요.",
+   "visual_observation": "경찰 A 근무복·모자 유지, 문을 두드림. 화면은 음성 소스용(편집에서 화면 미사용)."
+  },
+  {
+   "take": "T3C3a",
+   "version": "v01",
+   "seed": 610317,
+   "length": "8.5초 입력 → 209프레임(8.71초)",
+   "prompt": "prompts/T3C3a_v01.txt",
+   "workflow_api": "workflows/D11_T3C3a_v01_s610317_api.json",
+   "output": "outputs/T3C3a_v01_s610317_00001-audio.mp4",
+   "output_sha256": "64767ef38ec63e6549e5e1884623057579b07cc3c89e9854996b57220d8635db",
+   "result": "success",
+   "run_s_from_history": 474,
+   "transcript_faster_whisper_base": "내 차 점검 받았잖아. 별문지 없었대.",
+   "visual_observation": "한 숟갈 → 시선 들어 말함. OTS 도현 슬레이트 블루 셔츠. 보호대는 프레임 아래쪽."
+  },
+  {
+   "take": "T3C3b",
+   "version": "v01",
+   "seed": 610317,
+   "length": "6.5초 입력 → 158프레임(6.58초)",
+   "prompt": "prompts/T3C3b_v01.txt",
+   "workflow_api": "workflows/D11_T3C3b_v01_s610317_api.json",
+   "output": "outputs/T3C3b_v01_s610317_00001-audio.mp4",
+   "output_sha256": "fd52c6bcaccd2bba03381c5a276c5c84438daaa47bf709ce20f3c79998413799",
+   "result": "success",
+   "run_s_from_history": 336,
+   "transcript_faster_whisper_base": "근데 왜 사고가 났지?",
+   "visual_observation": "OTS 도현, 시선 내렸다가 들어 기다림. 배경 소파·선반."
+  },
+  {
+   "take": "T-VD1",
+   "version": "v01",
+   "seed": 710101,
+   "length": "6.5초 입력 → 158프레임",
+   "prompt": "prompts/T-VD1_v01.txt",
+   "workflow_api": "workflows/D11_T-VD1_v01_s710101_api.json",
+   "output": "outputs/T-VD1_v01_s710101_00001-audio.mp4",
+   "output_sha256": "081af65669264da2793bbc54234f0dc5c0417bc7fc3c3240130433660298eb27",
+   "result": "success",
+   "run_s_from_history": 334,
+   "transcript_faster_whisper_base": "살아있으면 그럼 보험금 못 받아 너 진짜 괜찮겠어?",
+   "visual_observation": "고정 블랙박스 시점, 왼쪽 가까이 도현 몸통(푸른 셔츠, 얼굴 프레임 밖), 오른쪽 가장자리 차콜 재킷 소매. 확정 배경 배치와 일치."
+  },
+  {
+   "take": "T-VD2",
+   "version": "v01",
+   "seed": 710101,
+   "length": "6.5초 입력 → 158프레임",
+   "prompt": "prompts/T-VD2_v01.txt",
+   "workflow_api": "workflows/D11_T-VD2_v01_s710101_api.json",
+   "output": "outputs/T-VD2_v01_s710101_00001-audio.mp4",
+   "output_sha256": "01c71b54b0e15b79fabbb0c3b54ff6406fb640f698fdd83e673c3963b3e89d3b",
+   "result": "success",
+   "run_s_from_history": 322,
+   "transcript_faster_whisper_base": "내 와이프야, 내가 알아서 해.",
+   "visual_observation": "도현이 통로로 걸어 나가 돌아섬. 얼굴은 보이지만 전신이 작게 잡혀 식별 크기가 작음(설계는 전신~무릎 위)."
+  },
+  {
+   "take": "T1A1",
+   "version": "v01",
+   "seed": 1101,
+   "length_input_s": 7.0,
+   "prompt": "prompts/T1A1_v01.txt",
+   "workflow_api": "workflows/D11_T1A1_v01_s1101_api.json",
+   "output": "outputs/T1A1_v01_s1101_00001-audio.mp4",
+   "output_sha256": "e979e130a66ed3decc03b4c4dbcf4e1f2e8d43d90a80dabca507063cb51be4f5",
+   "result": "success",
+   "run_s_from_history": 351,
+   "transcript_faster_whisper_base": "(무음)",
+   "visual_observation": "서윤 MCU, 노트북 빛. 오른손이 노트북 쪽에서 멈춤 → 굳은 표정 유지. 배경 소파·선반·올리브나무. 입술 색이 시트보다 진함(이전 테스트와 같은 경향).",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T1A2",
+   "version": "v01",
+   "seed": 1102,
+   "length_input_s": 8.5,
+   "prompt": "prompts/T1A2_v01.txt",
+   "workflow_api": "workflows/D11_T1A2_v01_s1102_api.json",
+   "output": "outputs/T1A2_v01_s1102_00001-audio.mp4",
+   "output_sha256": "a1027a78ea974a6467dcc914191338aa0276b757d75bfdbf0b23c13fcf4e2145",
+   "result": "success",
+   "run_s_from_history": 453,
+   "transcript_faster_whisper_base": "음... 음...",
+   "visual_observation": "진동 전화를 보고 오른손으로 받아 오른쪽 귀에 댐. 받아쓰기상 짧은 '음/응' 소리가 8.0초 무렵(계획 6.0초보다 늦음). 실제 발화는 청취 확인 필요.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T1B1",
+   "version": "v01",
+   "seed": 1103,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T1B1_v01.txt",
+   "workflow_api": "workflows/D11_T1B1_v01_s1103_api.json",
+   "output": "outputs/T1B1_v01_s1103_00001-audio.mp4",
+   "output_sha256": "0e267bb0b3596c827389d69147fcea41523376cab2942d3b0635704d342d2364",
+   "result": "success",
+   "run_s_from_history": 302,
+   "transcript_faster_whisper_base": "(무음)",
+   "visual_observation": "실패: 식탁 위에 서윤 얼굴이 반투명하게 겹쳐 생성됨(인물 시트 전체 입력이 손 인서트에 새어 듦). 보호대 왼손은 보임.",
+   "status": "rejected_by_claude"
+  },
+  {
+   "take": "T1B2",
+   "version": "v01",
+   "seed": 1104,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T1B2_v01.txt",
+   "workflow_api": "workflows/D11_T1B2_v01_s1104_api.json",
+   "output": "outputs/T1B2_v01_s1104_00001-audio.mp4",
+   "output_sha256": "0d8ca00ec7f068dad100d70d6af7c9620e82df10962837902878b98a18090f1b",
+   "result": "success",
+   "run_s_from_history": 299,
+   "transcript_faster_whisper_base": "(진동음)",
+   "visual_observation": "전화 진동은 나오지만 노트북이 닫힌 상태로 생성됨 → S#1 연속성(노트북 열림·재생 중)과 불일치.",
+   "status": "rejected_by_claude"
+  },
+  {
+   "take": "T1C",
+   "version": "v01",
+   "seed": 1105,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T1C_v01.txt",
+   "workflow_api": "workflows/D11_T1C_v01_s1105_api.json",
+   "output": "outputs/T1C_v01_s1105_00001-audio.mp4",
+   "output_sha256": "6c58a5876871fb09ccc2ea65642d24b236d6569d4d065c9875654036825fc36f",
+   "result": "success",
+   "run_s_from_history": 339,
+   "transcript_faster_whisper_base": "(무음)",
+   "visual_observation": "서윤 어깨 너머 OTS, 전화를 귀에 대고 현관문 쪽으로 고개를 돌림. 깊은 곳에 닫힌 회색 현관문(LOC_03 배치와 유사).",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T-VO-D",
+   "version": "v01",
+   "seed": 1106,
+   "length_input_s": 9.0,
+   "prompt": "prompts/T-VO-D_v01.txt",
+   "workflow_api": "workflows/D11_T-VO-D_v01_s1106_api.json",
+   "output": "outputs/T-VO-D_v01_s1106_00001-audio.mp4",
+   "output_sha256": "e09c4df5bfc30ff03f0b1c0d78a89fa899d9a2ed6cb77e37a2271b1ad5eb10f3",
+   "result": "success",
+   "run_s_from_history": 555,
+   "transcript_faster_whisper_base": "양 먹었어? 나 올라가 문 열어줘. 손목 아프니까 내가 가방 들고 있어서 그래.",
+   "visual_observation": "엘리베이터 안 도현, 오른손 전화·왼손 초록 장바구니. 음성 소스용.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T1B1",
+   "version": "v02",
+   "seed": 1103,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T1B1_v02.txt",
+   "workflow_api": "workflows/D11_T1B1_v02_s1103_api.json",
+   "references": [
+    "D11_h3/C1_hands_brace_crop.png (refs/C1_hands_brace_crop.png, sha256 f6c623a3…, C1 시트 정면 팔·손 부분 크롭)",
+    "D11_h3/HOME_MASTER_b.png"
+   ],
+   "output": "outputs/T1B1_v02_s1103_00001-audio.mp4",
+   "output_sha256": "8cc1062855e011a382906a2852933b2aa0cf23a3cb71d929f93a303d68e72934",
+   "result": "success",
+   "run_s_from_history": 300,
+   "visual_observation": "얼굴 겹침 없음. 왼손(화면 왼쪽)에 회색 보호대, 오른손 검지로 트랙패드를 누름. 오트밀 소매 유지.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T1B2",
+   "version": "v02",
+   "seed": 1104,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T1B2_v02.txt",
+   "workflow_api": "workflows/D11_T1B2_v02_s1104_api.json",
+   "references": [
+    "D11_h3/HOME_MASTER_b.png"
+   ],
+   "output": "outputs/T1B2_v02_s1104_00001-audio.mp4",
+   "output_sha256": "67b5fe7022f6ce352cb1c17e3ce1d94db9547093982656c17725d77ec10115ec",
+   "result": "success",
+   "run_s_from_history": 310,
+   "visual_observation": "노트북 열린 채 화면에 영상 재생, 오른쪽 전화가 켜지며 진동. 인물 없음.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T1B2",
+   "version": "v03",
+   "seed": 1104,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T1B2_v03.txt",
+   "change_from_v02": "진동 묘사를 '짧게 끊기는 아주 미세한 떨림, 전화는 같은 자리에 그대로'로, 소리를 '낮고 부드러운 진동음'으로 변경",
+   "workflow_api": "workflows/D11_T1B2_v03_s1104_api.json",
+   "output": "outputs/T1B2_v03_s1104_00001-audio.mp4",
+   "output_sha256": "db2bfed6f9cb9083f426a4421a4e5e0990bb7fd5bcc860f1c39a1de9891a9e80",
+   "result": "success",
+   "run_s_from_history": 298,
+   "visual_observation": "8프레임에서 전화 위치가 거의 고정. 프레임 간 평균 밝기 차이 0.484(v02) → 0.275(v03)(화면 점등 변화 포함, 참고치). 노트북은 열린 채 재생 화면이 보임 — 화면 내용은 편집 합성 대상.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T2A1",
+   "version": "v01",
+   "seed": 2101,
+   "length_input_s": 9.0,
+   "prompt": "prompts/T2A1_v01.txt",
+   "workflow_api": "workflows/D11_T2A1_v01_s2101_api.json",
+   "output": "outputs/T2A1_v01_s2101_00001-audio.mp4",
+   "output_sha256": "f5a4eb386cc63a963342b9668207ec415535946f5cce1973b464458e01c144b1",
+   "result": "success",
+   "run_s_from_history": 542,
+   "transcript_faster_whisper_base": "(무음)",
+   "visual_observation": "노트북 앞 서윤, 현관 쪽으로 시선 → 노트북을 덮음.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T2A2a",
+   "version": "v01",
+   "seed": 2102,
+   "length_input_s": 8.5,
+   "prompt": "prompts/T2A2a_v01.txt",
+   "workflow_api": "workflows/D11_T2A2a_v01_s2102_api.json",
+   "output": "outputs/T2A2a_v01_s2102_00001-audio.mp4",
+   "output_sha256": "eb68e72f31c43cf87a8ee4a93648bccd2d9add3fced95aa54d7a5ed87e7ba0fc",
+   "result": "success",
+   "run_s_from_history": 554,
+   "transcript_faster_whisper_base": "좀 졸려서 내가?",
+   "visual_observation": "OTS 도현(어두운 셔츠 일부), 억지 미소 → 두 대사.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T2A2b",
+   "version": "v01",
+   "seed": 2103,
+   "length_input_s": 8.5,
+   "prompt": "prompts/T2A2b_v01.txt",
+   "workflow_api": "workflows/D11_T2A2b_v01_s2103_api.json",
+   "output": "outputs/T2A2b_v01_s2103_00001-audio.mp4",
+   "output_sha256": "3d1075066ab60b8aa358519b866b34abd98daa5c573174a1a84beac24e03bff1",
+   "result": "success",
+   "run_s_from_history": 664,
+   "transcript_faster_whisper_base": "저거 좀 발감이 있대. 지수.",
+   "visual_observation": "첫 2초에 프롬프트에 없는 말이 들어감(음높이 혼재, 남성 음역 포함). 아이스크림 통이 빨간 컵. 전화 뒤집기 동작은 있음.",
+   "status": "rejected_by_claude"
+  },
+  {
+   "take": "T2B1",
+   "version": "v01",
+   "seed": 2104,
+   "length_input_s": 8.5,
+   "prompt": "prompts/T2B1_v01.txt",
+   "workflow_api": "workflows/D11_T2B1_v01_s2104_api.json",
+   "output": "outputs/T2B1_v01_s2104_00001-audio.mp4",
+   "output_sha256": "2ee609b1538f26026d8d701a6c91f2e47d3708fe12c17fa74cbae5cac78b8d8b",
+   "result": "success",
+   "run_s_from_history": 785,
+   "transcript_faster_whisper_base": "(무음)",
+   "visual_observation": "보호대 찬 왼손이 전화를 받치고 오른손 엄지로 입력.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T2B2",
+   "version": "v01",
+   "seed": 2105,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T2B2_v01.txt",
+   "workflow_api": "workflows/D11_T2B2_v01_s2105_api.json",
+   "output": "outputs/T2B2_v01_s2105_00001-audio.mp4",
+   "output_sha256": "3b7e0c65f2f77b060d450253a05465d3d078b4f1331c059c8b526fdebb6e8f64",
+   "result": "success",
+   "run_s_from_history": 327,
+   "transcript_faster_whisper_base": "(받아쓰기 환각 추정)",
+   "visual_observation": "도현 손(왼손목 시계)이 갈색 종이컵을 내려놓음 — 통 디자인이 다른 테이크와 다름.",
+   "status": "rejected_by_claude"
+  },
+  {
+   "take": "T2B3",
+   "version": "v01",
+   "seed": 2106,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T2B3_v01.txt",
+   "workflow_api": "workflows/D11_T2B3_v01_s2106_api.json",
+   "output": "outputs/T2B3_v01_s2106_00001-audio.mp4",
+   "output_sha256": "5418d7e9faa052121d7f6eab31a7f8064ee7143b0fef8cc174823c2936152c00",
+   "result": "success",
+   "run_s_from_history": 309,
+   "transcript_faster_whisper_base": "(무음)",
+   "visual_observation": "켜진 전화를 오른손으로 덮어 뒤집음. | 재검수: 2.75~3.25초에 손이 전화 위로 반투명하게 겹치며 녹아들고, 집어 돌리는 동작 없이 다음 프레임에 이미 엎어져 있음(형태 변형 오류).",
+   "status": "rejected_by_user",
+   "user_feedback": "핸드폰을 뒤집을 때 에러가 있어 (2026-10-07)"
+  },
+  {
+   "take": "T2C",
+   "version": "v01",
+   "seed": 2107,
+   "length_input_s": 7.0,
+   "prompt": "prompts/T2C_v01.txt",
+   "workflow_api": "workflows/D11_T2C_v01_s2107_api.json",
+   "output": "outputs/T2C_v01_s2107_00001-audio.mp4",
+   "output_sha256": "47a35688ef2c1385454bfd9dadcbe1b9816d0970b46644cc131686f6cbd5004d",
+   "result": "success",
+   "run_s_from_history": 405,
+   "transcript_faster_whisper_base": "(효과음)",
+   "visual_observation": "거실 쪽 WS, 멀리 현관문이 열리고 도현이 들어옴(작게 보임).",
+   "status": "rejected_by_user",
+   "user_feedback": "서윤은 계속 식탁에 앉아 있는데 이 장면에서만 식탁에 없음 (2026-10-07)"
+  },
+  {
+   "take": "T2D",
+   "version": "v01",
+   "seed": 2108,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T2D_v01.txt",
+   "workflow_api": "workflows/D11_T2D_v01_s2108_api.json",
+   "output": "outputs/T2D_v01_s2108_00001-audio.mp4",
+   "output_sha256": "9bc2bc2d4dc2cfe89987c16164718099cf0f8e3c25fab8bc8250de7049060986",
+   "result": "success",
+   "run_s_from_history": 344,
+   "transcript_faster_whisper_base": "자는 줄 알았네.",
+   "visual_observation": "통로를 걸어오는 도현, 초록 장바구니. 발은 원거리라 양말 여부 판별 어려움.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T2E1",
+   "version": "v01",
+   "seed": 2109,
+   "length_input_s": 7.0,
+   "prompt": "prompts/T2E1_v01.txt",
+   "workflow_api": "workflows/D11_T2E1_v01_s2109_api.json",
+   "output": "outputs/T2E1_v01_s2109_00001-audio.mp4",
+   "output_sha256": "86f7434b9c2bd6444c76cabd1a1bd5ba08377ea2939064da484cbfe520d30f20",
+   "result": "success",
+   "run_s_from_history": 362,
+   "transcript_faster_whisper_base": "(효과음)",
+   "visual_observation": "식탁 축 2S, 장바구니를 내려놓고 물건을 꺼냄. 배경 창.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T2F1",
+   "version": "v01",
+   "seed": 2110,
+   "length_input_s": 5.6,
+   "prompt": "prompts/T2F1_v01.txt",
+   "workflow_api": "workflows/D11_T2F1_v01_s2110_api.json",
+   "output": "outputs/T2F1_v01_s2110_00001-audio.mp4",
+   "output_sha256": "3924abbba0578eaec3200b80e45212d1584b6807c9853372aee3642124064907",
+   "result": "success",
+   "run_s_from_history": 316,
+   "transcript_faster_whisper_base": "이거먹고 싶다며",
+   "visual_observation": "OTS 서윤(베이지 상의·긴 머리), 흰 아이스크림 통.",
+   "status": "usable_pending_user"
+  },
+  {
+   "take": "T2F2",
+   "version": "v01",
+   "seed": 2111,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T2F2_v01.txt",
+   "workflow_api": "workflows/D11_T2F2_v01_s2111_api.json",
+   "output": "outputs/T2F2_v01_s2111_00001-audio.mp4",
+   "output_sha256": "b027e5cc27130153621ce9d12ce73aedf9f1b02247aab84432f6958b0d9efc66",
+   "result": "success",
+   "run_s_from_history": 336,
+   "transcript_faster_whisper_base": "누구야?",
+   "visual_observation": "전경 서윤 쪽에 켜진 전화가 보임(이미 뒤집어 둔 상태와 불일치). '누구야?'가 6.0초로 늦음.",
+   "status": "rejected_by_claude"
+  },
+  {
+   "take": "T2E2",
+   "version": "v01",
+   "seed": 2112,
+   "length_input_s": 6.5,
+   "prompt": "prompts/T2E2_v01.txt",
+   "workflow_api": "workflows/D11_T2E2_v01_s2112_api.json",
+   "output": "outputs/T2E2_v01_s2112_00001-audio.mp4",
+   "output_sha256": "f70ee8a93715bdea84c98851f48ce965cf9b72af3b8d979fa12436185102956d",
+   "result": "success",
+   "run_s_from_history": 334,
+   "transcript_faster_whisper_base": "개가 또 모사준데?",
+   "visual_observation": "대사 후 도현이 주방이 아니라 창·거실 쪽으로 걸어감 → S#3 시작(인덕션 앞)과 불일치.",
+   "status": "rejected_by_claude"
+  },
+  {
+   "take": "T2A2b/T2F2/T2E2/T2B2",
+   "version": "v02",
+   "result": "not_queued",
+   "observed": "2026-10-07 19:47 ComfyUI /prompt 400: UNETLoader 검증 중 FileNotFoundError D:/ComfyUI_windows_portable/ComfyUI/models/unet. 모델 경로 설정(instance-model-paths, 9/29)은 그대로이고 해당 models 폴더 구조가 19:28~19:33에 바뀐 것으로 보임(폴더명 DiffusionModels, Lora 등). 사용자 환경이라 Claude는 수정하지 않음.",
+   "prompts": [
+    "prompts/T2A2b_v02.txt",
+    "prompts/T2F2_v02.txt",
+    "prompts/T2E2_v02.txt",
+    "prompts/T2B2_v02.txt"
+   ],
+   "new_ref": "refs/PROP_icecream_pint_from_S2-14.png (sha256 b7de230a..., 승인된 S2-14 기준 클립에서 아이스크림 통 크롭)"
+  },
+  {
+   "take": "ComfyUI 경로 문제",
+   "observed": "2026-10-07 사용자 확인 후(추정) /prompt가 다시 정상 수락됨. Claude는 폴더·설정을 수정하지 않음.",
+   "result": "resolved"
+  },
+  {
+   "take": "T2B2",
+   "version": "v02",
+   "seed": 2105,
+   "prompt": "prompts/T2B2_v02.txt",
+   "workflow_api": "workflows/D11_T2B2_v02_s2105_api.json",
+   "output": "outputs/T2B2_v02_s2105_00001-audio.mp4",
+   "output_sha256": "647d5e10856839058518dadcf862953e1e41a93f50da2e47a9e4f4fc7acb9f09",
+   "result": "success",
+   "run_s_from_history": 313,
+   "visual_observation": "소품 참조와 같은 흰 뚜껑·남색 라벨 통을 시계 찬 손이 내려놓음. 음성 구간 없음(VAD).",
+   "status": "accepted_by_claude"
+  },
+  {
+   "take": "T2A2b",
+   "version": "v02",
+   "seed": 2203,
+   "prompt": "prompts/T2A2b_v02.txt",
+   "workflow_api": "workflows/D11_T2A2b_v02_s2203_api.json",
+   "output": "outputs/T2A2b_v02_s2203_00001-audio.mp4",
+   "output_sha256": "0dcbac5e71e32d5a51471ffccc3bf6730fd87c1fb6d423f43176ff37cb28a342",
+   "result": "success",
+   "run_s_from_history": 943,
+   "visual_observation": "앞부분 끼어든 말 사라짐(VAD 받아쓰기: 7.7초 '지수' 1회). 통은 소품 참조와 같음. 전화 뒤집기 동작 정상.",
+   "status": "rejected_by_user"
+  },
+  {
+   "take": "T2F2",
+   "version": "v02",
+   "seed": 2211,
+   "prompt": "prompts/T2F2_v02.txt",
+   "workflow_api": "workflows/D11_T2F2_v02_s2211_api.json",
+   "output": "outputs/T2F2_v02_s2211_00001-audio.mp4",
+   "output_sha256": "a932f0e4db969a7be679e4917688e5d01cf876e791c224512e5b2d298cf5f7e7",
+   "result": "success",
+   "run_s_from_history": 342,
+   "visual_observation": "식탁 위 켜진 전화 불빛이 다시 보임. '누구야?' 5.95초로 늦음.",
+   "status": "rejected_by_claude"
+  },
+  {
+   "take": "T2E2",
+   "version": "v02",
+   "seed": 2212,
+   "prompt": "prompts/T2E2_v02.txt",
+   "workflow_api": "workflows/D11_T2E2_v02_s2212_api.json",
+   "output": "outputs/T2E2_v02_s2212_00001-audio.mp4",
+   "output_sha256": "aee51b9d6b517110de4601c02a52b59b02db1650885bf0496e7175c1b2222a90",
+   "result": "success",
+   "run_s_from_history": 333,
+   "visual_observation": "대사 후 화면 왼쪽 주방 쪽으로 걸어감.",
+   "status": "accepted_by_claude"
+  },
+  {
+   "take": "T2B3",
+   "version": "v02",
+   "seed": 2206,
+   "prompt": "prompts/T2B3_v02.txt",
+   "workflow_api": "workflows/D11_T2B3_v02_s2206_api.json",
+   "output": "outputs/T2B3_v02_s2206_00001-audio.mp4",
+   "output_sha256": "339d2469cd7fba164154dec065097de53de36304bc443a485648c98983957f49",
+   "result": "success",
+   "run_s_from_history": 345,
+   "visual_observation": "뒤집기 동작은 되지만 양손이 보이는데 왼손목 보호대가 없음.",
+   "status": "rejected_by_claude"
+  },
+  {
+   "take": "T2B3",
+   "version": "v02",
+   "seed": 2306,
+   "prompt": "prompts/T2B3_v02.txt",
+   "workflow_api": "workflows/D11_T2B3_v02_s2306_api.json",
+   "output": "outputs/T2B3_v02_s2306_00001-audio.mp4",
+   "output_sha256": "2d176e6564e518c261a533ce781b469774b8e9ca6165498ca6080d66c6993269",
+   "result": "success",
+   "run_s_from_history": 331,
+   "visual_observation": "가장자리를 잡아 들어 올림 → 뒷면이 보이게 회전 → 엎어서 내려놓음. 물리적으로 자연스러움. 오른손만 보임.",
+   "status": "rejected_by_user"
+  },
+  {
+   "take": "T2CD",
+   "version": "v01",
+   "seed": 2207,
+   "covers": [
+    "S2-07",
+    "S2-08"
+   ],
+   "length_input_s": 9.0,
+   "prompt": "prompts/T2CD_v01.txt",
+   "workflow_api": "workflows/D11_T2CD_v01_s2207_api.json",
+   "references": [
+    "D11_h3/CHAR_02_dohyun_turnaround_v02_HQ.png",
+    "D11_h3/LOC_03_ENTRY_v02.png",
+    "D11_h3/CHAR_01_seoyun_turnaround_v02_HQ_repaired.png",
+    "audio D11_VOICE_CHAR_02_dohyun_anchor_v01.wav"
+   ],
+   "output": "outputs/T2CD_v01_s2207_00001-audio.mp4",
+   "output_sha256": "b7b8825da88ca43df8941791997e515cb5668b4c1f87947774f811257eee59f8",
+   "result": "success",
+   "run_s_from_history": 516,
+   "transcript_vad": "잘은 줄 알았네? (base 오인 추정)",
+   "visual_observation": "전경 서윤 긴 머리·베이지 상의 유지. 문 열림 → 도현 진입 → 남색 양말로 통로 걸어옴 → 말함. 시계 왼손목, 장바구니 오른손. 구두 벗는 동작은 짧고, 문 열림 방향(바깥여닫이)은 원거리라 판별 어려움.",
+   "status": "rejected_by_user"
+  },
+  {
+   "take": "T2F2",
+   "version": "v03",
+   "seed": 2311,
+   "prompt": "prompts/T2F2_v03.txt",
+   "workflow_api": "workflows/D11_T2F2_v03_s2311_api.json",
+   "output": "outputs/T2F2_v03_s2311_00001-audio.mp4",
+   "output_sha256": "a9dbb80e603cf95dbf416b17d44444a5c4834384963ad4b35773bae4a31094fa",
+   "result": "success",
+   "run_s_from_history": 311,
+   "visual_observation": "식탁·전화 화면 밖. 시선 변화가 약함. '누구야?' 5.3초.",
+   "status": "alternate"
+  },
+  {
+   "take": "T2F2",
+   "version": "v03",
+   "seed": 2411,
+   "prompt": "prompts/T2F2_v03.txt",
+   "workflow_api": "workflows/D11_T2F2_v03_s2411_api.json",
+   "output": "outputs/T2F2_v03_s2411_00001-audio.mp4",
+   "output_sha256": "dc62b5f394cce92e4de37b75fd00a87b01ac79ddeeff97c47b78a89fdc5a42fe",
+   "result": "success",
+   "run_s_from_history": 293,
+   "visual_observation": "식탁·전화 화면 밖. 시선이 아래로 내려갔다가 올라온 뒤 '누구야?' 5.2초. 아이스크림 통은 소품 참조와 같음.",
+   "status": "accepted_by_claude"
+  }
+ ],
+ "length_limit_observed": {
+  "date": "2026-10-07",
+  "ok": "6.6초 약 5.5분, 7.3초 5.7~7분, 8.7초 7.9분, 9.4초 8.6~9.2분",
+  "fail": "11.5초·15.1초는 ×2 업스케일 뒤 마지막 1스텝에서 정지",
+  "rule": "본 작업 테이크는 9.4초(226프레임) 이하로 만든다. 10~11초 구간은 미검증."
+ },
+ "user_decisions": [
+  {
+   "date": "2026-10-07",
+   "text": "지수 2번째(T7E2 s820701), 경찰 2번째(T-VO-P s920601)로 확정. 블랙박스 T-VD2(도현 얼굴이 작게 잡힘)는 이대로 사용.",
+   "selected": {
+    "T7E2": "s820701 — S7-13·S7-14 화면과 지수 기준 음성",
+    "T-VO-P": "s920601 — S6-42·S6-51 음성과 경찰 A 기준 음성",
+    "T-VD1": "s710101 사용",
+    "T-VD2": "s710101 사용(재생성 안 함)"
+   }
+  },
+  {
+   "date": "2026-10-07",
+   "text": "서윤은 그대로 가도 괜찮을 것 같아 (T3C3a·T3C3b 채택). S#1부터 시작.",
+   "selected": {
+    "T3C3a": "s610317 사용",
+    "T3C3b": "s610317 사용"
+   }
+  },
+  {
+   "date": "2026-10-07",
+   "text": "핸드폰 진동이 올 때 너무 심하게 움직이는 것 같아. 아주 미세하게 움직이면 돼. (T1B2)"
+  },
+  {
+   "date": "2026-10-07",
+   "text": "응 이정도면 됐어 (T1B2 v03 채택). S#1 마무리 후 S#2 진행.",
+   "selected": {
+    "T1A1": "v01 s1101",
+    "T1A2": "v01 s1102 (사용자 개별 언급 없음 — 그대로 사용)",
+    "T1B1": "v02 s1103",
+    "T1B2": "v03 s1104",
+    "T1C": "v01 s1105",
+    "T-VO-D": "v01 s1106 (음성만)"
+   },
+   "note": "S2-14는 기준 목소리 클립 video_h3_voice_test/outputs/S2-14_anchor_v01_s110214 재사용 제안(사용자가 연기·호흡을 좋아함)."
+  },
+  {
+   "date": "2026-10-07",
+   "text": "T2C를 서윤 OTS로 바꾸면 T2D와 구도가 겹친다는 지적 → T2C+T2D를 한 테이크 T2CD(서윤 어깨 너머, 문 열림→구두 벗음→걸어오며 '자는 줄 알았네.')로 합치는 안 승인.",
+   "covers": [
+    "S2-07",
+    "S2-08"
+   ],
+   "note": "T2D v01은 대체 후보로 보관"
+  },
+  {
+   "date": "2026-10-08",
+   "text": "문은 바깥으로 열리는데 도어락이 집 안쪽에 위치해 있음. 도어락(키패드)은 문 바깥에 있어야 함. 문 닫을 때 도어락이 잠기는 소리가 나야 함. 핸드폰 뒤집어 식탁에 놓을 때 아직도 에러가 있음.",
+   "affected": [
+    "T2CD v01",
+    "T2B3 v02 s2306",
+    "T2A2b v02"
+   ]
+  }
+ ],
+ "lessons": [
+  {
+   "date": "2026-10-07",
+   "text": "손·소품 인서트에 인물 시트 전체를 넣으면 얼굴이 화면에 반투명하게 새어 들어올 수 있다(T1B1 v01). 인서트는 얼굴 없는 손·소매 크롭(refs/C1_hands_brace_crop.png)을 넣거나 인물 참조를 빼고, 소품 상태(노트북 열림 등)를 명시한다."
+  },
+  {
+   "date": "2026-10-07",
+   "text": "물건을 뒤집는 동작은 '덮어서 뒤집는다'처럼 쓰면 손과 물건이 섞이며 순간 변형된다(T2B3 v01). 가장자리를 집음 → 들어 올림 → 손목 회전 → 내려놓음으로 단계와 시간을 나누고, 물건은 하나의 단단한 물체라고 명시한다."
+  },
+  {
+   "date": "2026-10-07",
+   "text": "faster-whisper base는 무음·잡음 구간에서 문장을 지어낸다. 받아쓰기는 vad_filter=True로 확인한다(T2B2 v02, T2B3 v02)."
+  },
+  {
+   "date": "2026-10-07",
+   "text": "화면에 소품이 보이면 상태 지시('엎어져 꺼져 있음')를 무시하고 켜진 상태로 그릴 수 있다(T2F2 v01·v02). 상태가 중요하면 프레임 밖으로 빼는 편이 안전하다."
+  },
+  {
+   "date": "2026-10-08",
+   "text": "도어락 규칙: 키패드(불 켜짐)는 문 바깥 면. 집 안에서 보이는 안쪽 면은 불 없는 검은 내부 본체+레버만. 문이 닫히면 자동 잠김 전자음+걸쇠 모터 소리. 집 안 장면의 도어락 묘사·소리는 모두 이 규칙을 따른다."
+  },
+  {
+   "date": "2026-10-08",
+   "text": "H3는 화면 안에서 전화를 뒤집는 회전을 안정적으로 그리지 못한다(v01 손 녹아듦, v02 펜처럼 얇아짐·반투명). 회전은 프레임 밖에서 처리(들어 올려 나갔다가 엎어진 채 들어옴)하거나, 인물 샷에서는 소품을 프레임 밖에 둔다."
+  }
+ ],
+ "scene_selection": {
+  "S#2": {
+   "date": "2026-10-07",
+   "status": "Claude 검수 통과, 사용자 확인 대기",
+   "takes": {
+    "S2-02,06": "T2A1 v01 s2101",
+    "S2-09,13": "T2A2a v01 s2102",
+    "S2-15,17,20": "T2A2b v02 s2203",
+    "S2-03,05": "T2B1 v01 s2104",
+    "S2-11": "T2B2 v02 s2105",
+    "S2-16,17 (INS)": "T2B3 v02 s2306",
+    "S2-07,08": "T2CD v01 s2207",
+    "S2-10": "T2E1 v01 s2109",
+    "S2-12": "T2F1 v01 s2110",
+    "S2-14": "video_h3_voice_test S2-14_anchor_v01_s110214 (기준 목소리 클립 재사용)",
+    "S2-18,19": "T2F2 v03 s2411",
+    "S2-21": "T2E2 v02 s2212"
+   },
+   "not_used": [
+    "T2C v01 (사용자 지적: 서윤 부재)",
+    "T2D v01 (T2CD로 대체, 예비)"
+   ],
+   "UI": [
+    "S2-01",
+    "S2-04"
+   ]
+  },
+  "S#1": {
+   "status": "사용자 확인",
+   "takes": {
+    "S1-04,06": "T1A1 v01",
+    "S1-08,09": "T1A2 v01",
+    "S1-02": "T1B1 v02",
+    "S1-07": "T1B2 v03",
+    "S1-10": "T1C v01",
+    "S1-08/10/11 음성": "T-VO-D v01",
+    "S1-03,05": "T-VD1/T-VD2 v01"
+   },
+   "UI": [
+    "S1-01"
+   ],
+   "plate": [
+    "S1-11"
+   ]
+  }
+ }
+}

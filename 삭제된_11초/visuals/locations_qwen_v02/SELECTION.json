@@ -1,0 +1,50 @@
+{
+  "status": "ALL location views user confirmed final (2026-10-06). 권위 목록: FINAL_SELECTION.json",
+  "date": "2026-10-05",
+  "supersedes_for_review": "../locations_qwen_v01/SELECTION.json (HOME 4 views only; v01 files preserved)",
+  "selected_outputs": {
+    "HOME_MASTER": "outputs/HOME_MASTER_b.png",
+    "HOME_REVERSE": "outputs/HOME_REVERSE_v02.png",
+    "LOC_02_KITCHEN": "outputs/LOC_02_KITCHEN.png",
+    "LOC_03_ENTRY": "outputs/LOC_03_ENTRY_v02.png"
+  },
+  "qwen_runs": 16,
+  "post_process": 1,
+  "user_confirmation": {
+    "date": "2026-10-05",
+    "scope": [
+      "HOME_MASTER",
+      "HOME_REVERSE",
+      "LOC_02_KITCHEN",
+      "LOC_03_ENTRY"
+    ],
+    "instruction": "이대로 집 내부는 fix (사용자). 복도·엘리베이터는 디테일만 상향, 지하주차장은 사용자 제공 레퍼런스 이미지로 디벨롭.",
+    "fixed_scope": "구조·가구 배치·마감·재질·조명 분위기. 남은 차이(현관 높이·현관 벽 마감·주방 카운터 연장부)는 README 기록대로 확정 이미지 그대로 둠."
+  },
+  "floor_garage_selected": {
+    "LOC_04_CORRIDOR": "outputs/LOC_04_CORRIDOR_v04b.png",
+    "LOC_05_ELEVATOR": "outputs/LOC_05_ELEVATOR_v02.png",
+    "LOC_06_GARAGE_MASTER": "gpt_image/LOC_06_GARAGE_MASTER_gpt_a.png",
+    "LOC_06_GARAGE_DASHCAM": "gpt_image/LOC_06_GARAGE_DASHCAM_gpt_a.png"
+  },
+  "upscaled_5k": {
+    "HOME_MASTER": "outputs_5k/HOME_MASTER_b_5k.png",
+    "HOME_REVERSE": "outputs_5k/HOME_REVERSE_v02_5k.png",
+    "LOC_02_KITCHEN": "outputs_5k/LOC_02_KITCHEN_5k.png",
+    "LOC_03_ENTRY": "outputs_5k/LOC_03_ENTRY_v02_5k.png",
+    "LOC_04_CORRIDOR": "outputs_5k/LOC_04_CORRIDOR_v04b_5k.png",
+    "LOC_05_ELEVATOR": "outputs_5k/LOC_05_ELEVATOR_v02_5k.png",
+    "LOC_06_GARAGE_MASTER": "outputs_5k/LOC_06_GARAGE_MASTER_gpt_a_5k.png",
+    "LOC_06_GARAGE_DASHCAM": "outputs_5k/LOC_06_GARAGE_DASHCAM_gpt_a_5k.png"
+  },
+  "upscale_note": "5120x2880, RealESRGAN_x4plus + lanczos 50:50 혼합 + 약한 언샤프. 내용 변경 없음. 기록: UPSCALE_RECORD.json",
+  "garage_replacement": {
+    "date": "2026-10-06",
+    "user_instruction": "gpt버전으로 교체해줘",
+    "replaced": {
+      "LOC_06_GARAGE_MASTER": "outputs/LOC_06_GARAGE_MASTER.png (Qwen, 보존)",
+      "LOC_06_GARAGE_DASHCAM": "outputs/LOC_06_GARAGE_DASHCAM_v03.png (Qwen, 보존)"
+    },
+    "status": "사용자 선택으로 GPT 버전 교체 후, 2026-10-06 전체 배경 최종 확정에 포함."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "status": "generated and visually reviewed; design proposal, not user-confirmed",
+  "purpose": "Observed vestibule door placement and kitchen camera-position corrections",
+  "runs": [
+    {
+      "id": "HOME_REVERSE_v02",
+      "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\HOME_REVERSE.png",
+      "reference_sha256": "20ecc66006424a7889e2e2ecdf1d115a7bd875e41a7ca46beda46a18d0478177",
+      "uploaded_name": "HOME_REVERSE.png",
+      "actual_destination": "16 images.image_1",
+      "prompt_id": "aba5ad66-93b1-4fa9-bee1-c58e7213548a",
+      "seed": 202610051107,
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\HOME_REVERSE_v02.png",
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "sha256": "76a33ff9c4a95e958827d5240b192003f1d5641922c4500ca630f6dd09205cb8"
+    },
+    {
+      "id": "LOC_02_KITCHEN_v02",
+      "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\HOME_MASTER.png",
+      "reference_sha256": "940b3f35701490577be6471c63b9c6d110fafe1cab161f07681eef1fa0fed0b9",
+      "uploaded_name": "HOME_MASTER.png",
+      "actual_destination": "16 images.image_1",
+      "prompt_id": "7ed37526-97e3-4e7a-8e0d-7604c4a35b84",
+      "seed": 202610051108,
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_02_KITCHEN_v02.png",
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "sha256": "24b33cd90a5876e3cbe05e748c78a7deedd85682fd74d79f1dddd852d5485405"
+    },
+    {
+      "id": "LOC_02_KITCHEN_v03",
+      "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_02_KITCHEN_v02.png",
+      "reference_sha256": "24b33cd90a5876e3cbe05e748c78a7deedd85682fd74d79f1dddd852d5485405",
+      "uploaded_name": "LOC_02_KITCHEN_v02.png",
+      "actual_destination": "16 images.image_1",
+      "prompt_id": "15a89d84-d4e1-41e3-9560-89de97c83d9c",
+      "seed": 202610051107,
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_02_KITCHEN_v03.png",
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "sha256": "36f88c2b691be28cf3169b2c911d53d7ddcc5e8c18c0e37f7f1dfc739f6568c1"
+    },
+    {
+      "id": "LOC_06_GARAGE_v02",
+      "source": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_06_GARAGE.png",
+      "reference_sha256": "00ccfe65c03afc056e269761f8390b9d35485f42657f2e7d58a079cb92eb35b1",
+      "uploaded_name": "LOC_06_GARAGE.png",
+      "actual_destination": "16 images.image_1",
+      "prompt_id": "68b9d96a-83ac-4ae9-81ad-b77e0044c9d7",
+      "seed": 202610051107,
+      "node_errors": {},
+      "status": "generated",
+      "visual_review": "completed; see README.md for observations and limitations",
+      "output": "D:\\work\\Youtube\\New_롱폼\\삭제된_11초\\visuals\\locations_qwen_v01\\outputs\\LOC_06_GARAGE_v02.png",
+      "actual_size": [
+        2048,
+        1152
+      ],
+      "sha256": "5117a678f880d7a29b0218c1b200141687a25c067a91c91ace5c34cc1fa92496"
+    }
+  ]
+}

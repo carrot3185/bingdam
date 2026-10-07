@@ -1,0 +1,205 @@
+{
+  "1": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+      "weight_dtype": "default"
+    }
+  },
+  "3": {
+    "class_type": "QwenImage21Cache",
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ],
+      "device": "cpu",
+      "dtype": "default"
+    }
+  },
+  "4": {
+    "class_type": "ModelSamplingFlux",
+    "inputs": {
+      "model": [
+        "3",
+        0
+      ],
+      "max_shift": 0.693548,
+      "base_shift": 0.5,
+      "width": 2560,
+      "height": 1536
+    }
+  },
+  "6": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+    }
+  },
+  "31": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    }
+  },
+  "11": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": 2560,
+      "height": 1536,
+      "batch_size": 1
+    }
+  },
+  "7": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "CHAR_01_서윤_turnaround_v02_HQ_repaired.png"
+    }
+  },
+  "40": {
+    "class_type": "ImageScaleBy",
+    "inputs": {
+      "image": [
+        "7",
+        0
+      ],
+      "upscale_method": "lanczos",
+      "scale_by": 0.75
+    }
+  },
+  "8": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "USER_LOOKBOOK_4LOOKS.webp"
+    }
+  },
+  "41": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "8",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 705
+    }
+  },
+  "42": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "8",
+        0
+      ],
+      "x": 912,
+      "y": 876,
+      "width": 150,
+      "height": 134
+    }
+  },
+  "9": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "D11_CHAR_01_FINAL.png"
+    }
+  },
+  "34": {
+    "class_type": "ImageCrop",
+    "inputs": {
+      "image": [
+        "9",
+        0
+      ],
+      "x": 320,
+      "y": 0,
+      "width": 384,
+      "height": 384
+    }
+  },
+  "16": {
+    "class_type": "TextEncodeQwenImage21",
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ],
+      "prompt": "Image one is the approved four-view character turnaround of this woman; it fixes her identity, face, long black hair, body proportions, oatmeal cotton top, loose charcoal trousers, the gray wrist brace on her anatomical LEFT wrist, the four-view layout, studio lighting and backdrop. Image four is a close crop of the SAME woman's original head and only reinforces her face and hair. Image two is a styling reference used ONLY for the long camel wool coat; ignore that model's face, her handbag and her black loafers. Image three is a product photo used ONLY for the white lace-up sneakers. Generate a new photographic turnaround of the same woman from image one, now dressed for going outside: show exactly four separate full-body views in one horizontal row in the same order, spacing, floor baseline and body scale as image one: front, strict profile facing the left edge, straight rear, strict profile facing the right edge. Keep every head and foot inside the frame. She wears the camel wool coat from image two over her unchanged oatmeal top and charcoal trousers: a long single-breasted camel coat in soft brushed wool with a fine visible nap, notched lapels, dropped shoulders, side welt pockets, worn open and unbelted. The coat is very long, exactly as long as in image two: its hem reaches down to the ankles in every view, so only a narrow band of charcoal trouser leg shows between the coat hem and the sneakers; it is not a knee-length or mid-calf coat. The open front shows the oatmeal top and the charcoal trousers between the coat panels. From behind, her long black hair falls over the coat's back down to mid-back, and the coat back shows a plain center seam and the long hem. On her feet are the plain white leather lace-up low-top sneakers from image three, with white laces and flat white soles; the loose charcoal trouser hems rest on them. No bag, no strap, no handbag, no loafers, no socks visible, no belt, no scarf, no jewelry, no hat. The gray structured wrist brace with its straps and thumb opening stays on her anatomical LEFT wrist only. Both coat sleeves end at the wrist bone, and the brace on the left forearm is clearly visible below the left coat cuff in three views: in the FRONT view on the wrist at the image-right side, in the REAR view on the wrist at the image-left side, and in the left-facing profile on the near arm. In the right-facing profile that arm is hidden behind the body. Her anatomical right wrist stays bare in every view. Arms rest alongside the body, hands visible and relaxed, not in pockets. The front-view facial geometry, eye spacing and shape, nose, lips, jaw, head size, hairline, thin wispy bangs and skin tone must match image one and image four, without beautifying, slimming, recasting or changing age; calm neutral expression. Keep the original soft studio lighting and the pale warm-gray backdrop of image one. Preserve individual hair strands, natural skin texture, the wool nap and seams of the coat, fabric folds and sneaker edges with clear focused detail, without painterly smoothing or artificial sharpening. No text, labels or watermark.",
+      "negative_prompt": "",
+      "resolution": 0,
+      "images.image_1": [
+        "40",
+        0
+      ],
+      "images.image_2": [
+        "41",
+        0
+      ],
+      "images.image_3": [
+        "42",
+        0
+      ],
+      "images.image_4": [
+        "34",
+        0
+      ]
+    }
+  },
+  "20": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "16",
+        0
+      ],
+      "negative": [
+        "16",
+        1
+      ],
+      "latent_image": [
+        "11",
+        0
+      ],
+      "seed": 2026100602,
+      "steps": 60,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    }
+  },
+  "21": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "20",
+        0
+      ],
+      "vae": [
+        "6",
+        0
+      ]
+    }
+  },
+  "22": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "21",
+        0
+      ],
+      "filename_prefix": "deleted_11s_costume/CHAR_01_서윤_COSTUME_01B_turnaround_b"
+    }
+  }
+}

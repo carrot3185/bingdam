@@ -1,0 +1,48 @@
+{
+  "engine": "Deno Qwen-Image 2.1 T2I + Edit; local ComfyUI Desktop 127.0.0.1:8188",
+  "status": "completed and visually inspected",
+  "settings": {
+    "width": 1536,
+    "height": 1024,
+    "steps": 40,
+    "cfg": 1,
+    "sampler": "euler",
+    "scheduler": "simple",
+    "denoise": 1,
+    "reference_resolution": 1024
+  },
+  "reference_input": "LoadImage node 7 -> TextEncodeQwenImage21 node 16 images.image_1",
+  "validation": "all three workflows valid, zero errors and warnings, no partner API nodes",
+  "runs": [
+    {
+      "id": "CHAR_01",
+      "version": "v01",
+      "prompt_id": "134b2205-2113-4840-9007-202ef1fd68e8",
+      "status": "completed",
+      "observed": "Four directions; face/hair and indoor costume visually compared to selected A. Brace remains anatomical LEFT. Rear heels covered by trouser hems.",
+      "output": "outputs/CHAR_01_서윤_turnaround_v01.png"
+    },
+    {
+      "id": "CHAR_02",
+      "version": "v01",
+      "prompt_id": "12562571-fc58-4a1e-964d-5417c1e129df",
+      "status": "completed",
+      "observed": "Four directions; face/hair, blue shirt, navy trousers, shoes compared to selected D. Watch remains anatomical LEFT. Hands stay in pockets despite requested relaxed arms.",
+      "output": "outputs/CHAR_02_도현_turnaround_v01.png"
+    },
+    {
+      "id": "CHAR_03",
+      "version": "v01",
+      "prompt_id": "d75efb3c-a144-45cb-8ba4-3ba38c629799",
+      "status": "completed",
+      "observed": "Four directions; face/hair, olive jacket, ivory T-shirt, jeans, sneakers compared to selected B. One bag remains at anatomical RIGHT hip; strap begins LEFT shoulder. Hands stay in pockets despite requested relaxed arms.",
+      "output": "outputs/CHAR_03_지수_turnaround_v01.png"
+    }
+  ],
+  "metadata_checks": "METADATA_CHECKS.json",
+  "limitations": [
+    "Rear and profile geometry inferred from a single front reference; not a measured 3D model.",
+    "Seven-head proportion is a prompt target, not formally measured.",
+    "Male hands remain in pockets; Seo-yun rear heels covered by trouser hems."
+  ]
+}

@@ -1,0 +1,1130 @@
+{
+  "status": "completed_8_first_outputs_no_regeneration",
+  "gpt_engine": "Codex built-in image_gen; exact model version not exposed; independent original input each call; same conversation context, not separate fresh chats",
+  "qwen_engine": "Deno Qwen-Image 2.1 T2I + Edit via local ComfyUI Desktop server 127.0.0.1:8188",
+  "qwen_prompt_ids": {
+    "B_CONTROL_V2_03": "ca79c10d-1f67-4da0-a522-e4ce6e1b00b7",
+    "B_V3_01": "9c3eac98-7eb5-401d-b810-74003eeb9f18",
+    "B_V3_02": "3e9f190e-4b25-4cde-ae60-6418bddcac5f",
+    "B_V3_03": "651cbaa6-c006-47f6-89f4-7084dd35d06a"
+  },
+  "source_input_hash_verified": true,
+  "metric_note": "Unregistered normalized-coordinate patches; RGB only auxiliary, framing/muscle movement confounds. No quality-loss percentage.",
+  "images": [
+    {
+      "file": "COMMON_REFERENCE.png",
+      "size": [
+        1672,
+        941
+      ],
+      "file_sha256": "81e135e8c58fb1037eca165588c93169c2615b4712ecbef06c7623a3c6ba89a2",
+      "pixels_sha256": "f744a5d8c0b33a98124ef6e4d5b6f7fc9e546dcd84d83aa678cf9c216a79ef06",
+      "regions": {
+        "forehead": {
+          "mean_rgb": [
+            173.52,
+            146.64,
+            134.99
+          ],
+          "R_minus_G": 26.88
+        },
+        "cheek": {
+          "mean_rgb": [
+            203.87,
+            179.16,
+            169.99
+          ],
+          "R_minus_G": 24.7
+        },
+        "background": {
+          "mean_rgb": [
+            101.09,
+            98.85,
+            94.52
+          ],
+          "R_minus_G": 2.25
+        }
+      }
+    },
+    {
+      "file": "결과\\GPT\\A_CONTROL_V2_03.png",
+      "size": [
+        1672,
+        941
+      ],
+      "file_sha256": "f96b4912ba5cbd000b12a5a74381b485e964b0d858ea81ec05cfd3eaa9adc1e6",
+      "pixels_sha256": "b4c1f289e92713e32bbf54320640672aa1ff82870cbf627b86297246b4ebc206",
+      "regions": {
+        "forehead": {
+          "mean_rgb": [
+            186.89,
+            151.45,
+            139.37
+          ],
+          "R_minus_G": 35.45
+        },
+        "cheek": {
+          "mean_rgb": [
+            211.34,
+            177.87,
+            169.85
+          ],
+          "R_minus_G": 33.46
+        },
+        "background": {
+          "mean_rgb": [
+            100.42,
+            97.47,
+            94.24
+          ],
+          "R_minus_G": 2.95
+        }
+      }
+    },
+    {
+      "file": "결과\\GPT\\A_V3_01.png",
+      "size": [
+        1672,
+        941
+      ],
+      "file_sha256": "1fcaf8250de15b3f59799e91983661c1fa63470f374826209400ad7626eb24fd",
+      "pixels_sha256": "f4131229cf486fc869799824592464434496cc96fcc3322397e9f997128e3ec8",
+      "regions": {
+        "forehead": {
+          "mean_rgb": [
+            183.91,
+            152.05,
+            140.18
+          ],
+          "R_minus_G": 31.86
+        },
+        "cheek": {
+          "mean_rgb": [
+            212.22,
+            182.24,
+            173.07
+          ],
+          "R_minus_G": 29.99
+        },
+        "background": {
+          "mean_rgb": [
+            101.43,
+            98.92,
+            94.74
+          ],
+          "R_minus_G": 2.51
+        }
+      }
+    },
+    {
+      "file": "결과\\GPT\\A_V3_02.png",
+      "size": [
+        1672,
+        941
+      ],
+      "file_sha256": "9a5dfd2caf39fbd0a9faa32a0aef370715d234008222609a163bb347a599f9c3",
+      "pixels_sha256": "e2251d78e9fd450f54d04aaa682c2ea33507f45771784f8e0e87eb3f7affbbc5",
+      "regions": {
+        "forehead": {
+          "mean_rgb": [
+            190.2,
+            155.51,
+            142.74
+          ],
+          "R_minus_G": 34.7
+        },
+        "cheek": {
+          "mean_rgb": [
+            217.16,
+            183.56,
+            174.58
+          ],
+          "R_minus_G": 33.6
+        },
+        "background": {
+          "mean_rgb": [
+            101.17,
+            98.45,
+            94.43
+          ],
+          "R_minus_G": 2.73
+        }
+      }
+    },
+    {
+      "file": "결과\\GPT\\A_V3_03.png",
+      "size": [
+        1672,
+        941
+      ],
+      "file_sha256": "de8057326a85db5c3cd44451bbf0f18808df6e73666c9069de81f3ecc9fa12e2",
+      "pixels_sha256": "8d1d45e03a530a0787b2a95361b22ce21d1df39dfe17731b3835933a94622599",
+      "regions": {
+        "forehead": {
+          "mean_rgb": [
+            178.82,
+            148.92,
+            136.78
+          ],
+          "R_minus_G": 29.9
+        },
+        "cheek": {
+          "mean_rgb": [
+            208.09,
+            180.94,
+            174.09
+          ],
+          "R_minus_G": 27.16
+        },
+        "background": {
+          "mean_rgb": [
+            100.66,
+            98.38,
+            93.93
+          ],
+          "R_minus_G": 2.28
+        }
+      }
+    },
+    {
+      "file": "결과\\Qwen\\B_CONTROL_V2_03.png",
+      "size": [
+        1536,
+        864
+      ],
+      "file_sha256": "2a4e0012d0537c40339f0faa3731890de3507702d0ad9979b3345e09e13cc6ae",
+      "pixels_sha256": "67d48ec4090e40df373b8931b524c9281bf9544ca3d7c2ae2660c87362f554fd",
+      "regions": {
+        "forehead": {
+          "mean_rgb": [
+            172.26,
+            144.3,
+            131.82
+          ],
+          "R_minus_G": 27.96
+        },
+        "cheek": {
+          "mean_rgb": [
+            202.06,
+            178.77,
+            169.81
+          ],
+          "R_minus_G": 23.3
+        },
+        "background": {
+          "mean_rgb": [
+            99.26,
+            95.73,
+            90.32
+          ],
+          "R_minus_G": 3.53
+        }
+      },
+      "qwen_prompt_graph": {
+        "1": {
+          "inputs": {
+            "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+            "weight_dtype": "default"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "Load Diffusion Model"
+          }
+        },
+        "3": {
+          "inputs": {
+            "device": "auto",
+            "dtype": "default",
+            "model": [
+              "1",
+              0
+            ]
+          },
+          "class_type": "QwenImage21Cache",
+          "_meta": {
+            "title": "Qwen Image 2.1 Cache"
+          }
+        },
+        "4": {
+          "inputs": {
+            "max_shift": 0.693548,
+            "base_shift": 0.5,
+            "model": [
+              "3",
+              0
+            ],
+            "width": [
+              "10",
+              1
+            ],
+            "height": [
+              "10",
+              2
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "ModelSamplingFlux"
+          }
+        },
+        "10": {
+          "inputs": {
+            "mode": "Manual Input",
+            "ratio_preset": "16:9",
+            "megapixels": 1.0,
+            "width": 1536,
+            "height": 864,
+            "divisible_by": "32",
+            "resize_method": "Center Crop (Fill)",
+            "interpolation": "lanczos",
+            "crop_x": 0.5,
+            "crop_y": 0.5,
+            "crop_zoom": 1.0
+          },
+          "class_type": "DenoResolutionSetup",
+          "_meta": {
+            "title": "(Deno) Resize Box"
+          }
+        },
+        "20": {
+          "inputs": {
+            "seed": 50915118364261,
+            "steps": 40,
+            "cfg": 1.0,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "16",
+              0
+            ],
+            "negative": [
+              "16",
+              1
+            ],
+            "latent_image": [
+              "11",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "21": {
+          "inputs": {
+            "samples": [
+              "20",
+              0
+            ],
+            "vae": [
+              "6",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "22": {
+          "inputs": {
+            "filename_prefix": "emotional_acting_02/B_CONTROL_V2_03",
+            "images": [
+              "21",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "6": {
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "Load VAE"
+          }
+        },
+        "31": {
+          "inputs": {
+            "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          },
+          "class_type": "CLIPLoader",
+          "_meta": {
+            "title": "Load CLIP"
+          }
+        },
+        "11": {
+          "inputs": {
+            "batch_size": 1,
+            "width": [
+              "10",
+              1
+            ],
+            "height": [
+              "10",
+              2
+            ]
+          },
+          "class_type": "EmptyLatentImage",
+          "_meta": {
+            "title": "Empty Latent Image"
+          }
+        },
+        "7": {
+          "inputs": {
+            "image": "COMMON_REFERENCE.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          },
+          "is_changed": [
+            "81e135e8c58fb1037eca165588c93169c2615b4712ecbef06c7623a3c6ba89a2"
+          ]
+        },
+        "16": {
+          "inputs": {
+            "prompt": "Change only the woman's expression and tear state in the image to a warm restrained smile with one fallen tear, expressing joyful relief after learning that someone she loves is safe. Her eyes and gently lifted cheeks carry the smile, and her mouth corners are softly raised. Her lips remain closed, with no visible teeth. A single clear tear rests halfway down one cheek, connected to the lower eyelid by one narrow wet trail; the other cheek remains dry. The tear sits on the skin surface, with a subtle highlight that follows the existing light. Her eyebrows stay relaxed, and her face reads as relieved and happy rather than contorted by sobbing. Use the woman in the image as the identity reference; preserve her facial identity, hairstyle, clothing, framing, head position, gaze direction, background, and lighting while allowing the intended expression changes. This is a local edit of the original photograph, with the existing skin texture intact. No added people, objects, text, or watermark.",
+            "negative_prompt": "",
+            "resolution": 1024,
+            "clip": [
+              "31",
+              0
+            ],
+            "vae": [
+              "6",
+              0
+            ],
+            "images.image_1": [
+              "7",
+              0
+            ]
+          },
+          "class_type": "TextEncodeQwenImage21",
+          "_meta": {
+            "title": "Text Encode Qwen Image 2.1"
+          }
+        }
+      },
+      "prompt_verified": true,
+      "input_verified_filename": "COMMON_REFERENCE.png"
+    },
+    {
+      "file": "결과\\Qwen\\B_V3_01.png",
+      "size": [
+        1536,
+        864
+      ],
+      "file_sha256": "c2e66f95c9b3a329c8a7f742ce58afef5be2b3358c599fe183cb3207e1953a9d",
+      "pixels_sha256": "d48b3005bb84cb0dbe4103c3ccf8ed1e84fe80d9868e4b65e24f591561b5ee05",
+      "regions": {
+        "forehead": {
+          "mean_rgb": [
+            173.09,
+            145.0,
+            132.43
+          ],
+          "R_minus_G": 28.09
+        },
+        "cheek": {
+          "mean_rgb": [
+            201.94,
+            177.48,
+            167.54
+          ],
+          "R_minus_G": 24.46
+        },
+        "background": {
+          "mean_rgb": [
+            99.77,
+            96.23,
+            90.7
+          ],
+          "R_minus_G": 3.54
+        }
+      },
+      "qwen_prompt_graph": {
+        "1": {
+          "inputs": {
+            "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+            "weight_dtype": "default"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "Load Diffusion Model"
+          }
+        },
+        "3": {
+          "inputs": {
+            "device": "auto",
+            "dtype": "default",
+            "model": [
+              "1",
+              0
+            ]
+          },
+          "class_type": "QwenImage21Cache",
+          "_meta": {
+            "title": "Qwen Image 2.1 Cache"
+          }
+        },
+        "4": {
+          "inputs": {
+            "max_shift": 0.693548,
+            "base_shift": 0.5,
+            "model": [
+              "3",
+              0
+            ],
+            "width": [
+              "10",
+              1
+            ],
+            "height": [
+              "10",
+              2
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "ModelSamplingFlux"
+          }
+        },
+        "10": {
+          "inputs": {
+            "mode": "Manual Input",
+            "ratio_preset": "16:9",
+            "megapixels": 1.0,
+            "width": 1536,
+            "height": 864,
+            "divisible_by": "32",
+            "resize_method": "Center Crop (Fill)",
+            "interpolation": "lanczos",
+            "crop_x": 0.5,
+            "crop_y": 0.5,
+            "crop_zoom": 1.0
+          },
+          "class_type": "DenoResolutionSetup",
+          "_meta": {
+            "title": "(Deno) Resize Box"
+          }
+        },
+        "20": {
+          "inputs": {
+            "seed": 50915118364261,
+            "steps": 40,
+            "cfg": 1.0,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "16",
+              0
+            ],
+            "negative": [
+              "16",
+              1
+            ],
+            "latent_image": [
+              "11",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "21": {
+          "inputs": {
+            "samples": [
+              "20",
+              0
+            ],
+            "vae": [
+              "6",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "22": {
+          "inputs": {
+            "filename_prefix": "emotional_acting_02/B_V3_01",
+            "images": [
+              "21",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "6": {
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "Load VAE"
+          }
+        },
+        "31": {
+          "inputs": {
+            "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          },
+          "class_type": "CLIPLoader",
+          "_meta": {
+            "title": "Load CLIP"
+          }
+        },
+        "11": {
+          "inputs": {
+            "batch_size": 1,
+            "width": [
+              "10",
+              1
+            ],
+            "height": [
+              "10",
+              2
+            ]
+          },
+          "class_type": "EmptyLatentImage",
+          "_meta": {
+            "title": "Empty Latent Image"
+          }
+        },
+        "7": {
+          "inputs": {
+            "image": "COMMON_REFERENCE.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          },
+          "is_changed": [
+            "81e135e8c58fb1037eca165588c93169c2615b4712ecbef06c7623a3c6ba89a2"
+          ]
+        },
+        "16": {
+          "inputs": {
+            "prompt": "Change only the woman's expression and tear state in the image to the first restrained moment of joyful relief after learning that someone she loves is safe. Her eyes soften as emotion gathers, and a thin clear bead of moisture sits along each lower eyelid. Her eyebrows remain relaxed rather than drawing together in distress. Her lips are gently pressed together, and the corners of her mouth remain level: a smile has not started. Her cheeks are dry, with no falling tear or wet trail. The visible response is relief held in the eyes, quiet and emotionally contained. Use the woman in the image as the identity reference; preserve her facial identity, hairstyle, clothing, framing, head position, gaze direction, background, and lighting while allowing the intended expression changes. This is a local edit of the original photograph. Keep the source white balance, exposure, contrast, saturation, and skin color unchanged; express emotional warmth through the facial expression alone. Retain the original fine skin texture, pores, individual hair strands, and blouse fabric detail, with no skin smoothing, beauty retouching, or added blush. Outside the facial expression and tear area, preserve the source appearance rather than repainting the scene. No added people, objects, text, or watermark.",
+            "negative_prompt": "",
+            "resolution": 1024,
+            "clip": [
+              "31",
+              0
+            ],
+            "vae": [
+              "6",
+              0
+            ],
+            "images.image_1": [
+              "7",
+              0
+            ]
+          },
+          "class_type": "TextEncodeQwenImage21",
+          "_meta": {
+            "title": "Text Encode Qwen Image 2.1"
+          }
+        }
+      },
+      "prompt_verified": true,
+      "input_verified_filename": "COMMON_REFERENCE.png"
+    },
+    {
+      "file": "결과\\Qwen\\B_V3_02.png",
+      "size": [
+        1536,
+        864
+      ],
+      "file_sha256": "e3cdfc884363cf6bebbe5ca6278882f2329d52e97c9a3519d7774c6a8f28b21a",
+      "pixels_sha256": "bbb0637bece6908a8e1f84a5e9f08b11b953467676450fb1eceeb37faaaa90a4",
+      "regions": {
+        "forehead": {
+          "mean_rgb": [
+            174.04,
+            145.89,
+            133.28
+          ],
+          "R_minus_G": 28.15
+        },
+        "cheek": {
+          "mean_rgb": [
+            203.23,
+            179.16,
+            169.57
+          ],
+          "R_minus_G": 24.07
+        },
+        "background": {
+          "mean_rgb": [
+            99.98,
+            96.48,
+            91.03
+          ],
+          "R_minus_G": 3.51
+        }
+      },
+      "qwen_prompt_graph": {
+        "1": {
+          "inputs": {
+            "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+            "weight_dtype": "default"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "Load Diffusion Model"
+          }
+        },
+        "3": {
+          "inputs": {
+            "device": "auto",
+            "dtype": "default",
+            "model": [
+              "1",
+              0
+            ]
+          },
+          "class_type": "QwenImage21Cache",
+          "_meta": {
+            "title": "Qwen Image 2.1 Cache"
+          }
+        },
+        "4": {
+          "inputs": {
+            "max_shift": 0.693548,
+            "base_shift": 0.5,
+            "model": [
+              "3",
+              0
+            ],
+            "width": [
+              "10",
+              1
+            ],
+            "height": [
+              "10",
+              2
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "ModelSamplingFlux"
+          }
+        },
+        "10": {
+          "inputs": {
+            "mode": "Manual Input",
+            "ratio_preset": "16:9",
+            "megapixels": 1.0,
+            "width": 1536,
+            "height": 864,
+            "divisible_by": "32",
+            "resize_method": "Center Crop (Fill)",
+            "interpolation": "lanczos",
+            "crop_x": 0.5,
+            "crop_y": 0.5,
+            "crop_zoom": 1.0
+          },
+          "class_type": "DenoResolutionSetup",
+          "_meta": {
+            "title": "(Deno) Resize Box"
+          }
+        },
+        "20": {
+          "inputs": {
+            "seed": 50915118364261,
+            "steps": 40,
+            "cfg": 1.0,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "16",
+              0
+            ],
+            "negative": [
+              "16",
+              1
+            ],
+            "latent_image": [
+              "11",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "21": {
+          "inputs": {
+            "samples": [
+              "20",
+              0
+            ],
+            "vae": [
+              "6",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "22": {
+          "inputs": {
+            "filename_prefix": "emotional_acting_02/B_V3_02",
+            "images": [
+              "21",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "6": {
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "Load VAE"
+          }
+        },
+        "31": {
+          "inputs": {
+            "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          },
+          "class_type": "CLIPLoader",
+          "_meta": {
+            "title": "Load CLIP"
+          }
+        },
+        "11": {
+          "inputs": {
+            "batch_size": 1,
+            "width": [
+              "10",
+              1
+            ],
+            "height": [
+              "10",
+              2
+            ]
+          },
+          "class_type": "EmptyLatentImage",
+          "_meta": {
+            "title": "Empty Latent Image"
+          }
+        },
+        "7": {
+          "inputs": {
+            "image": "COMMON_REFERENCE.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          },
+          "is_changed": [
+            "81e135e8c58fb1037eca165588c93169c2615b4712ecbef06c7623a3c6ba89a2"
+          ]
+        },
+        "16": {
+          "inputs": {
+            "prompt": "Change only the woman's expression and tear state in the image to the moment a small smile begins through joyful relief after learning that someone she loves is safe. A thin clear bead of moisture sits along each lower eyelid, and both cheeks remain dry without a falling tear or wet trail. Her lower eyelids lift slightly, her cheeks rise gently, and the corners of her mouth turn upward into a small emerging smile. Her eyebrows stay relaxed. Her lips remain closed, with no visible teeth. The smile is clearly warmer than a neutral face but still restrained, as though she is holding back a stronger response. Use the woman in the image as the identity reference; preserve her facial identity, hairstyle, clothing, framing, head position, gaze direction, background, and lighting while allowing the intended expression changes. This is a local edit of the original photograph. Keep the source white balance, exposure, contrast, saturation, and skin color unchanged; express emotional warmth through the facial expression alone. Retain the original fine skin texture, pores, individual hair strands, and blouse fabric detail, with no skin smoothing, beauty retouching, or added blush. Outside the facial expression and tear area, preserve the source appearance rather than repainting the scene. No added people, objects, text, or watermark.",
+            "negative_prompt": "",
+            "resolution": 1024,
+            "clip": [
+              "31",
+              0
+            ],
+            "vae": [
+              "6",
+              0
+            ],
+            "images.image_1": [
+              "7",
+              0
+            ]
+          },
+          "class_type": "TextEncodeQwenImage21",
+          "_meta": {
+            "title": "Text Encode Qwen Image 2.1"
+          }
+        }
+      },
+      "prompt_verified": true,
+      "input_verified_filename": "COMMON_REFERENCE.png"
+    },
+    {
+      "file": "결과\\Qwen\\B_V3_03.png",
+      "size": [
+        1536,
+        864
+      ],
+      "file_sha256": "2c2a9d4fd40f5ebaca77c0f1acc39ab6e124a730d4c6093a7237589f9f45e68a",
+      "pixels_sha256": "d535861cb9746d4e448253df97458d5ed9e706816ad425c3fc92373bc8e26b7d",
+      "regions": {
+        "forehead": {
+          "mean_rgb": [
+            173.03,
+            144.94,
+            132.49
+          ],
+          "R_minus_G": 28.09
+        },
+        "cheek": {
+          "mean_rgb": [
+            202.63,
+            179.11,
+            170.34
+          ],
+          "R_minus_G": 23.52
+        },
+        "background": {
+          "mean_rgb": [
+            99.54,
+            95.98,
+            90.5
+          ],
+          "R_minus_G": 3.56
+        }
+      },
+      "qwen_prompt_graph": {
+        "1": {
+          "inputs": {
+            "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+            "weight_dtype": "default"
+          },
+          "class_type": "UNETLoader",
+          "_meta": {
+            "title": "Load Diffusion Model"
+          }
+        },
+        "3": {
+          "inputs": {
+            "device": "auto",
+            "dtype": "default",
+            "model": [
+              "1",
+              0
+            ]
+          },
+          "class_type": "QwenImage21Cache",
+          "_meta": {
+            "title": "Qwen Image 2.1 Cache"
+          }
+        },
+        "4": {
+          "inputs": {
+            "max_shift": 0.693548,
+            "base_shift": 0.5,
+            "model": [
+              "3",
+              0
+            ],
+            "width": [
+              "10",
+              1
+            ],
+            "height": [
+              "10",
+              2
+            ]
+          },
+          "class_type": "ModelSamplingFlux",
+          "_meta": {
+            "title": "ModelSamplingFlux"
+          }
+        },
+        "10": {
+          "inputs": {
+            "mode": "Manual Input",
+            "ratio_preset": "16:9",
+            "megapixels": 1.0,
+            "width": 1536,
+            "height": 864,
+            "divisible_by": "32",
+            "resize_method": "Center Crop (Fill)",
+            "interpolation": "lanczos",
+            "crop_x": 0.5,
+            "crop_y": 0.5,
+            "crop_zoom": 1.0
+          },
+          "class_type": "DenoResolutionSetup",
+          "_meta": {
+            "title": "(Deno) Resize Box"
+          }
+        },
+        "20": {
+          "inputs": {
+            "seed": 50915118364261,
+            "steps": 40,
+            "cfg": 1.0,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1.0,
+            "model": [
+              "4",
+              0
+            ],
+            "positive": [
+              "16",
+              0
+            ],
+            "negative": [
+              "16",
+              1
+            ],
+            "latent_image": [
+              "11",
+              0
+            ]
+          },
+          "class_type": "KSampler",
+          "_meta": {
+            "title": "KSampler"
+          }
+        },
+        "21": {
+          "inputs": {
+            "samples": [
+              "20",
+              0
+            ],
+            "vae": [
+              "6",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "22": {
+          "inputs": {
+            "filename_prefix": "emotional_acting_02/B_V3_03",
+            "images": [
+              "21",
+              0
+            ]
+          },
+          "class_type": "SaveImage",
+          "_meta": {
+            "title": "Save Image"
+          }
+        },
+        "6": {
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          },
+          "class_type": "VAELoader",
+          "_meta": {
+            "title": "Load VAE"
+          }
+        },
+        "31": {
+          "inputs": {
+            "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          },
+          "class_type": "CLIPLoader",
+          "_meta": {
+            "title": "Load CLIP"
+          }
+        },
+        "11": {
+          "inputs": {
+            "batch_size": 1,
+            "width": [
+              "10",
+              1
+            ],
+            "height": [
+              "10",
+              2
+            ]
+          },
+          "class_type": "EmptyLatentImage",
+          "_meta": {
+            "title": "Empty Latent Image"
+          }
+        },
+        "7": {
+          "inputs": {
+            "image": "COMMON_REFERENCE.png"
+          },
+          "class_type": "LoadImage",
+          "_meta": {
+            "title": "Load Image"
+          },
+          "is_changed": [
+            "81e135e8c58fb1037eca165588c93169c2615b4712ecbef06c7623a3c6ba89a2"
+          ]
+        },
+        "16": {
+          "inputs": {
+            "prompt": "Change only the woman's expression and tear state in the image to a warm restrained smile with one fallen tear, expressing joyful relief after learning that someone she loves is safe. Her eyes and gently lifted cheeks carry the smile, and her mouth corners are softly raised. Her lips remain closed, with no visible teeth. A single clear tear rests halfway down one cheek, connected to the lower eyelid by one narrow wet trail; the other cheek remains dry. The tear sits on the skin surface, with a subtle highlight that follows the existing light. Her eyebrows stay relaxed, and her face reads as relieved and happy rather than contorted by sobbing. Use the woman in the image as the identity reference; preserve her facial identity, hairstyle, clothing, framing, head position, gaze direction, background, and lighting while allowing the intended expression changes. This is a local edit of the original photograph. Keep the source white balance, exposure, contrast, saturation, and skin color unchanged; express emotional warmth through the facial expression alone. Retain the original fine skin texture, pores, individual hair strands, and blouse fabric detail, with no skin smoothing, beauty retouching, or added blush. Outside the facial expression and tear area, preserve the source appearance rather than repainting the scene. No added people, objects, text, or watermark.",
+            "negative_prompt": "",
+            "resolution": 1024,
+            "clip": [
+              "31",
+              0
+            ],
+            "vae": [
+              "6",
+              0
+            ],
+            "images.image_1": [
+              "7",
+              0
+            ]
+          },
+          "class_type": "TextEncodeQwenImage21",
+          "_meta": {
+            "title": "Text Encode Qwen Image 2.1"
+          }
+        }
+      },
+      "prompt_verified": true,
+      "input_verified_filename": "COMMON_REFERENCE.png"
+    }
+  ]
+}

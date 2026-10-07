@@ -1,0 +1,13 @@
+[reference generation + audio reference] <Picture 1> is the character turnaround sheet of S1, Dohyun, a Korean man in his mid-thirties; it is used only for his identity: face, eyes, short black hair with a natural side part, clean-shaven skin, slim build, slate-blue button-up shirt with the sleeves rolled to the forearms, navy trousers, black leather shoes, and a black wristwatch on his LEFT wrist. <Picture 2> is the inside of the apartment elevator where the scene takes place: brushed stainless-steel walls, a handrail, a bright ceiling light panel and a button panel on the right wall. <Audio 1> is a recording of S1's own voice saying a different line; it defines S1's voice identity only: the same timbre, pitch, warmth and natural Korean speaking rhythm. S1 speaks with exactly that voice, and the words he says are only the new lines written below. The whole video is one continuous live-action shot inside that elevator at night, photographed like a restrained Korean TV drama: natural skin texture, even cool elevator light, shallow depth of field. Throughout the entire video S1 is the identical person from <Picture 1> — the exact same face, eyes, hairstyle and outfit. Never replace S1 with a different person. This identity lock applies ONLY to the face, hair and outfit — it never restricts poses, expressions, movement or energy.
+
+integrated_multimodal_description: [Shot 1] Medium shot inside the elevator, static camera. S1 stands holding a dark green reusable grocery bag in his left hand and a smartphone to his right ear with his right hand, calm and casual, speaking to his wife. With clear natural Korean mouth movements, in an easy, caring everyday tone, S1 says: <d>[Korean] 약 먹었어?</d>
+At 00:01.500, he listens for a moment in silence, glancing up at the floor indicator.
+At 00:03.000, S1 says: <d>[Korean] 나 올라가. 문 열어줘.</d>
+At 00:04.800, he listens for a beat in silence.
+At 00:05.500, gently, as if explaining something obvious, S1 says: <d>[Korean] 손목 아프니까. 내가 가방 들고 있어서 그래.</d>
+At 00:08.300, he lowers the phone slightly and waits for the doors, until the end.
+He speaks in his own calm, comfortable mid-low voice from <Audio 1>, warm and unhurried.
+
+overall_soundscape: The soft hum of the moving elevator, a faint rustle of the grocery bag. Only S1's voice is heard; nothing is heard from the phone.
+
+non_diegetic_music: N/A
